@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Project1" />
+        <module name="cs122b-spring20-project1-api-example" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Project1" target="1.8" />
+      <module name="cs122b-spring20-project1-api-example" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
