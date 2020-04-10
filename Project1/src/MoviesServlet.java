@@ -1,3 +1,4 @@
+import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
@@ -14,6 +15,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.HashMap;
+import java.util.Map;
 
 
 // Declaring a WebServlet called StarsServlet, which maps to url "/api/stars"
@@ -51,7 +54,7 @@ public class MoviesServlet extends HttpServlet {
 
             // Iterate through each row of rs
             while (rs.next()) {
-                String movieId = rs.getString("id");
+                String movieId = rs.getString("movieId");
                 String title = rs.getString("title");
                 String year = rs.getString("year");
                 String director = rs.getString("director");
@@ -74,18 +77,27 @@ public class MoviesServlet extends HttpServlet {
                 genre_statement.close();
 
                 //Create and execute the star query statement
+                JsonArray starJsonArray = new JsonArray();
                 String star_query = "SELECT * from stars as s, stars_in_movies as sm where sm.movieId = ? and sm.starId = s.id";
                 PreparedStatement star_statement = dbcon.prepareStatement(star_query);
                 star_statement.setString(1, movieId);
                 ResultSet star_rs = star_statement.executeQuery();
                 String stars = "";
                 count = 0;
+                Map<String, String> starMap = new HashMap<String, String>();
                 while (star_rs.next() && count < 3){
                     if (count != 0){
                         stars = stars + ", ";
                     }
-                    stars = stars + star_rs.getString("name");
+
+                    String starName = star_rs.getString("name");
+                    String starId = star_rs.getString("starId");
                     count++;
+                    JsonObject starJsonObject = new JsonObject();
+                    starJsonObject.addProperty("starName", starName);
+                    starJsonObject.addProperty("starId", starId);
+                    starJsonArray.add(starJsonObject);
+                    starMap.put(starName, starId);
                 }
                 star_rs.close();
                 star_statement.close();
@@ -97,11 +109,12 @@ public class MoviesServlet extends HttpServlet {
 
                 // Create a JsonObject based on the data we retrieve from rs
                 JsonObject jsonObject = new JsonObject();
+                jsonObject.addProperty("movieId", movieId);
                 jsonObject.addProperty("title", title);
                 jsonObject.addProperty("year", year);
                 jsonObject.addProperty("director", director);
                 jsonObject.addProperty("genres", genres);
-                jsonObject.addProperty("stars", stars);
+                jsonObject.add("starInfo", starJsonArray);
                 jsonObject.addProperty("rating", rating);
 
                 jsonArray.add(jsonObject);

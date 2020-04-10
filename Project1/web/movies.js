@@ -19,11 +19,25 @@ function handleStarResult(resultData) {
         //     + resultData[i]["star_name"] +     // display star_name for the link text
         //     '</a>' +
         //     "</th>";
-        rowHTML += "<th>" + resultData[i]["title"] + "</th>";
+        rowHTML += "<th>" + '<a href="single-star.html?id=' + resultData[i]['movieId'] + '">' +
+            resultData[i]["title"] + '</a>' +"</th>";
+        // rowHTML += "<th>" + resultData[i]["title"] + "</th>";
         rowHTML += "<th>" + resultData[i]["year"] + "</th>";
         rowHTML += "<th>" + resultData[i]["director"] + "</th>";
         rowHTML += "<th>" + resultData[i]["genres"] + "</th>";
-        rowHTML += "<th>" + resultData[i]["stars"] + "</th>";
+        rowHTML += "<th>";
+        for (let x = 0; x < resultData[i]['starInfo'].length; x++) {
+            if (x != 0){
+                rowHTML += ", ";
+            }
+            // rowHTML += resultData[i]['starsInfo'][x]["starName"];
+            // rowHTML += resultData[i]['starsInfo'][x]["starId"];
+            rowHTML += '<a href="single-movie.html?id=' + resultData[i]['starInfo'][x]["starId"] + '">'
+                + resultData[i]['starInfo'][x]["starName"] +     // display star_name for the link text
+                '</a>';
+
+        }
+        rowHTML += "</th>";
         rowHTML += "<th>" + resultData[i]["rating"] + "</th>";
 
         // rowHTML += "<th>" + resultData[i]["star_dob"] + "</th>";
