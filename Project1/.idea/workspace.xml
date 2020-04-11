@@ -5,13 +5,33 @@
       <artifact name="Project1:war" />
     </artifacts-to-build>
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2d7e4442-12ef-4b78-8342-d0cc67c9d636" name="Default Changelist" comment="init project template">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Project1.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project1.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Project1/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project1/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Project1/single-star.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project1/single-star.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/single-star.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/single-star.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Project1/single-movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project1/single-movie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Project1/single-star.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project1/single-star.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/single-movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/single-movie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/single-star.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/single-star.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +66,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -126,28 +147,6 @@
       </method>
     </configuration>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -168,11 +167,23 @@
       <workItem from="1586556375823" duration="3031000" />
       <workItem from="1586580304335" duration="624000" />
       <workItem from="1586584366960" duration="122000" />
+      <workItem from="1586585852490" duration="933000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
