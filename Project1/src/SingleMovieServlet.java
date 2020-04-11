@@ -17,7 +17,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-@WebServlet(name = "SingleStarServlet", urlPatterns = "/api/single-movie")
+@WebServlet(name = "SingleMovieServlet", urlPatterns = "/api/single-movie")
 public class SingleMovieServlet extends HttpServlet {
     private static final long serialVersionUID = 5L;
 

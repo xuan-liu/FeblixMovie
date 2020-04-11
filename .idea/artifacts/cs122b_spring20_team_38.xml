@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cs122b-spring20-team-38">
+    <output-path>$PROJECT_DIR$/out/artifacts/cs122b_spring20_team_38</output-path>
+    <root id="archive" name="cs122b-spring20-team-38.war" />
+  </artifact>
+</component>
