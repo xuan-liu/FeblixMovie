@@ -1,0 +1,38 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Page</title>
+</head>
+<body>
+<h2>Search Page</h2>
+<!-- Set the method to POST to avoid showing the username/password in the URL
+     The default action is disabled to allow your own implementation. -->
+<form id="search_form" method="get" action="result.html">
+    <label><b>Movie Title</b></label>
+    <label>
+        <input name="title" placeholder="" type="text">
+    </label>
+    <br>
+    <label><b>Year</b></label>
+    <label>
+        <input name="year" placeholder="" type="text">
+    </label>
+    <br>
+    <label><b>Director</b></label>
+    <label>
+        <input name="director" placeholder="" type="text">
+    </label>
+    <br>
+    <label><b>Star</b></label>
+    <label>
+        <input name="star" placeholder="" type="text">
+    </label>
+    <br>
+    <input type="submit" value="Search">
+</form>
+
+
+</body>
+</html>
