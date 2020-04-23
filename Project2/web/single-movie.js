@@ -1,4 +1,8 @@
 
+let addItem = $("#addItem");
+
+let movieTitle = "";
+
 function getParameterByName(target) {
     // Get request URL
     let url = window.location.href;
@@ -24,9 +28,9 @@ function handleResult(resultData) {
     // populate the star info h3
     // find the empty h3 body by id "star_info"
     let movieInfoElement = jQuery("#movie_info");
-
+    movieTitle = resultData[0]["title"];
     // append two html <p> created to the h3 body, which will refresh the page
-    movieInfoElement.append("<p>Movie Title: <b>" + resultData[0]["title"] + "</b></p>" +
+    movieInfoElement.append("<p>Movie Title: <b>" + movieTitle + "</b></p>" +
         "<p>Movie Year: " + resultData[0]["year"] + "</p>" +
         "<p>Movie Director: " + resultData[0]["director"] + "</p>" +
         "<p>Movie Genres: " + resultData[0]["genres"] + "</p>");
@@ -52,6 +56,17 @@ function handleResult(resultData) {
 
 }
 
+function handleCartInfo(cartEvent){
+    console.log("submit cart form");
+    var quantity = document.getElementById("quantity").value;
+    $.ajax("api/add", {
+        method: "POST",
+        data: {movie: movieTitle, quantity:quantity},
+    });
+
+    cartEvent.preventDefault();
+}
+
 /**
  * Once this .js is loaded, following scripts will be executed by the browser\
  */
@@ -66,3 +81,5 @@ jQuery.ajax({
     url: "api/single-movie?id=" + movieId, // Setting request url, which is mapped by StarsServlet in Stars.java
     success: (resultData) => handleResult(resultData) // Setting callback function to handle data returned successfully by the SingleStarServlet
 });
+
+addItem.submit(handleCartInfo);

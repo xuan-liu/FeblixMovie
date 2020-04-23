@@ -35,10 +35,12 @@ public class ResultServlet extends HttpServlet {
 
         response.setContentType("application/json"); // Response mime type
 
+        //Obtain and checks if the parameters exists in the url
         String title_param = request.getParameter("title");
         String year_param = request.getParameter("year");
         String director_param = request.getParameter("director");
         String star_param = request.getParameter("star");
+        String offset_param = request.getParameter("offset");
         String param = "";
         if (year_param != ""){
             param += " and m.year = " + year_param;
@@ -68,6 +70,10 @@ public class ResultServlet extends HttpServlet {
             Statement statement = dbcon.createStatement();
 
             String query = "SELECT distinct m.id, m.title, m.year, m.director, r.rating from movies as m, ratings as r, stars as s, stars_in_movies as sm where m.id = r.movieId and m.id = sm.movieId and sm.starId = s.id" + param + " order by r.rating desc limit 20";
+
+            if (offset_param != null){
+                query += " offset " + offset_param;
+            }
 
             log(query);
             // Perform the query

@@ -30,9 +30,21 @@
 
     <!-- H3 body is left empty here, will be populated with the data retrieved with single-star.js -->
     <!-- single-star.js will find this html element by it's id "star_info" -->
+
     <ul class="list-group">
         <li class="list-group-item" id="movie_info"></li>
     </ul>
+
+
+    <form ACTION="#" id="addItem" METHOD="get">
+        <label>Add to Cart</label>
+        <br>
+        <label>
+            <input id = "quantity" name="quantity" required="required" type="number">
+        </label>
+        <input type="submit" VALUE="add">
+    </form>
+
 
     <a href="movies.html" class="btn btn-primary">Go Back</a>
 
