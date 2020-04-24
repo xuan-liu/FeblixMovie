@@ -59,9 +59,9 @@ function handleResult(resultData) {
 function handleCartInfo(cartEvent){
     console.log("submit cart form");
     var quantity = document.getElementById("quantity").value;
-    $.ajax("api/add", {
+    $.ajax("api/cart", {
         method: "POST",
-        data: {movie: movieTitle, quantity:quantity},
+        data: {message: "add", movie: movieTitle, quantity: quantity},
     });
 
     cartEvent.preventDefault();

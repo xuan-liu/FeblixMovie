@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Page</title>
+</head>
+<body>
+    <p>total price of the shopping cart: </p>
+    <p>please enter the credit card information</p>
+
+    <form id="payment_form" method="post" action="/payment">
+        <label><b>first name of credit card holder</b></label>
+        <label>
+            <input name="firstname" placeholder="Enter Firstname" type="text">
+        </label>
+        <br>
+        <label><b>last name of credit card holder</b></label>
+        <label>
+            <input name="lastname" placeholder="Enter Lastname" type="text">
+        </label>
+        <br>
+        <label><b>credit card number</b></label>
+        <label>
+            <input name="cardnumber" placeholder="Enter Cardnumber" type="text">
+        </label>
+        <br>
+        <label><b>expiration date</b></label>
+        <label>
+            <input name="expir_date" placeholder="Enter Date" type="text">
+        </label>
+        <br>
+        <input type="submit" value="Place Order">
+    </form>
+
+    <div id="payment_error_message"></div>
+
+    <!-- include jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- include our own JS file -->
+    <script src="./payment.js"></script>
+
+</body>
+</html>
