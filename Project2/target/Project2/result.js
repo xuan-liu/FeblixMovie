@@ -12,15 +12,9 @@ function handleStarResult(resultData) {
         // Concatenate the html tags with resultData jsonObject
         let rowHTML = "";
         rowHTML += "<tr>";
-        // rowHTML +=
-        //     "<th>" +
-        //     // Add a link to single-star.html with id passed with GET url parameter
-        //     '<a href="single-star.html?id=' + resultData[i]['star_id'] + '">'
-        //     + resultData[i]["star_name"] +     // display star_name for the link text
-        //     '</a>' +
-        //     "</th>";
+        let movieTitle = resultData[i]["title"];
         rowHTML += "<th>" + '<a href="single-movie.html?id=' + resultData[i]['movieId'] + '">' +
-            resultData[i]["title"] + '</a>' +"</th>";
+            movieTitle + '</a>' +"</th>";
         // rowHTML += "<th>" + resultData[i]["title"] + "</th>";
         rowHTML += "<th>" + resultData[i]["year"] + "</th>";
         rowHTML += "<th>" + resultData[i]["director"] + "</th>";
@@ -30,8 +24,6 @@ function handleStarResult(resultData) {
             if (x != 0){
                 rowHTML += ", ";
             }
-            // rowHTML += resultData[i]['starsInfo'][x]["starName"];
-            // rowHTML += resultData[i]['starsInfo'][x]["starId"];
             rowHTML += '<a href="single-star.html?id=' + resultData[i]['starInfo'][x]["starId"] + '">'
                 + resultData[i]['starInfo'][x]["starName"] +     // display star_name for the link text
                 '</a>';
@@ -39,6 +31,9 @@ function handleStarResult(resultData) {
         }
         rowHTML += "</th>";
         rowHTML += "<th>" + resultData[i]["rating"] + "</th>";
+
+        rowHTML += "<th>" + '<button onclick = "handleAddToCart('+ "'" + movieTitle+ "'" + ',1)"' + ">Add to cart</button></th>";
+
 
         // rowHTML += "<th>" + resultData[i]["star_dob"] + "</th>";
         rowHTML += "</tr>";
@@ -48,6 +43,19 @@ function handleStarResult(resultData) {
     }
 }
 
+
+function handleAddToCart(movieTitle, quantity){
+    console.log('Handling AddToCart');
+    console.log('movie: ' + movieTitle);
+    console.log('quantity: ' + quantity);
+
+    $.ajax("api/cart", {
+        method: "POST",
+        data: {message:"add", movie: movieTitle, quantity:quantity},
+    });
+
+    // event.preventDefault();
+}
 
 /**
  * Once this .js is loaded, following scripts will be executed by the browser

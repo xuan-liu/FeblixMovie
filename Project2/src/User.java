@@ -27,11 +27,5 @@ public class User {
         return items;
     }
 
-    public void addItem(String item, int quantity){
-        if (items.containsKey(item)){
-            items.put(item, items.get(item) + quantity);
-        }
-    }
-
 
 }

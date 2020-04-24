@@ -41,20 +41,34 @@ public class ResultServlet extends HttpServlet {
         String director_param = request.getParameter("director");
         String star_param = request.getParameter("star");
         String offset_param = request.getParameter("offset");
-        String param = "";
-        if (year_param != ""){
-            param += " and m.year = " + year_param;
-        }
 
-        if (title_param != "") {
-            param += " and m.title like '%" + title_param + "%'";
-        }
+        String whereSection = "";
+        String orderSection = "r.rating desc";
 
-        if (director_param != ""){
-            param += " and m.director like '%" + director_param + "%'";
-        }
+        String queryBegin = "SELECT distinct m.id, m.title, m.year, m.director, r.rating from movies as m, ratings as r";
+
+
         if (star_param != ""){
-            param += " and s.name like '%" + star_param + "%'";
+            queryBegin += ",stars as s, stars_in_movies as sm";
+            whereSection += " and m.id = sm.movieId and s.id = sm.starId and s.name like '%" + star_param + "%'";
+        }
+        if (director_param != ""){
+            whereSection += " and m.director like '%" + director_param + "%'";
+        }
+        if (year_param != ""){
+            whereSection += " and m.year = " + year_param;
+        }
+        if (title_param != "") {
+            whereSection += " and m.title like '%" + title_param + "%'";
+        }
+
+        String queryTail = " where m.id = r.movieId" + whereSection + " order by "+ orderSection +" limit 100 ";
+
+        if (offset_param == null){
+            queryTail += "offset 0";
+        }
+        else{
+            queryTail += "offset " + offset_param;
         }
 
 
@@ -69,11 +83,7 @@ public class ResultServlet extends HttpServlet {
             // Declare our statement
             Statement statement = dbcon.createStatement();
 
-            String query = "SELECT distinct m.id, m.title, m.year, m.director, r.rating from movies as m, ratings as r, stars as s, stars_in_movies as sm where m.id = r.movieId and m.id = sm.movieId and sm.starId = s.id" + param + " order by r.rating desc limit 20";
-
-            if (offset_param != null){
-                query += " offset " + offset_param;
-            }
+            String query = queryBegin + queryTail;
 
             log(query);
             // Perform the query

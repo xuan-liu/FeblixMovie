@@ -19,9 +19,7 @@ function handleCartResult(resultData) {
         rowHTML += "<th>";
         rowHTML += "<form ACTION='#' id='updateQuantity' METHOD='post'>";
         rowHTML += "<input id='quantity_update' type='text' value=" + value + " class='input-small'>";
-        // console.log(document.getElementById("quantity_update").value);
-
-        rowHTML += "<button type='submit' onclick='handleButton(" + arg + ")'>Update</button>";
+        rowHTML += "<button name ='update' type='submit' onclick='handleButton(" + arg + ")'>Update</button>";
         rowHTML += "</form>"
 
         // delete movie item
@@ -29,16 +27,18 @@ function handleCartResult(resultData) {
         rowHTML += "<button name='delete' onclick='handleButton(" + arg + ")'>Delete</button>";
         rowHTML += "</th>";
 
-        // delete movie item
-        // arg = "\"delete\", \"" + key + "\", 0";
-        // rowHTML += "<th>" + value + "<button name='delete' onclick='handleButton(" + arg + ")'>Delete</button> </th>";
-        rowHTML += "<th>4</th></tr>";
+        // generate a single price for each movie
+        rowHTML += "<th>$4.00</th></tr>";
 
         // Append the row created to the table body, which will refresh the page
         cartTableBodyElement.append(rowHTML);
     }
 }
 
+/**
+ * Once the update and delete button is clicked, following scripts will be executed to pass the button message
+ * and movieTitle to backend
+ */
 function handleButton(button, movieTitle){
     console.log(button);
     console.log(movieTitle);
@@ -52,17 +52,6 @@ function handleButton(button, movieTitle){
     window.location.href = "cart.html";
 }
 
-// function handleQuantityUpdate(updateEvent){
-//     console.log("submit update quantity form");
-//     var quantity = document.getElementById("quantity").value;
-//     $.ajax("api/add", {
-//         method: "POST",
-//         data: {movie: movieTitle, quantity:quantity},
-//     });
-//
-//     updateEvent.preventDefault();
-// }
-
 /**
  * Once this .js is loaded, following scripts will be executed by the browser
  */
@@ -73,5 +62,3 @@ jQuery.ajax({
     url: "api/cart", // Setting request url, which is mapped by MoviesServlet
     success: (resultData) => handleCartResult(resultData) // Setting callback function to handle data returned successfully by the StarsServlet
 });
-
-// login_form.submit(submitLoginForm);

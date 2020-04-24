@@ -19,7 +19,7 @@ function handleCartResult(resultData) {
         rowHTML += "<th>";
         rowHTML += "<form ACTION='#' id='updateQuantity' METHOD='post'>";
         rowHTML += "<input id='quantity_update' type='text' value=" + value + " class='input-small'>";
-        rowHTML += "<button type='submit' onclick='handleButton(" + arg + ")'>Update</button>";
+        rowHTML += "<button name ='update' type='submit' onclick='handleButton(" + arg + ")'>Update</button>";
         rowHTML += "</form>"
 
         // delete movie item

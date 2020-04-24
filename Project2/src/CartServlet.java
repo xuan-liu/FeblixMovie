@@ -48,6 +48,7 @@ public class CartServlet extends HttpServlet {
         String item = request.getParameter("movie");
         String quantityString = request.getParameter("quantity");
 
+
         System.out.println(message);
         System.out.println(item);
         System.out.println(quantityString);
@@ -64,9 +65,18 @@ public class CartServlet extends HttpServlet {
             synchronized (previousItems) {
                 previousItems.remove(item);
             }
-        } else {
-            // add the movie with the quantity
+        } else if (message.equals("update")) {
+            // update the movie with the quantity
             synchronized (previousItems) {
+                previousItems.put(item, quantity);
+            }
+        }
+        else if (message.equals("add")){
+            // increase the quantity of movie
+            synchronized (previousItems) {
+                if (previousItems.containsKey(item)){
+                    quantity += previousItems.get(item);
+                }
                 previousItems.put(item, quantity);
             }
         }
