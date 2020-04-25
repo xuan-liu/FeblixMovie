@@ -1,4 +1,6 @@
 var url = window.location;
+
+
 function handleMovieResult(resultData) {
     console.log("handleMovieResult: populating star table from resultData");
 
@@ -158,6 +160,13 @@ function handleAddToCart(movieTitle, quantity){
  * Once this .js is loaded, following scripts will be executed by the browser
  */
 // Makes the HTTP GET request and registers on success callback function handleMovieResult
+console.log(url.toString());
+$.ajax("api/jump",{
+    method: "POST", // Setting request method
+
+    data: {movielisturl:url.toString()},// Setting request url, which is mapped by MoviesServlet
+});
+
 jQuery.ajax({
     dataType: "json", // Setting return data type
     method: "GET", // Setting request method

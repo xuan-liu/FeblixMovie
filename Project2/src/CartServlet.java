@@ -58,34 +58,37 @@ public class CartServlet extends HttpServlet {
 
         // get the previous items in a ArrayList
         User user = (User) session.getAttribute("user");
-        HashMap<String, Integer> previousItems = user.getItems();
+//        HashMap<String, Integer> previousItems = user.getItems();
 
         // output alert to indicate success/failure to quantity
         JsonObject responseJsonObject = new JsonObject();
 
         if (message.equals("delete")) {
             // delete the movie
-            synchronized (previousItems) {
-                previousItems.remove(item);
-            }
+//            synchronized (previousItems) {
+//                previousItems.remove(item);
+//            }
+            user.removeItem(item);
             responseJsonObject.addProperty("status", "success");
             responseJsonObject.addProperty("alert", "succeed! delete the item");
         } else if (message.equals("update")) {
             // update the movie with the quantity
-            synchronized (previousItems) {
-                previousItems.put(item, quantity);
-            }
+//            synchronized (previousItems) {
+//                previousItems.put(item, quantity);
+//            }
+            user.updateItem(item,quantity);
             responseJsonObject.addProperty("status", "success");
             responseJsonObject.addProperty("alert", "succeed! update the quantity");
         }
         else if (message.equals("add")){
             // increase the quantity of movie
-            synchronized (previousItems) {
-                if (previousItems.containsKey(item)){
-                    quantity += previousItems.get(item);
-                }
-                previousItems.put(item, quantity);
-            }
+//            synchronized (previousItems) {
+//                if (previousItems.containsKey(item)){
+//                    quantity += previousItems.get(item);
+//                }
+//                previousItems.put(item, quantity);
+//            }
+            user.addItem(item,quantity);
             responseJsonObject.addProperty("status", "success");
             responseJsonObject.addProperty("alert", "succeed! add to cart");
         } else {
@@ -93,9 +96,9 @@ public class CartServlet extends HttpServlet {
             responseJsonObject.addProperty("alert", "fail! error occurred");
         }
 
-        User updatedUser = new User(user.getUsername(), previousItems);
+//        User updatedUser = new User(user.getUsername(), previousItems);
 
-        session.setAttribute("user", updatedUser);
+        session.setAttribute("user", user);
 
         response.getWriter().write(responseJsonObject.toString());
     }
