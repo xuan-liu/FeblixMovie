@@ -43,6 +43,28 @@ function handleMovieResult(resultData) {
     }
 }
 
+/**
+ * Handle the data returned by CartServlet
+ * @param resultDataString jsonObject
+ */
+function handleAddToCartResult(resultDataString) {
+    console.log("handle add cart response");
+    let resultDataJson = JSON.parse(resultDataString);
+
+    console.log("handle add cart response");
+    console.log(resultDataJson);
+    console.log(resultDataJson["status"]);
+
+    // If add succeeds, it will redirect the user to index.html
+    if (resultDataJson["status"] === "success") {
+        var txt = "<div class=\"alert alert-success\" role=\"alert\">" + resultDataJson["alert"] + "</div>";
+        $("#add_to_cart_message").append(txt);
+    } else {
+        // If add fails, the web page will display error messages
+        var txt = "<div class=\"alert alert-danger\" role=\"alert\">" + resultDataJson["alert"] + "</div>";
+        $("#add_to_cart_message").append(txt);
+    }
+}
 
 function handleAddToCart(movieTitle, quantity){
     console.log('Handling AddToCart');
@@ -52,8 +74,8 @@ function handleAddToCart(movieTitle, quantity){
     $.ajax("api/cart", {
         method: "POST",
         data: {message:"add", movie: movieTitle, quantity:quantity},
+        success: handleAddToCartResult
     });
-
     // event.preventDefault();
 }
 

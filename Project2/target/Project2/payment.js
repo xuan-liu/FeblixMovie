@@ -40,8 +40,8 @@ function handlePaymentResult(resultDataString) {
         // If payment fails, the web page will display
         // error messages on <div> with id "payment_error_message"
         console.log("show error message");
-        console.log(resultDataJson["message"]);
-        $("#payment_error_message").text(resultDataJson["message"]);
+        var txt = "<div class=\"alert alert-danger\" role=\"alert\">" + resultDataJson["message"] + "</div>";
+        $("#payment_error_message").append(txt);
     }
 }
 

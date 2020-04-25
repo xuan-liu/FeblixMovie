@@ -25,34 +25,36 @@
 <body>
 <div id="header"></div>
 <div class="container">
-    <p id="total_price"></p>
-    <p>please enter the credit card information</p>
-
-    <form id="payment_form" method="post" action="/payment">
-        <label><b>first name of credit card holder</b></label>
-        <label>
-            <input name="firstname" placeholder="Enter Firstname" type="text" required>
-        </label>
-        <br>
-        <label><b>last name of credit card holder</b></label>
-        <label>
-            <input name="lastname" placeholder="Enter Lastname" type="text" required>
-        </label>
-        <br>
-        <label><b>credit card number</b></label>
-        <label>
-            <input name="cardnumber" placeholder="Enter Cardnumber" type="text" required>
-        </label>
-        <br>
-        <label><b>expiration date (YYYY-MM-DD)</b></label>
-        <label>
-            <input name="expir_date" placeholder="Enter Date" type="text" required>
-        </label>
-        <br>
-        <input type="submit" value="Place Order">
-    </form>
-
     <div id="payment_error_message"></div>
+
+    <div class="jumbotron">
+        <h2 id="total_price" class="display-4"></h2>
+    </div>
+
+    <div class="row">
+        <h1 style="text-align: center">Enter Your Credit Card Information</h1>
+        <div style="width: 30%; margin: 25px auto;">
+            <form id="payment_form" method="post" action="/payment">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="firstname" placeholder="First Name of Credit Card Holder" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="lastname" placeholder="Lastname of Credit Card Holder" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="cardnumber" placeholder="Credit Card Number" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="expir_date" placeholder="Expiration Date (YYYY-MM-DD)" required>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Place Order</button>
+                </div>
+            </form>
+            <a href="cart.html">Go Back</a>
+        </div>
+    </div>
+
 </div>
 <div id="footer"></div>
 <script src="./payment.js"></script>

@@ -36,6 +36,29 @@ function handleCartResult(resultData) {
 }
 
 /**
+ * Handle the data returned by CartServlet
+ * @param resultDataString jsonObject
+ */
+// function handleButtonResult(resultDataString) {
+//     let resultDataJson = JSON.parse(resultDataString);
+//
+//     console.log("handle button response");
+//     console.log(resultDataJson);
+//     console.log(resultDataJson["status"]);
+//
+//     // If add succeeds, it will redirect the user to index.html
+//     if (resultDataJson["status"] === "success") {
+//         $("#update_cart_message").text(resultDataJson["alert"]);
+//     } else {
+//         // If login fails, the web page will display
+//         // error messages on <div> with id "login_error_message"
+//         console.log("show error message");
+//         console.log(resultDataJson["alert"]);
+//         $("#update_cart_message").text(resultDataJson["alert"]);
+//     }
+// }
+
+/**
  * Once the update and delete button is clicked, following scripts will be executed to pass the button message
  * and movieTitle to backend
  */
@@ -47,6 +70,7 @@ function handleButton(button, movieTitle){
     $.ajax("api/cart", {
         method: "POST",
         data: {message: button, movie: movieTitle, quantity: quantity},
+        // success: handleButtonResult
     });
 
     window.location.href = "cart.html";
