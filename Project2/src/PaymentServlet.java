@@ -34,59 +34,45 @@ public class PaymentServlet extends HttpServlet {
         String expir_date = request.getParameter("expir_date");
 
         // check whether the credit card info matches a record in the credit cards table
+        try {
+            // Get a connection from dataSource
+            Connection dbcon = dataSource.getConnection();
 
-        JsonObject responseJsonObject = new JsonObject();
-        if (firstname.equals("Xuan")) {
-            // credit card verified success:
-            responseJsonObject.addProperty("status", "success");
-            responseJsonObject.addProperty("message", "success");
+            // Declare our statement
+            Statement statement = dbcon.createStatement();
 
-        } else {
-            // credit card verified fail
-            responseJsonObject.addProperty("status", "fail");
-            responseJsonObject.addProperty("message", "incorrect credit card info");
+            String query = "SELECT * from creditcards where id = \"" + cardnumber + "\" and firstName = \"" + firstname + "\" and lastName = \"" + lastname +"\" and expiration = \"" + expir_date + "\"";
+
+            System.out.println(query);
+            // Perform the query
+            ResultSet rs = statement.executeQuery(query);
+
+            JsonObject responseJsonObject = new JsonObject();
+            if (rs.next()) {
+                System.out.println(rs.getString("id"));
+                // credit card verified success:
+                responseJsonObject.addProperty("status", "success");
+                responseJsonObject.addProperty("message", "success");
+
+            } else {
+                // credit card verified fail
+                responseJsonObject.addProperty("status", "fail");
+                responseJsonObject.addProperty("message", "incorrect credit card info, please re-enter payment information");
+            }
+            response.getWriter().write(responseJsonObject.toString());
+
+            rs.close();
+            statement.close();
+            dbcon.close();
+        } catch (Exception e) {
+
+            // write error message JSON object to output
+            JsonObject jsonObject = new JsonObject();
+            jsonObject.addProperty("errorMessage", e.getMessage());
+
+            // set reponse status to 500 (Internal Server Error)
+            response.setStatus(500);
+
         }
-        response.getWriter().write(responseJsonObject.toString());
-
-
-//        try {
-//            // Get a connection from dataSource
-//            Connection dbcon = dataSource.getConnection();
-//
-//            // Declare our statement
-//            Statement statement = dbcon.createStatement();
-//
-//            String query = "SELECT * from creditcards as m where m.id = " + cardnumber + " and m.firstName = " + firstname + " and m.lastName = " + lastname;
-//
-//            System.out.println(query);
-//            // Perform the query
-//            ResultSet rs = statement.executeQuery(query);
-//
-//            JsonObject responseJsonObject = new JsonObject();
-//            if (rs.next()) {
-//                // credit card verified success:
-//                responseJsonObject.addProperty("status", "success");
-//                responseJsonObject.addProperty("message", "success");
-//
-//            } else {
-//                // credit card verified fail
-//                responseJsonObject.addProperty("status", "fail");
-//                responseJsonObject.addProperty("message", "incorrect credit card info");
-//            }
-//            response.getWriter().write(responseJsonObject.toString());
-//
-//            rs.close();
-//            statement.close();
-//            dbcon.close();
-//        } catch (Exception e) {
-//
-//            // write error message JSON object to output
-//            JsonObject jsonObject = new JsonObject();
-//            jsonObject.addProperty("errorMessage", e.getMessage());
-//
-//            // set reponse status to 500 (Internal Server Error)
-//            response.setStatus(500);
-//
-//        }
     }
 }
