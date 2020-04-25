@@ -36,7 +36,8 @@
     </div>
 
     <div id="add_to_cart_message"></div>
-
+    <select id="sortMenu" onchange="location = this.value;"></select>
+    <select id="numberToDisplayMenu" onchange="location = this.value;"></select>
     <!-- Id "movie_table" is useful for jQuery to find the html element with id, class here is mapping to Bootstrap defined class CSS -->
     <table id=movie_table class="table table-striped">
         <!-- Create a table header -->
@@ -57,6 +58,11 @@
         <!-- Again, id "movie_table_body" is useful for jQuery to find this html element -->
         <tbody id=movie_table_body></tbody>
     </table>
+
+</div>
+<div class="container">
+    <ul id="pagination" class="pagination">
+    </ul>
 </div>
 <div id="footer"></div>
 

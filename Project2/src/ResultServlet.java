@@ -20,7 +20,7 @@ import java.util.Map;
 
 
 // Declaring a WebServlet called StarsServlet, which maps to url "/api/stars"
-@WebServlet(name = "MoviesServlet", urlPatterns = "/api/result")
+@WebServlet(name = "ResultServlet", urlPatterns = "/api/result")
 public class ResultServlet extends HttpServlet {
 //    private static final long serialVersionUID = 3L;
 
@@ -40,31 +40,70 @@ public class ResultServlet extends HttpServlet {
         String year_param = request.getParameter("year");
         String director_param = request.getParameter("director");
         String star_param = request.getParameter("star");
+        String limit_param = request.getParameter("limit");
         String offset_param = request.getParameter("offset");
+        String category_param = request.getParameter("category");
+        String genre_param = request.getParameter("genre");
+        String order_param = request.getParameter("order");
+
+
+        String orderSection = "r.rating desc";
+        if (order_param.equals("titleasc")){
+            orderSection = "m.title asc";
+        }
+        else if (order_param.equals("titledesc")){
+            orderSection = "m.title desc";
+        }
+        else if (order_param.equals("ratingasc")){
+            orderSection = "r.rating asc";
+        }
+        else if (order_param.equals("ratingdesc")){
+            orderSection = "r.rating desc";
+        }
+
+
 
         String whereSection = "";
-        String orderSection = "r.rating desc";
+
 
         String queryBegin = "SELECT distinct m.id, m.title, m.year, m.director, r.rating from movies as m, ratings as r";
 
+        if (category_param != null){
+            whereSection += " and m.title like '" + category_param + "%'";
+        }
+        else if(genre_param != null){
+            queryBegin += ",genres_in_movies as gm, genres as g";
+            whereSection += " and g.name='" + genre_param +"' and gm.movieId = m.id and gm.genreId = g.id";
+        }
+        else{
+            if (star_param != ""){
+                queryBegin += ",stars as s, stars_in_movies as sm";
+                whereSection += " and m.id = sm.movieId and s.id = sm.starId and s.name like '%" + star_param + "%'";
+            }
+            if (director_param != ""){
+                whereSection += " and m.director like '%" + director_param + "%'";
+            }
+            if (year_param != ""){
+                whereSection += " and m.year = " + year_param;
+            }
+            if (title_param != "") {
+                whereSection += " and m.title like '%" + title_param + "%'";
+            }
+        }
 
-        if (star_param != ""){
-            queryBegin += ",stars as s, stars_in_movies as sm";
-            whereSection += " and m.id = sm.movieId and s.id = sm.starId and s.name like '%" + star_param + "%'";
+
+
+
+        String queryTail = " where m.id = r.movieId" + whereSection + " order by "+ orderSection;
+
+        if (limit_param == null || limit_param == ""){
+            queryTail += " limit 30 ";
         }
-        if (director_param != ""){
-            whereSection += " and m.director like '%" + director_param + "%'";
-        }
-        if (year_param != ""){
-            whereSection += " and m.year = " + year_param;
-        }
-        if (title_param != "") {
-            whereSection += " and m.title like '%" + title_param + "%'";
+        else{
+            queryTail += " limit " + limit_param + " ";
         }
 
-        String queryTail = " where m.id = r.movieId" + whereSection + " order by "+ orderSection +" limit 100 ";
-
-        if (offset_param == null){
+        if (offset_param == null || offset_param ==""){
             queryTail += "offset 0";
         }
         else{
