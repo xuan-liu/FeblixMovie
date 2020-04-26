@@ -36,6 +36,7 @@ public class LoginServlet extends HttpServlet {
 
             String query = "SELECT * from customers where email = \"" + email + "\" and password = \"" + password + "\"";
 
+            System.out.println("login query is : " + query);
             // Perform the query
             ResultSet rs = statement.executeQuery(query);
 

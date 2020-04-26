@@ -47,19 +47,41 @@ public class ResultServlet extends HttpServlet {
         String order_param = request.getParameter("order");
 
 
-        String orderSection = "r.rating desc";
-        if (order_param.equals("titleasc")){
-            orderSection = "m.title asc";
+//        String orderSection = "r.rating desc";
+        String orderSection = "";
+        if (order_param.equals("t_asc_r_asc")){
+            //"t_asc_r_asc" = title ascending order, rating ascending order
+            orderSection = "m.title asc, r.rating asc";
         }
-        else if (order_param.equals("titledesc")){
-            orderSection = "m.title desc";
+        else if (order_param.equals("t_asc_r_desc")){
+            //title ascending order, rating descending order
+            orderSection = "m.title asc, r.rating desc";
         }
-        else if (order_param.equals("ratingasc")){
-            orderSection = "r.rating asc";
+        else if (order_param.equals("t_desc_r_asc")){
+            //title descending order, rating ascending order
+            orderSection = "m.title desc, r.rating asc";
         }
-        else if (order_param.equals("ratingdesc")){
-            orderSection = "r.rating desc";
+        else if (order_param.equals("t_desc_r_desc")){
+            //title descending order, rating descending order
+            orderSection = "m.title desc, r.rating desc";
         }
+        else if (order_param.equals("r_asc_t_asc")){
+            //rating ascending order, title ascending order
+            orderSection = "r.rating asc, m.title asc";
+        }
+        else if (order_param.equals("r_asc_t_desc")){
+            //rating ascending order, title descending order
+            orderSection = "r.rating asc, m.title desc";
+        }
+        else if (order_param.equals("r_desc_t_asc")){
+            //rating descending order, title ascending order
+            orderSection = "r.rating desc, m.title asc";
+        }
+        else if (order_param.equals("r_desc_t_desc")){
+            //rating descending order, title ascending order
+            orderSection = "r.rating desc, m.title desc";
+        }
+
 
 
 
@@ -69,7 +91,10 @@ public class ResultServlet extends HttpServlet {
         String queryBegin = "SELECT distinct m.id, m.title, m.year, m.director, r.rating from movies as m, ratings as r";
 
         if (category_param != null){
-            whereSection += " and m.title like '" + category_param + "%'";
+            if (!category_param.equals("*")){
+                whereSection += " and m.title like '" + category_param + "%'";
+            }
+
         }
         else if(genre_param != null){
             queryBegin += ",genres_in_movies as gm, genres as g";
@@ -138,17 +163,19 @@ public class ResultServlet extends HttpServlet {
                 String director = rs.getString("director");
 
                 //Create and execute the genre query statement
+                JsonArray genreJsonArray = new JsonArray();
                 String genre_query = "SELECT * from genres_in_movies as gm, genres as g where gm.movieId = ? and gm.genreId = g.id";
                 PreparedStatement genre_statement = dbcon.prepareStatement(genre_query);
                 genre_statement.setString(1, movieId);
                 ResultSet genre_rs = genre_statement.executeQuery();
-                String genres = "";
+//                String genres = "";
+                String genre;
                 int count = 0;
                 while (genre_rs.next() && count < 3){
-                    if (count != 0){
-                        genres = genres + ", ";
-                    }
-                    genres = genres + genre_rs.getString("name");
+//                    if (count != 0){
+//                        genres = genres + ", ";
+//                    }
+                    genreJsonArray.add(genre_rs.getString("name"));
                     count++;
                 }
                 genre_rs.close();
@@ -156,18 +183,23 @@ public class ResultServlet extends HttpServlet {
 
                 //Create and execute the star query statement
                 JsonArray starJsonArray = new JsonArray();
-                String star_query = "SELECT * from stars as s, stars_in_movies as sm where sm.movieId = ? and sm.starId = s.id";
+                String star_query = "Select s.name, sm.starId, count(sm.movieId) " +
+                        "From stars as s, stars_in_movies as sm " +
+                        "Where sm.starId = s.id and s.id in (Select starId From stars_in_movies Where movieId = ?) " +
+                        "Group by s.name " +
+                        "Order by count(sm.movieId) desc";
+//                String star_query = "SELECT * from stars as s, stars_in_movies as sm where sm.movieId = ? and sm.starId = s.id";
+                System.out.println(star_query);
                 PreparedStatement star_statement = dbcon.prepareStatement(star_query);
                 star_statement.setString(1, movieId);
                 ResultSet star_rs = star_statement.executeQuery();
-                String stars = "";
+//                String stars = "";
                 count = 0;
                 Map<String, String> starMap = new HashMap<String, String>();
                 while (star_rs.next() && count < 3){
-                    if (count != 0){
-                        stars = stars + ", ";
-                    }
-
+//                    if (count != 0){
+//                        stars = stars + ", ";
+//                    }
                     String starName = star_rs.getString("name");
                     String starId = star_rs.getString("starId");
                     count++;
@@ -191,7 +223,8 @@ public class ResultServlet extends HttpServlet {
                 jsonObject.addProperty("title", title);
                 jsonObject.addProperty("year", year);
                 jsonObject.addProperty("director", director);
-                jsonObject.addProperty("genres", genres);
+//                jsonObject.addProperty("genres", genres);
+                jsonObject.add("genres", genreJsonArray);
                 jsonObject.add("starInfo", starJsonArray);
                 jsonObject.addProperty("rating", rating);
 

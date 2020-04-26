@@ -10,7 +10,7 @@ function handleCategoryResult(resultData) {
     // console.log("passs2");
     for (let x = 0; x < resultData.length; x++) {
         let genre = resultData[x]['genre'];
-        bodyHTML += "<a href='result.html?genre=" + genre + "&limit=10&offset=0&order=titleasc'>" + genre + "</a>";
+        bodyHTML += "<a href='result.html?genre=" + genre + "&limit=10&offset=0&order=r_desc_t_asc'>" + genre + "</a>";
         console.log(bodyHTML);
     }
 

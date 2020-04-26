@@ -68,6 +68,9 @@ function handleResult(resultData) {
         movieTableBodyElement.append(rowHTML);
     }
 }
+function handleBackInfo(result){
+    document.getElementById('backButton').href=result['movielisturl'];
+}
 
 /**
  * Once this .js is loaded, following scripts will be executed by the browser\
@@ -82,4 +85,11 @@ jQuery.ajax({
     method: "GET",// Setting request method
     url: "api/single-star?id=" + starId, // Setting request url, which is mapped by StarsServlet in Stars.java
     success: (resultData) => handleResult(resultData) // Setting callback function to handle data returned successfully by the SingleStarServlet
+});
+
+jQuery.ajax({
+    dataType: "json",
+    method: "GET",
+    url: "api/jump",
+    success: (resultURLdata) => handleBackInfo(resultURLdata)
 });

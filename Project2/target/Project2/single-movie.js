@@ -32,22 +32,33 @@ function handleResult(resultData) {
     // append two html <p> created to the h3 body, which will refresh the page
     movieInfoElement.append("<p>Movie Title: <b>" + movieTitle + "</b></p>" +
         "<p>Movie Year: " + resultData[0]["year"] + "</p>" +
-        "<p>Movie Director: " + resultData[0]["director"] + "</p>" +
-        "<p>Movie Genres: " + resultData[0]["genres"] + "</p>");
+        "<p>Movie Director: " + resultData[0]["director"] + "</p>");
 
-    let starsHTML = "<p>Stars: ";
-    for (let x = 0; x < resultData[0]['starInfo'].length; x++) {
-        if (x != 0){
-            starsHTML += ", ";
+    let genres = resultData[0]["genres"];
+    let partHtml = "<p>Movie Genres: ";
+    for (let x = 0; x < genres.length; x++) {
+        if (x != 0) {
+            partHtml += ", ";
         }
 
-        starsHTML += '<a href="single-star.html?id=' + resultData[0]['starInfo'][x]["starId"] + '">'
-            + resultData[0]['starInfo'][x]["starName"] +     // display star_name for the link text
+        partHtml += "<a href='result.html?genre=" + genres[x] + "&limit=10&offset=0&order=r_desc_t_asc'>" + genres[x] + "</a>";
+    }
+
+    partHtml += "</p><p>Stars: ";
+
+    let starInfo = resultData[0]['starInfo'];
+    for (let x = 0; x < starInfo.length; x++) {
+        if (x != 0){
+            partHtml += ", ";
+        }
+
+        partHtml += '<a href="single-star.html?id=' + starInfo[x]["starId"] + '">'
+            + starInfo[x]["starName"] +     // display star_name for the link text
             '</a>';
     }
-    starsHTML += "</p>";
+    partHtml += "</p>";
 
-    movieInfoElement.append(starsHTML + "<p>Movie Rating: " + resultData[0]["rating"] + "</p>");
+    movieInfoElement.append(partHtml + "<p>Movie Rating: " + resultData[0]["rating"] + "</p>");
 
     console.log("handleResult: populating movie table from resultData");
 
@@ -80,17 +91,19 @@ function handleAddCartResult(resultDataString) {
 
 function handleCartInfo(cartEvent){
     console.log("submit cart form");
-    console.log(movieId);
     let quantity = document.getElementById("quantity").value;
     $.ajax("api/cart", {
         method: "POST",
-        data: {message: "add", id: movieId, movie: movieTitle, quantity: quantity},
+        data: {message: "add", id: movieId,  movie: movieTitle, quantity: quantity},
         success: handleAddCartResult
     });
 
     cartEvent.preventDefault();
 }
 
+function handleBackInfo(result){
+    document.getElementById('backButton').href=result['movielisturl'];
+}
 /**
  * Once this .js is loaded, following scripts will be executed by the browser\
  */
@@ -104,6 +117,13 @@ jQuery.ajax({
     method: "GET",// Setting request method
     url: "api/single-movie?id=" + movieId, // Setting request url, which is mapped by StarsServlet in Stars.java
     success: (resultData) => handleResult(resultData) // Setting callback function to handle data returned successfully by the SingleStarServlet
+});
+
+jQuery.ajax({
+    dataType: "json",
+    method: "GET",
+    url: "api/jump",
+    success: (resultURLdata) => handleBackInfo(resultURLdata)
 });
 
 addItem.submit(handleCartInfo);

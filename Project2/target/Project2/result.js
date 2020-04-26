@@ -10,21 +10,38 @@ function handleMovieResult(resultData) {
     let tempUrl = new URL(url.toString());
     let tempSearchParams = tempUrl.searchParams;
 
-    tempSearchParams.set('order',"titleasc"); //set the order parameter to ascending title
+    tempSearchParams.set('order',"t_asc_r_asc"); //set the order parameter to Ascending title then Ascending rating
     tempUrl.search = tempSearchParams.toString();
-    SortHTML += "<option value='"+ tempUrl.toString() +"'>Title: Ascending order</option>";
+    SortHTML += "<option value='"+ tempUrl.toString() +"'>Title: Ascending, Rating: Ascending order</option>";
 
-    tempSearchParams.set('order',"titledesc");
-    tempUrl.search = tempSearchParams.toString(); //set the order parameter to descending title
-    SortHTML += "<option value='"+ tempUrl.toString() +"'>Title: Descending order</option>";
+    tempSearchParams.set('order',"t_asc_r_desc");
+    tempUrl.search = tempSearchParams.toString();
+    SortHTML += "<option value='"+ tempUrl.toString() +"'>Title: Ascending order, Rating: Descending order</option>";
 
-    tempSearchParams.set('order',"ratingasc");
-    tempUrl.search = tempSearchParams.toString(); //set the order parameter to ascending rating
-    SortHTML += "<option value='"+ tempUrl.toString() +"'>Rating: Ascending order</option>";
+    tempSearchParams.set('order',"t_desc_r_asc");
+    tempUrl.search = tempSearchParams.toString();
+    SortHTML += "<option value='"+ tempUrl.toString() +"'>Title: Descending order, Rating: Ascending order</option>";
 
-    tempSearchParams.set('order',"ratingdesc");
-    tempUrl.search = tempSearchParams.toString(); //set the order parameter to descending rating
-    SortHTML += "<option value='"+ tempUrl.toString() + "'>Rating: Descending order</option>";
+    tempSearchParams.set('order',"t_desc_r_desc");
+    tempUrl.search = tempSearchParams.toString();
+    SortHTML += "<option value='"+ tempUrl.toString() + "'>Title: Descending order, Rating: Descending order</option>";
+
+    tempSearchParams.set('order',"r_asc_t_asc");
+    tempUrl.search = tempSearchParams.toString(); //set the order parameter to Ascending rating then Ascending title
+    SortHTML += "<option value='"+ tempUrl.toString() + "'>Rating: Ascending order, Title: Ascending order</option>";
+
+    tempSearchParams.set('order',"r_asc_t_desc");
+    tempUrl.search = tempSearchParams.toString();
+    SortHTML += "<option value='"+ tempUrl.toString() + "'>Rating: Ascending order, Title: Descending order</option>";
+
+    tempSearchParams.set('order',"r_desc_t_asc");
+    tempUrl.search = tempSearchParams.toString();
+    SortHTML += "<option value='"+ tempUrl.toString() + "'>Rating: Descending order, Title: Ascending order</option>";
+
+    tempSearchParams.set('order',"r_desc_t_desc");
+    tempUrl.search = tempSearchParams.toString();
+    SortHTML += "<option value='"+ tempUrl.toString() + "'>Rating: Descending order, Title: Descending order</option>";
+
 
     SortMenuElement.append(SortHTML);
 
@@ -68,17 +85,30 @@ function handleMovieResult(resultData) {
         // rowHTML += "<th>" + resultData[i]["title"] + "</th>";
         rowHTML += "<th>" + resultData[i]["year"] + "</th>";
         rowHTML += "<th>" + resultData[i]["director"] + "</th>";
-        rowHTML += "<th>" + resultData[i]["genres"] + "</th>";
         rowHTML += "<th>";
-        for (let x = 0; x < resultData[i]['starInfo'].length; x++) {
+        let genres = resultData[i]['genres'];
+        for (let x = 0; x < genres.length; x++) {
             if (x != 0){
                 rowHTML += ", ";
             }
-            rowHTML += '<a href="single-star.html?id=' + resultData[i]['starInfo'][x]["starId"] + '">'
-                + resultData[i]['starInfo'][x]["starName"] +     // display star_name for the link text
+            rowHTML += "<a href='result.html?genre=" + genres[x] + "&limit=10&offset=0&order=r_desc_t_asc'>" + genres[x] + "</a>";
+        }
+        rowHTML += "</th>";
+
+
+        //Process the stars data and hyperlink them
+        rowHTML += "<th>";
+        let stars = resultData[i]['starInfo'];
+        for (let x = 0; x < stars.length; x++) {
+            if (x != 0){
+                rowHTML += ", ";
+            }
+            rowHTML += '<a href="single-star.html?id=' + stars[x]["starId"] + '">'
+                + stars[x]["starName"] +     // display star_name for the link text
                 '</a>';
 
         }
+        rowHTML += "</th>";
         let arg = "\"" + resultData[i]['movieId'] + "\", \"" + movieTitle + "\"";
         rowHTML += "</th>";
         rowHTML += "<th>" + resultData[i]["rating"] + "</th>";

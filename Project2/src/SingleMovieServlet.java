@@ -69,38 +69,37 @@ public class SingleMovieServlet extends HttpServlet {
                 String director = rs.getString("director");
                 String rating = rs.getString("rating");
 
+                JsonArray genreJsonArray = new JsonArray();
                 String genre_query = "SELECT * from genres_in_movies as gm, genres as g where gm.movieId = ? and gm.genreId = g.id";
                 PreparedStatement genre_statement = dbcon.prepareStatement(genre_query);
                 genre_statement.setString(1, movieId);
                 ResultSet genre_rs = genre_statement.executeQuery();
-                String genres = "";
-                int count = 0;
+
                 while (genre_rs.next()){
-                    if (count != 0){
-                        genres = genres + ", ";
-                    }
-                    genres = genres + genre_rs.getString("name");
-                    count++;
+                    genreJsonArray.add(genre_rs.getString("name"));
+
                 }
                 genre_rs.close();
                 genre_statement.close();
 
                 JsonArray starJsonArray = new JsonArray();
-                String star_query = "SELECT * from stars as s, stars_in_movies as sm where sm.movieId = ? and sm.starId = s.id";
+                String star_query = "Select s.name, sm.starId, count(sm.movieId) " +
+                        "From stars as s, stars_in_movies as sm " +
+                        "Where sm.starId = s.id and s.id in (Select starId From stars_in_movies Where movieId = ?) " +
+                        "Group by s.name " +
+                        "Order by count(sm.movieId) desc";
+                System.out.println(star_query);
                 PreparedStatement star_statement = dbcon.prepareStatement(star_query);
                 star_statement.setString(1, movieId);
                 ResultSet star_rs = star_statement.executeQuery();
                 String stars = "";
-                count = 0;
+
                 Map<String, String> starMap = new HashMap<String, String>();
                 while (star_rs.next()){
-                    if (count != 0){
-                        stars = stars + ", ";
-                    }
+
 
                     String starName = star_rs.getString("name");
                     String starId = star_rs.getString("starId");
-                    count++;
                     JsonObject starJsonObject = new JsonObject();
                     starJsonObject.addProperty("starName", starName);
                     starJsonObject.addProperty("starId", starId);
@@ -118,7 +117,7 @@ public class SingleMovieServlet extends HttpServlet {
                 jsonObject.addProperty("title", title);
                 jsonObject.addProperty("year", year);
                 jsonObject.addProperty("director", director);
-                jsonObject.addProperty("genres", genres);
+                jsonObject.add("genres",genreJsonArray);
                 jsonObject.add("starInfo", starJsonArray);
                 jsonObject.addProperty("rating", rating);
 
