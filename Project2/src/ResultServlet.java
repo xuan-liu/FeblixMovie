@@ -94,6 +94,9 @@ public class ResultServlet extends HttpServlet {
             if (!category_param.equals("*")){
                 whereSection += " and m.title like '" + category_param + "%'";
             }
+            else{
+                whereSection += " and m.title regexp '^[^a-z0-9]'";
+            }
 
         }
         else if(genre_param != null){
