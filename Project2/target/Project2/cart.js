@@ -66,10 +66,11 @@ function handleButton(button, movieTitle){
     console.log(button);
     console.log(movieTitle);
     var quantity = document.getElementById("quantity_update").value;
+    console.log(quantity);
 
     $.ajax("api/cart", {
         method: "POST",
-        data: {message: button, movie: movieTitle, quantity: quantity},
+        data: {message: button, id: 'null', movie: movieTitle, quantity: quantity},
         // success: handleButtonResult
     });
 

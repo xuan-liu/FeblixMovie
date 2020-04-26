@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -6,14 +7,28 @@ import java.util.HashMap;
  */
 public class User {
 
-    private final String username;
-    private HashMap<String, Integer> items;
+    private String id;
+    private String firstName;
+    private String lastName;
+    private String ccId;
+    private String address;
+    private String email;
+    private String password;
+
+    private HashMap<String, Integer> items; // key is movieTitle, value is quantity
+    private HashMap<String, String> movieInfo; // key is movieTitle, value is movieID
     String movieListURL;
 
-    public User(String username) {
-        this.username = username;
-        items = new HashMap<>();
-
+    public User(String id, String firstName, String lastName, String ccId, String address, String email, String password) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName= lastName;
+        this.ccId = ccId;
+        this.address = address;
+        this.email = email;
+        this.password = password;
+        this.items = new HashMap<>();
+        this.movieInfo = new HashMap<>();
     }
 
 //    public User(String username, HashMap<String, Integer> items){
@@ -22,11 +37,18 @@ public class User {
 //    }
 
     public String getUsername() {
-        return username;
+        return this.firstName + " " + this.lastName;
+    }
+
+    public String getUserId() {
+        return this.id;
     }
 
     public HashMap<String, Integer> getItems() {
         return items;
+    }
+    public HashMap<String, String> getMovieInfo() {
+        return movieInfo;
     }
 
     public void addItem(String item, int quantity){
@@ -35,6 +57,12 @@ public class User {
                 quantity += items.get(item);
             }
             items.put(item, quantity);
+        }
+    }
+
+    public void addMovieInfo(String title, String id){
+        synchronized(movieInfo){
+            movieInfo.put(title, id);
         }
     }
 
@@ -50,9 +78,21 @@ public class User {
         }
     }
 
+    public void removeMovieInfo(String title){
+        synchronized(movieInfo){
+            movieInfo.remove(title);
+        }
+    }
+
     public void clearItems(){
         synchronized(items){
             items = new HashMap<>();
+        }
+    }
+
+    public void clearMovieInfo(){
+        synchronized(items){
+            movieInfo = new HashMap<>();
         }
     }
 

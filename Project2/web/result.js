@@ -79,11 +79,11 @@ function handleMovieResult(resultData) {
                 '</a>';
 
         }
+        var arg = "\"" + resultData[i]['movieId'] + "\", \"" + movieTitle + "\"";
         rowHTML += "</th>";
         rowHTML += "<th>" + resultData[i]["rating"] + "</th>";
-
-        rowHTML += "<th>" + '<button onclick = "handleAddToCart('+ "'" + movieTitle+ "'" + ',1)"' + ">Add to cart</button></th>";
-
+        rowHTML += "<th><button onclick = 'handleAddToCart(" + arg + ")'>Add to cart</button></th>"
+        // rowHTML += "<th>" + '<button onclick = "handleAddToCart('+ "'" + movieTitle+ "'" + ',1)"' + ">Add to cart</button></th>";
 
         // rowHTML += "<th>" + resultData[i]["star_dob"] + "</th>";
         rowHTML += "</tr>";
@@ -143,14 +143,13 @@ function handleAddToCartResult(resultDataString) {
     }
 }
 
-function handleAddToCart(movieTitle, quantity){
+function handleAddToCart(movieId, movieTitle){
     console.log('Handling AddToCart');
     console.log('movie: ' + movieTitle);
-    console.log('quantity: ' + quantity);
-
+    console.log("id: " + movieId);
     $.ajax("api/cart", {
         method: "POST",
-        data: {message:"add", movie: movieTitle, quantity:quantity},
+        data: {message:"add", id: movieId, movie: movieTitle, quantity:1},
         success: handleAddToCartResult
     });
     // event.preventDefault();

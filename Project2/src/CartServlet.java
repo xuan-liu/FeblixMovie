@@ -45,10 +45,11 @@ public class CartServlet extends HttpServlet {
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String message = request.getParameter("message");
+        String id = request.getParameter("id");
         String item = request.getParameter("movie");
         String quantityString = request.getParameter("quantity");
 
-
+        System.out.println(id);
         System.out.println(message);
         System.out.println(item);
         System.out.println(quantityString);
@@ -69,6 +70,7 @@ public class CartServlet extends HttpServlet {
 //                previousItems.remove(item);
 //            }
             user.removeItem(item);
+            user.removeMovieInfo(item);
             responseJsonObject.addProperty("status", "success");
             responseJsonObject.addProperty("alert", "succeed! delete the item");
         } else if (message.equals("update")) {
@@ -89,12 +91,15 @@ public class CartServlet extends HttpServlet {
 //                previousItems.put(item, quantity);
 //            }
             user.addItem(item,quantity);
+            user.addMovieInfo(item,id);
             responseJsonObject.addProperty("status", "success");
             responseJsonObject.addProperty("alert", "succeed! add to cart");
         } else {
             responseJsonObject.addProperty("status", "failure");
             responseJsonObject.addProperty("alert", "fail! error occurred");
         }
+        System.out.println("items: " + user.getItems());
+        System.out.println("movieInfo: " + user.getMovieInfo());
 
 //        User updatedUser = new User(user.getUsername(), previousItems);
 

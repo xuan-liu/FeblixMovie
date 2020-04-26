@@ -80,10 +80,11 @@ function handleAddCartResult(resultDataString) {
 
 function handleCartInfo(cartEvent){
     console.log("submit cart form");
+    console.log(movieId);
     var quantity = document.getElementById("quantity").value;
     $.ajax("api/cart", {
         method: "POST",
-        data: {message: "add", movie: movieTitle, quantity: quantity},
+        data: {message: "add", id: movieId, movie: movieTitle, quantity: quantity},
         success: handleAddCartResult
     });
 

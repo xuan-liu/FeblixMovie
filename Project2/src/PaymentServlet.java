@@ -49,11 +49,32 @@ public class PaymentServlet extends HttpServlet {
 
             JsonObject responseJsonObject = new JsonObject();
             if (rs.next()) {
-                System.out.println(rs.getString("id"));
                 // credit card verified success:
                 responseJsonObject.addProperty("status", "success");
                 responseJsonObject.addProperty("message", "success");
 
+                // get user information
+                User user = (User) request.getSession().getAttribute("user");
+                String customerId = user.getUserId();
+                HashMap<String, Integer> items = user.getItems();
+                HashMap<String, String> movieInfo = user.getMovieInfo();
+                System.out.println("time: " + java.time.LocalDate.now());
+
+                // record transactions in the "sales" table
+                for (Map.Entry<String, Integer> entry : items.entrySet()) {
+                    String movieId = movieInfo.get(entry.getKey());
+                    int quantity = entry.getValue();
+                    for (int i = 0; i < quantity; i++) {
+                        String updateQuery = "INSERT INTO sales VALUES(NULL,\"" + customerId + "\", \"" + movieId + "\", \"" + java.time.LocalDate.now() + "\")";
+                        System.out.println(updateQuery);
+                        statement.executeUpdate(updateQuery);
+                    }
+                }
+
+                // clear shopping cart
+                user.clearItems();
+                user.clearMovieInfo();
+                request.getSession().setAttribute("user", user);
             } else {
                 // credit card verified fail
                 responseJsonObject.addProperty("status", "fail");
@@ -70,7 +91,7 @@ public class PaymentServlet extends HttpServlet {
             JsonObject jsonObject = new JsonObject();
             jsonObject.addProperty("errorMessage", e.getMessage());
 
-            // set reponse status to 500 (Internal Server Error)
+            // set response status to 500 (Internal Server Error)
             response.setStatus(500);
 
         }
