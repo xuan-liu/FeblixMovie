@@ -15,12 +15,12 @@ function handleCartResult(resultData) {
         rowHTML += "<th>" + key + "</th>";
 
         // update movie quantity
-        var arg = "\"update\", \"" + key + "\"";
+        let arg = "\"update\", \"" + key + "\"";
         rowHTML += "<th>";
-        rowHTML += "<form ACTION='#' id='updateQuantity' METHOD='post'>";
-        rowHTML += "<input id='quantity_update' type='text' value=" + value + " class='input-small'>";
+        // rowHTML += "<form ACTION='#' id='" + key + "' METHOD='post'>";
+        rowHTML += "<input id='" + key + "' type='text' value=" + value + " class='input-small'>";
         rowHTML += "<button name ='update' type='submit' onclick='handleButton(" + arg + ")'>Update</button>";
-        rowHTML += "</form>"
+        // rowHTML += "</form>"
 
         // delete movie item
         arg = "\"delete\", \"" + key + "\"";
@@ -65,7 +65,7 @@ function handleCartResult(resultData) {
 function handleButton(button, movieTitle){
     console.log(button);
     console.log(movieTitle);
-    var quantity = document.getElementById("quantity_update").value;
+    let quantity = document.getElementById(movieTitle).value;
     console.log(quantity);
 
     $.ajax("api/cart", {

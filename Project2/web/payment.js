@@ -9,7 +9,7 @@ function handleSaleData(resultData) {
 
     // Iterate through resultData, sum all the sales
     const jsonObj = resultData[0];
-    var sale = 0;
+    let sale = 0;
     for (let [key, value] of Object.entries(jsonObj)) {
         console.log(key);
         console.log(value);
@@ -40,7 +40,7 @@ function handlePaymentResult(resultDataString) {
         // If payment fails, the web page will display
         // error messages on <div> with id "payment_error_message"
         console.log("show error message");
-        var txt = "<div class=\"alert alert-danger\" role=\"alert\">" + resultDataJson["message"] + "</div>";
+        let txt = "<div class=\"alert alert-danger\" role=\"alert\">" + resultDataJson["message"] + "</div>";
         $("#payment_error_message").append(txt);
     }
 }

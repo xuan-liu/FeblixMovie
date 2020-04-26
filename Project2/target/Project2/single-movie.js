@@ -69,11 +69,11 @@ function handleAddCartResult(resultDataString) {
 
     // If add succeeds, it will redirect the user to index.html
     if (resultDataJson["status"] === "success") {
-        var txt = "<div class=\"alert alert-success\" role=\"alert\">" + resultDataJson["alert"] + "</div>";
+        let txt = "<div class=\"alert alert-success\" role=\"alert\">" + resultDataJson["alert"] + "</div>";
         $("#add_cart_message").append(txt);
     } else {
         // If add fails, the web page will display error messages
-        var txt = "<div class=\"alert alert-danger\" role=\"alert\">" + resultDataJson["alert"] + "</div>";
+        let txt = "<div class=\"alert alert-danger\" role=\"alert\">" + resultDataJson["alert"] + "</div>";
         $("#add_cart_message").append(txt);
     }
 }
@@ -81,7 +81,7 @@ function handleAddCartResult(resultDataString) {
 function handleCartInfo(cartEvent){
     console.log("submit cart form");
     console.log(movieId);
-    var quantity = document.getElementById("quantity").value;
+    let quantity = document.getElementById("quantity").value;
     $.ajax("api/cart", {
         method: "POST",
         data: {message: "add", id: movieId, movie: movieTitle, quantity: quantity},

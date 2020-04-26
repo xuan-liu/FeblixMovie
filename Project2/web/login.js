@@ -19,7 +19,7 @@ function handleLoginResult(resultDataString) {
         // error messages on <div> with id "login_error_message"
         console.log("show error message");
         // $("#login_error_message").text(resultDataJson["message"]);
-        var txt = "<div class=\"alert alert-danger\" role=\"alert\">" + resultDataJson["message"] + "</div>";
+        let txt = "<div class=\"alert alert-danger\" role=\"alert\">" + resultDataJson["message"] + "</div>";
         $("#login_error_message").append(txt);
         console.log(txt);
     }
