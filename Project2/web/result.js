@@ -9,38 +9,76 @@ function handleMovieResult(resultData) {
     let SortHTML = "";
     let tempUrl = new URL(url.toString());
     let tempSearchParams = tempUrl.searchParams;
+    let currentOrder = tempSearchParams.get("order");
+    console.log('current order: ' + currentOrder);
+    let currentLimit = tempSearchParams.get("limit");
+
 
     tempSearchParams.set('order',"t_asc_r_asc"); //set the order parameter to Ascending title then Ascending rating
     tempUrl.search = tempSearchParams.toString();
-    SortHTML += "<option value='"+ tempUrl.toString() +"'>Title: Ascending, Rating: Ascending order</option>";
+    SortHTML += "<option value='"+ tempUrl.toString() +"'";
+
+    if (currentOrder.localeCompare("t_asc_r_asc") == 0){
+        SortHTML += "selected='selected'";
+    }
+    SortHTML += ">" + "Title: Ascending, Rating: Ascending order</option>";
 
     tempSearchParams.set('order',"t_asc_r_desc");
     tempUrl.search = tempSearchParams.toString();
-    SortHTML += "<option value='"+ tempUrl.toString() +"'>Title: Ascending order, Rating: Descending order</option>";
+    SortHTML += "<option value='"+ tempUrl.toString() +"'";
+    if (currentOrder.localeCompare("t_asc_r_desc") == 0){
+        SortHTML += "selected='selected'";
+    }
+    SortHTML += ">" + "Title: Ascending order, Rating: Descending order</option>";
 
     tempSearchParams.set('order',"t_desc_r_asc");
     tempUrl.search = tempSearchParams.toString();
-    SortHTML += "<option value='"+ tempUrl.toString() +"'>Title: Descending order, Rating: Ascending order</option>";
+    SortHTML += "<option value='"+ tempUrl.toString() +"'";
+    if (currentOrder.localeCompare("t_desc_r_asc") == 0){
+        SortHTML += "selected='selected'";
+    }
+    SortHTML += ">" + "Title: Descending order, Rating: Ascending order</option>";
 
     tempSearchParams.set('order',"t_desc_r_desc");
     tempUrl.search = tempSearchParams.toString();
-    SortHTML += "<option value='"+ tempUrl.toString() + "'>Title: Descending order, Rating: Descending order</option>";
+    SortHTML += "<option value='"+ tempUrl.toString() +"'";
+    if (currentOrder.localeCompare("t_desc_r_desc") == 0){
+        SortHTML += "selected='selected'";
+    }
+    SortHTML += ">" + "Title: Descending order, Rating: Descending order</option>";
+
 
     tempSearchParams.set('order',"r_asc_t_asc");
     tempUrl.search = tempSearchParams.toString(); //set the order parameter to Ascending rating then Ascending title
-    SortHTML += "<option value='"+ tempUrl.toString() + "'>Rating: Ascending order, Title: Ascending order</option>";
+    SortHTML += "<option value='"+ tempUrl.toString() +"'";
+    if (currentOrder.localeCompare("r_asc_t_asc") == 0){
+        SortHTML += "selected='selected'";
+    }
+    SortHTML += ">" + "Rating: Ascending order, Title: Ascending order</option>";
 
     tempSearchParams.set('order',"r_asc_t_desc");
     tempUrl.search = tempSearchParams.toString();
-    SortHTML += "<option value='"+ tempUrl.toString() + "'>Rating: Ascending order, Title: Descending order</option>";
+    SortHTML += "<option value='"+ tempUrl.toString() +"'";
+    if (currentOrder.localeCompare("r_asc_t_desc") == 0){
+        SortHTML += "selected='selected'";
+    }
+    SortHTML += ">" + "Rating: Ascending order, Title: Descending order</option>";
 
     tempSearchParams.set('order',"r_desc_t_asc");
     tempUrl.search = tempSearchParams.toString();
-    SortHTML += "<option value='"+ tempUrl.toString() + "'>Rating: Descending order, Title: Ascending order</option>";
+    SortHTML += "<option value='"+ tempUrl.toString() +"'";
+    if (currentOrder.localeCompare("r_desc_t_asc") == 0){
+        SortHTML += "selected='selected'";
+    }
+    SortHTML += ">" + "Rating: Descending order, Title: Ascending order</option>";
 
     tempSearchParams.set('order',"r_desc_t_desc");
     tempUrl.search = tempSearchParams.toString();
-    SortHTML += "<option value='"+ tempUrl.toString() + "'>Rating: Descending order, Title: Descending order</option>";
+    SortHTML += "<option value='"+ tempUrl.toString() +"'";
+    if (currentOrder.localeCompare("r_desc_t_desc") == 0){
+        SortHTML += "selected='selected'";
+    }
+    SortHTML += ">" + "Rating: Descending order, Title: Descending order</option>";
 
 
     SortMenuElement.append(SortHTML);
@@ -53,19 +91,35 @@ function handleMovieResult(resultData) {
 
     tempSearchParams.set('limit',"10"); //set the limit parameter to 10
     tempUrl.search = tempSearchParams.toString();
-    numDisplayString += "<option value='"+ tempUrl.toString() +"'>10 results per page</option>";
+    numDisplayString += "<option value='"+ tempUrl.toString() +"'";
+    if (currentLimit.localeCompare("10") == 0){
+        numDisplayString += "selected='selected'";
+    }
+    numDisplayString += ">10 results per page</option>";
 
     tempSearchParams.set('limit',"25");
     tempUrl.search = tempSearchParams.toString(); //set the limit parameter to 25
-    numDisplayString += "<option value='"+ tempUrl.toString() +"'>25 results per page</option>";
+    numDisplayString += "<option value='"+ tempUrl.toString() +"'";
+    if (currentLimit.localeCompare("25") == 0){
+        numDisplayString += "selected='selected'";
+    }
+    numDisplayString += ">25 results per page</option>";
 
     tempSearchParams.set('limit',"50");
     tempUrl.search = tempSearchParams.toString(); ///set the limit parameter to 50
-    numDisplayString += "<option value='"+ tempUrl.toString() +"'>50 results per page</option>";
+    numDisplayString += "<option value='"+ tempUrl.toString() +"'";
+    if (currentLimit.localeCompare("50") == 0){
+        numDisplayString += "selected='selected'";
+    }
+    numDisplayString += ">50 results per page</option>";
 
     tempSearchParams.set('limit',"100");
     tempUrl.search = tempSearchParams.toString(); //set the limit parameter to 100
-    numDisplayString += "<option value='"+ tempUrl.toString() + "'>100 results per page</option>";
+    numDisplayString += "<option value='"+ tempUrl.toString() +"'";
+    if (currentLimit.localeCompare("100") == 0){
+        numDisplayString += "selected='selected'";
+    }
+    numDisplayString += ">100 results per page</option>";
 
     numDisplayElement.append(numDisplayString);
 
