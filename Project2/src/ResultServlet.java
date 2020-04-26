@@ -186,7 +186,7 @@ public class ResultServlet extends HttpServlet {
                 String star_query = "Select s.name, sm.starId, count(sm.movieId) " +
                         "From stars as s, stars_in_movies as sm " +
                         "Where sm.starId = s.id and s.id in (Select starId From stars_in_movies Where movieId = ?) " +
-                        "Group by s.name, sm.starId" +
+                        "Group by s.name, sm.starId " +
                         "Order by count(sm.movieId) desc";
 //                String star_query = "SELECT * from stars as s, stars_in_movies as sm where sm.movieId = ? and sm.starId = s.id";
                 System.out.println(star_query);
