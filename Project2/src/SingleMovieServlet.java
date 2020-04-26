@@ -86,7 +86,7 @@ public class SingleMovieServlet extends HttpServlet {
                 String star_query = "Select s.name, sm.starId, count(sm.movieId) " +
                         "From stars as s, stars_in_movies as sm " +
                         "Where sm.starId = s.id and s.id in (Select starId From stars_in_movies Where movieId = ?) " +
-                        "Group by s.name " +
+                        "Group by s.name, sm.starId" +
                         "Order by count(sm.movieId) desc";
                 System.out.println(star_query);
                 PreparedStatement star_statement = dbcon.prepareStatement(star_query);
