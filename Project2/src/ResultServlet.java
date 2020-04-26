@@ -167,19 +167,19 @@ public class ResultServlet extends HttpServlet {
 
                 //Create and execute the genre query statement
                 JsonArray genreJsonArray = new JsonArray();
-                String genre_query = "SELECT * from genres_in_movies as gm, genres as g where gm.movieId = ? and gm.genreId = g.id";
+                String genre_query = "SELECT * from genres_in_movies as gm, genres as g where gm.movieId = ? and gm.genreId = g.id order by g.name asc limit 3";
                 PreparedStatement genre_statement = dbcon.prepareStatement(genre_query);
                 genre_statement.setString(1, movieId);
                 ResultSet genre_rs = genre_statement.executeQuery();
 //                String genres = "";
                 String genre;
-                int count = 0;
-                while (genre_rs.next() && count < 3){
+//                int count = 0;
+                while (genre_rs.next()){
 //                    if (count != 0){
 //                        genres = genres + ", ";
 //                    }
                     genreJsonArray.add(genre_rs.getString("name"));
-                    count++;
+//                    count++;
                 }
                 genre_rs.close();
                 genre_statement.close();
@@ -190,22 +190,22 @@ public class ResultServlet extends HttpServlet {
                         "From stars as s, stars_in_movies as sm " +
                         "Where sm.starId = s.id and s.id in (Select starId From stars_in_movies Where movieId = ?) " +
                         "Group by s.name, sm.starId " +
-                        "Order by count(sm.movieId) desc";
+                        "Order by count(sm.movieId) desc, s.name asc " +
+                        "Limit 3";
 //                String star_query = "SELECT * from stars as s, stars_in_movies as sm where sm.movieId = ? and sm.starId = s.id";
                 System.out.println(star_query);
                 PreparedStatement star_statement = dbcon.prepareStatement(star_query);
                 star_statement.setString(1, movieId);
                 ResultSet star_rs = star_statement.executeQuery();
 //                String stars = "";
-                count = 0;
+
                 Map<String, String> starMap = new HashMap<String, String>();
-                while (star_rs.next() && count < 3){
+                while (star_rs.next()){
 //                    if (count != 0){
 //                        stars = stars + ", ";
 //                    }
                     String starName = star_rs.getString("name");
                     String starId = star_rs.getString("starId");
-                    count++;
                     JsonObject starJsonObject = new JsonObject();
                     starJsonObject.addProperty("starName", starName);
                     starJsonObject.addProperty("starId", starId);

@@ -70,7 +70,7 @@ public class SingleMovieServlet extends HttpServlet {
                 String rating = rs.getString("rating");
 
                 JsonArray genreJsonArray = new JsonArray();
-                String genre_query = "SELECT * from genres_in_movies as gm, genres as g where gm.movieId = ? and gm.genreId = g.id";
+                String genre_query = "SELECT * from genres_in_movies as gm, genres as g where gm.movieId = ? and gm.genreId = g.id order by g.name asc";
                 PreparedStatement genre_statement = dbcon.prepareStatement(genre_query);
                 genre_statement.setString(1, movieId);
                 ResultSet genre_rs = genre_statement.executeQuery();
@@ -87,7 +87,7 @@ public class SingleMovieServlet extends HttpServlet {
                         "From stars as s, stars_in_movies as sm " +
                         "Where sm.starId = s.id and s.id in (Select starId From stars_in_movies Where movieId = ?) " +
                         "Group by s.name, sm.starId " +
-                        "Order by count(sm.movieId) desc";
+                        "Order by count(sm.movieId) desc, s.name asc";
                 System.out.println(star_query);
                 PreparedStatement star_statement = dbcon.prepareStatement(star_query);
                 star_statement.setString(1, movieId);
