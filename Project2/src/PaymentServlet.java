@@ -72,9 +72,9 @@ public class PaymentServlet extends HttpServlet {
                 }
 
                 // clear shopping cart
-                user.clearItems();
-                user.clearMovieInfo();
-                request.getSession().setAttribute("user", user);
+//                user.clearItems();
+//                user.clearMovieInfo();
+//                request.getSession().setAttribute("user", user);
             } else {
                 // credit card verified fail
                 responseJsonObject.addProperty("status", "fail");

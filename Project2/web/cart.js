@@ -8,7 +8,9 @@ function handleCartResult(resultData) {
 
     // Iterate through resultData, no more than 10 entries
     const jsonObj = resultData[0];
+    let sale = 0;
     for (let [key, value] of Object.entries(jsonObj)) {
+        sale += value;
         // Concatenate the html tags with resultData jsonObject
         let rowHTML = "";
         rowHTML += "<tr>";
@@ -33,6 +35,9 @@ function handleCartResult(resultData) {
         // Append the row created to the table body, which will refresh the page
         cartTableBodyElement.append(rowHTML);
     }
+    sale *= 4;
+    // add the sale to the empty body by id "total_price"
+    $("#total_price").text("Total price: $" + sale + ".00");
 }
 
 /**

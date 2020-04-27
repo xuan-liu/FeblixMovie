@@ -26,11 +26,30 @@
 <body>
 <div id="header"></div>
 <div class="container">
-    <h1> transaction succeeds! </h1>
+    <div class="jumbotron">
+        <h1> transaction succeeds! </h1>
+    </div>
+
+    <table id=sale_table class="table table-striped">
+        <!-- Create a table header -->
+        <thead>
+        <tr>
+            <!-- Titles of each column-->
+            <th>Title</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+        <!-- Table body is left empty here, will be populated with the data retrieved with index.js -->
+        <!-- Again, id "movie_table_body" is useful for jQuery to find this html element -->
+        <tbody id=sale_table_body></tbody>
+    </table>
+    
+    <h4 id="total_sale" style="text-align: right"></h4>
 </div>
 
 <!-- include our own JS file -->
-<script src="./payment.js"></script>
+<script src="./confirmation.js"></script>
 <div id="footer"></div>
 </body>
 </html>
