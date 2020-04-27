@@ -52,7 +52,7 @@ public class LoginServlet extends HttpServlet {
             } else {
                 // Login fail
                 responseJsonObject.addProperty("status", "fail");
-                responseJsonObject.addProperty("message", "incorrect email or password");
+                responseJsonObject.addProperty("message", "Fail! Incorrect email or password");
             }
             response.getWriter().write(responseJsonObject.toString());
 

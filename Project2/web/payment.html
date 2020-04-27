@@ -6,13 +6,13 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <!-- add header and footer -->
     <script
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous">
     </script>
+
+    <!-- add header and footer -->
     <script>
         $(function(){
             $("#header").load("header.html");
@@ -33,19 +33,31 @@
 
     <div class="row">
         <h1 style="text-align: center">Enter Your Credit Card Information</h1>
-        <div style="width: 30%; margin: 25px auto;">
+        <div style="width: 40%; margin: 25px auto;">
             <form id="payment_form" method="post" action="/payment">
                 <div class="form-group">
-                    <input class="form-control" type="text" name="firstname" placeholder="First Name of Credit Card Holder" required>
+                    <div class="input-group">
+                        <div class="input-group-addon">First Name of Credit Card Holder</div>
+                        <input class="form-control" type="text" name="firstname" required>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <input class="form-control" type="text" name="lastname" placeholder="Lastname of Credit Card Holder" required>
+                    <div class="input-group">
+                        <div class="input-group-addon">Last Name of Credit Card Holder</div>
+                        <input class="form-control" type="text" name="lastname" required>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <input class="form-control" type="text" name="cardnumber" placeholder="Credit Card Number" required>
+                    <div class="input-group">
+                        <div class="input-group-addon">Credit Card Number</div>
+                        <input class="form-control" type="text" name="cardnumber" required>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <input class="form-control" type="text" name="expir_date" placeholder="Expiration Date (YYYY-MM-DD)" required>
+                    <div class="input-group">
+                        <div class="input-group-addon">Expiration Date (YYYY-MM-DD)</div>
+                        <input class="form-control" type="text" name="expir_date" required>
+                    </div>
                 </div>
                 <div class="form-group">
                     <button class="btn btn-lg btn-primary btn-block">Place Order</button>

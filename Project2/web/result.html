@@ -23,6 +23,12 @@
         });
     </script>
 
+    <style>
+        .sort {
+            float: right;
+        }
+    </style>
+
     <title>Movie List</title>
 </head>
 
@@ -31,13 +37,17 @@
 <div class="container">
 
     <div class="jumbotron">
-        <h1 class="display-4">Movie List</h1>
-        <p class="lead">The top 20 rated movies are show below!</p>
+        <h1 class="display-4">Search Result</h1>
     </div>
 
     <div id="add_to_cart_message"></div>
-    <select id="sortMenu" onchange="location = this.value;"></select>
-    <select id="numberToDisplayMenu" onchange="location = this.value;"></select>
+
+    <div class="sort">
+        Sort by:
+        <select id="sortMenu" onchange="location = this.value;"></select>
+        <select id="numberToDisplayMenu" onchange="location = this.value;"></select>
+    </div>
+    <br>
     <!-- Id "movie_table" is useful for jQuery to find the html element with id, class here is mapping to Bootstrap defined class CSS -->
     <table id=movie_table class="table table-striped">
         <!-- Create a table header -->
