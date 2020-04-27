@@ -21,12 +21,12 @@ function handleCartResult(resultData) {
         rowHTML += "<th>";
         // rowHTML += "<form ACTION='#' id='" + key + "' METHOD='post'>";
         rowHTML += "<input id='" + key + "' type='text' value=" + value + " class='input-small'>";
-        rowHTML += "<button name ='update' type='submit' onclick='handleButton(" + arg + ")'>Update</button>";
+        rowHTML += "<button class='btn btn-success btn-sm' name ='update' type='submit' onclick='handleButton(" + arg + ")'>Update</button>";
         // rowHTML += "</form>"
 
         // delete movie item
         arg = "\"delete\", \"" + key + "\"";
-        rowHTML += "<button name='delete' onclick='handleButton(" + arg + ")'>Delete</button>";
+        rowHTML += "<button class='btn btn-danger btn-sm' name='delete' onclick='handleButton(" + arg + ")'>Delete</button>";
         rowHTML += "</th>";
 
         // generate a single price for each movie

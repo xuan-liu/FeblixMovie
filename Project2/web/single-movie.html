@@ -9,6 +9,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
 
     <!-- add header and footer -->
     <script
@@ -42,14 +43,15 @@
         <li class="list-group-item" id="movie_info"></li>
     </ul>
 
-
     <form ACTION="#" id="addItem" METHOD="get">
-        <label>Add to Cart</label>
-        <br>
-        <label>
-            <input id = "quantity" name="quantity" required="required" type="number">
-        </label>
-        <input type="submit" VALUE="add">
+        <div class="col-sm-3">
+            <div class="input-group">
+                <input id="quantity" name="quantity" type="number" class="form-control" placeholder="quantity" required>
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">Add to Cart</button>
+                </span>
+            </div>
+        </div>
     </form>
 
     <a href="movies.html" id = "backButton" class="btn btn-primary">Back to MovieList</a>

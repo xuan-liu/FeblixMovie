@@ -35,6 +35,6 @@ function handleCartResult(resultData) {
 jQuery.ajax({
     dataType: "json", // Setting return data type
     method: "GET", // Setting request method
-    url: "api/cart", // Setting request url, which is mapped by MoviesServlet
+    url: "api/confirm", // Setting request url, which is mapped by MoviesServlet
     success: (resultData) => handleCartResult(resultData) // Setting callback function to handle data returned successfully by the StarsServlet
 });

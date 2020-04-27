@@ -9,6 +9,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
 
     <!-- add header and footer -->
     <script
@@ -22,12 +23,6 @@
             $("#footer").load("footer.html");
         });
     </script>
-
-    <style>
-        .sort {
-            float: right;
-        }
-    </style>
 
     <title>Movie List</title>
 </head>
@@ -46,10 +41,11 @@
         Sort by:
         <select id="sortMenu" onchange="location = this.value;"></select>
         <select id="numberToDisplayMenu" onchange="location = this.value;"></select>
+        <br>
     </div>
-    <br>
+
     <!-- Id "movie_table" is useful for jQuery to find the html element with id, class here is mapping to Bootstrap defined class CSS -->
-    <table id=movie_table class="table table-striped">
+    <table id="movie_table" class="table table-striped">
         <!-- Create a table header -->
         <thead>
         <tr>
@@ -69,10 +65,10 @@
         <tbody id=movie_table_body></tbody>
     </table>
 
-</div>
-<div class="container">
-    <ul id="pagination" class="pagination">
-    </ul>
+    <div class="page">
+        <ul id="pagination" class="pagination">
+        </ul>
+    </div>
 </div>
 <div id="footer"></div>
 

@@ -166,7 +166,7 @@ function handleMovieResult(resultData) {
         let arg = "\"" + resultData[i]['movieId'] + "\", \"" + movieTitle + "\"";
         rowHTML += "</th>";
         rowHTML += "<th>" + resultData[i]["rating"] + "</th>";
-        rowHTML += "<th><button class=\"btn btn-default btn-sm\" onclick = 'handleAddToCart(" + arg + ")'>Add to cart</button></th>"
+        rowHTML += "<th><button class=\"btn btn-default\" onclick = 'handleAddToCart(" + arg + ")'>Add to cart</button></th>"
         // rowHTML += "<th>" + '<button onclick = "handleAddToCart('+ "'" + movieTitle+ "'" + ',1)"' + ">Add to cart</button></th>";
 
         // rowHTML += "<th>" + resultData[i]["star_dob"] + "</th>";

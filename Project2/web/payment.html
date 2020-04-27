@@ -6,6 +6,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+
     <script
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -25,11 +27,16 @@
 <body>
 <div id="header"></div>
 <div class="container">
-    <div id="payment_error_message"></div>
-
     <div class="jumbotron">
         <h2 id="total_price" class="display-4"></h2>
     </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 66%;">
+            <span class="sr-only">66% Complete</span>
+        </div>
+    </div>
+
+    <div id="payment_error_message"></div>
 
     <div class="row">
         <h1 style="text-align: center">Enter Your Credit Card Information</h1>
@@ -63,7 +70,7 @@
                     <button class="btn btn-lg btn-primary btn-block">Place Order</button>
                 </div>
             </form>
-            <a href="cart.html">Go Back</a>
+            <a href="cart.html">Go Back to Cart</a>
         </div>
     </div>
 
