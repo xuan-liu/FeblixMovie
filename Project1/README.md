@@ -1,4 +1,4 @@
-# # cs122b-spring20-team-38 Project1
+# cs122b-spring20-team-38 Project1
 
 ###  Demo video URL
 https://www.youtube.com/watch?v=WICHBGzBS5g&feature=youtu.be
