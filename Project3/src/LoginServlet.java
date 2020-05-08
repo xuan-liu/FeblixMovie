@@ -25,7 +25,22 @@ public class LoginServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
+
         // check whether the user email/password info matches a record in the customers table
+
+        // Obtain RecaptchaResponse
+        String gRecaptchaResponse = request.getParameter("g-recaptcha-response");
+
+        try{
+            RecaptchaVerifyUtils.verify(gRecaptchaResponse);
+
+        } catch (Exception e) {
+            JsonObject responseJsonObject = new JsonObject();
+            responseJsonObject.addProperty("status", "fail");
+            responseJsonObject.addProperty("message", "Recaptcha Verification Failed");
+            response.getWriter().write(responseJsonObject.toString());
+            return;
+        }
 
         try {
             // Get a connection from dataSource
