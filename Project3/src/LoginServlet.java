@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.sql.PreparedStatement;
 
 import org.jasypt.util.password.StrongPasswordEncryptor;
 /*
@@ -39,9 +40,6 @@ public class LoginServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
-
-        // check whether the user email/password info matches a record in the customers table
-
         // Obtain RecaptchaResponse
         String gRecaptchaResponse = request.getParameter("g-recaptcha-response");
 
@@ -56,30 +54,32 @@ public class LoginServlet extends HttpServlet {
             return;
         }
 
+        // check whether the user email/password info matches a record in the customers table
+        PreparedStatement loginQuery = null;
         try {
             // Get a connection from dataSource
             Connection dbcon = dataSource.getConnection();
 
             // Declare our statement
-            Statement statement = dbcon.createStatement();
-            String query = String.format("SELECT * from customers where email='%s'", email);
-
-//            String query = "SELECT * from customers where email = \"" + email + "\" and password = \"" + password + "\"";
+            String query = "SELECT * from customers where email = ?";
+            loginQuery = dbcon.prepareStatement(query);
+            loginQuery.setString(1, email);
 
             // Perform the query
-            ResultSet rs = statement.executeQuery(query);
-            boolean success = false;
+            ResultSet rs = loginQuery.executeQuery();
+
+            boolean login_success = false;
 
             JsonObject responseJsonObject = new JsonObject();
             if (rs.next()) {
                 // get the encrypted password from the database
                 String encryptedPassword = rs.getString("password");
 
-                // use the same encryptor to compare the user input password with encrypted password stored in DB
-                success = new StrongPasswordEncryptor().checkPassword(password, encryptedPassword);
+                // use the same encryptors to compare the user input password with encrypted password stored in DB
+                login_success = new StrongPasswordEncryptor().checkPassword(password, encryptedPassword);
             }
 
-            if (success){
+            if (login_success){
                 // Login success:
                 // set this user into the session
                 request.getSession().setAttribute("user", new User(rs.getString("id"), rs.getString("firstName"), rs.getString("lastName"), rs.getString("ccId"), rs.getString("address"),  rs.getString("email"), rs.getString("password")));
@@ -95,7 +95,7 @@ public class LoginServlet extends HttpServlet {
             response.getWriter().write(responseJsonObject.toString());
 
             rs.close();
-            statement.close();
+            loginQuery.close();
             dbcon.close();
         } catch (Exception e) {
 
@@ -103,7 +103,7 @@ public class LoginServlet extends HttpServlet {
             JsonObject jsonObject = new JsonObject();
             jsonObject.addProperty("errorMessage", e.getMessage());
 
-            // set reponse status to 500 (Internal Server Error)
+            // set response status to 500 (Internal Server Error)
             response.setStatus(500);
 
         }

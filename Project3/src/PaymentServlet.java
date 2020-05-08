@@ -15,6 +15,8 @@ import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.jasypt.util.password.StrongPasswordEncryptor;
+
 @WebServlet(name = "PaymentServlet", urlPatterns = "/api/payment")
 public class PaymentServlet extends HttpServlet {
 
@@ -27,11 +29,7 @@ public class PaymentServlet extends HttpServlet {
      */
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        String firstname = request.getParameter("firstname");
-        String lastname = request.getParameter("lastname");
-        String cardnumber = request.getParameter("cardnumber");
-//        java.sql.Date expir_date = request.getParameter("expir_date");
-        String expir_date = request.getParameter("expir_date");
+        PreparedStatement creditCardQuery = null;
 
         // check whether the credit card info matches a record in the credit cards table
         try {
@@ -39,13 +37,16 @@ public class PaymentServlet extends HttpServlet {
             Connection dbcon = dataSource.getConnection();
 
             // Declare our statement
-            Statement statement = dbcon.createStatement();
+            String query = "SELECT * from creditcards where id = ? and firstName = ? and lastName = ? and expiration = ?";
+            creditCardQuery = dbcon.prepareStatement(query);
+            creditCardQuery.setString(1, request.getParameter("cardnumber"));
+            creditCardQuery.setString(2, request.getParameter("firstname"));
+            creditCardQuery.setString(3, request.getParameter("lastname"));
+            creditCardQuery.setString(4, request.getParameter("expir_date"));
+            System.out.println(creditCardQuery);
 
-            String query = "SELECT * from creditcards where id = \"" + cardnumber + "\" and firstName = \"" + firstname + "\" and lastName = \"" + lastname +"\" and expiration = \"" + expir_date + "\"";
-
-            System.out.println(query);
             // Perform the query
-            ResultSet rs = statement.executeQuery(query);
+            ResultSet rs = creditCardQuery.executeQuery();
 
             JsonObject responseJsonObject = new JsonObject();
             if (rs.next()) {
@@ -65,9 +66,14 @@ public class PaymentServlet extends HttpServlet {
                     String movieId = movieInfo.get(entry.getKey());
                     int quantity = entry.getValue();
                     for (int i = 0; i < quantity; i++) {
-                        String updateQuery = "INSERT INTO sales VALUES(NULL,\"" + customerId + "\", \"" + movieId + "\", \"" + java.time.LocalDate.now() + "\")";
-                        System.out.println(updateQuery);
-                        statement.executeUpdate(updateQuery);
+                        PreparedStatement updateSales = null;
+                        String updateString = "INSERT INTO sales VALUES(NULL,?, ?, ?)";
+                        updateSales = dbcon.prepareStatement(updateString);
+                        updateSales.setString(1, customerId);
+                        updateSales.setString(2, movieId);
+                        updateSales.setString(3, java.time.LocalDate.now().toString());
+                        System.out.println(updateSales);
+                        updateSales.executeUpdate();
                     }
                 }
 
@@ -79,7 +85,7 @@ public class PaymentServlet extends HttpServlet {
             response.getWriter().write(responseJsonObject.toString());
 
             rs.close();
-            statement.close();
+            creditCardQuery.close();
             dbcon.close();
         } catch (Exception e) {
 
