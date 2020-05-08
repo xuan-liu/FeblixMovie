@@ -47,40 +47,10 @@ public class ResultServlet extends HttpServlet {
         String order_param = request.getParameter("order");
 
 
-//        String orderSection = "r.rating desc";
-        String orderSection = "";
-        if (order_param.equals("t_asc_r_asc")){
-            //"t_asc_r_asc" = title ascending order, rating ascending order
-            orderSection = "m.title asc, r.rating asc";
-        }
-        else if (order_param.equals("t_asc_r_desc")){
-            //title ascending order, rating descending order
-            orderSection = "m.title asc, r.rating desc";
-        }
-        else if (order_param.equals("t_desc_r_asc")){
-            //title descending order, rating ascending order
-            orderSection = "m.title desc, r.rating asc";
-        }
-        else if (order_param.equals("t_desc_r_desc")){
-            //title descending order, rating descending order
-            orderSection = "m.title desc, r.rating desc";
-        }
-        else if (order_param.equals("r_asc_t_asc")){
-            //rating ascending order, title ascending order
-            orderSection = "r.rating asc, m.title asc";
-        }
-        else if (order_param.equals("r_asc_t_desc")){
-            //rating ascending order, title descending order
-            orderSection = "r.rating asc, m.title desc";
-        }
-        else if (order_param.equals("r_desc_t_asc")){
-            //rating descending order, title ascending order
-            orderSection = "r.rating desc, m.title asc";
-        }
-        else if (order_param.equals("r_desc_t_desc")){
-            //rating descending order, title ascending order
-            orderSection = "r.rating desc, m.title desc";
-        }
+        HashMap<Integer, String> string_parameters = new HashMap<Integer, String>();
+        HashMap<Integer, Integer> integer_parameters = new HashMap<Integer, Integer>();
+        int param_count = 0;
+
 
 
 
@@ -92,51 +62,105 @@ public class ResultServlet extends HttpServlet {
 
         if (category_param != null){
             if (!category_param.equals("*")){
-                whereSection += " and m.title like '" + category_param + "%'";
+//                whereSection += " and m.title like '" + category_param + "%'";
+//                category_param += "%";
+                whereSection += " and m.title like ?";
+                string_parameters.put(++param_count, category_param+"%");
+
             }
             else{
-                whereSection += " and m.title regexp '^[^a-z0-9]'";
+//                whereSection += " and m.title regexp '^[^a-z0-9]'";
+                whereSection += " and m.title regexp ?";
+                string_parameters.put(++param_count, "^[^a-z0-9]");
             }
 
         }
         else if(genre_param != null){
             queryBegin += ",genres_in_movies as gm, genres as g";
-            whereSection += " and g.name='" + genre_param +"' and gm.movieId = m.id and gm.genreId = g.id";
+//            whereSection += " and g.name='" + genre_param +"' and gm.movieId = m.id and gm.genreId = g.id";
+            whereSection += " and g.name= ? and gm.movieId = m.id and gm.genreId = g.id";
+            string_parameters.put(++param_count, genre_param);
         }
         else{
             if (star_param != ""){
                 queryBegin += ",stars as s, stars_in_movies as sm";
-                whereSection += " and m.id = sm.movieId and s.id = sm.starId and s.name like '%" + star_param + "%'";
+                whereSection += " and m.id = sm.movieId and s.id = sm.starId and s.name like ?";
+                string_parameters.put(++param_count, "%" + star_param + "%");
             }
             if (director_param != ""){
-                whereSection += " and m.director like '%" + director_param + "%'";
+                whereSection += " and m.director like ?";
+//                whereSection += " and m.director like '%" + director_param + "%'";
+                string_parameters.put(++param_count, "%" + director_param + "%");
             }
             if (year_param != ""){
-                whereSection += " and m.year = " + year_param;
+//                whereSection += " and m.year = " + year_param;
+                whereSection += " and m.year = ?";
+                integer_parameters.put(++param_count, Integer.parseInt(year_param));
+
             }
             if (title_param != "") {
-                whereSection += " and m.title like '%" + title_param + "%'";
+                whereSection += " and m.title like ?";
+//                whereSection += " and m.title like '%" + title_param + "%'";
+                string_parameters.put(++param_count, "%" + title_param + "%");
             }
         }
 
 
-
-
-        String queryTail = " where m.id = r.movieId" + whereSection + " order by "+ orderSection;
-
-        if (limit_param == null || limit_param == ""){
-            queryTail += " limit 30 ";
+        //        String orderSection = "r.rating desc";
+//        String orderSection = "";
+        if (order_param.equals("t_asc_r_asc")){
+            //"t_asc_r_asc" = title ascending order, rating ascending order
+            whereSection += " order by m.title asc, r.rating asc";
         }
-        else{
-            queryTail += " limit " + limit_param + " ";
+        else if (order_param.equals("t_asc_r_desc")){
+            //title ascending order, rating descending order
+            whereSection += " order by m.title asc, r.rating desc";
+        }
+        else if (order_param.equals("t_desc_r_asc")){
+            //title descending order, rating ascending order
+            whereSection += " order by m.title desc, r.rating asc";
+        }
+        else if (order_param.equals("t_desc_r_desc")){
+            //title descending order, rating descending order
+            whereSection += " order by m.title desc, r.rating desc";
+        }
+        else if (order_param.equals("r_asc_t_asc")){
+            //rating ascending order, title ascending order
+            whereSection += " order by r.rating asc, m.title asc";
+        }
+        else if (order_param.equals("r_asc_t_desc")){
+            //rating ascending order, title descending order
+            whereSection += " order by r.rating asc, m.title desc";
+        }
+        else if (order_param.equals("r_desc_t_asc")){
+            //rating descending order, title ascending order
+            whereSection += " order by r.rating desc, m.title asc";
+        }
+        else if (order_param.equals("r_desc_t_desc")){
+            //rating descending order, title ascending order
+            whereSection += " order by r.rating desc, m.title desc";
         }
 
-        if (offset_param == null || offset_param ==""){
-            queryTail += "offset 0";
-        }
-        else{
-            queryTail += "offset " + offset_param;
-        }
+//        string_parameters.put(++param_count, orderSection);
+
+        String queryTail = " where m.id = r.movieId" + whereSection + " limit ? offset ?";
+
+        integer_parameters.put(++param_count, Integer.parseInt(limit_param));
+        integer_parameters.put(++param_count, Integer.parseInt(offset_param));
+
+//        if (limit_param == null || limit_param == ""){
+//            queryTail += " limit 30 ";
+//        }
+//        else{
+//            queryTail += " limit " + limit_param + " ";
+//        }
+//
+//        if (offset_param == null || offset_param ==""){
+//            queryTail += "offset 0";
+//        }
+//        else{
+//            queryTail += "offset " + offset_param;
+//        }
 
 
 
@@ -151,10 +175,32 @@ public class ResultServlet extends HttpServlet {
             Statement statement = dbcon.createStatement();
 
             String query = queryBegin + queryTail;
-
             log(query);
+
+
+            PreparedStatement preparedQuery = dbcon.prepareStatement(query);
+//            System.out.println(star_query);
+            log(preparedQuery.toString());
+            log(string_parameters.toString());
+            log(integer_parameters.toString());
+            log(Integer.toString(param_count));
+            log(string_parameters.get(3));
+            for (int i = 0; i < param_count; i++){
+                if (string_parameters.get(i+1) != null){
+                    preparedQuery.setString(i+1, string_parameters.get(i+1));
+                }
+                else if (integer_parameters.get(i+1) != null){
+                    preparedQuery.setInt(i+1, integer_parameters.get(i+1));
+                }
+
+            }
+
+            log(preparedQuery.toString());
+
+            ResultSet rs = preparedQuery.executeQuery();
+
             // Perform the query
-            ResultSet rs = statement.executeQuery(query);
+//            ResultSet rs = statement.executeQuery(query);
 
             JsonArray jsonArray = new JsonArray();
 
@@ -193,7 +239,7 @@ public class ResultServlet extends HttpServlet {
                         "Order by count(sm.movieId) desc, s.name asc " +
                         "Limit 3";
 //                String star_query = "SELECT * from stars as s, stars_in_movies as sm where sm.movieId = ? and sm.starId = s.id";
-                System.out.println(star_query);
+
                 PreparedStatement star_statement = dbcon.prepareStatement(star_query);
                 star_statement.setString(1, movieId);
                 ResultSet star_rs = star_statement.executeQuery();
