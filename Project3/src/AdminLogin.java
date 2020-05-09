@@ -14,20 +14,20 @@ import java.sql.PreparedStatement;
 
 import org.jasypt.util.password.StrongPasswordEncryptor;
 /*
-* Before running the project, make sure have run UpdateSecurePassword.java which read all the passwords from the
-* existing moviedb.customers table, encrypt them, and update the table with the encrypted passwords.
-*
-* can also Create table “customers_backup” for the backup of "customers"
-* create table customers_backup(id integer not null AUTO_INCREMENT, firstName varchar(50) not null,
-* lastName varchar(50) not null, ccId varchar(20) not null, address varchar(200) not null,
-* email varchar(50) not null, password varchar(20) not null, PRIMARY KEY(id),
-* FOREIGN KEY(ccId) REFERENCES creditcards(id) on delete cascade on update cascade);
-*
-* Insert data into table “customers_backup”
-* Insert into customers_backup select * from customers;
-* */
-@WebServlet(name = "LoginServlet", urlPatterns = "/api/login")
-public class LoginServlet extends HttpServlet {
+ * Before running the project, make sure have run UpdateSecurePassword.java which read all the passwords from the
+ * existing moviedb.customers table, encrypt them, and update the table with the encrypted passwords.
+ *
+ * can also Create table “customers_backup” for the backup of "customers"
+ * create table customers_backup(id integer not null AUTO_INCREMENT, firstName varchar(50) not null,
+ * lastName varchar(50) not null, ccId varchar(20) not null, address varchar(200) not null,
+ * email varchar(50) not null, password varchar(20) not null, PRIMARY KEY(id),
+ * FOREIGN KEY(ccId) REFERENCES creditcards(id) on delete cascade on update cascade);
+ *
+ * Insert data into table “customers_backup”
+ * Insert into customers_backup select * from customers;
+ * */
+@WebServlet(name = "AdminLogin", urlPatterns = "/api/adminlogin")
+public class AdminLogin extends HttpServlet {
     // Create a dataSource which registered in web.xml
     @Resource(name = "jdbc/moviedb")
     private DataSource dataSource;
@@ -40,20 +40,6 @@ public class LoginServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
-        // Obtain RecaptchaResponse
-        String gRecaptchaResponse = request.getParameter("g-recaptcha-response");
-
-        try{
-            RecaptchaVerifyUtils.verify(gRecaptchaResponse);
-
-        } catch (Exception e) {
-            JsonObject responseJsonObject = new JsonObject();
-            responseJsonObject.addProperty("status", "fail");
-            responseJsonObject.addProperty("message", "Recaptcha Verification Failed");
-            response.getWriter().write(responseJsonObject.toString());
-            return;
-        }
-
         // check whether the user email/password info matches a record in the customers table
         PreparedStatement loginQuery = null;
         try {
@@ -61,10 +47,11 @@ public class LoginServlet extends HttpServlet {
             Connection dbcon = dataSource.getConnection();
 
             // Declare our statement
-            String query = "SELECT * from customers where email = ?";
+            String query = "SELECT * from employees where email = ?";
             loginQuery = dbcon.prepareStatement(query);
             loginQuery.setString(1, email);
-
+            log("email is " + email);
+            log("password is "+password);
             // Perform the query
             ResultSet rs = loginQuery.executeQuery();
 
@@ -82,12 +69,13 @@ public class LoginServlet extends HttpServlet {
             if (login_success){
                 // Login success:
                 // set this user into the session
-                request.getSession().setAttribute("user", new User(rs.getString("id"), rs.getString("firstName"), rs.getString("lastName"), rs.getString("ccId"), rs.getString("address"),  rs.getString("email"), rs.getString("password"), "customer"));
 
+                log("succesful! login");
+
+                request.getSession().setAttribute("user", new User(email, "admin"));
                 responseJsonObject.addProperty("status", "success");
                 responseJsonObject.addProperty("message", "success");
-                responseJsonObject.addProperty("type", "customer");
-
+                responseJsonObject.addProperty("type", "admin");
 
             } else {
                 // Login fail

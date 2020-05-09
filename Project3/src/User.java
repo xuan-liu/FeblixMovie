@@ -14,12 +14,13 @@ public class User {
     private String address;
     private String email;
     private String password;
+    private String type;
 
     private HashMap<String, Integer> items; // key is movieTitle, value is quantity
     private HashMap<String, String> movieInfo; // key is movieTitle, value is movieID
     String movieListURL;
 
-    public User(String id, String firstName, String lastName, String ccId, String address, String email, String password) {
+    public User(String id, String firstName, String lastName, String ccId, String address, String email, String password, String type) {
         this.id = id;
         this.firstName = firstName;
         this.lastName= lastName;
@@ -29,6 +30,12 @@ public class User {
         this.password = password;
         this.items = new HashMap<>();
         this.movieInfo = new HashMap<>();
+        this.type = type;
+    }
+
+    public User(String email, String type){
+        this.email = email;
+        this.type = type;
     }
 
 //    public User(String username, HashMap<String, Integer> items){
