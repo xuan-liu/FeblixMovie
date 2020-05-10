@@ -144,22 +144,22 @@ public class SAXParserActor extends DefaultHandler {
         String query = "Select max(id) as id from stars";
 
         PreparedStatement checkStar = null;
-        String checkQuery = "SELECT COUNT(*) FROM stars WHERE name = ?";
+        String checkQuery = "SELECT * FROM stars WHERE name = ?";
 
         PreparedStatement preparedQuery = null;
         String insertQuery = "Insert into stars(id, name, birthYear) Values(?,?,?)";
         int[] iNoRows=null;
+        int recordCount = 0;
 
         // find the max id in stars table
         try {
             showMaxId = conn.prepareStatement(query);
             ResultSet rs = showMaxId.executeQuery();
-            int startId = Integer.parseInt(rs.getString("id").substring(2)) + 1;
-            System.out.println("start id: " + startId);
 
             if (rs.next()){
+                int startId = Integer.parseInt(rs.getString("id").substring(2)) + 1;
+                System.out.println("start id: " + startId);
 //                conn.setAutoCommit(false);
-
                 checkStar = conn.prepareStatement(checkQuery);
                 preparedQuery = conn.prepareStatement(insertQuery);
 
@@ -180,7 +180,7 @@ public class SAXParserActor extends DefaultHandler {
 
                     // check whether the star already exists
                     checkStar.setString(1, name);
-                    rs = showMaxId.executeQuery();
+                    rs = checkStar.executeQuery();
 
                     if (rs.next()) {
                         // if the star already exists, go to next actor
@@ -204,8 +204,9 @@ public class SAXParserActor extends DefaultHandler {
                         }
                         preparedQuery.addBatch();
                     }
+                    recordCount += 1;
                 }
-
+                System.out.println("adding star record number: " + recordCount);
                 iNoRows= preparedQuery.executeBatch();
 //                conn.commit();
 
