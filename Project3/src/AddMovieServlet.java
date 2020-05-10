@@ -26,91 +26,43 @@ public class AddMovieServlet extends HttpServlet {
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
+        System.out.println("Enter!");
+
         String movieName = request.getParameter("moviename");
         String director = request.getParameter("director");
         String year = request.getParameter("year");
         String genre = request.getParameter("genre");
         String star = request.getParameter("star");
 
-        System.out.println("adminlogin");
-
         try {
             // Get a connection from dataSource
             Connection dbcon = dataSource.getConnection();
 
-            // Declare our statement
-            Statement statement = dbcon.createStatement();
-            String query = "Select max(id) as id from stars";
+            // Declare our statement);
+            String query = "CALL add_movie(?, ?, ?, ?, ?)";
+            PreparedStatement preparedQuery = dbcon.prepareStatement(query);
+            preparedQuery.setString(1, movieName);
+            preparedQuery.setString(2, director);
+            preparedQuery.setString(3, year);
+            preparedQuery.setString(4, genre);
+            preparedQuery.setString(5, star);
 
-            ResultSet rs = statement.executeQuery(query);
+            ResultSet rs = preparedQuery.executeQuery();
 
-            if (rs.next()){
-                String maxId = rs.getString("id").substring(2);
-                String newId = "nm" + (Integer.parseInt(maxId) + 1);
-
-                String insertQuery = "Insert into stars(id, name, birthYear) Values(?,?,?)";
-
-                PreparedStatement preparedQuery = dbcon.prepareStatement(insertQuery);
-
-//                preparedQuery.setString(1, newId);
-//                preparedQuery.setString(2, name_param);
-//                if (birthyear_param.equals("")){
-//                    preparedQuery.setNull(3, Types.NULL);
-//                }
-//                else{
-//                    preparedQuery.setInt(3, Integer.parseInt(birthyear_param));
-//                }
-
-                preparedQuery.executeUpdate();
-
-
-
-
-//                if (birthyear_param.equals("")){
-//                    System.out.println("pass1");
-//                        String insertQuery = "Insert into stars(id, name) Values(?,?)";
-//
-//                        PreparedStatement preparedQuery = dbcon.prepareStatement(insertQuery);
-//
-//                        preparedQuery.setString(1, newId);
-//                        preparedQuery.setString(2, name_param);
-//
-//                    preparedQuery.executeUpdate();
-//                    System.out.println("pass3");
-//
-//                }
-//
-//                else{
-//                    System.out.println("pass2");
-//                    String insertQuery = "Insert into stars(id, name, birthYear) Values(?,?,?)";
-//
-//                    PreparedStatement preparedQuery = dbcon.prepareStatement(insertQuery);
-//
-//                    preparedQuery.setString(1, newId);
-//                    preparedQuery.setString(2, name_param);
-//                    preparedQuery.setInt(3, Integer.parseInt(birthyear_param));
-//                    preparedQuery.executeQuery();
-//
-//
-//
-//
-//                }
-
+            if (rs.next()) {
+                String message = rs.getString("message");
+                JsonObject jsonObject = new JsonObject();
+                jsonObject.addProperty("message", message);
+                System.out.println(jsonObject.toString());
+                response.getWriter().write(jsonObject.toString());
             }
 
 
 
-
-
-
-
-            // write JSON string to output
-
-            // set response status to 200 (OK)
             response.setStatus(200);
 
             rs.close();
-            statement.close();
+            preparedQuery.close();
             dbcon.close();
         } catch (Exception e) {
 

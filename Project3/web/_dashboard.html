@@ -20,6 +20,19 @@
 </head>
 <body>
 <div id="header"></div>
+
+<div>
+    <table  id="metadata" style="width:100%">
+        <tr>
+            <th>Table Name</th>
+            <th>Columns</th>
+        </tr>
+    </table>
+</div>
+
+
+<div>
+<div id = "result_message"></div>
 <div class="container">
     <div>
     <h3>Add Stars</h3>
@@ -27,6 +40,7 @@
     <!-- Set the method to POST to avoid showing the info in the URL
          The default action is disabled to allow your own implementation. -->
     <form id="add_star_form" method="post" action="#" class="form-horizontal">
+
         <div class="form-group">
             <label class="col-sm-1 control-label">Name</label>
             <div class="col-sm-5">
@@ -83,7 +97,9 @@
     </div>
 
 
+
     <script src="_dashboard.js"></script>
+</div>
 </div>
 <div id="footer"></div>
 </body>

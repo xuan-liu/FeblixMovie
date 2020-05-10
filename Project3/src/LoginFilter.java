@@ -20,12 +20,9 @@ public class LoginFilter implements Filter {
         HttpServletRequest httpRequest = (HttpServletRequest) request;
         HttpServletResponse httpResponse = (HttpServletResponse) response;
         StringBuffer requestURL = httpRequest.getRequestURL();
-
-        System.out.println("LoginFilter: " + httpRequest.getRequestURI());
-
+        
         String contextPath = httpRequest.getContextPath();
-        System.out.println("Context Path: " + contextPath);
-        System.out.println("Servlet Path: " + httpRequest.getServletPath());
+
         //Find the Context Path
 
         String redirectPath = contextPath + "/login.html";

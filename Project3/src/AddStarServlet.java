@@ -37,8 +37,6 @@ public class AddStarServlet extends HttpServlet {
             Connection dbcon = dataSource.getConnection();
 
 
-
-
             // Declare our statement
             Statement statement = dbcon.createStatement();
             String query = "Select max(id) as id from stars";
@@ -63,41 +61,14 @@ public class AddStarServlet extends HttpServlet {
                 }
 
                 preparedQuery.executeUpdate();
+                preparedQuery.close();
 
-
-
-
-//                if (birthyear_param.equals("")){
-//                    System.out.println("pass1");
-//                        String insertQuery = "Insert into stars(id, name) Values(?,?)";
-//
-//                        PreparedStatement preparedQuery = dbcon.prepareStatement(insertQuery);
-//
-//                        preparedQuery.setString(1, newId);
-//                        preparedQuery.setString(2, name_param);
-//
-//                    preparedQuery.executeUpdate();
-//                    System.out.println("pass3");
-//
-//                }
-//
-//                else{
-//                    System.out.println("pass2");
-//                    String insertQuery = "Insert into stars(id, name, birthYear) Values(?,?,?)";
-//
-//                    PreparedStatement preparedQuery = dbcon.prepareStatement(insertQuery);
-//
-//                    preparedQuery.setString(1, newId);
-//                    preparedQuery.setString(2, name_param);
-//                    preparedQuery.setInt(3, Integer.parseInt(birthyear_param));
-//                    preparedQuery.executeQuery();
-//
-//
-//
-//
-//                }
 
             }
+            JsonObject jsonObject = new JsonObject();
+            jsonObject.addProperty("message", "Star " + name_param + " has been successfully added to the database.");
+            System.out.println(jsonObject.toString());
+            response.getWriter().write(jsonObject.toString());
 
 
 
