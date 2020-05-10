@@ -15,7 +15,7 @@ import java.sql.*;
 import java.util.ArrayList;
 
 
-@WebServlet(name = "AddMovieServlet", urlPatterns = "/api/addmovie")
+@WebServlet(name = "AddMovieServlet", urlPatterns = "/admin/api/addmovie")
 public class AddMovieServlet extends HttpServlet {
 
     @Resource(name = "jdbc/moviedb")

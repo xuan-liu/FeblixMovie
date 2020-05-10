@@ -58,6 +58,8 @@ public class User {
         return movieInfo;
     }
 
+    public String getType(){return this.type;}
+
     public void addItem(String item, int quantity){
         synchronized(items){
             if (items.containsKey(item)){

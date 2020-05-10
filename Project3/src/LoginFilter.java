@@ -19,17 +19,16 @@ public class LoginFilter implements Filter {
             throws IOException, ServletException {
         HttpServletRequest httpRequest = (HttpServletRequest) request;
         HttpServletResponse httpResponse = (HttpServletResponse) response;
-        StringBuffer requestURL = httpRequest.getRequestURL();
-        
-        String contextPath = httpRequest.getContextPath();
+//        StringBuffer requestURL = httpRequest.getRequestURL();
 
-        //Find the Context Path
+        String contextPath = httpRequest.getContextPath();
 
         String redirectPath = contextPath + "/login.html";
 
         // Check if this URL is allowed to access without logging in
         if (this.isUrlAllowedWithoutLogin(httpRequest.getServletPath())) {
             // Keep default action: pass along the filter chain
+            System.out.println("redirect url" + httpRequest.getRequestURL());
             chain.doFilter(request, response);
             return;
         }
@@ -50,6 +49,7 @@ public class LoginFilter implements Filter {
          */
 
         //Compares the servletPath with the allowed servlet path('/login.html')
+        System.out.println("url: " + requestURI.toLowerCase());
         return allowedURIs.stream().anyMatch(element -> element.equals(requestURI.toLowerCase()));
 
     }

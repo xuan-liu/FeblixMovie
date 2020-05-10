@@ -64,6 +64,9 @@ function handleMetaData(resultData){
 
 }
 
+let v = window.location.toString();
+console.log(v);
+
 $.ajax("api/metadata", {
     dataType: "json",
     method: "GET",

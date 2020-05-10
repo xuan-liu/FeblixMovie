@@ -15,7 +15,7 @@ import java.sql.*;
 
 
 // Declaring a WebServlet called MetaDataServlet, which maps to url "/api/stars"
-@WebServlet(name = "MetaDataServlet", urlPatterns = "/api/metadata")
+@WebServlet(name = "MetaDataServlet", urlPatterns = "/admin/api/metadata")
 public class MetaDataServlet extends HttpServlet {
 
     @Resource(name = "jdbc/moviedb")
