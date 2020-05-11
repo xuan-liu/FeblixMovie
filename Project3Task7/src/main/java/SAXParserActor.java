@@ -7,26 +7,33 @@ import javax.xml.parsers.SAXParserFactory;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 
 public class SAXParserActor extends DefaultHandler {
 
-    static List<Actor> myActors;
+    List<Actor> myActors;
 
     private String tempVal;
 
     //to maintain context
     private Actor tempActor;
 
+    //whether add the actor into list
+    private boolean addList;
+    static String inconsistent = "";
+
+    // hashmap. key: stage name, value: star id
+    public Map<String, String> actorMap = new HashMap<>();
+
     public SAXParserActor() {
         myActors = new ArrayList<Actor>();
     }
 
-    public void runExample() {
+    public void runExample() throws InstantiationException, IllegalAccessException, ClassNotFoundException {
         parseDocument();
+        System.out.println("Finish Parsing. No. Valid data after parsing: " + myActors.size());
+        addData();
 //        printData();
     }
 
@@ -40,7 +47,7 @@ public class SAXParserActor extends DefaultHandler {
             javax.xml.parsers.SAXParser sp = spf.newSAXParser();
 
             //parse the file and also register this class for call backs
-            System.out.println("xxxxxxxxx");
+            System.out.println("Start Parsing.");
             sp.parse("actors63.xml", this);
 
         } catch (SAXException se) {
@@ -77,8 +84,9 @@ public class SAXParserActor extends DefaultHandler {
     //Event Handlers
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         if (qName.equalsIgnoreCase("actor")) {
-            // if "actor", clean tempLastname, create a new instance of actor
+            // if "actor", create a new instance of actor
             tempActor = new Actor();
+            addList = true;
         }
     }
 
@@ -87,7 +95,7 @@ public class SAXParserActor extends DefaultHandler {
     }
 
     public void endElement(String uri, String localName, String qName) throws SAXException {
-        if (qName.equalsIgnoreCase("actor")) {
+        if (addList && qName.equalsIgnoreCase("actor")) {
             // if "actor", add it to the list
             myActors.add(tempActor);
         } else if (qName.equalsIgnoreCase("stagename")) {
@@ -95,39 +103,45 @@ public class SAXParserActor extends DefaultHandler {
             if (tempVal != null && tempVal.trim().length() > 0) {
                 tempActor.setStageName(tempVal);
             } else {
-                tempActor.setStageName(null);
-            }
-        } else if (qName.equalsIgnoreCase("familyname")) {
-            // if "familyname", setLastName
-            if (tempVal != null && tempVal.trim().length() > 0) {
-                tempActor.setLastName(tempVal);
-            } else {
-                tempActor.setLastName(null);
-            }
-        } else if (qName.equalsIgnoreCase("firstname")) {
-            // if "givenname", setFirstName
-            if (tempVal != null && tempVal.trim().length() > 0) {
-                tempActor.setFirstName(tempVal);
-            } else {
-                tempActor.setFirstName(null);
+                // if null, not add to list
+                addList = false;
+                inconsistent += "Star with null stagename " + tempActor.toString() + "\n";
             }
         } else if (qName.equalsIgnoreCase("dob")) {
             // if "dob", setBirthyear
-//            System.out.println("len: " + tempVal.trim().length());
             if (tempVal != null && tempVal.trim().length() > 0) {
-                tempActor.setBirthyear(tempVal);
+                try {
+                    Integer.parseInt(tempVal);
+                    tempActor.setBirthyear(tempVal);
+                } catch (Exception e) {
+                    addList = false;
+                    inconsistent += "Star birthyear not int: " + tempActor.toString() + "\n";
+                }
             } else {
-//                System.out.println("set null");
                 tempActor.setBirthyear(null);
             }
         }
+//        else if (qName.equalsIgnoreCase("familyname")) {
+//            // if "familyname", setLastName
+//            if (tempVal != null && tempVal.trim().length() > 0) {
+//                tempActor.setLastName(tempVal);
+//            } else {
+//                addList = false;
+//                inconsistent += "Star with null familyname " + tempActor.toString() + "\n";
+//            }
+//        } else if (qName.equalsIgnoreCase("firstname")) {
+//            // if "givenname", setFirstName
+//            if (tempVal != null && tempVal.trim().length() > 0) {
+//                tempActor.setFirstName(tempVal);
+//            } else {
+//                addList = false;
+//                inconsistent += "Star with null firstname " + tempActor.toString() + "\n";
+//            }
+//        }
 
     }
 
-    public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
-        SAXParserActor spe = new SAXParserActor();
-        spe.runExample();
-
+    public void addData() throws InstantiationException, IllegalAccessException, ClassNotFoundException {
         // connect to the database
         Connection conn = null;
 
@@ -158,46 +172,40 @@ public class SAXParserActor extends DefaultHandler {
 
             if (rs.next()){
                 int startId = Integer.parseInt(rs.getString("id").substring(2)) + 1;
-                System.out.println("start id: " + startId);
-//                conn.setAutoCommit(false);
+                System.out.println("Start adding data, start id: " + startId);
+
+                conn.setAutoCommit(false);
                 checkStar = conn.prepareStatement(checkQuery);
                 preparedQuery = conn.prepareStatement(insertQuery);
 
                 // iterate all the actors we parsed
                 for (int i = 0; i < myActors.size(); i++) {
-                    // get the actor name
+                    // get the actor
                     Actor ac = myActors.get(i);
-                    String name;
-
-                    if (ac.getFirstName() != null && ac.getLastName() != null) {
-                        name = myActors.get(i).getFirstName() + " " + myActors.get(i).getLastName();
-                    } else {
-//                        name = null;
-                        // if the actor has no name, go to next actor
-                        System.out.println("Star with Name Null: " + ac.toString());
-                        continue;
-                    }
+//                    String name;
+//                    name = myActors.get(i).getFirstName() + " " + myActors.get(i).getLastName();
 
                     // check whether the star already exists
-                    checkStar.setString(1, name);
+                    checkStar.setString(1, ac.getStageName());
                     rs = checkStar.executeQuery();
 
                     if (rs.next()) {
+                        // add existed id into hashmap
+                        actorMap.put(ac.getStageName(), rs.getString("id"));
+
                         // if the star already exists, go to next actor
-                        System.out.println("Star already exists: " + ac.toString());
+                        inconsistent += "Star already exists: " + ac.toString() + "\n";
                         continue;
                     } else {
                         // if not, add the star
                         String newId = "nm" + (startId + i);
                         preparedQuery.setString(1, newId);
-                        preparedQuery.setString(2, name);
+                        preparedQuery.setString(2, ac.getStageName());
+                        // add new id into hashmap
+                        actorMap.put(ac.getStageName(), newId);
+
                         if (ac.getBirthyear() != null){
-                            try {
-                                preparedQuery.setInt(3, Integer.parseInt(ac.getBirthyear()));
-                            } catch (Exception e) {
-                                System.out.println("Star birthyear not int: " + ac.toString());
-                                continue;
-                            }
+                            preparedQuery.setInt(3, Integer.parseInt(ac.getBirthyear()));
                         }
                         else{
                             preparedQuery.setNull(3, Types.NULL);
@@ -206,22 +214,146 @@ public class SAXParserActor extends DefaultHandler {
                     }
                     recordCount += 1;
                 }
-                System.out.println("adding star record number: " + recordCount);
+                System.out.println("adding star record number: " + recordCount + ", " + actorMap.size());
                 iNoRows= preparedQuery.executeBatch();
-//                conn.commit();
+                conn.commit();
 
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
+        // print inconsistent to file
+        try {
+            FileWriter myWriter = new FileWriter("inconsistent_actor.txt");
+            myWriter.write(inconsistent);
+            myWriter.close();
+            System.out.println("Successfully wrote inconsistent to the file inconsistent_actor.txt.");
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+
         // close query and connection
         try {
-            if(preparedQuery!=null) preparedQuery.close();
-            if(conn!= null) conn.close();
+            showMaxId.close();
+            checkStar.close();
+            preparedQuery.close();
+            conn.close();
         } catch(Exception e) {
             e.printStackTrace();
         }
+
+    }
+
+    public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+        SAXParserActor spe = new SAXParserActor();
+        spe.runExample();
+
+        // print inconsistent to file
+//        try {
+//            FileWriter myWriter = new FileWriter("inconsistent_actor.txt");
+//            myWriter.write(inconsistent);
+//            myWriter.close();
+//            System.out.println("Successfully wrote inconsistent to the file inconsistent_actor.txt.");
+//        } catch (IOException e) {
+//            System.out.println("An error occurred.");
+//            e.printStackTrace();
+//        }
+
+//        // connect to the database
+//        Connection conn = null;
+//
+//        Class.forName("com.mysql.jdbc.Driver").newInstance();
+//        String jdbcURL="jdbc:mysql://localhost:3306/moviedb";
+//
+//        try {
+//            conn = DriverManager.getConnection(jdbcURL,"mytestuser", "mypassword");
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//
+//        PreparedStatement showMaxId = null;
+//        String query = "Select max(id) as id from stars";
+//
+//        PreparedStatement checkStar = null;
+//        String checkQuery = "SELECT * FROM stars WHERE name = ?";
+//
+//        PreparedStatement preparedQuery = null;
+//        String insertQuery = "Insert into stars(id, name, birthYear) Values(?,?,?)";
+//        int[] iNoRows=null;
+//        int recordCount = 0;
+//
+//        // find the max id in stars table
+//        try {
+//            showMaxId = conn.prepareStatement(query);
+//            ResultSet rs = showMaxId.executeQuery();
+//
+//            if (rs.next()){
+//                int startId = Integer.parseInt(rs.getString("id").substring(2)) + 1;
+//                System.out.println("Start adding data, start id: " + startId);
+//
+//                conn.setAutoCommit(false);
+//                checkStar = conn.prepareStatement(checkQuery);
+//                preparedQuery = conn.prepareStatement(insertQuery);
+//
+//                // iterate all the actors we parsed
+//                for (int i = 0; i < myActors.size(); i++) {
+//                    // get the actor
+//                    Actor ac = myActors.get(i);
+////                    String name;
+////                    name = myActors.get(i).getFirstName() + " " + myActors.get(i).getLastName();
+//
+//                    // check whether the star already exists
+//                    checkStar.setString(1, ac.getStageName());
+//                    rs = checkStar.executeQuery();
+//
+//                    if (rs.next()) {
+//                        // if the star already exists, go to next actor
+//                        inconsistent += "Star already exists: " + ac.toString() + "\n";
+//                        continue;
+//                    } else {
+//                        // if not, add the star
+//                        String newId = "nm" + (startId + i);
+//                        preparedQuery.setString(1, newId);
+//                        preparedQuery.setString(2, ac.getStageName());
+//                        if (ac.getBirthyear() != null){
+//                            preparedQuery.setInt(3, Integer.parseInt(ac.getBirthyear()));
+//                        }
+//                        else{
+//                            preparedQuery.setNull(3, Types.NULL);
+//                        }
+//                        preparedQuery.addBatch();
+//                    }
+//                    recordCount += 1;
+//                }
+//                System.out.println("adding star record number: " + recordCount);
+//                iNoRows= preparedQuery.executeBatch();
+//                conn.commit();
+//
+//            }
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//
+//        // print inconsistent to file
+//        try {
+//            FileWriter myWriter = new FileWriter("inconsistent_actor.txt");
+//            myWriter.write(inconsistent);
+//            myWriter.close();
+//            System.out.println("Successfully wrote inconsistent to the file inconsistent_actor.txt.");
+//        } catch (IOException e) {
+//            System.out.println("An error occurred.");
+//            e.printStackTrace();
+//        }
+//
+//        // close query and connection
+//        try {
+//            if(preparedQuery!=null) preparedQuery.close();
+//            if(conn!= null) conn.close();
+//        } catch(Exception e) {
+//            e.printStackTrace();
+//        }
 
     }
 

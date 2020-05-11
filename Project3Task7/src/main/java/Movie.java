@@ -6,7 +6,7 @@ public class Movie {
 
 	private String title;
 
-	private String year;
+	private int year;
 
 	private String director;
 
@@ -17,7 +17,7 @@ public class Movie {
 		this.genres = new ArrayList<>();
 	}
 
-	public Movie(String id, String title, String year, String director, List<String> genres) {
+	public Movie(String id, String title, int year, String director, List<String> genres) {
 		this.id = id;
 		this.title = title;
 		this.year  = year;
@@ -39,10 +39,10 @@ public class Movie {
 		this.title = title;
 	}
 
-	public String getYear() {
+	public int getYear() {
 		return year;
 	}
-	public void setYear(String year) {
+	public void setYear(int year) {
 		this.year = year;
 	}
 
