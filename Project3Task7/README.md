@@ -1,9 +1,15 @@
-# project3-SAXParserMain-example
+# project3-task7
 
-## Run the example
+## Run the project
 
-`cd cs122b-spring20-project3-SAXParserMain-example`
+Before running it, it's recommended to back up your "moviedb" database. You can follow the step.
+1. create a database named "moviedb_backup".
+2. `mysqldump -u root -p moviedb > moviedb.sql`
+3. `mysql -u root -p moviedb_backup < moviedb.sql`
 
-`mvn package`
 
-`java -cp target/cs122b-spring20-project3-SAXParserMain-example-0.0.1-SNAPSHOT.jar SAXParserExample`
+Then you can run the project.
+1. Clone this repository using git clone <repo url>
+2. `cd Project3Task7`
+3. `mvn package`
+4. `time java -cp target/cs122b-spring20-project3-SAXParser-example-0.0.1-SNAPSHOT.jar:/home/ubuntu/.m2/repository/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46.jar SAXParserCast` Using "time" at first can track the time the project consumes.
