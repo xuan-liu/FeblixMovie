@@ -24,6 +24,8 @@ public class SAXParserActor extends DefaultHandler {
 
     private Map<String, String> actorMap = new HashMap<>(); // hashmap. key: stage name, value: star id
 
+    String maxIdString = ""; // maxId in the actorMap
+
     public SAXParserActor() {
         myActors = new ArrayList<Actor>();
     }
@@ -153,8 +155,8 @@ public class SAXParserActor extends DefaultHandler {
 
         // find the max id in stars table
         try {
-            int startId = maxId + 1;
-            System.out.println("Start adding actor data, start actor id: " + startId);
+            maxId += 1;
+            System.out.println("Start adding actor data, start actor id: " + maxId);
 
             conn.setAutoCommit(false);
             preparedQuery = conn.prepareStatement(insertQuery);
@@ -171,7 +173,7 @@ public class SAXParserActor extends DefaultHandler {
                     continue;
                 } else {
                     // if not, add the star
-                    String newId = "nm" + (startId + i);
+                    String newId = "nm" + maxId;
                     preparedQuery.setString(1, newId);
                     preparedQuery.setString(2, ac.getStageName());
 
@@ -186,6 +188,7 @@ public class SAXParserActor extends DefaultHandler {
                     }
                     preparedQuery.addBatch();
                     recordCount += 1;
+                    maxId += 1;
                 }
             }
             System.out.println("adding star record number: " + recordCount + ", actor map size: " + actorMap.size());
@@ -195,6 +198,7 @@ public class SAXParserActor extends DefaultHandler {
             e.printStackTrace();
         }
 
+        maxIdString += "nm" + maxId;
         // print inconsistent to file
         try {
             FileWriter myWriter = new FileWriter("inconsistent_actor.txt");
@@ -219,6 +223,10 @@ public class SAXParserActor extends DefaultHandler {
 
     public Map<String, String> getActorMap() {
         return actorMap;
+    }
+
+    public String getMaxId() {
+        return maxIdString;
     }
 
     public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException {

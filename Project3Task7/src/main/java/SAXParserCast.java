@@ -25,6 +25,8 @@ public class SAXParserCast extends DefaultHandler {
     private static Map<String, String> actorMap;
     private static Map<String, String> movieMap;
 
+    static String maxStarId = "";
+
     public SAXParserCast() {
         myCasts = new ArrayList<Cast>();
     }
@@ -170,13 +172,16 @@ public class SAXParserCast extends DefaultHandler {
         PreparedStatement checkCast = null;
         String checkQuery = "SELECT * FROM stars_in_movies WHERE starId = ? and movieId = ?";
 
-//        PreparedStatement checkStar = null;
-//        String checkStarQuery = "SELECT * FROM stars WHERE name = ?";
+        PreparedStatement insertStar = null;
+        String insertStarQuery = "Insert into stars(id, name, birthYear) Values(?,?,?)";
+        int[] iNoRowss = null;
+        int starCount = 0;
+        int maxId = Integer.parseInt(maxStarId.substring(2));;
 
         try {
             preparedQuery = conn.prepareStatement(insertQuery);
             checkCast = conn.prepareStatement(checkQuery);
-//            checkStar = conn.prepareStatement(checkStarQuery);
+            insertStar = conn.prepareStatement(insertStarQuery);
             System.out.println("Start adding cast data.");
 
             conn.setAutoCommit(false);
@@ -220,8 +225,26 @@ public class SAXParserCast extends DefaultHandler {
                         preparedQuery.setString(2, movieId);
                         preparedQuery.addBatch();
                     } else {
-                        // add the cast and add the actor
-                        inconsistent += "Cast Star cannot add: " + ct.toString() + "\n";
+                        // if the star is not in database, add the star in stars table
+                        String newId = "nm" + maxId;
+                        insertStar.setString(1, newId);
+                        insertStar.setString(2, ct.getStageName());
+                        insertStar.setNull(3, Types.NULL);
+                        insertStar.addBatch();
+                        maxId += 1;
+                        starCount += 1;
+
+                        // add to actorMap
+                        actorMap.put(ct.getStageName(), newId);
+
+                        // add the cast
+                        recordCount += 1;
+                        preparedQuery.setString(1, newId);
+                        preparedQuery.setString(2, movieId);
+                        preparedQuery.addBatch();
+                        recordCount += 1;
+
+//                        inconsistent += "Cast Star cannot add: " + ct.toString() + "\n";
                     }
                 } else {
                     // otherwise, report inconsistent
@@ -230,6 +253,8 @@ public class SAXParserCast extends DefaultHandler {
 
             }
 
+            System.out.println("adding star record number: " + starCount);
+            iNoRowss= insertStar.executeBatch();
             System.out.println("adding cast record number: " + recordCount);
             iNoRows= preparedQuery.executeBatch();
             conn.commit();
@@ -251,6 +276,7 @@ public class SAXParserCast extends DefaultHandler {
 
         // close query and connection
         try {
+            insertStar.close();
             checkCast.close();
             preparedQuery.close();
             conn.close();
@@ -265,6 +291,7 @@ public class SAXParserCast extends DefaultHandler {
         SAXParserActor actor_parser = new SAXParserActor();
         actor_parser.runParser();
         actorMap = actor_parser.getActorMap();
+        maxStarId += actor_parser.getMaxId();
 
         SAXParserMain movie_parser = new SAXParserMain();
         movie_parser.runParser();
