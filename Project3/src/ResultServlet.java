@@ -55,11 +55,11 @@ public class ResultServlet extends HttpServlet {
 
 
 
-        String whereSection = "";
 
 
-        String queryBegin = "SELECT distinct m.id, m.title, m.year, m.director, r.rating from movies as m, ratings as r";
 
+        String queryBegin = "SELECT distinct m.id, m.title, m.year, m.director, r.rating from movies as m left join ratings as r on m.id = r.movieId";
+        String whereSection = " where true";
         if (category_param != null){
             if (!category_param.equals("*")){
 //                whereSection += " and m.title like '" + category_param + "%'";
@@ -143,7 +143,7 @@ public class ResultServlet extends HttpServlet {
 
 //        string_parameters.put(++param_count, orderSection);
 
-        String queryTail = " where m.id = r.movieId" + whereSection + " limit ? offset ?";
+        String queryTail = whereSection + " limit ? offset ?";
 
         integer_parameters.put(++param_count, Integer.parseInt(limit_param));
         integer_parameters.put(++param_count, Integer.parseInt(offset_param));
