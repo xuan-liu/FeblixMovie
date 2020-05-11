@@ -45,7 +45,7 @@ public class SingleMovieServlet extends HttpServlet {
             Connection dbcon = dataSource.getConnection();
 
             // Construct a query with parameter represented by "?"
-            String query = "select * from movies as m, ratings as r where r.movieId = m.id and m.id = ?";
+            String query = "select * from movies as m left join ratings as r on r.movieId = m.id where m.id = ?";
 
 
             // Declare our statement
@@ -90,7 +90,7 @@ public class SingleMovieServlet extends HttpServlet {
                         "Order by count(sm.movieId) desc, s.name asc";
                 System.out.println(star_query);
                 PreparedStatement star_statement = dbcon.prepareStatement(star_query);
-                star_statement.setString(1, movieId);
+                star_statement.setString(1, id);
                 ResultSet star_rs = star_statement.executeQuery();
                 String stars = "";
 
