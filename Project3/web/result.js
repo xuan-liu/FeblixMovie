@@ -1,4 +1,5 @@
 var url = window.location;
+var admin = false;
 
 
 function handleMovieResult(resultData) {
@@ -166,10 +167,16 @@ function handleMovieResult(resultData) {
         let arg = "\"" + resultData[i]['movieId'] + "\", \"" + movieTitle + "\"";
         rowHTML += "</th>";
         rowHTML += "<th>" + resultData[i]["rating"] + "</th>";
-        rowHTML += "<th><button class=\"btn btn-default\" onclick = 'handleAddToCart(" + arg + ")'>Add to cart</button></th>"
-        // rowHTML += "<th>" + '<button onclick = "handleAddToCart('+ "'" + movieTitle+ "'" + ',1)"' + ">Add to cart</button></th>";
+        console.log("admin :" + admin);
+        if (admin){
+            console.log("TRUE");
+            rowHTML += "<th>N/A</th>>";
+        }else {
+            console.log("FALSE");
+            rowHTML += "<th><button class=\"btn btn-default\" onclick = 'handleAddToCart(" + arg + ")'>Add to cart</button></th>"
+        }
 
-        // rowHTML += "<th>" + resultData[i]["star_dob"] + "</th>";
+
         rowHTML += "</tr>";
 
         // Append the row created to the table body, which will refresh the page
@@ -239,6 +246,15 @@ function handleAddToCart(movieId, movieTitle){
     // event.preventDefault();
 }
 
+function handleUserType(userTypeData){
+
+    if (userTypeData['usertype'].localeCompare("admin") == 0){
+        admin = true;
+        $("#dashBoardButton").append("<a href='admin/_dashboard.html' class='btn btn-primary'>Back to DashBoard</a>");
+
+    }
+}
+
 /**
  * Once this .js is loaded, following scripts will be executed by the browser
  */
@@ -246,9 +262,17 @@ function handleAddToCart(movieId, movieTitle){
 console.log(url.toString());
 $.ajax("api/jump",{
     method: "POST", // Setting request method
-
     data: {movielisturl:url.toString()},// Setting request url, which is mapped by MoviesServlet
 });
+
+jQuery.ajax({
+    dataType: "json", // Setting return data type
+    method: "GET", // Setting request method
+    url: "api/usertype", // Setting request url, which is mapped by MoviesServlet
+    success: (userTypeData) => handleUserType(userTypeData)// Setting callback function to handle data returned successfully by the StarsServlet
+});
+
+
 
 jQuery.ajax({
     dataType: "json", // Setting return data type

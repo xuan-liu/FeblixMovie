@@ -35,7 +35,7 @@ main:BEGIN
         INSERT INTO stars(id, name) VALUES(newStarID, mstar);
 	ELSE
 		-- Else, find the id of existing star
-		SET newStarID = (SELECT id FROM stars WHERE name = '');
+		SET newStarID = (SELECT id FROM stars WHERE name = mstar);
     END IF;
 		
     -- Modify stars_in_movies table to link the movie with star

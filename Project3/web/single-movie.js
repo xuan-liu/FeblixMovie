@@ -1,6 +1,6 @@
 
 let addItem = $("#addItem");
-
+var admin = false;
 let movieTitle = "";
 
 function getParameterByName(target) {
@@ -107,7 +107,13 @@ function handleBackInfo(result){
 /**
  * Once this .js is loaded, following scripts will be executed by the browser\
  */
-
+function handleUserType(userTypeData){
+    console.log("from data, admin: "+userTypeData['usertype']);
+    if (userTypeData['usertype'].localeCompare("admin") == 0){
+        $("#dashBoardButton").append("<a href='admin/_dashboard.html' class='btn btn-primary'>Back to DashBoard</a>");
+        addItem.remove();
+    }
+}
 // Get id from URL
 let movieId = getParameterByName('id');
 
@@ -126,4 +132,13 @@ jQuery.ajax({
     success: (resultURLdata) => handleBackInfo(resultURLdata)
 });
 
+jQuery.ajax({
+    dataType: "json", // Setting return data type
+    method: "GET", // Setting request method
+    url: "api/usertype", // Setting request url, which is mapped by MoviesServlet
+    success: (userTypeData) => handleUserType(userTypeData)// Setting callback function to handle data returned successfully by the StarsServlet
+});
+
+
 addItem.submit(handleCartInfo);
+

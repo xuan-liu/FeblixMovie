@@ -53,7 +53,7 @@ public class AddMovieServlet extends HttpServlet {
                 String message = rs.getString("message");
                 JsonObject jsonObject = new JsonObject();
                 jsonObject.addProperty("message", message);
-                System.out.println(jsonObject.toString());
+                System.out.println(message);
                 response.getWriter().write(jsonObject.toString());
             }
 

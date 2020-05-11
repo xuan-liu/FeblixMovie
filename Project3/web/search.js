@@ -17,7 +17,13 @@ function handleCategoryResult(resultData) {
     BodyElement.append(bodyHTML);
 }
 
+function handleUserType(userTypeData){
 
+    if (userTypeData['usertype'].localeCompare("admin") == 0){
+        $("#dashBoardButton").append("<a href='admin/_dashboard.html' class='btn btn-primary'>Back to DashBoard</a>");
+
+    }
+}
 /**
  * Once this .js is loaded, following scripts will be executed by the browser
  */
@@ -27,4 +33,11 @@ jQuery.ajax({
     method: "GET", // Setting request method
     url: "api/categoryResult", // Setting request url, which is mapped by CategoryResultServlet
     success: (resultData) => handleCategoryResult(resultData) // Setting callback function to handle data returned successfully by the CategoryResultServlet
+});
+
+jQuery.ajax({
+    dataType: "json", // Setting return data type
+    method: "GET", // Setting request method
+    url: "api/usertype", // Setting request url, which is mapped by MoviesServlet
+    success: (userTypeData) => handleUserType(userTypeData)// Setting callback function to handle data returned successfully by the StarsServlet
 });

@@ -34,7 +34,9 @@ function handleAddMovie(Event){
 function handleMessage(resultMessage){
     console.log(resultMessage);
     let message_div = document.getElementById("result_message");
+    console.log(message_div.childElementCount)
     if(message_div.childElementCount != 0){
+        console.log("")
         message_div.removeChild(message_div.childNodes[0]);
     }
     let txt = "<div class=\"alert alert-success\" role=\"alert\">" + resultMessage["message"] + "</div>";
@@ -73,7 +75,11 @@ $.ajax("api/metadata", {
     success: (resultData) => handleMetaData(resultData)
 });
 
+let url = window.location.href.toString();
+let patt = /.+?(?=admin)/i;
+let result = url.match(patt) + "search.html";
 
+$("#searchPageButton").append("<a href='" + result + "' class='btn btn-primary' style='float: right;'>Search Page</a>");
 
 add_star.submit(handleAddStar);
 add_movie.submit(handleAddMovie);
