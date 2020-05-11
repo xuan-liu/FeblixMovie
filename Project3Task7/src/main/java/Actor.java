@@ -3,10 +3,6 @@
 public class Actor {
 	private String stageName;
 
-//	private String lastName;
-//
-//	private String firstName;
-
 	private String birthyear;
 
 	public Actor() {
@@ -15,8 +11,6 @@ public class Actor {
 
 	public Actor(String stageName, String lastName, String firstName, String birthyear) {
 		this.stageName = stageName;
-//		this.lastName = lastName;
-//		this.firstName = firstName;
 		this.birthyear  = birthyear;
 	}
 
@@ -26,20 +20,6 @@ public class Actor {
 	public void setStageName(String stageName) {
 		this.stageName = stageName;
 	}
-
-//	public String getFirstName() {
-//		return firstName;
-//	}
-//	public void setFirstName(String firstName) {
-//		this.firstName = firstName;
-//	}
-//
-//	public String getLastName() {
-//		return lastName;
-//	}
-//	public void setLastName(String lastName) {
-//		this.lastName = lastName;
-//	}
 
 	public String getBirthyear() {
 		return birthyear;
@@ -58,14 +38,6 @@ public class Actor {
 		}
 
 		sb.append(", ");
-
-//		if (getFirstName() != null && getLastName() != null) {
-//			sb.append("Name:" + getFirstName() + " " + getLastName());
-//		} else {
-//			sb.append("Name: null");
-//		}
-//
-//		sb.append(", ");
 
 		if (getBirthyear() != null) {
 			sb.append("Birthyear:" + getBirthyear());

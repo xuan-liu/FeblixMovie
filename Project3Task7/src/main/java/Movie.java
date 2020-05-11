@@ -10,7 +10,6 @@ public class Movie {
 
 	private String director;
 
-//	private String genres;
 	private List<String> genres;
 
 	public Movie() {
@@ -52,13 +51,6 @@ public class Movie {
 	public void setDirector(String director) {
 		this.director = director;
 	}
-
-//	public String getGenres() {
-//		return genres;
-//	}
-//	public void setGenres(String genres) {
-//		this.genres = genres;
-//	}
 
 	public List<String> getGenres() {
 		return genres;

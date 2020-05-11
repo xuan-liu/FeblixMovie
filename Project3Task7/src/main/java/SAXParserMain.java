@@ -19,18 +19,18 @@ public class SAXParserMain extends DefaultHandler {
 
     private String tempDirector;
 
-    //to maintain context
-    private Movie tempMovie;
+    private Movie tempMovie; //to maintain context
 
-    //whether add the actor into list
-    private boolean addList;
-    static String inconsistent = "";
+    private boolean addList; //whether add the actor into list
+
+    String inconsistent = "";
 
     // hashmap. key: fid in xml file, value: movie id in database
-    public Map<String, String> movieMap = new HashMap<>();
+    private Map<String, String> movieMap = new HashMap<>();
 
     // hashmap for genre. key: genre's whole name, value: genre's id
     private Map<String, Integer> genreMap = new HashMap<>();
+
     // hashmap for genre whole name. key: shorten genre in xml file, value: the whole name
     private Map<String, String> genreNameMap = new HashMap<String, String>() {{
         put("Susp", "Thriller");
@@ -56,15 +56,19 @@ public class SAXParserMain extends DefaultHandler {
         myMovies = new ArrayList<Movie>();
     }
 
-    public void runExample() throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+    /**
+     * parse the xml file and add the data into database
+     */
+    public void runParser() throws InstantiationException, IllegalAccessException, ClassNotFoundException {
         parseDocument();
-        System.out.println("Finish Parsing. No. Valid data after parsing: " + myMovies.size());
+        System.out.println("Finish Parsing Main. No. Valid data after parsing: " + myMovies.size());
         addData();
-//        printData();
     }
 
+    /**
+     * parse the xml file
+     */
     private void parseDocument() {
-
         //get a factory
         SAXParserFactory spf2 = SAXParserFactory.newInstance();
         try {
@@ -73,7 +77,7 @@ public class SAXParserMain extends DefaultHandler {
             javax.xml.parsers.SAXParser sp2 = spf2.newSAXParser();
 
             //parse the file and also register this class for call backs
-            System.out.println("Start Parsing.");
+            System.out.println("Start Parsing Main.");
             sp2.parse("mains243.xml", this);
 
         } catch (SAXException se) {
@@ -85,33 +89,12 @@ public class SAXParserMain extends DefaultHandler {
         }
     }
 
-    /**
-     * Iterate through the list and print
-     * the contents
-     */
-    private void printData() {
-        String result = "No of Movies '" + myMovies.size() + "'.\n";
-        Iterator<Movie> it = myMovies.iterator();
-        while (it.hasNext()) {
-            result += it.next().toString() + "\n";
-        }
-
-        try {
-            FileWriter myWriter = new FileWriter("main.txt");
-            myWriter.write(result);
-            myWriter.close();
-            System.out.println("Successfully wrote to the file.");
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
-    }
-
     //Event Handlers
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         if (qName.equalsIgnoreCase("directorfilms")) {
             // if "directorfilms", reset temp director
             tempDirector = "";
+
         } else if (qName.equalsIgnoreCase("film")) {
             // if "film", create a new instance of movie
             tempMovie = new Movie();
@@ -125,51 +108,61 @@ public class SAXParserMain extends DefaultHandler {
 
     public void endElement(String uri, String localName, String qName) throws SAXException {
         if (qName.equalsIgnoreCase("dirname")) {
+
             // if "dirname", set tempDirector
             tempDirector = tempVal;
 
             if (!(tempVal != null && tempVal.trim().length() > 0)) {
                 addList = false;
-                inconsistent += "Movie with null director " + tempMovie.toString() + "\n";
+                inconsistent += "Movie with null director: " + tempMovie.toString() + "\n";
             }
+
         } else if (addList && qName.equalsIgnoreCase("film")) {
             // if "film", setDirector, add it to the list
             tempMovie.setDirector(tempDirector);
             myMovies.add(tempMovie);
+
         } else if (qName.equalsIgnoreCase("fid")) {
             // if "fid", setId
             tempMovie.setId(tempVal);
+
         } else if (qName.equalsIgnoreCase("t")) {
+
             // if "t", setTitle
             if (tempVal != null && tempVal.trim().length() > 0) {
                 tempMovie.setTitle(tempVal);
             } else {
                 // if null, not add to list
                 addList = false;
-                inconsistent += "Movie with null title " + tempMovie.toString() + "\n";
+                inconsistent += "Movie with null title: " + tempMovie.toString() + "\n";
             }
+
         } else if (qName.equalsIgnoreCase("year")) {
+
             // if "year", setYear
             if (tempVal != null && tempVal.trim().length() > 0 && !tempVal.equals("0")) {
                 try {
                     tempMovie.setYear(Integer.parseInt(tempVal));
                 } catch (Exception e) {
                     addList = false;
-                    inconsistent += "Movie year not int: " + tempMovie.toString() + "\n";
+                    inconsistent += "Movie year cannot parse to int: " + tempMovie.toString() + "\n";
                 }
             } else {
                 addList = false;
                 inconsistent += "Movie with null year: " + tempMovie.toString() + "\n";
             }
+
         } else if (qName.equalsIgnoreCase("cat")) {
             // if "cats", setGenres
             if (tempVal != null && tempVal.trim().length() > 0) {
                 tempMovie.addGenre(genreNameMap.get(tempVal));
             }
         }
-
     }
 
+    /**
+     * add the data to the database
+     */
     public void addData() throws InstantiationException, IllegalAccessException, ClassNotFoundException {
         // connect to the database
         Connection conn = null;
@@ -215,7 +208,7 @@ public class SAXParserMain extends DefaultHandler {
 
             if (rs.next()){
                 int startId = Integer.parseInt(rs.getString("id").substring(2)) + 1;
-                System.out.println("Start adding data, start id: " + startId);
+                System.out.println("Start adding movie data, start movie id: " + startId);
 
                 conn.setAutoCommit(false);
 
@@ -251,22 +244,22 @@ public class SAXParserMain extends DefaultHandler {
                 preparedQuery = conn.prepareStatement(insertQuery);
                 preparedGenreMovie = conn.prepareStatement(insertGenreMovie);
 
-                // iterate all the actors we parsed
+                // iterate all the movies we parsed
                 for (int i = 0; i < myMovies.size(); i++) {
                     // get the actor
                     Movie mv = myMovies.get(i);
 
-                    // check whether the star already exists
+                    // check whether the movie already exists
                     checkMovie.setString(1, mv.getTitle());
                     checkMovie.setString(2, mv.getDirector());
                     checkMovie.setInt(3, mv.getYear());
                     rs = checkMovie.executeQuery();
 
                     if (rs.next()) {
-                        // add existed id into hashmap
+                        // if the movie already exists, add existed id into hashmap
                         movieMap.put(mv.getId(), rs.getString("id"));
 
-                        // if the movie already exists, go to next actor
+                        // go to next actor
                         inconsistent += "Movie already exists: " + mv.toString() + "\n";
                         continue;
                     } else {
@@ -276,27 +269,25 @@ public class SAXParserMain extends DefaultHandler {
                         preparedQuery.setString(2, mv.getTitle());
                         preparedQuery.setString(3, mv.getDirector());
                         preparedQuery.setInt(4, mv.getYear());
-//                        System.out.println(mv.getYear());
                         movieMap.put(mv.getId(), newId);
 
                         preparedQuery.addBatch();
+                        recordCount += 1;
 
                         // add the movie genre relationship
                         for (int j = 0; j < mv.getGenres().size(); j++) {
                             genreCount += 1;
                             try{
                                 String g = mv.getGenres().get(j);
-//                                System.out.println(mv.getGenres());
                                 preparedGenreMovie.setInt(1, genreMap.get(g));
                                 preparedGenreMovie.setString(2, movieMap.get(mv.getId()));
                                 preparedGenreMovie.addBatch();
                             } catch (Exception e) {
-                                inconsistent += "Genre cannot add: " + mv.toString() + "\n";
+                                inconsistent += "Genre cannot add to genres_in_movies: " + mv.toString() + "\n";
                             }
                         }
 
                     }
-                    recordCount += 1;
                 }
                 System.out.println("adding movie record number: " + recordCount + ", movie map size: " + movieMap.size());
                 iNoRows= preparedQuery.executeBatch();
@@ -336,9 +327,13 @@ public class SAXParserMain extends DefaultHandler {
 
     }
 
+    public Map<String, String> getMovieMap() {
+        return movieMap;
+    }
+
     public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
         SAXParserMain spe = new SAXParserMain();
-        spe.runExample();
+        spe.runParser();
     }
 
 }
