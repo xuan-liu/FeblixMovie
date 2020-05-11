@@ -72,7 +72,7 @@ public class SingleMovieServlet extends HttpServlet {
                 JsonArray genreJsonArray = new JsonArray();
                 String genre_query = "SELECT * from genres_in_movies as gm, genres as g where gm.movieId = ? and gm.genreId = g.id order by g.name asc";
                 PreparedStatement genre_statement = dbcon.prepareStatement(genre_query);
-                genre_statement.setString(1, movieId);
+                genre_statement.setString(1, id);
                 ResultSet genre_rs = genre_statement.executeQuery();
 
                 while (genre_rs.next()){
