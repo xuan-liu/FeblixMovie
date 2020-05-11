@@ -1939,6 +1939,7 @@ Cast Star cannot add: MovieId:AAS10, StageName:Jack Wayne.
 Cast Star cannot add: MovieId:AAS10, StageName:Jack Coleman.
 Cast Star cannot add: MovieId:AAS10, StageName:Kevin Colsonn.
 Cast Star cannot add: MovieId:AAt10, StageName:Gaston Batyi.
+Cast Star cannot add: MovieId:AAt10, StageName:Jose Sacristan.
 Cast Star cannot add: MovieId:AAt10, StageName:Frederico Luppi.
 Cast Star cannot add: MovieId:AB2, StageName:Thais Galizky.
 Cast Star cannot add: MovieId:AbA10, StageName:Francesca Bertini.
@@ -1956,7 +1957,9 @@ Cast Star cannot add: MovieId:ABi10, StageName:David Ebbets.
 Cast Star cannot add: MovieId:ABi10, StageName:Ian Richardson.
 Cast Star cannot add: MovieId:ABi10, StageName:N. Ottering.
 Cast Star cannot add: MovieId:ABi20, StageName:Andrew Robertson.
+Cast Star cannot add: MovieId:ABi20, StageName:Sinead Cusack.
 Cast Movie with null id: MovieId:AbK15, StageName:Homayoun Ershadi.
+Cast Star cannot add: MovieId:ABl10, StageName:Vittorio deSica.
 Cast Star cannot add: MovieId:ABo10, StageName:Stephen Rappaport.
 Cast Star cannot add: MovieId:AbP10, StageName:Gareth Hughes.
 Cast Star cannot add: MovieId:AbP10, StageName:Sam Sothern.
@@ -2007,6 +2010,7 @@ Cast Star cannot add: MovieId:ACj115, StageName:Ada Stewart.
 Cast Star cannot add: MovieId:ACj115, StageName:Clegg Hoyt.
 Cast Star cannot add: MovieId:ACj116, StageName:Susan Harrison.
 Cast Star cannot add: MovieId:ACj117, StageName:John Emery.
+Cast Star cannot add: MovieId:ACj117, StageName:Jo vanFleet.
 Cast Star cannot add: MovieId:ACj117, StageName:Alice Frost.
 Cast Star cannot add: MovieId:ACj118, StageName:Frank Maxwell.
 Cast Star cannot add: MovieId:ACj119, StageName:Edmund Hashim.
@@ -2075,6 +2079,7 @@ Cast Star cannot add: MovieId:AdL6, StageName:Cyntia Cruz.
 Cast Star cannot add: MovieId:AdL6, StageName:Raynor Scheine.
 Cast Star cannot add: MovieId:AdL6, StageName:Olek Krup.
 Cast Star cannot add: MovieId:AdL6, StageName:Dwight West.
+Cast Star cannot add: MovieId:AdL14, StageName:Elizabeth Pena.
 Cast Star cannot add: MovieId:AdL14, StageName:Patricia Kalember.
 Cast Star cannot add: MovieId:AdL16, StageName:Woody Harrison.
 Cast Star cannot add: MovieId:AdL16, StageName:Tommy Rile.
@@ -2121,6 +2126,7 @@ Cast Star cannot add: MovieId:ADw60, StageName:Richard Jaecker.
 Cast Star cannot add: MovieId:ADw70, StageName:Barbara Stanwyk.
 Cast Star cannot add: MovieId:ADw72, StageName:Lon Chaney~jr.
 Cast Star cannot add: MovieId:ADw75, StageName:Coleen Gray.
+Cast Star cannot add: MovieId:ADw75, StageName:Anthony caruso.
 Cast Star cannot add: MovieId:ADw75, StageName:Myron Healey.
 Cast Star cannot add: MovieId:ADw75, StageName:John Mansfield.
 Cast Star cannot add: MovieId:ADw78, StageName:Lisa Montell.
@@ -2129,10 +2135,12 @@ Cast Movie with null id: MovieId:ADx1, StageName:Beata Tyskiewicz.
 Cast Movie with null id: MovieId:ADx1, StageName:Luc Phillips.
 Cast Star cannot add: MovieId:ADx11, StageName:Arletta Emery.
 Cast Star cannot add: MovieId:ADx12, StageName:Ives Montand.
+Cast Star cannot add: MovieId:ADx13, StageName:Mathieu Carriere.
 Cast Star cannot add: MovieId:ADx13, StageName:Daniel Delorme.
 Cast Star cannot add: MovieId:ADx14, StageName:JeanLuc Bideau.
 Cast Star cannot add: MovieId:ADx14, StageName:Adriana Bogdan.
 Cast Star cannot add: MovieId:ADx30, StageName:Roger vanHool.
+Cast Star cannot add: MovieId:ADx37, StageName:Mathieu Carriere.
 Cast Star cannot add: MovieId:ADx37, StageName:Vittorio Gassman.
 Cast Star cannot add: MovieId:ADx39, StageName:Jaques Sojcher.
 Cast Star cannot add: MovieId:ADx39, StageName:Denise Debbaut.
@@ -2145,6 +2153,7 @@ Cast Star cannot add: MovieId:AEG25, StageName:Walter Heirs.
 Cast Star cannot add: MovieId:AEG25, StageName:Arthur Edmund Carewe.
 Cast Star cannot add: MovieId:AEG41, StageName:John Eldridge.
 Cast Star cannot add: MovieId:AEG50, StageName:Warren Williams.
+Cast Star cannot add: MovieId:AEG50, StageName:Ellen drew.
 Cast Star cannot add: MovieId:AEG70, StageName:Keefe Brasselle.
 Cast Star cannot add: MovieId:AEG70, StageName:Marllyn Erskine.
 Cast Star cannot add: MovieId:AEG70, StageName:Alex Gerry.
@@ -2177,6 +2186,7 @@ Cast Movie with null id: MovieId:AHa10, StageName:Jane Merrow.
 Cast Movie with null id: MovieId:AHa10, StageName:John Castle.
 Cast Movie with null id: MovieId:AHa10, StageName:Nigel Terry.
 Cast Movie with null id: MovieId:AHa10, StageName:Timothy Dalton.
+Cast Star cannot add: MovieId:AGi10, StageName:Yael Abecassis.
 Cast Star cannot add: MovieId:AGi10, StageName:Meitel Barda.
 Cast Star cannot add: MovieId:AHo1, StageName:Candice Rialson.
 Cast Star cannot add: MovieId:AHo1, StageName:Maya Rojo.
@@ -2202,8 +2212,10 @@ Cast Star cannot add: MovieId:AgH5, StageName:Armin Mueller Stahl.
 Cast Star cannot add: MovieId:AgH10, StageName:Marco Hofschneider.
 Cast Star cannot add: MovieId:AgH10, StageName:Rene Hofschneider.
 Cast Star cannot add: MovieId:AgH10, StageName:Solomon Perel.
+Cast Star cannot add: MovieId:AgH10, StageName:Andre Wilms.
 Cast Star cannot add: MovieId:AgH10, StageName:Halina Labonarska.
 Cast Star cannot add: MovieId:AgH13, StageName:Emmanuel Morozov.
+Cast Star cannot add: MovieId:AgH13, StageName:Francois Cluzet.
 Cast Star cannot add: MovieId:AgH13, StageName:Brigitte Rouan.
 Cast Star cannot add: MovieId:AgH13, StageName:Faye Gatteau.
 Cast Star cannot add: MovieId:AgH15, StageName:Heydon Prowse.
@@ -2266,6 +2278,7 @@ Cast Star cannot add: MovieId:AKa5, StageName:Susanna Haavisto.
 Cast Star cannot add: MovieId:AKa5, StageName:Matti Pellonpaa.
 Cast Star cannot add: MovieId:AKa15, StageName:Elina Salo.
 Cast Star cannot add: MovieId:AKa15, StageName:Esko Nikkari.
+Cast Star cannot add: MovieId:AKa20, StageName:Andre Wilms.
 Cast Star cannot add: MovieId:AKa20, StageName:Matti Pellon\"a\"A.
 Cast Star cannot add: MovieId:AKa20, StageName:Kari V\"a\"ana\"anen.
 Cast Star cannot add: MovieId:AKa20, StageName:Christine Murillo.
@@ -2306,6 +2319,7 @@ Cast Star cannot add: MovieId:AKo10, StageName:John P. Ryan.
 Cast Star cannot add: MovieId:AKo15, StageName:Lolita Davidoitch.
 Cast Star cannot add: MovieId:AkS10, StageName:Jesper Sal\'en.
 Cast Star cannot add: MovieId:AkS10, StageName:Basia Frydman.
+Cast Star cannot add: MovieId:AkS10, StageName:Stellan Skarsgard.
 Cast Star cannot add: MovieId:AkS10, StageName:Niklas Odlund.
 Cast Star cannot add: MovieId:AKu10, StageName:Donald Pleasance.
 Cast Star cannot add: MovieId:AL10, StageName:Maurice Murphy.
@@ -2318,6 +2332,7 @@ Cast Star cannot add: MovieId:AL14, StageName:Sig Rumann.
 Cast Star cannot add: MovieId:AL21, StageName:Barbara Stanwyk.
 Cast Star cannot add: MovieId:AL21, StageName:Harold Vermilya.
 Cast Star cannot add: MovieId:AL22, StageName:Leo Glenn.
+Cast Star cannot add: MovieId:AL22, StageName:Mark stevens.
 Cast Star cannot add: MovieId:AL27, StageName:Anouk Aim\'ee.
 Cast Star cannot add: MovieId:AlA10, StageName:Zandor Vorkov.
 Cast Star cannot add: MovieId:AlA10, StageName:Angelo Rossito.
@@ -2339,6 +2354,7 @@ Cast Star cannot add: MovieId:AlH8, StageName:Frank McGlynn~sr.
 Cast Star cannot add: MovieId:AlH24, StageName:James Gleason.
 Cast Star cannot add: MovieId:AlH24, StageName:Rita Johnson.
 Cast Star cannot add: MovieId:AlH24, StageName:John Emery.
+Cast Star cannot add: MovieId:AlH24, StageName:Donald mcBride.
 Cast Star cannot add: MovieId:AlH24, StageName:Benny Rubin.
 Cast Star cannot add: MovieId:AlH30, StageName:James Gleason.
 Cast Star cannot add: MovieId:AlH30, StageName:Ted Donaldson.
@@ -2370,6 +2386,7 @@ Cast Star cannot add: MovieId:AlW40, StageName:Refinald Owen.
 Cast Star cannot add: MovieId:AlW40, StageName:Florence Arliss.
 Cast Star cannot add: MovieId:AlW40, StageName:Holmes Hernert.
 Cast Star cannot add: MovieId:AlW60, StageName:Alan Marshall.
+Cast Star cannot add: MovieId:AlZ4, StageName:Mamie vanDoren.
 Cast Star cannot add: MovieId:AlZ4, StageName:Conway Twitty.
 Cast Star cannot add: MovieId:AlZ4, StageName:Earl Wilson.
 Cast Star cannot add: MovieId:AlZ4, StageName:Sheilah Graham.
@@ -2377,6 +2394,7 @@ Cast Star cannot add: MovieId:AlZ4, StageName:Rocky Marciano.
 Cast Star cannot add: MovieId:AlZ4, StageName:Elisha Cook.
 Cast Star cannot add: MovieId:AlZ4, StageName:Ziva Rodann.
 Cast Star cannot add: MovieId:AlZ4, StageName:Micket Shaughnessey.
+Cast Star cannot add: MovieId:AlZ5, StageName:Mamie vanDoren.
 Cast Star cannot add: MovieId:AlZ5, StageName:Louis Nye.
 Cast Star cannot add: MovieId:AlZ5, StageName:Pamela Mason.
 Cast Star cannot add: MovieId:AlZ5, StageName:Marty Milner.
@@ -2408,6 +2426,7 @@ Cast Star cannot add: MovieId:AM31, StageName:Jackie Geason.
 Cast Star cannot add: MovieId:AM35, StageName:Sig Rumann.
 Cast Star cannot add: MovieId:AM35, StageName:Lisette Verea.
 Cast Star cannot add: MovieId:AM36, StageName:Hardie allbright.
+Cast Star cannot add: MovieId:AMa10, StageName:Ronald reagan.
 Cast Star cannot add: MovieId:AMa50, StageName:Paul Anka.
 Cast Star cannot add: MovieId:AMa50, StageName:Fabian.
 Cast Star cannot add: MovieId:AMa50, StageName:Kenneth Moore.
@@ -2465,6 +2484,7 @@ Cast Movie with null id: MovieId:AMp1, StageName:Helen Hunt.
 Cast Movie with null id: MovieId:AMp1, StageName:Holly Gagnier.
 Cast Movie with null id: MovieId:AMp1, StageName:Morgan Woodward.
 Cast Movie with null id: MovieId:AMp1, StageName:Ed Lauter.
+Cast Star cannot add: MovieId:AMr10, StageName:Mario van Peebles.
 Cast Star cannot add: MovieId:AMr10, StageName:Deborah Unger.
 Cast Star cannot add: MovieId:AMr15, StageName:Chistopher Lambert.
 Cast Star cannot add: MovieId:AMs25, StageName:Folke Sundquist.
@@ -2591,6 +2611,7 @@ Cast Star cannot add: MovieId:AR8, StageName:Anna Duperey.
 Cast Star cannot add: MovieId:AR8, StageName:Francois Perier.
 Cast Star cannot add: MovieId:AR10, StageName:Ellen Busteyn.
 Cast Star cannot add: MovieId:ARa10, StageName:Don Barry.
+Cast Star cannot add: MovieId:ARb1, StageName:Elizabeth Pena.
 Cast Star cannot add: MovieId:ARb1, StageName:Michael Carmine.
 Cast Star cannot add: MovieId:ArD10, StageName:Marvin Liebman.
 Cast Star cannot add: MovieId:ARG2, StageName:Daniel Emilfork.
@@ -2646,6 +2667,7 @@ Cast Star cannot add: MovieId:ArH236, StageName:Kelly McGinnis.
 Cast Star cannot add: MovieId:ArH240, StageName:Ryan ONeil.
 Cast Star cannot add: MovieId:ArH240, StageName:Whoopi oldberg.
 Cast Star cannot add: MovieId:ArH240, StageName:Robert Shapiro.
+Cast Star cannot add: MovieId:Ari15, StageName:Fernando Lujan.
 Cast Star cannot add: MovieId:Ari15, StageName:Marisa Paredes.
 Cast Star cannot add: MovieId:ARk10, StageName:Kristy Swenson.
 Cast Star cannot add: MovieId:ARk10, StageName:Josh Mostel.
@@ -2735,6 +2757,7 @@ Cast Star cannot add: MovieId:ATu1, StageName:Rebacca Smart.
 Cast Star cannot add: MovieId:ATe10, StageName:Wadeck Stanczak.
 Cast Star cannot add: MovieId:ATe10, StageName:Nicolas Giraudi.
 Cast Star cannot add: MovieId:ATe10, StageName:Claire Nebout.
+Cast Star cannot add: MovieId:ATe16, StageName:Elodie Bouchez.
 Cast Star cannot add: MovieId:ATe20, StageName:Didier Bezac.
 Cast Star cannot add: MovieId:ATe20, StageName:Laurence cote.
 Cast Star cannot add: MovieId:ATn10, StageName:Anjelica Houston.
@@ -2757,6 +2780,7 @@ Cast Star cannot add: MovieId:AVL11, StageName:Tony Aguilar.
 Cast Star cannot add: MovieId:AVL11, StageName:Roman Gabriel.
 Cast Star cannot add: MovieId:AVL13, StageName:Jin Hutton.
 Cast Star cannot add: MovieId:AVL13, StageName:Katherine Ross.
+Cast Star cannot add: MovieId:AVL13, StageName:Bruce cabot.
 Cast Star cannot add: MovieId:AVo10, StageName:Heinz Drache.
 Cast Star cannot add: MovieId:AVo10, StageName:Ady Berber.
 Cast Star cannot add: MovieId:AVo10, StageName:Sabine Sesselman.
@@ -2775,6 +2799,7 @@ Cast Star cannot add: MovieId:AvW12, StageName:Loes Wouterson.
 Cast Star cannot add: MovieId:AvW19, StageName:Alex vanWarmerdam.
 Cast Star cannot add: MovieId:AvW19, StageName:Annet Malherbe.
 Cast Star cannot add: MovieId:AWa5, StageName:Gerard Malanga.
+Cast Star cannot add: MovieId:AWe10, StageName:jean Smart.
 Cast Star cannot add: MovieId:AWj5, StageName:Tadeusz Lomnicki.
 Cast Star cannot add: MovieId:AWj5, StageName:Tadeusz Janczar.
 Cast Star cannot add: MovieId:AWj13, StageName:Tadeusz Lomnicki.
@@ -2805,6 +2830,7 @@ Cast Star cannot add: MovieId:AWw10, StageName:CarrieAnne Moss.
 Cast Star cannot add: MovieId:AWw10, StageName:Hogo Weaving.
 Cast Star cannot add: MovieId:AxC10, StageName:Michael StGerard.
 Cast Star cannot add: MovieId:AxC10, StageName:John P. Ryan.
+Cast Star cannot add: MovieId:AxS10, StageName:Joe deSantis.
 Cast Star cannot add: MovieId:AxS10, StageName:Hershel Bernardi.
 Cast Star cannot add: MovieId:AyW11, StageName:Everett Scott.
 Cast Star cannot add: MovieId:AZu26, StageName:Pascal Gregory.
@@ -2814,6 +2840,7 @@ Cast Star cannot add: MovieId:BaD13, StageName:Patric Doonan.
 Cast Star cannot add: MovieId:BaD13, StageName:Peggy Evans.
 Cast Star cannot add: MovieId:BaD22, StageName:Belinda Lee.
 Cast Star cannot add: MovieId:BaD22, StageName:David Kosoff.
+Cast Star cannot add: MovieId:BaD26, StageName:Kieron moore.
 Cast Star cannot add: MovieId:BaD26, StageName:Doris Hare.
 Cast Star cannot add: MovieId:BaD26, StageName:Lydia Sherwood.
 Cast Star cannot add: MovieId:BaD28, StageName:Keith Mitchell.
@@ -2902,6 +2929,7 @@ Cast Star cannot add: MovieId:BDH10, StageName:Antoinette Celier.
 Cast Star cannot add: MovieId:BDH10, StageName:Aileen Marson.
 Cast Star cannot add: MovieId:BDH10, StageName:George Graves.
 Cast Star cannot add: MovieId:BDH30, StageName:Alastair Simms.
+Cast Star cannot add: MovieId:BDH30, StageName:Francis deWolff.
 Cast Star cannot add: MovieId:BDH30, StageName:Michael Dolan.
 Cast Star cannot add: MovieId:BDH30, StageName:C.Konarski.
 Cast Star cannot add: MovieId:BDn7, StageName:Leonora Corbett.
@@ -2940,6 +2968,7 @@ Cast Star cannot add: MovieId:BdP25, StageName:Gabrielle Charteris.
 Cast Star cannot add: MovieId:BdP26, StageName:Jon Leguizamo.
 Cast Star cannot add: MovieId:BdP26, StageName:Luis Guzman.
 Cast Star cannot add: MovieId:BdP30, StageName:Jon Voigt.
+Cast Star cannot add: MovieId:BdP30, StageName:Emmanuelle Beart.
 Cast Star cannot add: MovieId:BdP30, StageName:Kristin ScottThomas.
 Cast Star cannot add: MovieId:BDu2, StageName:Zakes Mokae.
 Cast Star cannot add: MovieId:BDu2, StageName:Badja Djola.
@@ -3040,6 +3069,7 @@ Cast Star cannot add: MovieId:BGi13, StageName:Sharan Farrell.
 Cast Star cannot add: MovieId:BGi13, StageName:Michael King.
 Cast Star cannot add: MovieId:BGi13, StageName:Charlotte Knight.
 Cast Star cannot add: MovieId:BGi17, StageName:Linda Christian.
+Cast Star cannot add: MovieId:BGi18, StageName:John gavin.
 Cast Star cannot add: MovieId:BGi19, StageName:Ricard long.
 Cast Star cannot add: MovieId:BGi20, StageName:Chris Robinson.
 Cast Star cannot add: MovieId:BGu10, StageName:Marlene Clark.
@@ -3054,10 +3084,12 @@ Cast Movie with null id: MovieId:BHt10, StageName:Minnie Driver.
 Cast Star cannot add: MovieId:BHu10, StageName:Dave Strickland.
 Cast Star cannot add: MovieId:BHu10, StageName:Meredith Scott Lynn.
 Cast Star cannot add: MovieId:BiA1, StageName:Pelle Hvenegaard.
+Cast Star cannot add: MovieId:BiA5, StageName:Samuel Froler.
 Cast Star cannot add: MovieId:BiA8, StageName:Julia Ormond.
 Cast Star cannot add: MovieId:BiA9, StageName:Ulf Friberg.
 Cast Star cannot add: MovieId:BiA9, StageName:Marie Bonnevie.
 Cast Star cannot add: MovieId:BiA9, StageName:Johan Rabaeus.
+Cast Star cannot add: MovieId:BiA9, StageName:Bjorn Granath.
 Cast Star cannot add: MovieId:BiF10, StageName:Jake dArcy.
 Cast Star cannot add: MovieId:BiF10, StageName:Claire Grogan.
 Cast Star cannot add: MovieId:BiF13, StageName:Dennis Lawson.
@@ -3068,6 +3100,7 @@ Cast Star cannot add: MovieId:BiK10, StageName:Myrna Dell.
 Cast Star cannot add: MovieId:BiK10, StageName:Nelson Leigh.
 Cast Star cannot add: MovieId:BiK10, StageName:Vic Lundin.
 Cast Star cannot add: MovieId:BiK10, StageName:Don Grady.
+Cast Star cannot add: MovieId:BJq5, StageName:Judith Godreche.
 Cast Star cannot add: MovieId:BJq15, StageName:Vincent Martinez.
 Cast Star cannot add: MovieId:BKi10, StageName:Imelda Staubton.
 Cast Star cannot add: MovieId:BKi10, StageName:Saskia Reeves.
@@ -3097,6 +3130,8 @@ Cast Star cannot add: MovieId:BLe21, StageName:Jay Leno.
 Cast Star cannot add: MovieId:BLe23, StageName:Bebe Neuwirth.
 Cast Star cannot add: MovieId:BLe23, StageName:Rebekah Johnson.
 Cast Star cannot add: MovieId:BLe23, StageName:Carolyn Murphy.
+Cast Star cannot add: MovieId:BLu10, StageName:Jordi Molla.
+Cast Star cannot add: MovieId:BLu10, StageName:Penelope Cruz.
 Cast Star cannot add: MovieId:BLu12, StageName:Elisa Touati.
 Cast Star cannot add: MovieId:BLu12, StageName:Marbel Verdu.
 Cast Star cannot add: MovieId:BLu12, StageName:Maria deMederios.
@@ -3131,6 +3166,7 @@ Cast Movie with null id: MovieId:BnjR10, StageName:Hugh OConnor.
 Cast Star cannot add: MovieId:BnS10, StageName:E-than Hawke.
 Cast Star cannot add: MovieId:BnS10, StageName:Jeneane Garofalo.
 Cast Star cannot add: MovieId:BNu1, StageName:Madelaine Robinson.
+Cast Star cannot add: MovieId:BNu1, StageName:Laurent Grevill.
 Cast Star cannot add: MovieId:BNu1, StageName:Katrine Boorman.
 Cast Star cannot add: MovieId:BNu1, StageName:Phillippe Clevenot.
 Cast Star cannot add: MovieId:BNu1, StageName:Maxime Leroux.
@@ -3186,6 +3222,7 @@ Cast Star cannot add: MovieId:BRf2, StageName:Josh Mostel.
 Cast Star cannot add: MovieId:BRf4, StageName:Helen Kallianiotes.
 Cast Star cannot add: MovieId:BRf4, StageName:Roger E. Mosley.
 Cast Star cannot add: MovieId:BRf4, StageName:Woodrow Parfrey.
+Cast Star cannot add: MovieId:BRf4, StageName:JoAnna Cassidy.
 Cast Star cannot add: MovieId:BRf20, StageName:John Colicos.
 Cast Star cannot add: MovieId:BRf20, StageName:John P. Ryan.
 Cast Star cannot add: MovieId:BRf30, StageName:Fiona Shaw.
@@ -3292,11 +3329,13 @@ Cast Star cannot add: MovieId:BSt15, StageName:Brenda Vaccar.
 Cast Star cannot add: MovieId:BSz10, StageName:John Masrley.
 Cast Star cannot add: MovieId:BSz10, StageName:Simon McCorkingdale.
 Cast Star cannot add: MovieId:BtB25, StageName:Josiana Balasko.
+Cast Star cannot add: MovieId:BtB32, StageName:Gerard Lanvin.
 Cast Star cannot add: MovieId:BTh10, StageName:Olivia Hack.
 Cast Star cannot add: MovieId:BTh10, StageName:Jennifer Elise Cox.
 Cast Star cannot add: MovieId:BTh10, StageName:Shelly Long.
 Cast Star cannot add: MovieId:BTh10, StageName:Gary Cole.
 Cast Star cannot add: MovieId:BTh13, StageName:Norm McDonald.
+Cast Star cannot add: MovieId:BTh13, StageName:Julie kavner.
 Cast Star cannot add: MovieId:BTh13, StageName:Ellen DeGeneres.
 Cast Star cannot add: MovieId:BTh13, StageName:Paul Reubens.
 Cast Star cannot add: MovieId:BTh15, StageName:Ellen Perkins.
@@ -3304,6 +3343,7 @@ Cast Star cannot add: MovieId:BTh15, StageName:Coleman Triton.
 Cast Star cannot add: MovieId:BtK10, StageName:Maurice Costello.
 Cast Star cannot add: MovieId:BtS10, StageName:Kirstie Allen.
 Cast Star cannot add: MovieId:BTv5, StageName:Christine Pascal.
+Cast Star cannot add: MovieId:BTv16, StageName:Francois Cluzet.
 Cast Star cannot add: MovieId:BTv16, StageName:Herbie Hancock.
 Cast Star cannot add: MovieId:BTv16, StageName:Sandra Reaves Phillips.
 Cast Star cannot add: MovieId:BTv16, StageName:John Berry.
@@ -3325,6 +3365,8 @@ Cast Star cannot add: MovieId:BVo10, StageName:Hugh Beaumont.
 Cast Star cannot add: MovieId:BVS3, StageName:Kathleen Cworlwy.
 Cast Star cannot add: MovieId:BW2, StageName:Rita Johnson.
 Cast Star cannot add: MovieId:BW2, StageName:Frankie Thomas.
+Cast Star cannot add: MovieId:BW3, StageName:Erich vonStroheim.
+Cast Star cannot add: MovieId:BW3, StageName:Peter vanEyck.
 Cast Star cannot add: MovieId:BW3, StageName:Konstantin Shayne.
 Cast Star cannot add: MovieId:BW4, StageName:Barbara Stanwyk.
 Cast Star cannot add: MovieId:BW4, StageName:none.
@@ -3334,6 +3376,8 @@ Cast Star cannot add: MovieId:BW4, StageName:Richard Gaines.
 Cast Star cannot add: MovieId:BW4, StageName:Fortuna Bonanova.
 Cast Star cannot add: MovieId:BW5, StageName:Edna May Wonnacutt.
 Cast Star cannot add: MovieId:BW7, StageName:Freddie Steele.
+Cast Star cannot add: MovieId:BW8, StageName:Erich vonStroheim.
+Cast Star cannot add: MovieId:BW8, StageName:Erich vonStroheim.
 Cast Star cannot add: MovieId:BW9, StageName:Bob Arthur.
 Cast Star cannot add: MovieId:BW9, StageName:Frank Cady.
 Cast Star cannot add: MovieId:BW11, StageName:Joan Vohs.
@@ -3342,6 +3386,7 @@ Cast Star cannot add: MovieId:BW16, StageName:Tom Kennedy.
 Cast Star cannot add: MovieId:BW18, StageName:Pamela Tiffin.
 Cast Star cannot add: MovieId:BW18, StageName:Horst Bucholz.
 Cast Star cannot add: MovieId:BW18, StageName:Hans Lothar.
+Cast Star cannot add: MovieId:BW19, StageName:Shirley Maclaine.
 Cast Star cannot add: MovieId:BW19, StageName:Hershel Benardi.
 Cast Star cannot add: MovieId:BW19, StageName:Bruce Yarnell.
 Cast Star cannot add: MovieId:BW25, StageName:Colin Blake.
@@ -3351,11 +3396,13 @@ Cast Star cannot add: MovieId:BYa10, StageName:Glenn Fitzgerald.
 Cast Star cannot add: MovieId:ByB10, StageName:Elvis Payne.
 Cast Star cannot add: MovieId:ByB10, StageName:Mark Wingett.
 Cast Star cannot add: MovieId:ByB10, StageName:Kathryn Apanowicz.
+Cast Star cannot add: MovieId:ByH5, StageName:Wendell corey.
 Cast Star cannot add: MovieId:ByH5, StageName:Kristine Miller.
 Cast Star cannot add: MovieId:ByH5, StageName:George Riguad.
 Cast Star cannot add: MovieId:ByH5, StageName:Mike Mazrrki.
 Cast Star cannot add: MovieId:ByH8, StageName:Denis ODay.
 Cast Star cannot add: MovieId:ByH8, StageName:Geoffrey Wilson.
+Cast Star cannot add: MovieId:ByH10, StageName:George MacReady.
 Cast Star cannot add: MovieId:ByH10, StageName:Virginia Huston.
 Cast Star cannot add: MovieId:ByH10, StageName:Frederick ONeal.
 Cast Star cannot add: MovieId:ByH13, StageName:Bob Cornthwaite.
@@ -3404,6 +3451,8 @@ Cast Star cannot add: MovieId:C131, StageName:Sydney Greenstreet.
 Cast Star cannot add: MovieId:C135, StageName:Ginny Simms.
 Cast Star cannot add: MovieId:C135, StageName:Dorotjy Malone.
 Cast Star cannot add: MovieId:C135, StageName:Selana Royle.
+Cast Star cannot add: MovieId:C135, StageName:Donald woods.
+Cast Star cannot add: MovieId:C135, StageName:Clarence muse.
 Cast Star cannot add: MovieId:C135, StageName:Sig Rumann.
 Cast Star cannot add: MovieId:C136, StageName:James Lydon.
 Cast Star cannot add: MovieId:C136, StageName:John Calhoun.
@@ -3422,6 +3471,7 @@ Cast Star cannot add: MovieId:CaB1, StageName:Olivier Parniere.
 Cast Star cannot add: MovieId:CaB1, StageName:Bertha Dominguez-D.
 Cast Star cannot add: MovieId:CaB1, StageName:JeanFrancois Stevenin.
 Cast Star cannot add: MovieId:CaB1, StageName:Diane Bellego.
+Cast Star cannot add: MovieId:CaB6, StageName:Sagamore Stevenin.
 Cast Star cannot add: MovieId:CAd10, StageName:Claire Rushbrook.
 Cast Star cannot add: MovieId:CAd10, StageName:Rita Tushinham.
 Cast Star cannot add: MovieId:CaF10, StageName:Michael Beach.
@@ -3437,6 +3487,9 @@ Cast Star cannot add: MovieId:CAL35, StageName:PierreMichel Beck.
 Cast Star cannot add: MovieId:CAL35, StageName:Nicole Berger.
 Cast Star cannot add: MovieId:CAL36, StageName:Jean Martinelli.
 Cast Star cannot add: MovieId:CAL46, StageName:Bourvil.
+Cast Star cannot add: MovieId:CaR1, StageName:Elaine may.
+Cast Star cannot add: MovieId:CaR1, StageName:Janet margolin.
+Cast Star cannot add: MovieId:CaR5, StageName:Dick vanDyke.
 Cast Star cannot add: MovieId:CaR15, StageName:John Denver.
 Cast Star cannot add: MovieId:CaR22, StageName:Peter Hobbs.
 Cast Star cannot add: MovieId:CaR22, StageName:Merv Griffin.
@@ -3470,6 +3523,7 @@ Cast Star cannot add: MovieId:CBl30, StageName:Bill Ihnen.
 Cast Star cannot add: MovieId:CBl32, StageName:Lowell Thomas.
 Cast Star cannot add: MovieId:CBl35, StageName:Sam Fuller.
 Cast Star cannot add: MovieId:CBl67, StageName:Arthur Miller.
+Cast Star cannot add: MovieId:CBl67, StageName:Volker Schlondorff.
 Cast Star cannot add: MovieId:CBl69, StageName:Alwin Nikolais.
 Cast Star cannot add: MovieId:CBl69, StageName:Murray Louis.
 Cast Star cannot add: MovieId:CBl70, StageName:Paul Seiler.
@@ -3607,6 +3661,7 @@ Cast Star cannot add: MovieId:CCr12, StageName:Jaqueline Brookes.
 Cast Star cannot add: MovieId:CCw2, StageName:Kyra Sedgewick.
 Cast Star cannot add: MovieId:CCw2, StageName:Camilo Gallardo.
 Cast Star cannot add: MovieId:CCw2, StageName:Sheila Kelly.
+Cast Star cannot add: MovieId:CCw2, StageName:James leGros.
 Cast Star cannot add: MovieId:CCw2, StageName:Jim True.
 Cast Star cannot add: MovieId:CCw2, StageName:Devon Raymond.
 Cast Star cannot add: MovieId:CCw2, StageName:Jeremy Piven.
@@ -3667,6 +3722,7 @@ Cast Star cannot add: MovieId:CDM59, StageName:Henry Wilcoxson.
 Cast Star cannot add: MovieId:CDM59, StageName:Gertrude Michael.
 Cast Star cannot add: MovieId:CDM64, StageName:John Ellison.
 Cast Star cannot add: MovieId:CDM73, StageName:Kenry Kolker.
+Cast Star cannot add: MovieId:CDM77, StageName:Katherine deMille.
 Cast Star cannot add: MovieId:CDM79, StageName:Lyle Bettger.
 Cast Star cannot add: MovieId:CDM79, StageName:John Ringling North.
 Cast Star cannot add: MovieId:CDM80, StageName:Telly Savales.
@@ -3703,6 +3759,7 @@ Cast Star cannot add: MovieId:CEa7, StageName:Wolf Kahn.
 Cast Star cannot add: MovieId:CEa7, StageName:Warren Cosell.
 Cast Star cannot add: MovieId:CEa12, StageName:Samuel L. Wright.
 Cast Star cannot add: MovieId:CEa15, StageName:Pepe Senna.
+Cast Star cannot add: MovieId:CEa15, StageName:Marco Rodriguez.
 Cast Star cannot add: MovieId:CEa15, StageName:Tony Plana.
 Cast Star cannot add: MovieId:CEa16, StageName:Anna Thomson.
 Cast Star cannot add: MovieId:CEa17, StageName:Keith Szarabajka.
@@ -3771,6 +3828,7 @@ Cast Movie with null id: MovieId:ChG1, StageName:John Cleese.
 Cast Star cannot add: MovieId:ChG10, StageName:Christi Conaway.
 Cast Star cannot add: MovieId:ChG10, StageName:Victoria Haas.
 Cast Star cannot add: MovieId:ChG10, StageName:Kye Benson.
+Cast Star cannot add: MovieId:ChH3, StageName:Mamie vanDoren.
 Cast Star cannot add: MovieId:ChH3, StageName:Mel Torme.
 Cast Star cannot add: MovieId:ChH3, StageName:Paul Anka.
 Cast Star cannot add: MovieId:ChH3, StageName:Ray Anthony.
@@ -3800,6 +3858,7 @@ Cast Star cannot add: MovieId:ChM20, StageName:Jack McGee.
 Cast Star cannot add: MovieId:CHo5, StageName:Bonnie Bedalia.
 Cast Star cannot add: MovieId:ChR10, StageName:Marion Byron.
 Cast Star cannot add: MovieId:ChR13, StageName:Ukele Ike.
+Cast Star cannot add: MovieId:ChR50, StageName:Virginia Obrien.
 Cast Star cannot add: MovieId:ChR60, StageName:Tommy Dorsey.
 Cast Star cannot add: MovieId:ChS10, StageName:Alan Garfield.
 Cast Star cannot add: MovieId:ChS13, StageName:Sam Sheppard.
@@ -3819,7 +3878,9 @@ Cast Star cannot add: MovieId:ChV26, StageName:Margeret Wycherly.
 Cast Star cannot add: MovieId:ChV35, StageName:Roalnd Petit.
 Cast Star cannot add: MovieId:ChV35, StageName:Erik Bruhn.
 Cast Star cannot add: MovieId:ChV35, StageName:Joey Walsh.
+Cast Star cannot add: MovieId:ChV45, StageName:Mitzi gaynor.
 Cast Star cannot add: MovieId:ChV45, StageName:Ted deCorsica.
+Cast Star cannot add: MovieId:ChV46, StageName:Vittorio deSica.
 Cast Star cannot add: MovieId:ChV46, StageName:Kurt Kaznar.
 Cast Star cannot add: MovieId:ChW2, StageName:Patricia Marshall.
 Cast Star cannot add: MovieId:ChW2, StageName:Joan McCracken.
@@ -3834,6 +3895,7 @@ Cast Star cannot add: MovieId:ChW7, StageName:Charlotte Greenwwod.
 Cast Star cannot add: MovieId:ChW7, StageName:Barbara Whiting.
 Cast Star cannot add: MovieId:ChW7, StageName:Tom.
 Cast Star cannot add: MovieId:ChW7, StageName:Jerry.
+Cast Star cannot add: MovieId:ChW16, StageName:Jim backus.
 Cast Star cannot add: MovieId:ChW16, StageName:Claire Kelly.
 Cast Star cannot add: MovieId:ChW25, StageName:Miiko Taka.
 Cast Star cannot add: MovieId:CiS10, StageName:Lenka Novak.
@@ -3847,6 +3909,7 @@ Cast Star cannot add: MovieId:CJ2, StageName:John Colicos.
 Cast Star cannot add: MovieId:CJ2, StageName:Katherine Blake.
 Cast Star cannot add: MovieId:CJ2, StageName:Peter Jeffrey.
 Cast Star cannot add: MovieId:CJ2, StageName:William Squire.
+Cast Star cannot add: MovieId:CJ2, StageName:Nora SwinBurne.
 Cast Star cannot add: MovieId:CJ4, StageName:Liv Ullman.
 Cast Star cannot add: MovieId:CJ6, StageName:MarieFrance Pisier.
 Cast Star cannot add: MovieId:CJ6, StageName:Christian Marquand.
@@ -3874,6 +3937,7 @@ Cast Movie with null id: MovieId:ClC5, StageName:Pierre Barouh.
 Cast Star cannot add: MovieId:ClC8, StageName:JoseMaria Caffare.
 Cast Star cannot add: MovieId:ClC8, StageName:Marie La Forette.
 Cast Star cannot add: MovieId:ClC8, StageName:Stephan Audran.
+Cast Star cannot add: MovieId:ClC18, StageName:michel bouquet.
 Cast Star cannot add: MovieId:ClC18, StageName:La femme infidele.
 Cast Movie with null id: MovieId:ClC22, StageName:Charles Gray.
 Cast Star cannot add: MovieId:ClC35, StageName:Paul Gegauff.
@@ -3884,6 +3948,7 @@ Cast Star cannot add: MovieId:ClC45, StageName:Jacques Penot.
 Cast Star cannot add: MovieId:ClC45, StageName:Virgenie Thevenet.
 Cast Star cannot add: MovieId:ClC49, StageName:Barbara deRossi.
 Cast Star cannot add: MovieId:ClC50, StageName:Isabel Huppert.
+Cast Star cannot add: MovieId:ClC50, StageName:Francois Cluzet.
 Cast Star cannot add: MovieId:ClC50, StageName:Nils Travenier.
 Cast Star cannot add: MovieId:ClD1, StageName:Mireille Perrier.
 Cast Star cannot add: MovieId:ClD1, StageName:Cecile Ducasse.
@@ -3894,6 +3959,7 @@ Cast Star cannot add: MovieId:ClD1, StageName:Isaach deBankol\'e.
 Cast Star cannot add: MovieId:ClD1, StageName:JeanClaude Adelin.
 Cast Star cannot add: MovieId:ClD1, StageName:Jacques Denis.
 Cast Star cannot add: MovieId:ClD1, StageName:sa.
+Cast Star cannot add: MovieId:ClD5, StageName:Gregoire Colin.
 Cast Star cannot add: MovieId:ClD5, StageName:Alice Houri.
 Cast Star cannot add: MovieId:CLi10, StageName:Sylvie Testau.
 Cast Star cannot add: MovieId:CLi10, StageName:Emanuelle Laborit.
@@ -3909,6 +3975,7 @@ Cast Star cannot add: MovieId:ClM30, StageName:Nathalie Cardone.
 Cast Star cannot add: MovieId:ClM40, StageName:Romane Bohringer.
 Cast Star cannot add: MovieId:ClM40, StageName:Elena Safonova.
 Cast Star cannot add: MovieId:ClS25, StageName:Sami Frey.
+Cast Star cannot add: MovieId:ClS40, StageName:Andre Dussollier.
 Cast Star cannot add: MovieId:ClS40, StageName:Elisabeth Bourgine.
 Cast Star cannot add: MovieId:ClS40, StageName:JeanLuc Bibeau.
 Cast Star cannot add: MovieId:ClS45, StageName:JeanHugues Anglade.
@@ -3929,6 +3996,7 @@ Cast Star cannot add: MovieId:CMt10, StageName:Virginia Powell.
 Cast Star cannot add: MovieId:CMu10, StageName:Edwin S. Porter.
 Cast Star cannot add: MovieId:CNo1, StageName:Jeremy Theobald.
 Cast Movie with null id: MovieId:CNo3, StageName:Guy Pearce.
+Cast Star cannot add: MovieId:CNu10, StageName:Helena Bergstrom.
 Cast Star cannot add: MovieId:CNy1, StageName:Robert Cornthwaite.
 Cast Star cannot add: MovieId:CNy15, StageName:Marilyn Devon.
 Cast Star cannot add: MovieId:CNy15, StageName:Stephen Roberts.
@@ -3946,6 +4014,7 @@ Cast Star cannot add: MovieId:CPR10, StageName:Barrie Ingram.
 Cast Star cannot add: MovieId:CPR10, StageName:James Hayter.
 Cast Star cannot add: MovieId:CPR10, StageName:Leon Greene.
 Cast Star cannot add: MovieId:CPR10, StageName:John Arnatt.
+Cast Star cannot add: MovieId:CR10, StageName:Margaret lockwood.
 Cast Star cannot add: MovieId:CR10, StageName:Wyndham Goldie.
 Cast Star cannot add: MovieId:CR12, StageName:Diana Wynard.
 Cast Star cannot add: MovieId:CR12, StageName:Kathlenn Harrison.
@@ -3953,6 +4022,7 @@ Cast Star cannot add: MovieId:CR12, StageName:Felix Aymer.
 Cast Star cannot add: MovieId:CR13, StageName:Stephen Haggard.
 Cast Star cannot add: MovieId:CR14, StageName:William harnell.
 Cast Star cannot add: MovieId:CR14, StageName:Hugh Burden.
+Cast Star cannot add: MovieId:CR14, StageName:Jimmy hanley.
 Cast Star cannot add: MovieId:CR14, StageName:Renee Asherson.
 Cast Star cannot add: MovieId:CR14, StageName:Penelope Dudley ward.
 Cast Star cannot add: MovieId:CR14, StageName:Reginal Tate.
@@ -4003,6 +4073,7 @@ Cast Star cannot add: MovieId:CSr10, StageName:Antonio Gades.
 Cast Star cannot add: MovieId:CSr10, StageName:Laura deSol.
 Cast Star cannot add: MovieId:CSr10, StageName:Paco deLucia.
 Cast Star cannot add: MovieId:CSr10, StageName:Cristina Jimenez.
+Cast Star cannot add: MovieId:CSr10, StageName:Sebastian Moreno.
 Cast Star cannot add: MovieId:CSr25, StageName:Cramen Maura.
 Cast Star cannot add: MovieId:CsS10, StageName:Giovanni Guidelli.
 Cast Star cannot add: MovieId:CsS10, StageName:Rupert Graves.
@@ -4023,6 +4094,7 @@ Cast Star cannot add: MovieId:CTK12, StageName:James Belushi.
 Cast Star cannot add: MovieId:CTK12, StageName:Kevin Tighe.
 Cast Star cannot add: MovieId:CuB32, StageName:Barbara Stanwyk.
 Cast Star cannot add: MovieId:CuB34, StageName:John Ridgely.
+Cast Star cannot add: MovieId:CuB37, StageName:Robert coote.
 Cast Star cannot add: MovieId:CuB44, StageName:Fred McMurray.
 Cast Star cannot add: MovieId:CVi10, StageName:Judith Henry.
 Cast Star cannot add: MovieId:CWh10, StageName:Rosalind Ayres.
@@ -4076,6 +4148,7 @@ Cast Star cannot add: MovieId:DaB33, StageName:Robert Shackleton.
 Cast Star cannot add: MovieId:DaB33, StageName:Mary Germaine.
 Cast Star cannot add: MovieId:DaB33, StageName:Howard Marion Crawford.
 Cast Star cannot add: MovieId:DAf10, StageName:Kjell Bergquist.
+Cast Star cannot add: MovieId:DAf10, StageName:Rolf Lassgard.
 Cast Star cannot add: MovieId:DAf10, StageName:Niklas Hjulstrom.
 Cast Star cannot add: MovieId:DaG6, StageName:Dorin Harewood.
 Cast Star cannot add: MovieId:DaG6, StageName:Charles Cioffi.
@@ -4089,6 +4162,7 @@ Cast Star cannot add: MovieId:DAl10, StageName:Ralph Maccio.
 Cast Star cannot add: MovieId:DAl10, StageName:William Styron.
 Cast Star cannot add: MovieId:DAl10, StageName:Whoppi Goldberg.
 Cast Star cannot add: MovieId:DAl10, StageName:Arthur Penn.
+Cast Star cannot add: MovieId:DaM3, StageName:Jo vanFleet.
 Cast Star cannot add: MovieId:DaM5, StageName:Kyo Machiko.
 Cast Star cannot add: MovieId:DaM6, StageName:Lawrence Harvey.
 Cast Star cannot add: MovieId:DaM6, StageName:Susan Oliver.
@@ -4103,6 +4177,7 @@ Cast Star cannot add: MovieId:DAz5, StageName:Jack Luden.
 Cast Star cannot add: MovieId:DAz5, StageName:Adreinne Dore.
 Cast Star cannot add: MovieId:DAz5, StageName:Shirley OHara.
 Cast Star cannot add: MovieId:DAz6, StageName:Fuller Melish~jr.
+Cast Star cannot add: MovieId:DAz6, StageName:Doris lloyd.
 Cast Star cannot add: MovieId:DAz6, StageName:William Stack.
 Cast Star cannot add: MovieId:DAz6, StageName:Phillipe DeLacy.
 Cast Star cannot add: MovieId:DAz23, StageName:Lionel Attwill.
@@ -4153,6 +4228,7 @@ Cast Star cannot add: MovieId:DDg13, StageName:Jon Stewart.
 Cast Star cannot add: MovieId:DDg13, StageName:Josh Mostel.
 Cast Star cannot add: MovieId:DDg13, StageName:Cole Sprouse.
 Cast Star cannot add: MovieId:DDg13, StageName:Dylan Sprouse.
+Cast Star cannot add: MovieId:DDk10, StageName:janeane Garofalo.
 Cast Star cannot add: MovieId:DDk10, StageName:Georgina Cates.
 Cast Star cannot add: MovieId:DDo20, StageName:Hansa Czpionka.
 Cast Star cannot add: MovieId:DDo20, StageName:Ozay.
@@ -4185,6 +4261,7 @@ Cast Star cannot add: MovieId:DeD65, StageName:Jeremiah Persoff.
 Cast Star cannot add: MovieId:DeD77, StageName:John Mc.
 Cast Star cannot add: MovieId:DeD77, StageName:Mimsey Farmer.
 Cast Star cannot add: MovieId:DeD77, StageName:Virginia Green.
+Cast Star cannot add: MovieId:DeH10, StageName:Yvonne DeCarlo.
 Cast Star cannot add: MovieId:DeJ10, StageName:Hermine Demoriane.
 Cast Star cannot add: MovieId:DeJ28, StageName:Steve Waddington.
 Cast Star cannot add: MovieId:DeJ28, StageName:Jody Graber.
@@ -4196,6 +4273,7 @@ Cast Star cannot add: MovieId:DEl10, StageName:Karl Wuhrer.
 Cast Star cannot add: MovieId:DeM1, StageName:Karen Steele.
 Cast Star cannot add: MovieId:DeM2, StageName:Larry Blyden.
 Cast Star cannot add: MovieId:DeM2, StageName:Patricia Smith.
+Cast Star cannot add: MovieId:DeM4, StageName:Frank overton.
 Cast Star cannot add: MovieId:DeM10, StageName:Audre Meadows.
 Cast Star cannot add: MovieId:DeM20, StageName:Gladys Cooper.
 Cast Star cannot add: MovieId:DeM20, StageName:Audrey Dalton.
@@ -4204,7 +4282,9 @@ Cast Star cannot add: MovieId:DeR10, StageName:John Calvin.
 Cast Star cannot add: MovieId:DeR10, StageName:Anthony Peck.
 Cast Star cannot add: MovieId:DeR10, StageName:Priscilla Pointer.
 Cast Star cannot add: MovieId:DeS10, StageName:Mario VanPeebles.
+Cast Star cannot add: MovieId:DFg10, StageName:Gerard Jugnot.
 Cast Star cannot add: MovieId:DFg10, StageName:Thierry Lhermite.
+Cast Star cannot add: MovieId:DFi10, StageName:Paul mcGann.
 Cast Star cannot add: MovieId:DFi10, StageName:Brian Glover.
 Cast Star cannot add: MovieId:DFi10, StageName:Danny Webb.
 Cast Star cannot add: MovieId:DFi10, StageName:Christopher John Fields.
@@ -4296,6 +4376,8 @@ Cast Star cannot add: MovieId:DLD10, StageName:Dick Davalos.
 Cast Star cannot add: MovieId:DLD10, StageName:Alfie Wise.
 Cast Star cannot add: MovieId:DLD10, StageName:Bill McCutcheon.
 Cast Star cannot add: MovieId:DLD10, StageName:Carol deLuise.
+Cast Star cannot add: MovieId:DLD10, StageName:Peter deLuise.
+Cast Star cannot add: MovieId:DLD10, StageName:David deLuise.
 Cast Star cannot add: MovieId:DLi13, StageName:Scott Wolf.
 Cast Star cannot add: MovieId:DLi13, StageName:Desmond Askew.
 Cast Star cannot add: MovieId:DLi13, StageName:William Fichtner.
@@ -4303,8 +4385,10 @@ Cast Star cannot add: MovieId:DLi13, StageName:Brickin Meyer.
 Cast Star cannot add: MovieId:DLo13, StageName:Tim Byrd.
 Cast Star cannot add: MovieId:DLo13, StageName:Bryan Kevin.
 Cast Star cannot add: MovieId:DLo19, StageName:Julie Warner.
+Cast Star cannot add: MovieId:DLR3, StageName:Diana hyland.
 Cast Star cannot add: MovieId:DLR3, StageName:Mickey Sholdar.
 Cast Star cannot add: MovieId:DLR10, StageName:Susan Blakley.
+Cast Star cannot add: MovieId:DLR15, StageName:Efrem Zimbalist~jr..
 Cast Star cannot add: MovieId:DLu10, StageName:Paolo Hendel.
 Cast Star cannot add: MovieId:DLu10, StageName:Giovanni Giudelli.
 Cast Star cannot add: MovieId:DLv10, StageName:Charles Kaminsky.
@@ -4357,6 +4441,7 @@ Cast Star cannot add: MovieId:DMi27, StageName:Sidney James.
 Cast Star cannot add: MovieId:DMi27, StageName:Maureen Delaney.
 Cast Star cannot add: MovieId:DMi28, StageName:Loring Smith.
 Cast Star cannot add: MovieId:DMi28, StageName:Paty Duke.
+Cast Star cannot add: MovieId:DMl10, StageName:Sergi Lopez.
 Cast Star cannot add: MovieId:DMl10, StageName:Sophie Gullemin.
 Cast Star cannot add: MovieId:DMl10, StageName:With a Friend Like Harry.
 Cast Star cannot add: MovieId:DMl10, StageName:sa.
@@ -4492,6 +4577,7 @@ Cast Star cannot add: MovieId:DSW18, StageName:Rip Torn).
 Cast Star cannot add: MovieId:DTa100, StageName:Lee Phillips.
 Cast Star cannot add: MovieId:DTa102, StageName:Vivian nathan.
 Cast Star cannot add: MovieId:DTa103, StageName:Edgar Stehli.
+Cast Star cannot add: MovieId:DTa104, StageName:Hazel court.
 Cast Star cannot add: MovieId:DTa104, StageName:John Alderson.
 Cast Star cannot add: MovieId:DTa106, StageName:Alan Hewitt.
 Cast Star cannot add: MovieId:DTa106, StageName:Joanna Moore.
@@ -4512,6 +4598,7 @@ Cast Star cannot add: MovieId:DuM20, StageName:Alexandra Rohmig.
 Cast Star cannot add: MovieId:DuW10, StageName:Ronnie Corbett.
 Cast Star cannot add: MovieId:DuW10, StageName:James Roberton Justice.
 Cast Star cannot add: MovieId:DvD10, StageName:Karisma.
+Cast Star cannot add: MovieId:DvF10, StageName:Sarah jessica Parker.
 Cast Star cannot add: MovieId:DvF10, StageName:Paul Mazurky.
 Cast Star cannot add: MovieId:DvF10, StageName:Naomi Campbell.
 Cast Star cannot add: MovieId:DvH10, StageName:Adriana Caselotti.
@@ -4550,6 +4637,7 @@ Cast Star cannot add: MovieId:DWG51, StageName:Henry Walthall.
 Cast Star cannot add: MovieId:DWG52, StageName:Robert Harron.
 Cast Star cannot add: MovieId:DWG52, StageName:Alfred Paget.
 Cast Star cannot add: MovieId:DWG52, StageName:Howard Gaye.
+Cast Star cannot add: MovieId:DWG52, StageName:Erich vonStroheim.
 Cast Star cannot add: MovieId:DWG55, StageName:Robert Harron.
 Cast Star cannot add: MovieId:DWG57, StageName:Edward Peil.
 Cast Star cannot add: MovieId:DWG58, StageName:Clarine Seymour.
@@ -4650,6 +4738,7 @@ Cast Star cannot add: MovieId:ECn177, StageName:Patrick Knowles.
 Cast Star cannot add: MovieId:ECn177, StageName:Five Hertzogs.
 Cast Star cannot add: MovieId:ECn177, StageName:Fiorello LaGuardia.
 Cast Star cannot add: MovieId:EdC10, StageName:Doris Kunstmann.
+Cast Star cannot add: MovieId:EdE10, StageName:Jose Sacristan.
 Cast Star cannot add: MovieId:EDF10, StageName:Eduarado DeFilippo.
 Cast Star cannot add: MovieId:EDi12, StageName:Ice T.
 Cast Star cannot add: MovieId:EDi12, StageName:Bill Hawkins.
@@ -4874,6 +4963,7 @@ Cast Star cannot add: MovieId:ELM15, StageName:dArcy Corrigan.
 Cast Star cannot add: MovieId:ELM17, StageName:Anthony Allan.
 Cast Star cannot add: MovieId:ELM17, StageName:Willie Fung.
 Cast Star cannot add: MovieId:ELM17, StageName:Robert Middlemass.
+Cast Star cannot add: MovieId:ELM19, StageName:Mary nash.
 Cast Star cannot add: MovieId:ELM21, StageName:Joan Perry.
 Cast Star cannot add: MovieId:ELM22, StageName:Don Douglas.
 Cast Star cannot add: MovieId:ELM26, StageName:Claire Tevor.
@@ -4889,6 +4979,7 @@ Cast Star cannot add: MovieId:ElN10, StageName:Leif Erikson.
 Cast Star cannot add: MovieId:ElN10, StageName:Glen anders.
 Cast Star cannot add: MovieId:ElN14, StageName:Lili Palmer.
 Cast Star cannot add: MovieId:ElN14, StageName:Stella Adler.
+Cast Star cannot add: MovieId:ElN15, StageName:Macdonald Carey.
 Cast Star cannot add: MovieId:ElN20, StageName:Bob Arthur.
 Cast Star cannot add: MovieId:ElP30, StageName:Florinda Bolkan.
 Cast Star cannot add: MovieId:ElS2, StageName:none.
@@ -4992,6 +5083,7 @@ Cast Star cannot add: MovieId:ERz10, StageName:Karin Kienzler.
 Cast Star cannot add: MovieId:ERz10, StageName:Eva Maria Bayerswalter.
 Cast Star cannot add: MovieId:ERz10, StageName:R\"udiger Weigang.
 Cast Star cannot add: MovieId:ERz10, StageName:Karin Rasenach.
+Cast Star cannot add: MovieId:ESc10, StageName:Elle Macpherson.
 Cast Star cannot add: MovieId:ESl30, StageName:Louise Latimer.
 Cast Star cannot add: MovieId:ESP9, StageName:Thomas White.
 Cast Star cannot add: MovieId:ESP11, StageName:Arthur White.
@@ -5025,11 +5117,15 @@ Cast Star cannot add: MovieId:EtS7, StageName:JeanLouis Trintigant.
 Cast Star cannot add: MovieId:EtS10, StageName:Fanny Ardent.
 Cast Star cannot add: MovieId:EuF51, StageName:Joan Valerie.
 Cast Star cannot add: MovieId:EuF51, StageName:Queenie Vassar.
+Cast Star cannot add: MovieId:EuL10, StageName:Lee vanCleef.
 Cast Star cannot add: MovieId:EuL10, StageName:Paul Christian.
 Cast Star cannot add: MovieId:EuL10, StageName:Kenneth Toby.
 Cast Star cannot add: MovieId:EuL20, StageName:Leigh Madison.
+Cast Star cannot add: MovieId:EvS1, StageName:Erich vonStroheim.
+Cast Star cannot add: MovieId:EvS3, StageName:Erich vonStroheim.
 Cast Star cannot add: MovieId:EvS6, StageName:Roy dArcy.
 Cast Star cannot add: MovieId:EvS6, StageName:Edward Conelly.
+Cast Star cannot add: MovieId:EvS7, StageName:Erich vonStroheim.
 Cast Star cannot add: MovieId:EvS7, StageName:Matthew Betz.
 Cast Star cannot add: MovieId:EvS7, StageName:Maude George.
 Cast Star cannot add: MovieId:EvS7, StageName:Cesare Gravina.
@@ -5043,11 +5139,14 @@ Cast Star cannot add: MovieId:EWi10, StageName:Ines d'Anbrosio.
 Cast Star cannot add: MovieId:EWi10, StageName:Paolo Massafra.
 Cast Star cannot add: MovieId:EWS10, StageName:Eve Gordon.
 Cast Star cannot add: MovieId:EWS10, StageName:Kevin Conroy.
+Cast Star cannot add: MovieId:EZo10, StageName:Elodie Bouchez.
 Cast Star cannot add: MovieId:EZo10, StageName:Natasha Regnier.
 Cast Star cannot add: MovieId:EZo10, StageName:Patrick Mercado.
 Cast Star cannot add: MovieId:EZo10, StageName:Jo Fredo.
+Cast Star cannot add: MovieId:EZo10, StageName:Gregoire Colin.
 Cast Star cannot add: MovieId:EZw1, StageName:Jihmi Kennedy.
 Cast Star cannot add: MovieId:EZw1, StageName:Cary Elwes.
+Cast Star cannot add: MovieId:EZw4, StageName:Lenny vonDohlen.
 Cast Star cannot add: MovieId:EZw5, StageName:Julia Ormond.
 Cast Star cannot add: MovieId:EZw6, StageName:Rob Lowes.
 Cast Star cannot add: MovieId:EZw6, StageName:James Belushi.
@@ -5071,6 +5170,7 @@ Cast Star cannot add: MovieId:FB40, StageName:Charlie Ruggles.
 Cast Star cannot add: MovieId:FB42, StageName:Janet Beecher.
 Cast Star cannot add: MovieId:FB42, StageName:Karin Booth.
 Cast Star cannot add: MovieId:FB42, StageName:Eddie Quinlan.
+Cast Star cannot add: MovieId:FB43, StageName:Spencer tracy.
 Cast Star cannot add: MovieId:FB45, StageName:Charley Grapwin.
 Cast Star cannot add: MovieId:FB51, StageName:J.Edward Bromberg.
 Cast Star cannot add: MovieId:FB51, StageName:John Arledge.
@@ -5120,6 +5220,7 @@ Cast Star cannot add: MovieId:FCk1, StageName:Philip Coolidge.
 Cast Star cannot add: MovieId:FCk1, StageName:Ruta Lee.
 Cast Star cannot add: MovieId:FCk2, StageName:Ralph Peters.
 Cast Star cannot add: MovieId:FCo10, StageName:TinTan.
+Cast Star cannot add: MovieId:FCo20, StageName:Gabriel Garcia Marquez.
 Cast Star cannot add: MovieId:FCr10, StageName:Adam Sadler.
 Cast Star cannot add: MovieId:FCr10, StageName:Billy Idol.
 Cast Star cannot add: MovieId:FDa10, StageName:Tim Robbins...
@@ -5157,6 +5258,7 @@ Cast Movie with null id: MovieId:FeF28, StageName:Beverly Wills.
 Cast Movie with null id: MovieId:FeF28, StageName:Rose Murphy.
 Cast Movie with null id: MovieId:FeF28, StageName:Gene Krupa.
 Cast Star cannot add: MovieId:FF1, StageName:Peppino deFilippo.
+Cast Star cannot add: MovieId:FF1, StageName:Carla delPoggio.
 Cast Star cannot add: MovieId:FF2, StageName:Brunella Bovo.
 Cast Star cannot add: MovieId:FF2, StageName:Leopoldo Trieste.
 Cast Star cannot add: MovieId:FF2, StageName:Guilietta Masina.
@@ -5271,6 +5373,8 @@ Cast Star cannot add: MovieId:FKi18, StageName:Deborah Moore.
 Cast Star cannot add: MovieId:FkP10, StageName:Blanch Sweet.
 Cast Star cannot add: MovieId:FkP10, StageName:Mack Sennett.
 Cast Star cannot add: MovieId:FkP10, StageName:Kate Bruce.
+Cast Star cannot add: MovieId:FKr20, StageName:Lee vanCleef.
+Cast Star cannot add: MovieId:FKr20, StageName:Reiner Schone.
 Cast Star cannot add: MovieId:FKr20, StageName:Giampiero Albertini.
 Cast Star cannot add: MovieId:FKr20, StageName:Annabella Incontrera.
 Cast Star cannot add: MovieId:FKr20, StageName:Gianni Rizzo.
@@ -5332,6 +5436,8 @@ Cast Star cannot add: MovieId:FLl80, StageName:Rebecca Wassem.
 Cast Star cannot add: MovieId:FLl85, StageName:Fred McMurray.
 Cast Star cannot add: MovieId:FLl85, StageName:Gale Sondergard.
 Cast Star cannot add: MovieId:FLl85, StageName:Bennie Bartlett.
+Cast Star cannot add: MovieId:FLl85, StageName:Donald meek.
+Cast Star cannot add: MovieId:FLl85, StageName:Pedro deCordoba.
 Cast Star cannot add: MovieId:FLl85, StageName:Lucy Beaumont.
 Cast Star cannot add: MovieId:FLl85, StageName:Ira Singman.
 Cast Star cannot add: MovieId:FLl89, StageName:Alma Lloyd.
@@ -5341,6 +5447,7 @@ Cast Star cannot add: MovieId:FLl99, StageName:Leonard Strong.
 Cast Star cannot add: MovieId:FlM1, StageName:Mark Lawrence.
 Cast Star cannot add: MovieId:FlM1, StageName:Leonard Lyons.
 Cast Star cannot add: MovieId:FlM3, StageName:Barbara Stanwyk.
+Cast Star cannot add: MovieId:FlM3, StageName:Joe deSantis.
 Cast Star cannot add: MovieId:FLr10, StageName:Ann Belek.
 Cast Star cannot add: MovieId:FLr10, StageName:Cynthia vanDamme.
 Cast Star cannot add: MovieId:FLr10, StageName:Julie Jalaber.
@@ -5445,6 +5552,7 @@ Cast Star cannot add: MovieId:FrG10, StageName:Bruce Marchiano.
 Cast Star cannot add: MovieId:FrG10, StageName:Marianne Muellerleile.
 Cast Star cannot add: MovieId:FrG10, StageName:Terrence Evans.
 Cast Star cannot add: MovieId:FrG10, StageName:Al Fann.
+Cast Star cannot add: MovieId:FrG10, StageName:Jose Garcia.
 Cast Star cannot add: MovieId:FrH10, StageName:Elka Kaota.
 Cast Star cannot add: MovieId:FrH10, StageName:Christopher Michtchum.
 Cast Star cannot add: MovieId:FrH10, StageName:Nina deRose.
@@ -5509,6 +5617,7 @@ Cast Star cannot add: MovieId:FrT20, StageName:Salavtore Baccaloni.
 Cast Star cannot add: MovieId:FrT20, StageName:Isa Moore.
 Cast Star cannot add: MovieId:FrT22, StageName:Sebastion Cabot.
 Cast Star cannot add: MovieId:FrT32, StageName:Arthur Godfrey.
+Cast Star cannot add: MovieId:FrT32, StageName:Dom deLuise.
 Cast Star cannot add: MovieId:FrW1, StageName:Mildred Coles.
 Cast Star cannot add: MovieId:FrW10, StageName:Frances Neal.
 Cast Star cannot add: MovieId:FrW10, StageName:Mildred Coles.
@@ -5546,6 +5655,7 @@ Cast Star cannot add: MovieId:FT4, StageName:Henri Serre.
 Cast Star cannot add: MovieId:FT4, StageName:Oscar Werner.
 Cast Star cannot add: MovieId:FT4, StageName:Marie Dubois.
 Cast Star cannot add: MovieId:FT4, StageName:Varna Urbin.
+Cast Star cannot add: MovieId:FT6, StageName:Jean DeSailly.
 Cast Star cannot add: MovieId:FT6, StageName:Nelly Benedetti.
 Cast Star cannot add: MovieId:FT6, StageName:Daniel Ceccaldi.
 Cast Star cannot add: MovieId:FT6, StageName:Laurence Badie.
@@ -5580,6 +5690,7 @@ Cast Star cannot add: MovieId:FT22, StageName:Julien Bertheau.
 Cast Star cannot add: MovieId:FT22, StageName:Dorothe\'e.
 Cast Movie with null id: MovieId:Ft24, StageName:Catherine Deneuve.
 Cast Star cannot add: MovieId:FT24, StageName:Heinz Bennent.
+Cast Star cannot add: MovieId:FT24, StageName:Andrea Ferreol.
 Cast Star cannot add: MovieId:FT28, StageName:Fanny Ardent.
 Cast Star cannot add: MovieId:FT28, StageName:Henri Garcin.
 Cast Star cannot add: MovieId:FT28, StageName:Michele Baumgartner.
@@ -5613,6 +5724,7 @@ Cast Movie with null id: MovieId:FTu25, StageName:Rosalind Keith.
 Cast Movie with null id: MovieId:FTu25, StageName:Guinn Williams.
 Cast Movie with null id: MovieId:FTu25, StageName:Ray Milland.
 Cast Star cannot add: MovieId:FTu50, StageName:Veronica Ladd.
+Cast Star cannot add: MovieId:FTu60, StageName:Anne revere.
 Cast Star cannot add: MovieId:FWh5, StageName:Lela Rochon.
 Cast Star cannot add: MovieId:FWh10, StageName:Henry Conniff~jr..
 Cast Star cannot add: MovieId:FWs10, StageName:Sonny Landham.
@@ -5692,6 +5804,7 @@ Cast Star cannot add: MovieId:GAr58, StageName:C.Henry Gordon.
 Cast Star cannot add: MovieId:GAr59, StageName:James Gleason.
 Cast Star cannot add: MovieId:GAr59, StageName:Donald Cook.
 Cast Star cannot add: MovieId:GAr59, StageName:Robert Kennedy.
+Cast Star cannot add: MovieId:GAr60, StageName:Erich vonStroheim.
 Cast Star cannot add: MovieId:GAr60, StageName:Dorothy Jordan.
 Cast Star cannot add: MovieId:GAr60, StageName:Marjorie Peterson.
 Cast Star cannot add: MovieId:GaT10, StageName:Paige OHara.
@@ -5738,6 +5851,7 @@ Cast Star cannot add: MovieId:GC10, StageName:Phoebe Foster.
 Cast Star cannot add: MovieId:GC11, StageName:Madge Evans.
 Cast Star cannot add: MovieId:GC13, StageName:Violet Kemble Cooper.
 Cast Star cannot add: MovieId:GC13, StageName:Madge Evans.
+Cast Star cannot add: MovieId:GC13, StageName:Una Oconnor.
 Cast Star cannot add: MovieId:GC13, StageName:John Buckler.
 Cast Star cannot add: MovieId:GC15, StageName:Violet KembleCooper.
 Cast Star cannot add: MovieId:GC15, StageName:Virginia Hammond.
@@ -5839,6 +5953,7 @@ Cast Star cannot add: MovieId:GeO10, StageName:Carolyn Seymor.
 Cast Star cannot add: MovieId:GeO10, StageName:Sue Lloyd.
 Cast Star cannot add: MovieId:GeO10, StageName:Pamela Salem.
 Cast Star cannot add: MovieId:GeP10, StageName:Margaret Rutherford.
+Cast Star cannot add: MovieId:GeP10, StageName:Charles tingwell.
 Cast Star cannot add: MovieId:GeP10, StageName:Muriel Pavlov.
 Cast Star cannot add: MovieId:GeP10, StageName:Gerald Cross.
 Cast Star cannot add: MovieId:GeP10, StageName:Conrad Phillips.
@@ -5846,8 +5961,10 @@ Cast Star cannot add: MovieId:GeP15, StageName:Margaret Rutherford.
 Cast Star cannot add: MovieId:GeP15, StageName:Margaret Rutherford.
 Cast Star cannot add: MovieId:GeP18, StageName:Margaret Rutherford.
 Cast Star cannot add: MovieId:GeQ10, StageName:Kathy Ireland.
+Cast Star cannot add: MovieId:GeR1, StageName:Dick vanDyke.
 Cast Star cannot add: MovieId:GeS15, StageName:Joseph Allen~jr.
 Cast Star cannot add: MovieId:GeS15, StageName:Dorothy Lovett.
+Cast Star cannot add: MovieId:GeS17, StageName:Erich vonStroheim.
 Cast Star cannot add: MovieId:GeS27, StageName:Richard Crane.
 Cast Star cannot add: MovieId:GeS27, StageName:Faye Marlowe.
 Cast Star cannot add: MovieId:GeS27, StageName:Martha Stewart.
@@ -5860,6 +5977,7 @@ Cast Star cannot add: MovieId:GF90, StageName:Burr McIntosh.
 Cast Star cannot add: MovieId:GF150, StageName:Ramon Novorro.
 Cast Star cannot add: MovieId:GF150, StageName:C.Henry Gordon.
 Cast Star cannot add: MovieId:GF150, StageName:Blanche Frederici.
+Cast Star cannot add: MovieId:GF160, StageName:Erich vonStroheim.
 Cast Star cannot add: MovieId:GF160, StageName:Rafael Ottiano.
 Cast Star cannot add: MovieId:GF170, StageName:Inez Courtney.
 Cast Star cannot add: MovieId:GF170, StageName:Reginald Mason.
@@ -5906,6 +6024,7 @@ Cast Star cannot add: MovieId:GGM10, StageName:Armando Araiza.
 Cast Star cannot add: MovieId:GGM10, StageName:Patricial Riviera.
 Cast Star cannot add: MovieId:GGr8, StageName:Eva Bartok.
 Cast Star cannot add: MovieId:GGr8, StageName:Eddie Constantine.
+Cast Star cannot add: MovieId:GGr18, StageName:Melina mercouri.
 Cast Star cannot add: MovieId:GGr18, StageName:David Jansen.
 Cast Star cannot add: MovieId:GgW10, StageName:Daniel Pollock.
 Cast Star cannot add: MovieId:GGy10, StageName:John Spencer.
@@ -5933,12 +6052,14 @@ Cast Star cannot add: MovieId:GHo10, StageName:David Ward.
 Cast Star cannot add: MovieId:GHo10, StageName:Basil Burton.
 Cast Star cannot add: MovieId:GiA30, StageName:Kiri Paramore.
 Cast Star cannot add: MovieId:GiA32, StageName:Trini Alvorado.
+Cast Star cannot add: MovieId:GiA35, StageName:Ciaran Hinds.
 Cast Star cannot add: MovieId:GiB10, StageName:Federico Fellini.
 Cast Star cannot add: MovieId:GiC3, StageName:Mwlvyn Dougls.
 Cast Star cannot add: MovieId:GiC3, StageName:Dorothy Stickney.
 Cast Star cannot add: MovieId:GiC10, StageName:Arlene Arbus.
 Cast Star cannot add: MovieId:GiC10, StageName:Marilyn Sokol.
 Cast Star cannot add: MovieId:GiC10, StageName:Helena Dryden.
+Cast Star cannot add: MovieId:GiF10, StageName:Vittorio deSica.
 Cast Star cannot add: MovieId:GiF10, StageName:Maria Mercader.
 Cast Star cannot add: MovieId:GiG10, StageName:David Reynoso.
 Cast Star cannot add: MovieId:GiG10, StageName:Armando Silvestre.
@@ -6009,6 +6130,7 @@ Cast Star cannot add: MovieId:GM227, StageName:Glen Tryon.
 Cast Star cannot add: MovieId:GM227, StageName:Barbara Stanwyk.
 Cast Star cannot add: MovieId:GM227, StageName:Billy deWolfe.
 Cast Star cannot add: MovieId:GM227, StageName:George Pal Puppetoons.
+Cast Star cannot add: MovieId:GM227, StageName:Cecil B. deMille.
 Cast Star cannot add: MovieId:GM227, StageName:Mitchell Leisen.
 Cast Star cannot add: MovieId:GM227, StageName:Goerge Marshall.
 Cast Star cannot add: MovieId:GM227, StageName:City Slickers.
@@ -6069,6 +6191,7 @@ Cast Star cannot add: MovieId:GMx5, StageName:Elizabeth Shepperd.
 Cast Star cannot add: MovieId:GnA10, StageName:Enrico LoVerso.
 Cast Star cannot add: MovieId:GnA10, StageName:Valentina Scalaci.
 Cast Star cannot add: MovieId:GnA10, StageName:Giuseppe Ieracitano.
+Cast Star cannot add: MovieId:GNe5, StageName:Dick vanPatten.
 Cast Star cannot add: MovieId:GNe5, StageName:Sorrell Brooke.
 Cast Star cannot add: MovieId:GNj1, StageName:Dawn ODay.
 Cast Star cannot add: MovieId:GNj1, StageName:Murray Kinnell.
@@ -6103,6 +6226,7 @@ Cast Star cannot add: MovieId:GOl1, StageName:Charlie CreedMiles.
 Cast Star cannot add: MovieId:GOl1, StageName:Laila Morse.
 Cast Star cannot add: MovieId:GOl1, StageName:Edna Dore.
 Cast Star cannot add: MovieId:GoP12, StageName:Diane Wynyard.
+Cast Star cannot add: MovieId:GoP12, StageName:Francis deWolff.
 Cast Star cannot add: MovieId:GoP12, StageName:John Forrest.
 Cast Star cannot add: MovieId:GOu20, StageName:Bourvil.
 Cast Star cannot add: MovieId:GOu20, StageName:Sylvia Monti.
@@ -6166,6 +6290,7 @@ Cast Star cannot add: MovieId:GRi10, StageName:Italia AlmiranteManzini.
 Cast Star cannot add: MovieId:GRi10, StageName:Annibale Betrone.
 Cast Star cannot add: MovieId:GRi10, StageName:Alfonso Cassini.
 Cast Star cannot add: MovieId:GRi10, StageName:Franz Sala.
+Cast Star cannot add: MovieId:GRi50, StageName:Vittorio deSica.
 Cast Movie with null id: MovieId:GrM10, StageName:Hope Davis.
 Cast Movie with null id: MovieId:GrM10, StageName:Stanley Tucci.
 Cast Movie with null id: MovieId:GrM10, StageName:Anna Mears.
@@ -6223,6 +6348,7 @@ Cast Star cannot add: MovieId:GSi10, StageName:Tick Hellings.
 Cast Star cannot add: MovieId:GSj1, StageName:Read Morgan.
 Cast Star cannot add: MovieId:GSj1, StageName:Arch Johnson.
 Cast Star cannot add: MovieId:GSj1, StageName:Clegg Hoyt.
+Cast Star cannot add: MovieId:GSj2, StageName:Don DeFore.
 Cast Star cannot add: MovieId:GSj2, StageName:Madge Kennedy.
 Cast Star cannot add: MovieId:GSj2, StageName:Gail Bonney.
 Cast Star cannot add: MovieId:GSj2, StageName:Robert Kasner.
@@ -6442,6 +6568,7 @@ Cast Star cannot add: MovieId:H32, StageName:Horace Hodges.
 Cast Star cannot add: MovieId:H32, StageName:Morland Graham.
 Cast Star cannot add: MovieId:H32, StageName:Edwin Greenwood.
 Cast Star cannot add: MovieId:H32, StageName:Stephen Haggard.
+Cast Star cannot add: MovieId:H32, StageName:Jeanne deCasalis.
 Cast Star cannot add: MovieId:H32, StageName:Mabel Terry Lewis.
 Cast Star cannot add: MovieId:H32, StageName:A.Bromley Davenport.
 Cast Star cannot add: MovieId:H33, StageName:none.
@@ -6494,6 +6621,7 @@ Cast Star cannot add: MovieId:H69, StageName:Jessie Roy Landis.
 Cast Star cannot add: MovieId:H69, StageName:none.
 Cast Star cannot add: MovieId:H80, StageName:Bob Sweeny.
 Cast Star cannot add: MovieId:H83, StageName:Barbara Leigh-Hunt.
+Cast Star cannot add: MovieId:H83, StageName:Alec Mccowen.
 Cast Star cannot add: MovieId:H54, StageName:Frances Bavier.
 Cast Star cannot add: MovieId:H54, StageName:Ray Montgomery.
 Cast Star cannot add: MovieId:H54, StageName:John Gallaudet.
@@ -6533,6 +6661,7 @@ Cast Star cannot add: MovieId:H76, StageName:Percy Heston.
 Cast Star cannot add: MovieId:H76, StageName:Mike Ragan.
 Cast Star cannot add: MovieId:HAA15, StageName:sa.
 Cast Star cannot add: MovieId:HaB9, StageName:Elroy Hirsch.
+Cast Star cannot add: MovieId:HaB35, StageName:Dolores DelRio.
 Cast Star cannot add: MovieId:HaB35, StageName:Lupita Ferrer.
 Cast Star cannot add: MovieId:HaC10, StageName:Paaul Lukas.
 Cast Star cannot add: MovieId:HaF23, StageName:Peter Mullins.
@@ -6546,6 +6675,7 @@ Cast Star cannot add: MovieId:HaK20, StageName:Gerald papasin.
 Cast Star cannot add: MovieId:HaM10, StageName:Steven Hill.
 Cast Star cannot add: MovieId:HaM10, StageName:Joanna.
 Cast Star cannot add: MovieId:HaM11, StageName:Linda Lawson.
+Cast Star cannot add: MovieId:HaR10, StageName:Beverly dAngelo.
 Cast Star cannot add: MovieId:HaR10, StageName:Imogene Coca.
 Cast Star cannot add: MovieId:HaR10, StageName:Miriam Flynn.
 Cast Star cannot add: MovieId:HaR10, StageName:Dana Barron.
@@ -6579,6 +6709,7 @@ Cast Movie with null id: MovieId:HBe3, StageName:Tom Cruise.
 Cast Star cannot add: MovieId:HBe10, StageName:Christina Estabrook.
 Cast Star cannot add: MovieId:HBe15, StageName:Bebe Neuwith.
 Cast Star cannot add: MovieId:HBe15, StageName:Bebe Neuwirth.
+Cast Star cannot add: MovieId:HBe15, StageName:George C. scott.
 Cast Star cannot add: MovieId:HBe18, StageName:Tony Franciosa.
 Cast Star cannot add: MovieId:HBe20, StageName:Miko Hughes.
 Cast Star cannot add: MovieId:HBH15, StageName:Thomas Beck.
@@ -6597,6 +6728,7 @@ Cast Star cannot add: MovieId:HBH72, StageName:Rickie Sorensen.
 Cast Star cannot add: MovieId:HBH75, StageName:Jean Craine.
 Cast Star cannot add: MovieId:HBH90, StageName:Kathleen Widdoes.
 Cast Star cannot add: MovieId:HBl10, StageName:Charles Bryant.
+Cast Star cannot add: MovieId:HBl20, StageName:Buster keaton.
 Cast Star cannot add: MovieId:HBl20, StageName:Beulah Booker.
 Cast Star cannot add: MovieId:HBn8, StageName:William Walsh.
 Cast Star cannot add: MovieId:HBn8, StageName:William E. Shay.
@@ -6609,6 +6741,7 @@ Cast Star cannot add: MovieId:HBn8, StageName:Millie Eisten.
 Cast Star cannot add: MovieId:HBn8, StageName:Katherine Lee.
 Cast Star cannot add: MovieId:HBn8, StageName:Herbert Brenon.
 Cast Star cannot add: MovieId:HBn25, StageName:Betty Bronson.
+Cast Star cannot add: MovieId:HBn25, StageName:Mary brian.
 Cast Star cannot add: MovieId:HBn25, StageName:Cyril Chadwick.
 Cast Star cannot add: MovieId:HBn25, StageName:Phillippe deLacy.
 Cast Star cannot add: MovieId:HBn30, StageName:Alice Joyceinnocent girl, left behind.
@@ -6631,7 +6764,9 @@ Cast Star cannot add: MovieId:HbR17, StageName:Tommy Rall.
 Cast Star cannot add: MovieId:HbR17, StageName:Robert Fitch.
 Cast Star cannot add: MovieId:HbR17, StageName:Jay Gardner.
 Cast Star cannot add: MovieId:HbR22, StageName:Gail Strickland.
+Cast Star cannot add: MovieId:HbR22, StageName:Cliff deYoung.
 Cast Star cannot add: MovieId:HbR22, StageName:Andr\'e Gregory.
+Cast Star cannot add: MovieId:HbR22, StageName:jean Smart.
 Cast Star cannot add: MovieId:HbR22, StageName:Grainger Hines.
 Cast Star cannot add: MovieId:HbR22, StageName:Mary Carver.
 Cast Star cannot add: MovieId:HbR30, StageName:Sam Sheppard.
@@ -6670,6 +6805,8 @@ Cast Star cannot add: MovieId:HDl10, StageName:Uwe Ochsenknecht.
 Cast Star cannot add: MovieId:HDu10, StageName:Bakary Bamba.
 Cast Star cannot add: MovieId:HDu10, StageName:Tchelley Hanny.
 Cast Star cannot add: MovieId:HeB5, StageName:Pixote.
+Cast Star cannot add: MovieId:HeB5, StageName:Jorge Juliao.
+Cast Star cannot add: MovieId:HeB5, StageName:Marilia Pera.
 Cast Star cannot add: MovieId:HeB5, StageName:Fatima deToledo.
 Cast Star cannot add: MovieId:HeB12, StageName:Carroll Baker.
 Cast Star cannot add: MovieId:HeB12, StageName:Diane Verona.
@@ -6753,6 +6890,7 @@ Cast Star cannot add: MovieId:HGC5, StageName:Pierre Larquey.
 Cast Star cannot add: MovieId:HGC5, StageName:Noel Roquevert.
 Cast Star cannot add: MovieId:HGC6, StageName:Charles Dullin.
 Cast Star cannot add: MovieId:HGC14, StageName:Michel Auclair.
+Cast Star cannot add: MovieId:HGC16, StageName:Peter vanEyck.
 Cast Star cannot add: MovieId:HGC17, StageName:Paul Meurisse.
 Cast Star cannot add: MovieId:HGC19, StageName:Pablo Picasso.
 Cast Star cannot add: MovieId:HGC19, StageName:HenriGeorges Clouzot.
@@ -6817,6 +6955,7 @@ Cast Star cannot add: MovieId:HHa28, StageName:Lydia St.Clair.
 Cast Star cannot add: MovieId:HHa32, StageName:Kazi Orzazewski.
 Cast Star cannot add: MovieId:HHa32, StageName:Betty Garde.
 Cast Star cannot add: MovieId:HHa38, StageName:Cedric Hardwick.
+Cast Star cannot add: MovieId:HHa38, StageName:Jessica tandy.
 Cast Star cannot add: MovieId:HHa38, StageName:Leo G. Carrol.
 Cast Star cannot add: MovieId:HHa38, StageName:Desmond Young.
 Cast Star cannot add: MovieId:HHa43, StageName:Joseph Cotton.
@@ -6892,6 +7031,7 @@ Cast Star cannot add: MovieId:HKl23, StageName:Josephine Hitchinson.
 Cast Star cannot add: MovieId:HKl23, StageName:Jocelyn Brando.
 Cast Star cannot add: MovieId:HKl30, StageName:Julia Meade.
 Cast Star cannot add: MovieId:HKl30, StageName:Edgar Buchanan.
+Cast Star cannot add: MovieId:HKl40, StageName:Macdonald Carey.
 Cast Star cannot add: MovieId:HKo6, StageName:Deanna Burbin.
 Cast Star cannot add: MovieId:HKo10, StageName:Deanna Durbin Schell.
 Cast Star cannot add: MovieId:HKo13, StageName:Bob Cummins.
@@ -6946,6 +7086,7 @@ Cast Star cannot add: MovieId:HlH2, StageName:Merritt Nelson.
 Cast Star cannot add: MovieId:HlH3, StageName:William Sage.
 Cast Star cannot add: MovieId:HlH3, StageName:Karen Silas.
 Cast Star cannot add: MovieId:HLS10, StageName:Constance Dowling.
+Cast Star cannot add: MovieId:HLS10, StageName:Philip vanZandt.
 Cast Star cannot add: MovieId:HLv10, StageName:Will Patton.
 Cast Star cannot add: MovieId:HLv10, StageName:Clare Wren.
 Cast Star cannot add: MovieId:HMD1, StageName:Glen Berry.
@@ -6976,6 +7117,7 @@ Cast Star cannot add: MovieId:HoF10, StageName:Robert Joseph Paul.
 Cast Star cannot add: MovieId:HoG10, StageName:Evelyn Kraft.
 Cast Star cannot add: MovieId:HoG10, StageName:Lee Hassen.
 Cast Star cannot add: MovieId:HoH10, StageName:George Babier.
+Cast Star cannot add: MovieId:HoH12, StageName:ZaSu Pitts.
 Cast Star cannot add: MovieId:HoH12, StageName:Charles Winniger.
 Cast Star cannot add: MovieId:HoK5, StageName:Reed Haley.
 Cast Star cannot add: MovieId:HoK8, StageName:Stuart W.
@@ -7030,6 +7172,7 @@ Cast Star cannot add: MovieId:HSB18, StageName:Johanna Schall.
 Cast Star cannot add: MovieId:HSB18, StageName:Thomas Ruchel.
 Cast Star cannot add: MovieId:HSB18, StageName:Udo Kroschwald.
 Cast Star cannot add: MovieId:HSc5, StageName:Rita Johnson.
+Cast Star cannot add: MovieId:HSc15, StageName:Peter vanEyck.
 Cast Star cannot add: MovieId:HSc15, StageName:Charles Fredericks.
 Cast Star cannot add: MovieId:HSc15, StageName:Richard Reeves.
 Cast Star cannot add: MovieId:HSc15, StageName:Zippy.
@@ -7049,7 +7192,9 @@ Cast Star cannot add: MovieId:HuW10, StageName:Kim Catrall.
 Cast Star cannot add: MovieId:HuW22, StageName:John Roselin.
 Cast Star cannot add: MovieId:HuW25, StageName:Ed Koch.
 Cast Star cannot add: MovieId:HVe10, StageName:Francoise Arnoul.
+Cast Star cannot add: MovieId:HVe11, StageName:Francoise Arnaud.
 Cast Star cannot add: MovieId:HvH10, StageName:Jaqueline Scott.
+Cast Star cannot add: MovieId:HvH11, StageName:Bruce dern.
 Cast Star cannot add: MovieId:HvH12, StageName:Jeanette Nolan.
 Cast Star cannot add: MovieId:HvH12, StageName:Tom Simcox.
 Cast Star cannot add: MovieId:HvH12, StageName:Maggie Pierce.
@@ -7076,6 +7221,7 @@ Cast Star cannot add: MovieId:HY17, StageName:Guy Kibbe.
 Cast Star cannot add: MovieId:HY17, StageName:Carl 'Alfalfa' Switzer.
 Cast Star cannot add: MovieId:HY20, StageName:Vicky Lane.
 Cast Star cannot add: MovieId:HY20, StageName:Amelita Ward Cowan.
+Cast Star cannot add: MovieId:HyA2, StageName:Jo vanFleet.
 Cast Star cannot add: MovieId:HyA2, StageName:Herbert Edelman.
 Cast Star cannot add: MovieId:HyA2, StageName:Salem Ludwig.
 Cast Star cannot add: MovieId:HyA2, StageName:Edra Gale.
@@ -7213,6 +7359,7 @@ Cast Star cannot add: MovieId:ICr7, StageName:Willam B. Davidson.
 Cast Star cannot add: MovieId:ICr7, StageName:Jimmy Finlayson.
 Cast Star cannot add: MovieId:ICr10, StageName:Judith Wood.
 Cast Star cannot add: MovieId:ICr25, StageName:Barbara Stanwyk.
+Cast Star cannot add: MovieId:ICr25, StageName:Katherine deMille.
 Cast Star cannot add: MovieId:ICr27, StageName:Douglas Fairbanks~jr.
 Cast Star cannot add: MovieId:ICr30, StageName:Carol Lombard.
 Cast Star cannot add: MovieId:ICr30, StageName:Lucille Watson.
@@ -7240,6 +7387,7 @@ Cast Star cannot add: MovieId:IDa17, StageName:Lina Fiorentino.
 Cast Star cannot add: MovieId:IDa19, StageName:Gretchen Mol.
 Cast Star cannot add: MovieId:IDk10, StageName:Greg Bensen.
 Cast Star cannot add: MovieId:IDk10, StageName:Ian Cochran.
+Cast Star cannot add: MovieId:IDk10, StageName:Olivia dAbo.
 Cast Star cannot add: MovieId:IDk30, StageName:Joe Lara.
 Cast Star cannot add: MovieId:IDk32, StageName:Les Damien.
 Cast Star cannot add: MovieId:IDk32, StageName:Donald Trump.
@@ -7262,6 +7410,7 @@ Cast Star cannot add: MovieId:IDu22, StageName:Claudia Robinson.
 Cast Star cannot add: MovieId:IDu22, StageName:Rowena King.
 Cast Star cannot add: MovieId:IDu24, StageName:Sam Neil.
 Cast Star cannot add: MovieId:IDu24, StageName:Hugh Grant.
+Cast Star cannot add: MovieId:IDu24, StageName:Elle Macpherson.
 Cast Star cannot add: MovieId:IDu24, StageName:Portia deRossi.
 Cast Star cannot add: MovieId:IDu24, StageName:Kate Fisher.
 Cast Star cannot add: MovieId:IDu24, StageName:Mark Gerber.
@@ -7290,6 +7439,7 @@ Cast Star cannot add: MovieId:IF78, StageName:Eugene Palette.
 Cast Star cannot add: MovieId:IF78, StageName:John McGuire.
 Cast Star cannot add: MovieId:IF79, StageName:Joyce Kay.
 Cast Star cannot add: MovieId:IF79, StageName:Douglas Wood.
+Cast Star cannot add: MovieId:IF81, StageName:Shirley TEmple.
 Cast Star cannot add: MovieId:IF87, StageName:stone.
 Cast Star cannot add: MovieId:IF88, StageName:Roger Imhof.
 Cast Star cannot add: MovieId:IF90, StageName:Midred Natwick.
@@ -7301,6 +7451,7 @@ Cast Star cannot add: MovieId:IF106, StageName:Eileen Crowe.
 Cast Star cannot add: MovieId:IF111, StageName:Harry Carey~jr.
 Cast Star cannot add: MovieId:IF112, StageName:Peter Mamokos.
 Cast Star cannot add: MovieId:IF112, StageName:Olive Carey.
+Cast Star cannot add: MovieId:IF115, StageName:Pat Obrien.
 Cast Star cannot add: MovieId:IF115, StageName:Edward Brophy.
 Cast Star cannot add: MovieId:IF115, StageName:Jimmy Gleason.
 Cast Star cannot add: MovieId:IF115, StageName:Willis Bouchey.
@@ -7310,13 +7461,16 @@ Cast Star cannot add: MovieId:IF135, StageName:Ann Bancroft.
 Cast Star cannot add: MovieId:IF135, StageName:Sue Lyons.
 Cast Star cannot add: MovieId:IFa17, StageName:Iris Wong.
 Cast Star cannot add: MovieId:IFa17, StageName:Tala Birell.
+Cast Star cannot add: MovieId:IFa18, StageName:Luis vanRooten.
 Cast Star cannot add: MovieId:IFa18, StageName:Alexander Pope.
 Cast Star cannot add: MovieId:IFa18, StageName:Helene Thimmig.
 Cast Star cannot add: MovieId:IFa18, StageName:Sig Rumann.
 Cast Star cannot add: MovieId:IFa24, StageName:Wiliam Bendix.
 Cast Star cannot add: MovieId:IFa25, StageName:Rita Johnson.
+Cast Star cannot add: MovieId:IFa45, StageName:Luis vanRooten.
 Cast Star cannot add: MovieId:IFa50, StageName:Susana Canales.
 Cast Star cannot add: MovieId:IFD25, StageName:Anne Harding.
+Cast Star cannot add: MovieId:IFD25, StageName:James rennie.
 Cast Star cannot add: MovieId:IFD25, StageName:Harry Bannister.
 Cast Star cannot add: MovieId:IFD25, StageName:Ben Hendricks~jr.
 Cast Star cannot add: MovieId:IFD50, StageName:Monroe Owsley.
@@ -7336,6 +7490,7 @@ Cast Star cannot add: MovieId:IFr40, StageName:George Murcell.
 Cast Star cannot add: MovieId:IFr50, StageName:Amy Hargreaves.
 Cast Star cannot add: MovieId:IFr50, StageName:Jamie Marsh.
 Cast Star cannot add: MovieId:IFr50, StageName:T.Ryder Smith.
+Cast Star cannot add: MovieId:IFr52, StageName:Stellan Skarsgard.
 Cast Star cannot add: MovieId:IFr52, StageName:Katerina Witt.
 Cast Star cannot add: MovieId:IFr52, StageName:Skipp Sudduth "Larry".
 Cast Star cannot add: MovieId:IG4, StageName:John RhysDavis.
@@ -7371,6 +7526,7 @@ Cast Star cannot add: MovieId:IGu31, StageName:I.S. Johar.
 Cast Star cannot add: MovieId:IGu31, StageName:Simon McCorkindale.
 Cast Star cannot add: MovieId:IGu31, StageName:Jane Birkin.
 Cast Star cannot add: MovieId:IGy10, StageName:Keenan J. Wyams.
+Cast Star cannot add: MovieId:IH1, StageName:Elisha Cook~Jr..
 Cast Star cannot add: MovieId:IH1, StageName:a s.
 Cast Star cannot add: MovieId:IH1, StageName:Murray Alper.
 Cast Star cannot add: MovieId:IH1, StageName:s.a..
@@ -7531,6 +7687,7 @@ Cast Star cannot add: MovieId:IMi10, StageName:Darren Dalton.
 Cast Star cannot add: MovieId:IML101, StageName:Phil Yarnis.
 Cast Star cannot add: MovieId:IML101, StageName:Raymond Guth.
 Cast Star cannot add: MovieId:IMN10, StageName:Tracy Arnold.
+Cast Star cannot add: MovieId:IMN15, StageName:Kathy baker.
 Cast Star cannot add: MovieId:IMR10, StageName:Sarah Trygger.
 Cast Star cannot add: MovieId:IMR10, StageName:Dale Dye.
 Cast Star cannot add: MovieId:IMR10, StageName:Dannon Martin.
@@ -7578,6 +7735,7 @@ Cast Star cannot add: MovieId:IMu20, StageName:Bobcat Goldwath.
 Cast Star cannot add: MovieId:IMu20, StageName:Matt Frewer.
 Cast Star cannot add: MovieId:IMx10, StageName:Adrian Hoven.
 Cast Star cannot add: MovieId:IMx10, StageName:Nial McGinnis.
+Cast Star cannot add: MovieId:IMx10, StageName:Peter vanEyck.
 Cast Star cannot add: MovieId:IMz10, StageName:Dave King.
 Cast Star cannot add: MovieId:IMz10, StageName:Brian Hall.
 Cast Star cannot add: MovieId:IMz10, StageName:Eddie Constantine.
@@ -7715,6 +7873,7 @@ Cast Star cannot add: MovieId:IrP11, StageName:Johnny Russell.
 Cast Star cannot add: MovieId:IrP18, StageName:Henry Morgan.
 Cast Star cannot add: MovieId:IrP18, StageName:Richard Crane.
 Cast Star cannot add: MovieId:IrP27, StageName:Rita Johnson.
+Cast Star cannot add: MovieId:IrP27, StageName:Jane greer.
 Cast Star cannot add: MovieId:IrR5, StageName:Barbara Stanwyk.
 Cast Star cannot add: MovieId:IrR6, StageName:Gladys Cooper.
 Cast Star cannot add: MovieId:IrR6, StageName:Ilka Chase.
@@ -7741,6 +7900,7 @@ Cast Star cannot add: MovieId:IS3, StageName:Julie Christy.
 Cast Star cannot add: MovieId:IS7, StageName:Murray Head.
 Cast Star cannot add: MovieId:IS8, StageName:Richard A. Dysart.
 Cast Star cannot add: MovieId:IS25, StageName:Matthew Modeine.
+Cast Star cannot add: MovieId:IS25, StageName:Beverly dAngelo.
 Cast Star cannot add: MovieId:IS25, StageName:Laurie Metcalf.
 Cast Star cannot add: MovieId:IS25, StageName:Dan Hedaya.
 Cast Star cannot add: MovieId:IS25, StageName:Luca Bercovici.
@@ -7788,6 +7948,9 @@ Cast Star cannot add: MovieId:IsS11, StageName:Eniko Borcsok.
 Cast Star cannot add: MovieId:IsS11, StageName:Peter Androair.
 Cast Star cannot add: MovieId:IsS11, StageName:Eva Kerekes.
 Cast Star cannot add: MovieId:IsS11, StageName:Erzsi Pastor.
+Cast Star cannot add: MovieId:ISt20, StageName:Spencer tracy.
+Cast Star cannot add: MovieId:ISt24, StageName:Lee vanCleef.
+Cast Star cannot add: MovieId:ISt24, StageName:Jo vanFleet.
 Cast Star cannot add: MovieId:ISt24, StageName:Frank Fayles.
 Cast Star cannot add: MovieId:ISt26, StageName:Felipe Pazos.
 Cast Star cannot add: MovieId:ISt29, StageName:Brad Dexter.
@@ -7808,6 +7971,7 @@ Cast Star cannot add: MovieId:ISy22, StageName:Vondie CurtisHall.
 Cast Star cannot add: MovieId:ISy22, StageName:Marianne Mullerleile.
 Cast Star cannot add: MovieId:ISy29, StageName:Elizabeth Mastrantonio.
 Cast Star cannot add: MovieId:ISy29, StageName:David Straithairn.
+Cast Star cannot add: MovieId:ISz10, StageName:Lajos Kovacs.
 Cast Star cannot add: MovieId:ISz10, StageName:Diane Vacaru.
 Cast Star cannot add: MovieId:IvB10, StageName:Gwen Watford.
 Cast Star cannot add: MovieId:IvB10, StageName:Kay Tendeter.
@@ -7900,6 +8064,7 @@ Cast Star cannot add: MovieId:JA30, StageName:Ray Anthony.
 Cast Star cannot add: MovieId:JaB2, StageName:Graham Bickel.
 Cast Star cannot add: MovieId:JaB10, StageName:Charlie Schlatter.
 Cast Star cannot add: MovieId:JaB10, StageName:Swoosie Kurtz.
+Cast Star cannot add: MovieId:JaC28, StageName:Erich vonStroheim.
 Cast Star cannot add: MovieId:JaC28, StageName: Marjorie Kane.
 Cast Star cannot add: MovieId:JaC28, StageName:s.a..
 Cast Star cannot add: MovieId:JAl20, StageName:Quincy Jones.
@@ -8012,6 +8177,7 @@ Cast Star cannot add: MovieId:JC11, StageName:Francois Perier.
 Cast Star cannot add: MovieId:JC11, StageName:Henri Cremieux.
 Cast Star cannot add: MovieId:JC11, StageName:Pablo Picasso.
 Cast Star cannot add: MovieId:JCa4, StageName:William lucas.
+Cast Star cannot add: MovieId:JCa7, StageName:Shirley Maclaine.
 Cast Star cannot add: MovieId:JCa7, StageName:Yoko Tani.
 Cast Star cannot add: MovieId:JCa9, StageName:Derek Himmo.
 Cast Star cannot add: MovieId:JcC10, StageName:Brittney Powell.
@@ -8069,12 +8235,14 @@ Cast Star cannot add: MovieId:JCn20, StageName:Jack Dodson.
 Cast Star cannot add: MovieId:JCT1, StageName:MarieFrance Pisier.
 Cast Star cannot add: MovieId:JCT1, StageName:Victor Lanoux.
 Cast Star cannot add: MovieId:JCT1, StageName:Ginette Garcin.
+Cast Star cannot add: MovieId:JCu10, StageName:Fernando Fernan Gomez.
 Cast Star cannot add: MovieId:JCv10, StageName:Patricia Routledge.
 Cast Star cannot add: MovieId:JCv16, StageName:Florinda Bolkan.
 Cast Star cannot add: MovieId:JCw44, StageName:Rod LaRoque.
 Cast Star cannot add: MovieId:JCw50, StageName:Irene Purcell.
 Cast Star cannot add: MovieId:JCw61, StageName:Romald Coleman.
 Cast Star cannot add: MovieId:JCw61, StageName:Blanke Yorks.
+Cast Star cannot add: MovieId:JCw69, StageName:William powell.
 Cast Star cannot add: MovieId:JD10, StageName:Stanislaus Zbyszko.
 Cast Star cannot add: MovieId:JD12, StageName:Carl Mohner.
 Cast Star cannot add: MovieId:JD12, StageName:Robert Manuel.
@@ -8205,6 +8373,7 @@ Cast Star cannot add: MovieId:JFr12, StageName:Maria Perschy.
 Cast Star cannot add: MovieId:JFr15, StageName:Maria Rohm.
 Cast Star cannot add: MovieId:JFr15, StageName:Margaret Lee.
 Cast Star cannot add: MovieId:JFr15, StageName:Manfred Mann.
+Cast Star cannot add: MovieId:JFr22, StageName:KLaus Kinski.
 Cast Star cannot add: MovieId:JFs10, StageName:Sylvain Copoans.
 Cast Movie with null id: MovieId:JFW5, StageName:Robby Benson.
 Cast Movie with null id: MovieId:JFW5, StageName:Linda Grovenor.
@@ -8233,6 +8402,7 @@ Cast Star cannot add: MovieId:JGo10, StageName:Jules Buck.
 Cast Star cannot add: MovieId:JGo10, StageName:Adria Mitchell.
 Cast Star cannot add: MovieId:JGo10, StageName:Peter Ellis.
 Cast Star cannot add: MovieId:JGo10, StageName:Peter Ellis.
+Cast Star cannot add: MovieId:JGo13, StageName:Alan badel.
 Cast Star cannot add: MovieId:JGr5, StageName:Laurence Clavius.
 Cast Star cannot add: MovieId:JGr30, StageName:Paul Bernard.
 Cast Star cannot add: MovieId:JGs6, StageName:Tony Franciosa.
@@ -8253,6 +8423,7 @@ Cast Star cannot add: MovieId:JHj10, StageName:John David Carson.
 Cast Star cannot add: MovieId:JHL12, StageName:Peggy Cumming.
 Cast Star cannot add: MovieId:JHo20, StageName:Julia Adams.
 Cast Star cannot add: MovieId:JHo24, StageName:Tim Hovey.
+Cast Star cannot add: MovieId:JHo24, StageName:Cecil kellaway.
 Cast Star cannot add: MovieId:JHo40, StageName:Katherine Bard.
 Cast Star cannot add: MovieId:JHr10, StageName:Liza Minelli.
 Cast Star cannot add: MovieId:JHr20, StageName:Busby Berkeley.
@@ -8295,6 +8466,7 @@ Cast Star cannot add: MovieId:JiG10, StageName:Jennifer LoveHewitt.
 Cast Star cannot add: MovieId:JiG10, StageName:Freddie Prinze~jr..
 Cast Star cannot add: MovieId:JiG10, StageName:Bridgitte Wilson.
 Cast Star cannot add: MovieId:JiS10, StageName:Meatloaf.
+Cast Star cannot add: MovieId:JiS10, StageName:little Nell.
 Cast Star cannot add: MovieId:JIv8, StageName:Jennifer Kendal.
 Cast Star cannot add: MovieId:JIv15, StageName:Dena Dietrich.
 Cast Star cannot add: MovieId:JIv35, StageName:Isabella Celani.
@@ -8352,12 +8524,14 @@ Cast Star cannot add: MovieId:JJA25, StageName:B.D. Wong.
 Cast Star cannot add: MovieId:JJB1, StageName:Wilhelmena Wiggins Fernandez.
 Cast Star cannot add: MovieId:JJB1, StageName:Jacques Fabri.
 Cast Star cannot add: MovieId:JJB1, StageName:Roland Bertin.
+Cast Star cannot add: MovieId:JJB1, StageName:Gerard Darmon.
 Cast Star cannot add: MovieId:JJB1, StageName:Chantal Dernaz.
 Cast Star cannot add: MovieId:JJB1, StageName:Patrick Floersheim.
 Cast Star cannot add: MovieId:JJB1, StageName:JeanJaques Moreau.
 Cast Star cannot add: MovieId:JJB1, StageName:Anny Romand.
 Cast Star cannot add: MovieId:JJB10, StageName:Nastassia Kinski.
 Cast Star cannot add: MovieId:JJB15, StageName:JeanHughes Anglade.
+Cast Star cannot add: MovieId:JJB15, StageName:Gerard Darmon.
 Cast Star cannot add: MovieId:JJC10, StageName:Aitana SanchezGion.
 Cast Star cannot add: MovieId:JJC10, StageName:Michael Badalucco.
 Cast Star cannot add: MovieId:JJm2, StageName:John Lurie.
@@ -8411,6 +8585,7 @@ Cast Star cannot add: MovieId:JKp35, StageName:Kate Beckinsdale.
 Cast Star cannot add: MovieId:JKp35, StageName:Tom Amandes.
 Cast Star cannot add: MovieId:JKp35, StageName:Hank Green.
 Cast Star cannot add: MovieId:JKp35, StageName:Lou Richard Phillips.
+Cast Star cannot add: MovieId:JKp35, StageName:Daniel LaPaine.
 Cast Star cannot add: MovieId:JKp35, StageName:Nick Pars.
 Cast Star cannot add: MovieId:JKp35, StageName:Skip Karn.
 Cast Star cannot add: MovieId:JKp35, StageName:Davis.
@@ -8431,6 +8606,7 @@ Cast Star cannot add: MovieId:JLa10, StageName:Lara Zano.
 Cast Star cannot add: MovieId:JLa10, StageName:Dana Delaney.
 Cast Star cannot add: MovieId:JLa10, StageName:Leila Robbins.
 Cast Star cannot add: MovieId:JLa10, StageName:Julianna Lavin.
+Cast Star cannot add: MovieId:JLa10, StageName:Olivia dAbo.
 Cast Star cannot add: MovieId:JLa10, StageName:Cynthia Stevenson.
 Cast Star cannot add: MovieId:JLa10, StageName:Glenn Quinn.
 Cast Star cannot add: MovieId:JLB12, StageName:Whittni Wright.
@@ -8489,12 +8665,14 @@ Cast Star cannot add: MovieId:JLG55, StageName:Rene Kollo.
 Cast Star cannot add: MovieId:JLG55, StageName:Jussi Bjoerling.
 Cast Star cannot add: MovieId:JLG55, StageName:Jennifers Smith.
 Cast Star cannot add: MovieId:JLM2, StageName:Henry Morgan.
+Cast Star cannot add: MovieId:JLM3, StageName:Anna lee.
 Cast Star cannot add: MovieId:JLM6, StageName:Celest Holm.
 Cast Star cannot add: MovieId:JLM6, StageName:Jeanne Craine.
 Cast Star cannot add: MovieId:JLM8, StageName:Paul Valentine.
 Cast Star cannot add: MovieId:JLM8, StageName:Efrem Zimbalist~jr.
 Cast Star cannot add: MovieId:JLM8, StageName:Mushy Callahan.
 Cast Star cannot add: MovieId:JLM9, StageName:Maryilyn Monroe.
+Cast Star cannot add: MovieId:JLM12, StageName:Edmond Obrien.
 Cast Star cannot add: MovieId:JLM13, StageName:Edmund OBrien.
 Cast Star cannot add: MovieId:JLM13, StageName:Valentina Cortese.
 Cast Star cannot add: MovieId:JLM13, StageName:Tonio Selwart.
@@ -8504,6 +8682,7 @@ Cast Star cannot add: MovieId:JLo4, StageName:Walter Burke.
 Cast Star cannot add: MovieId:JLo17, StageName:Derk Bogard.
 Cast Star cannot add: MovieId:JLo18, StageName:Vivian Merchant.
 Cast Star cannot add: MovieId:JLo25, StageName:Marcus Richardson.
+Cast Star cannot add: MovieId:JLo25, StageName:Kate nelligan.
 Cast Star cannot add: MovieId:JLo25, StageName:Rene Koldehoff.
 Cast Star cannot add: MovieId:JLo27, StageName:Ruggero Raimondo.
 Cast Star cannot add: MovieId:JLo27, StageName:Kiri TeKanawa.
@@ -8630,6 +8809,7 @@ Cast Star cannot add: MovieId:JnL12, StageName:Ralph Maccio.
 Cast Star cannot add: MovieId:JnL12, StageName:Mitchell Whitfield.
 Cast Star cannot add: MovieId:JnL12, StageName:Bruce McGill.
 Cast Star cannot add: MovieId:JnL13, StageName:Sheryl Lee Ralph.
+Cast Star cannot add: MovieId:JnL15, StageName:Olivia dAbo.
 Cast Star cannot add: MovieId:JnL18, StageName:Michael Richards.
 Cast Star cannot add: MovieId:JnL18, StageName:Alexandra Wentworth.
 Cast Star cannot add: MovieId:JnL18, StageName:Jessica C..
@@ -8649,7 +8829,9 @@ Cast Star cannot add: MovieId:JNm64, StageName:Diane Sayer.
 Cast Star cannot add: MovieId:JNm65, StageName:Patricia Cutts.
 Cast Star cannot add: MovieId:JNm66, StageName:Roddy mcDowell.
 Cast Star cannot add: MovieId:JNm66, StageName:Efrem Zimbalist~jr.
+Cast Star cannot add: MovieId:JNm67, StageName:Lola albright.
 Cast Star cannot add: MovieId:JNm68, StageName:T.C. Jones.
+Cast Star cannot add: MovieId:JNm68, StageName:Louise latham.
 Cast Movie with null id: MovieId:JnCN10, StageName:Winona Ryder.
 Cast Movie with null id: MovieId:JnCN10, StageName:Richard Gere.
 Cast Movie with null id: MovieId:JnCN10, StageName:Elaine Stritch.
@@ -8690,6 +8872,7 @@ Cast Star cannot add: MovieId:JNs112, StageName:Joanne Linoche.
 Cast Star cannot add: MovieId:JNs210, StageName:Deborah Walley.
 Cast Star cannot add: MovieId:JNs210, StageName:Eddie Hodges.
 Cast Star cannot add: MovieId:JoA10, StageName:Keuanu Reeves.
+Cast Star cannot add: MovieId:JoA10, StageName:Peter gallagher.
 Cast Star cannot add: MovieId:JoA10, StageName:John Laroquette.
 Cast Star cannot add: MovieId:JoA10, StageName:San Hedaya.
 Cast Star cannot add: MovieId:JoA10, StageName:Irving Metzman.
@@ -8763,6 +8946,7 @@ Cast Star cannot add: MovieId:JoM15, StageName:Ken Anderson.
 Cast Star cannot add: MovieId:JoM15, StageName:Roy Baker.
 Cast Star cannot add: MovieId:JoP2, StageName:Edmon Ryan.
 Cast Star cannot add: MovieId:JoP2, StageName:Gerlad Mohr.
+Cast Star cannot add: MovieId:JoP41, StageName:Anne baxter.
 Cast Star cannot add: MovieId:JoP42, StageName:Polfich.
 Cast Star cannot add: MovieId:JoP42, StageName:Jean Hake.
 Cast Star cannot add: MovieId:JoP43, StageName:Lynn Loring.
@@ -8859,6 +9043,7 @@ Cast Star cannot add: MovieId:JqD7, StageName:Donald Pleasance.
 Cast Star cannot add: MovieId:JqF25, StageName:Hlomers Herbert.
 Cast Star cannot add: MovieId:JqF40, StageName:Jean Murat.
 Cast Star cannot add: MovieId:JqF40, StageName:Andre Alerme.
+Cast Star cannot add: MovieId:JqF50, StageName:Irene vanBrugh.
 Cast Star cannot add: MovieId:JqF50, StageName:Basil Gill.
 Cast Star cannot add: MovieId:JqM10, StageName:Matthiau Demy.
 Cast Star cannot add: MovieId:JqM11, StageName:Patachou.
@@ -8895,6 +9080,7 @@ Cast Star cannot add: MovieId:JR50, StageName:Gabriello.
 Cast Star cannot add: MovieId:JR50, StageName:Jeanne Marken.
 Cast Star cannot add: MovieId:JR50, StageName:Sylvia Bataille.
 Cast Star cannot add: MovieId:JR50, StageName:Jean Renoir.
+Cast Star cannot add: MovieId:JR55, StageName:Erich vonStroheim.
 Cast Star cannot add: MovieId:JR55, StageName:Julien Carette.
 Cast Star cannot add: MovieId:JR55, StageName:Georges Peclet.
 Cast Star cannot add: MovieId:JR55, StageName:Jacques Becker.
@@ -8917,6 +9103,7 @@ Cast Star cannot add: MovieId:JR70, StageName:Eddy Debray.
 Cast Star cannot add: MovieId:JR70, StageName:Henri Cartier-Bresson.
 Cast Star cannot add: MovieId:JR70, StageName:Andre Zwoboda.
 Cast Star cannot add: MovieId:JR75, StageName:Guinn Williams.
+Cast Star cannot add: MovieId:JR77, StageName:Una Oconnor.
 Cast Star cannot add: MovieId:JR77, StageName:Phillip Merivale.
 Cast Star cannot add: MovieId:JR77, StageName:George Couloris.
 Cast Star cannot add: MovieId:JR79, StageName:J. Carrol Nash.
@@ -9003,6 +9190,7 @@ Cast Star cannot add: MovieId:JSz3, StageName:Christine Freeman.
 Cast Star cannot add: MovieId:JSz3, StageName:Mike Masculo.
 Cast Star cannot add: MovieId:JSz12, StageName:Branda Vaccaro.
 Cast Star cannot add: MovieId:JSz12, StageName:David Healy.
+Cast Star cannot add: MovieId:JSz15, StageName:Mario van Peebles.
 Cast Star cannot add: MovieId:JT1, StageName:Jacques Tati.
 Cast Star cannot add: MovieId:JT1, StageName:Guy Decomble.
 Cast Star cannot add: MovieId:JT1, StageName:Santa Relli.
@@ -9017,6 +9205,7 @@ Cast Star cannot add: MovieId:JT3, StageName:Lucien Fr\'egis.
 Cast Star cannot add: MovieId:JT4, StageName:Barbara Dennek.
 Cast Star cannot add: MovieId:JT4, StageName:Jacqueline Lecomte.
 Cast Star cannot add: MovieId:JT4, StageName:Henri Piccoli.
+Cast Star cannot add: MovieId:JtF1, StageName:Levar Burton.
 Cast Star cannot add: MovieId:JtF1, StageName:Michael Dorn.
 Cast Star cannot add: MovieId:JtF1, StageName:Gates McFadden.
 Cast Star cannot add: MovieId:JtF1, StageName:Mariana Sirtis.
@@ -9026,6 +9215,7 @@ Cast Star cannot add: MovieId:JtF3, StageName:F.Murray Abrahams.
 Cast Star cannot add: MovieId:JtF3, StageName:Michael Piler.
 Cast Star cannot add: MovieId:JTg5, StageName:Warner Baxtre.
 Cast Star cannot add: MovieId:JTg5, StageName:Ketti Gallian.
+Cast Star cannot add: MovieId:JTg5, StageName:Jack laRue.
 Cast Star cannot add: MovieId:JTg7, StageName:Maxie Rosenbloom.
 Cast Star cannot add: MovieId:JTh10, StageName:Karl Boehm.
 Cast Star cannot add: MovieId:JTh10, StageName:Roger C. Carmel.
@@ -9039,6 +9229,7 @@ Cast Star cannot add: MovieId:JTo7, StageName:Veronica Gng.
 Cast Star cannot add: MovieId:JTo7, StageName:Fred Hess.
 Cast Star cannot add: MovieId:JTo7, StageName:Barbara Traub.
 Cast Star cannot add: MovieId:JTo7, StageName:Elaine Kaufman.
+Cast Star cannot add: MovieId:JTo7, StageName:Jose Torres.
 Cast Star cannot add: MovieId:JTo7, StageName:Tony Sirico.
 Cast Star cannot add: MovieId:JTo7, StageName:James Toback Sirico.
 Cast Star cannot add: MovieId:JTo7, StageName:Joseph Kanter.
@@ -9048,6 +9239,7 @@ Cast Star cannot add: MovieId:JTu10, StageName:Doug E Doug.
 Cast Star cannot add: MovieId:JTu14, StageName:Cuba Gooding~jr.
 Cast Star cannot add: MovieId:JTu14, StageName:Daniel Sarthwara.
 Cast Star cannot add: MovieId:JTu14, StageName:Mara Tierney.
+Cast Star cannot add: MovieId:JuA102, StageName:Peter vanEyck.
 Cast Star cannot add: MovieId:JuA102, StageName:Konstantis Shayne.
 Cast Star cannot add: MovieId:JuA102, StageName:Ralph Manza.
 Cast Star cannot add: MovieId:JuA103, StageName:Virginia Gregg.
@@ -9070,6 +9262,7 @@ Cast Star cannot add: MovieId:JuB102, StageName:A.E. GouldPotter.
 Cast Star cannot add: MovieId:JuD8, StageName:Gabriel Gabrio.
 Cast Star cannot add: MovieId:JuD8, StageName:Line Noro.
 Cast Star cannot add: MovieId:JuD8, StageName:Lucas Gridoux.
+Cast Star cannot add: MovieId:JuD10, StageName:Herman bing.
 Cast Star cannot add: MovieId:JuD10, StageName:Curu Bois.
 Cast Star cannot add: MovieId:JuD13, StageName:James Gleason.
 Cast Star cannot add: MovieId:JuD13, StageName:The Hall Johnson Choir.
@@ -9126,6 +9319,7 @@ Cast Star cannot add: MovieId:JW1, StageName:Kent Douglass.
 Cast Star cannot add: MovieId:JW1, StageName:Enid Bennett.
 Cast Star cannot add: MovieId:JW1, StageName:Frederick Kerr.
 Cast Star cannot add: MovieId:JW2, StageName:John Boles.
+Cast Star cannot add: MovieId:JW2, StageName:Edward vanSloan.
 Cast Star cannot add: MovieId:JW2, StageName:Frederick Kerr.
 Cast Star cannot add: MovieId:JW4, StageName:Lilian Bond.
 Cast Star cannot add: MovieId:JW4, StageName:John Dudgeon.
@@ -9141,6 +9335,7 @@ Cast Star cannot add: MovieId:JWB10, StageName:Isaach deBancole.
 Cast Star cannot add: MovieId:JWB10, StageName:Myriam Cyr.
 Cast Star cannot add: MovieId:JWe1, StageName:Gregg Weaver.
 Cast Star cannot add: MovieId:JWe1, StageName:Virgina Gregg.
+Cast Star cannot add: MovieId:JWe6, StageName:jack Webb.
 Cast Star cannot add: MovieId:JWe6, StageName:Richard Bakalyn.
 Cast Star cannot add: MovieId:JWe12, StageName:Vic Perrin.
 Cast Star cannot add: MovieId:JWe12, StageName:Bobby Troup.
@@ -9191,12 +9386,14 @@ Cast Star cannot add: MovieId:KBg8, StageName:Joshua Miller.
 Cast Star cannot add: MovieId:KBg8, StageName:Adrian Pastar.
 Cast Star cannot add: MovieId:KBg8, StageName:Marcie Leeds.
 Cast Star cannot add: MovieId:KBg10, StageName:John C. McGuiley.
+Cast Star cannot add: MovieId:KBg10, StageName:James leGros.
 Cast Star cannot add: MovieId:KBg10, StageName:Bojesse Christopher.
 Cast Star cannot add: MovieId:KBg10, StageName:Julian Reyes.
 Cast Star cannot add: MovieId:KBg10, StageName:Daniel Beer.
 Cast Star cannot add: MovieId:KBg10, StageName:Chris Pedersen.
 Cast Star cannot add: MovieId:KBi5, StageName:Barbara Ferris.
 Cast Star cannot add: MovieId:KBi10, StageName:JeanClaude Drouot.
+Cast Star cannot add: MovieId:KBi10, StageName:Fernando rey.
 Cast Star cannot add: MovieId:KBr1, StageName:Christopher Ravenscroft.
 Cast Star cannot add: MovieId:KBr1, StageName:Richard Briars.
 Cast Star cannot add: MovieId:KBr1, StageName:Richard Easton.
@@ -9230,6 +9427,7 @@ Cast Star cannot add: MovieId:KeA19, StageName:Jimmy Edwards.
 Cast Star cannot add: MovieId:KeA19, StageName:Marita Hunt.
 Cast Star cannot add: MovieId:KeA25, StageName:James Roobertson Jutice.
 Cast Star cannot add: MovieId:KeA25, StageName:Stanley Baxter.
+Cast Star cannot add: MovieId:KeA31, StageName:Jeanpierre Cassel.
 Cast Star cannot add: MovieId:KeA31, StageName:Irena Demich.
 Cast Star cannot add: MovieId:KeA31, StageName:John LeMesurier.
 Cast Star cannot add: MovieId:KeA31, StageName:Tony Hancock.
@@ -9244,6 +9442,7 @@ Cast Star cannot add: MovieId:KeA43, StageName:Corey Crow.
 Cast Star cannot add: MovieId:KeA43, StageName:George diCenzo.
 Cast Star cannot add: MovieId:KeA43, StageName:Lo Dickinson.
 Cast Star cannot add: MovieId:KeA43, StageName:Chaub Bailly.
+Cast Star cannot add: MovieId:KeA43, StageName:Dick vanPatten.
 Cast Star cannot add: MovieId:KeA43, StageName:Branscombe Highmond.
 Cast Star cannot add: MovieId:KeC1, StageName:Rodney A. Grant.
 Cast Star cannot add: MovieId:KeC1, StageName:Floyd Red Crow Westerman.
@@ -9296,6 +9495,7 @@ Cast Star cannot add: MovieId:KIW10, StageName:Keenan Ivory Wyans.
 Cast Star cannot add: MovieId:KKw10, StageName:Fran Drescher.
 Cast Star cannot add: MovieId:KKw10, StageName:Lisa Jacub.
 Cast Star cannot add: MovieId:KKw10, StageName:Lerner.
+Cast Star cannot add: MovieId:KKw10, StageName:Ian MCNeice.
 Cast Star cannot add: MovieId:KKw10, StageName:Kyle.T..
 Cast Star cannot add: MovieId:KLe1, StageName:Samuael L. Jackson.
 Cast Star cannot add: MovieId:KLe1, StageName:Jurnee Smollett.
@@ -9326,6 +9526,7 @@ Cast Star cannot add: MovieId:KOr1, StageName:Luke Edwards.
 Cast Star cannot add: MovieId:KOr1, StageName:AnnMargaret.
 Cast Star cannot add: MovieId:KOr1, StageName:Kevin Tighe.
 Cast Star cannot add: MovieId:KOr2, StageName:Omri Katz.
+Cast Star cannot add: MovieId:KPe10, StageName:Chloe Sevigny.
 Cast Star cannot add: MovieId:KrD10, StageName:David Stroud.
 Cast Star cannot add: MovieId:KrD10, StageName:Phil Brown.
 Cast Star cannot add: MovieId:KrK30, StageName:Grazyna Szapolowska.
@@ -9335,6 +9536,7 @@ Cast Star cannot add: MovieId:KrK35, StageName:Nasicaa Rampony.
 Cast Star cannot add: MovieId:KrK38, StageName:Benoit Regent.
 Cast Star cannot add: MovieId:KRu6, StageName:Christopher Gable.
 Cast Star cannot add: MovieId:KRu6, StageName:Tommy Tune.
+Cast Star cannot add: MovieId:KRu6, StageName:Max adrian.
 Cast Star cannot add: MovieId:KRu6, StageName:Brian Pringle.
 Cast Star cannot add: MovieId:KRu6, StageName:Moyra Fraser.
 Cast Star cannot add: MovieId:KRu8, StageName:Victoria Russell.
@@ -9405,7 +9607,9 @@ Cast Star cannot add: MovieId:KuF11, StageName:Liselotte POulver.
 Cast Star cannot add: MovieId:KuN4, StageName:Clyde Beatty.
 Cast Star cannot add: MovieId:KuN4, StageName:Vince Barnett.
 Cast Star cannot add: MovieId:KuN12, StageName:J.Carol Naish.
+Cast Star cannot add: MovieId:KuN30, StageName:Barton Maclane.
 Cast Star cannot add: MovieId:KuN33, StageName:Acquanetta.
+Cast Star cannot add: MovieId:KuN36, StageName:Barton Maclane.
 Cast Star cannot add: MovieId:KuN36, StageName:Patricia Morrison.
 Cast Star cannot add: MovieId:KuN40, StageName:Victor Joy.
 Cast Star cannot add: MovieId:KuN40, StageName:Susan Cabot.
@@ -9478,6 +9682,7 @@ Cast Star cannot add: MovieId:LaC20, StageName:Sally Grey.
 Cast Star cannot add: MovieId:LaC35, StageName:Bruce Seton.
 Cast Star cannot add: MovieId:LaC35, StageName:Harry Welchman.
 Cast Star cannot add: MovieId:LaC35, StageName:Kynsta Geer.
+Cast Star cannot add: MovieId:LaH10, StageName:Edward vanSloan.
 Cast Star cannot add: MovieId:LaH10, StageName:Marguerite Churchill.
 Cast Star cannot add: MovieId:LAl2, StageName:Dorothy Stickney.
 Cast Star cannot add: MovieId:LAl4, StageName:Richard Lyon.
@@ -9504,6 +9709,7 @@ Cast Star cannot add: MovieId:LaW10, StageName:George Melville.
 Cast Star cannot add: MovieId:LaW10, StageName:William Burgess.
 Cast Star cannot add: MovieId:LB1, StageName:Pierre Batcheff.
 Cast Star cannot add: MovieId:LB1, StageName:Simone Mateuil.
+Cast Star cannot add: MovieId:LB1, StageName:Salvador Dali.
 Cast Star cannot add: MovieId:LB1, StageName:Luis Bunuel.
 Cast Star cannot add: MovieId:LB2, StageName:Gaston Morlot.
 Cast Star cannot add: MovieId:LB2, StageName:Lya Lys.
@@ -9533,9 +9739,11 @@ Cast Movie with null id: MovieId:LB35, StageName:Fernando Rey.
 Cast Movie with null id: MovieId:LB35, StageName:Carole Bouquet.
 Cast Movie with null id: MovieId:LB35, StageName:Angela Molina.
 Cast Star cannot add: MovieId:LBe10, StageName:JeanHughes Anglade.
+Cast Star cannot add: MovieId:LBe10, StageName:Tcheky Karyo.
 Cast Star cannot add: MovieId:LBe10, StageName:Jaques Boudet.
 Cast Star cannot add: MovieId:LBe10, StageName:Jean Moore.
 Cast Star cannot add: MovieId:LBe10, StageName:Jerry Ramos.
+Cast Star cannot add: MovieId:LBe15, StageName:Eric Serra.
 Cast Star cannot add: MovieId:LBe16, StageName:Tcheka.
 Cast Star cannot add: MovieId:LBu1, StageName:Pamela Brown.
 Cast Star cannot add: MovieId:LBn10, StageName:Anthony Huston.
@@ -9549,6 +9757,7 @@ Cast Star cannot add: MovieId:LBx5, StageName:Dominque Blanc.
 Cast Star cannot add: MovieId:LBx6, StageName:Dominque Blanc.
 Cast Star cannot add: MovieId:LBx6, StageName:Dominque Blanc.
 Cast Star cannot add: MovieId:LBx6, StageName:Bernard Mazzinghi.
+Cast Star cannot add: MovieId:LCh1, StageName:Joyce vanPatten.
 Cast Star cannot add: MovieId:LCh2, StageName:a s.
 Cast Star cannot add: MovieId:LCh15, StageName:Ronee Blakelee.
 Cast Star cannot add: MovieId:LCh15, StageName:Dan Dailey.
@@ -9565,6 +9774,7 @@ Cast Star cannot add: MovieId:LDo10, StageName:Sophia Adella Hernandez.
 Cast Star cannot add: MovieId:LDo10, StageName:Fredia Gibbs.
 Cast Star cannot add: MovieId:LDo10, StageName:Maria Conchito Alonso.
 Cast Star cannot add: MovieId:LDo10, StageName:Tony Plana.
+Cast Star cannot add: MovieId:LeG12, StageName:Donald woods.
 Cast Star cannot add: MovieId:LeG36, StageName:Lon Channey.
 Cast Star cannot add: MovieId:LeG36, StageName:Virginia Christine.
 Cast Star cannot add: MovieId:LeG36, StageName:Kay Harding.
@@ -9611,6 +9821,7 @@ Cast Star cannot add: MovieId:LFl70, StageName:Ren\'e Creste.
 Cast Star cannot add: MovieId:LFl70, StageName:Marcel L\'evesque.
 Cast Star cannot add: MovieId:LFl70, StageName:Diana Monti.
 Cast Star cannot add: MovieId:LgC10, StageName:Marisa Merlini.
+Cast Star cannot add: MovieId:LgC10, StageName:Vittorio deSica.
 Cast Star cannot add: MovieId:LgC30, StageName:Barbara Hendricks.
 Cast Star cannot add: MovieId:LgC30, StageName:Luca Canonici.
 Cast Star cannot add: MovieId:LgC30, StageName:Gino Quilico.
@@ -9622,6 +9833,8 @@ Cast Star cannot add: MovieId:LGt19, StageName:Carl Mohner.
 Cast Star cannot add: MovieId:LGt31, StageName:Carloine Munro.
 Cast Star cannot add: MovieId:LGt31, StageName:Gerge Baker.
 Cast Star cannot add: MovieId:LGt31, StageName:Sydnet Taffer.
+Cast Star cannot add: MovieId:LGt31, StageName:Desmond LLewellyn.
+Cast Star cannot add: MovieId:LGt32, StageName:Desmond LLewellyn.
 Cast Star cannot add: MovieId:LGt33, StageName:sa.
 Cast Star cannot add: MovieId:LGt33, StageName:Michael Wilkins.
 Cast Star cannot add: MovieId:LGt45, StageName:Liza Minelli.
@@ -9777,6 +9990,7 @@ Cast Star cannot add: MovieId:LMa19, StageName:Blaise Pascal.
 Cast Star cannot add: MovieId:LMa21, StageName:Frances Faye.
 Cast Star cannot add: MovieId:LMa35, StageName:Dominque Blanc.
 Cast Star cannot add: MovieId:LMa35, StageName:Rozenn LeTallec.
+Cast Star cannot add: MovieId:LMa35, StageName:Francois Berleand.
 Cast Star cannot add: MovieId:LMa35, StageName:Bruno Carette.
 Cast Star cannot add: MovieId:LMa35, StageName:Martine Gautier.
 Cast Star cannot add: MovieId:LMa35, StageName:Paulette Dubost.
@@ -9830,6 +10044,7 @@ Cast Star cannot add: MovieId:LoK3, StageName:J.Carroll Naish.
 Cast Star cannot add: MovieId:LoK9, StageName:Thomas Beck.
 Cast Star cannot add: MovieId:LoK9, StageName:Farnk Conroy.
 Cast Star cannot add: MovieId:LoK20, StageName:Louise Campbell.
+Cast Star cannot add: MovieId:LoK50, StageName:Victor mature.
 Cast Star cannot add: MovieId:LoK50, StageName:Walter Reed.
 Cast Star cannot add: MovieId:LOl1, StageName:Rene\'e Asherson.
 Cast Star cannot add: MovieId:LOl1, StageName:George Robey.
@@ -9837,7 +10052,9 @@ Cast Star cannot add: MovieId:LOl1, StageName:Janet Burnett.
 Cast Star cannot add: MovieId:LOl1, StageName:Frederick Cooper.
 Cast Star cannot add: MovieId:LOl1, StageName:Jonathan Field.
 Cast Star cannot add: MovieId:LOl1, StageName:Russell Thorndike.
+Cast Star cannot add: MovieId:LOl3, StageName:Stanley baker.
 Cast Star cannot add: MovieId:LOl3, StageName:Pamela brown.
+Cast Star cannot add: MovieId:LOl3, StageName:Helen haye.
 Cast Star cannot add: MovieId:LOl4, StageName:Rosamund Greenwood.
 Cast Star cannot add: MovieId:LoM2, StageName:Huntley Gordon.
 Cast Star cannot add: MovieId:LoM2, StageName:William Austin.
@@ -9891,7 +10108,9 @@ Cast Star cannot add: MovieId:LuB21, StageName:Rini Otte.
 Cast Star cannot add: MovieId:LuB21, StageName:Max Croiset.
 Cast Star cannot add: MovieId:LuC10, StageName:Donald Ritchie.
 Cast Star cannot add: MovieId:LuD1, StageName:Oliver Gourmet.
+Cast Star cannot add: MovieId:LuD1, StageName:Jeremie Renier.
 Cast Star cannot add: MovieId:LuD1, StageName:Assita Ouedraogo.
+Cast Star cannot add: MovieId:LuD4, StageName:Emilie Dequenne.
 Cast Star cannot add: MovieId:LuM13, StageName:Max Parrish.
 Cast Star cannot add: MovieId:LuM13, StageName:Nora Dawn.
 Cast Star cannot add: MovieId:LuM16, StageName:Lauren Tom.
@@ -9917,6 +10136,7 @@ Cast Star cannot add: MovieId:LuV3, StageName:Gastone Renzelli.
 Cast Star cannot add: MovieId:LuV20, StageName:Massimo Girotti.
 Cast Star cannot add: MovieId:LuV20, StageName:Christian Marquand.
 Cast Star cannot add: MovieId:LuV30, StageName:Roger Hanin.
+Cast Star cannot add: MovieId:LuV40, StageName:Sophia loren.
 Cast Star cannot add: MovieId:LuV64, StageName:Bjorn Andresen.
 Cast Star cannot add: MovieId:LuV64, StageName:Franco Fabrizi.
 Cast Star cannot add: MovieId:LuV64, StageName:Carol Andre.
@@ -9927,6 +10147,7 @@ Cast Star cannot add: MovieId:LuV80, StageName:Massimo Girotti.
 Cast Star cannot add: MovieId:LuV80, StageName:Didier Haudepin.
 Cast Star cannot add: MovieId:LVa10, StageName:Rosana deSoto.
 Cast Star cannot add: MovieId:LVa10, StageName:Danielle vonZerneck.
+Cast Star cannot add: MovieId:LVa10, StageName:Elizabeth Pena.
 Cast Star cannot add: MovieId:LVa12, StageName:Danny Valdez.
 Cast Star cannot add: MovieId:LvK8, StageName:Alexandra Khokholva.
 Cast Star cannot add: MovieId:LvK8, StageName:Sergai Kamorov.
@@ -9937,6 +10158,8 @@ Cast Star cannot add: MovieId:LvT10, StageName:Ernst Hugo Jaregard.
 Cast Star cannot add: MovieId:LvT10, StageName:Barbara Sukowa.
 Cast Star cannot add: MovieId:LvT10, StageName:Jorgen Reenberg.
 Cast Star cannot add: MovieId:LvT10, StageName:Eddie Constantine.
+Cast Star cannot add: MovieId:LvT20, StageName:Stellan Skarsgard.
+Cast Star cannot add: MovieId:LvT25, StageName:Bjork.
 Cast Star cannot add: MovieId:LvT25, StageName:Vladica Kostic.
 Cast Star cannot add: MovieId:LvT25, StageName:Cara Seymor.
 Cast Star cannot add: MovieId:LvT25, StageName:Peter Stormage.
@@ -9962,6 +10185,7 @@ Cast Star cannot add: MovieId:LwT33, StageName:Daniel Hugh-Kelly.
 Cast Star cannot add: MovieId:LwT39, StageName:Spiros Ficas.
 Cast Star cannot add: MovieId:LwT50, StageName:Joanne WhalleyKilmer.
 Cast Star cannot add: MovieId:LwT50, StageName:Cyril OReilly.
+Cast Star cannot add: MovieId:LwT50, StageName:Nicholas kadi.
 Cast Star cannot add: MovieId:LwT50, StageName:Ron Joseph.
 Cast Star cannot add: MovieId:LwT50, StageName:Richard Venture.
 Cast Star cannot add: MovieId:LwT50, StageName:Greg McKinney.
@@ -10048,6 +10272,7 @@ Cast Star cannot add: MovieId:MB4, StageName:Madeline Kahn.
 Cast Star cannot add: MovieId:MB6, StageName:Madeline Kahn.
 Cast Star cannot add: MovieId:MB9, StageName:Madeline Kahn.
 Cast Star cannot add: MovieId:MB15, StageName:Dick Gautier.
+Cast Star cannot add: MovieId:MB15, StageName:Dick vanPatten.
 Cast Star cannot add: MovieId:MB15, StageName:Henry Polic~II.
 Cast Star cannot add: MovieId:MB15, StageName:David Sabin.
 Cast Star cannot add: MovieId:MB15, StageName:Misty Rowe.
@@ -10068,6 +10293,7 @@ Cast Star cannot add: MovieId:MBe18, StageName:Vittorio Mezzogiorno.
 Cast Star cannot add: MovieId:MBi10, StageName:Julie Warner.
 Cast Star cannot add: MovieId:MBi10, StageName:Kevin Pollack.
 Cast Star cannot add: MovieId:MBi10, StageName:Kimberly Williams.
+Cast Star cannot add: MovieId:MBl5, StageName:Gerard Lanvin.
 Cast Star cannot add: MovieId:MBm1, StageName:Judy Graubert.
 Cast Star cannot add: MovieId:MBm3, StageName:Chistopher Collen.
 Cast Star cannot add: MovieId:MBm3, StageName:Jill Eisenberry.
@@ -10267,6 +10493,7 @@ Cast Star cannot add: MovieId:MiA8, StageName:Luis Dominguin.
 Cast Star cannot add: MovieId:MiA8, StageName:Jose Greco.
 Cast Star cannot add: MovieId:MiA8, StageName:A.E. Mathews.
 Cast Star cannot add: MovieId:MiA8, StageName:Ed Murrow.
+Cast Star cannot add: MovieId:MiA18, StageName:Vittorio deSica.
 Cast Star cannot add: MovieId:MiA18, StageName:Clive Revell.
 Cast Star cannot add: MovieId:MiA25, StageName:Wayne Heffler.
 Cast Star cannot add: MovieId:MiA25, StageName:Peter Hoofer.
@@ -10309,6 +10536,7 @@ Cast Star cannot add: MovieId:MiJ10, StageName:Thomas Aran.
 Cast Star cannot add: MovieId:MiJ10, StageName:Richard Birt.
 Cast Star cannot add: MovieId:MiJ10, StageName:Robert Wuhl.
 Cast Star cannot add: MovieId:MiJ12, StageName:Dana Carvey.
+Cast Star cannot add: MovieId:MiJ12, StageName:Olivia dAbo.
 Cast Star cannot add: MovieId:MiJ15, StageName:Anne Hecht.
 Cast Star cannot add: MovieId:MiJ15, StageName:Gaby Hoffman.
 Cast Star cannot add: MovieId:MiL4, StageName:Roger Sloman.
@@ -10402,6 +10630,7 @@ Cast Movie with null id: MovieId:MkJ11, StageName:Milo OShea.
 Cast Star cannot add: MovieId:MkK10, StageName:John Searle.
 Cast Star cannot add: MovieId:MkK10, StageName:Frank Bardache.
 Cast Star cannot add: MovieId:MkP1, StageName:Ben Keyworth.
+Cast Star cannot add: MovieId:MkP1, StageName:Paul mcGann.
 Cast Star cannot add: MovieId:MkP1, StageName:Clare Holman.
 Cast Star cannot add: MovieId:MkR10, StageName:Terry Kinney.
 Cast Star cannot add: MovieId:MkR10, StageName:Terrence Knox.
@@ -10481,12 +10710,14 @@ Cast Star cannot add: MovieId:MLR12, StageName:Betty Davis.
 Cast Star cannot add: MovieId:MLR14, StageName:Aline McMahon.
 Cast Star cannot add: MovieId:MLR14, StageName:Clarence Nordstrom.
 Cast Star cannot add: MovieId:MLR16, StageName:Sybil Jackson.
+Cast Star cannot add: MovieId:MLR16, StageName:Barton Maclane.
 Cast Star cannot add: MovieId:MLR18, StageName:Gale Sondergard.
 Cast Star cannot add: MovieId:MLR18, StageName:Steffi Duna.
 Cast Star cannot add: MovieId:MLR18, StageName:Rollo Lloyd.
 Cast Star cannot add: MovieId:MLR22, StageName:Lucille Watson.
 Cast Star cannot add: MovieId:MLR22, StageName:Steffi Dunna.
 Cast Star cannot add: MovieId:MLR27, StageName:Bramwell Fletcher.
+Cast Star cannot add: MovieId:MLR29, StageName:Van johnson.
 Cast Star cannot add: MovieId:MLR29, StageName:Tim Murdock.
 Cast Star cannot add: MovieId:MLR30, StageName:Phil Brown.
 Cast Star cannot add: MovieId:MLR34, StageName:Barbara Stanwyk.
@@ -10617,6 +10848,7 @@ Cast Star cannot add: MovieId:MOp19, StageName:Fernand Gravey.
 Cast Star cannot add: MovieId:MOp19, StageName:Odette Joyeux.
 Cast Star cannot add: MovieId:MOp20, StageName:Daniel G\'elin.
 Cast Star cannot add: MovieId:MOp20, StageName:Madelaine Reanaud.
+Cast Star cannot add: MovieId:MOp21, StageName:Vittorio deSica.
 Cast Star cannot add: MovieId:MOp21, StageName:Jean Debuncourt.
 Cast Star cannot add: MovieId:MOp21, StageName:Lia deLea.
 Cast Star cannot add: MovieId:MOp22, StageName:Will Quadflieg.
@@ -10675,9 +10907,12 @@ Cast Star cannot add: MovieId:MPi50, StageName:Elza Siberstein.
 Cast Star cannot add: MovieId:MPi50, StageName:Leslie Azoulot.
 Cast Movie with null id: MovieId:MPl10, StageName:Jeremy Davis.
 Cast Movie with null id: MovieId:MPl10, StageName:Ben Affleck.
+Cast Star cannot add: MovieId:MPo10, StageName:Sergi Lopez.
+Cast Star cannot add: MovieId:MPo10, StageName:Elisabeth Vitali.
 Cast Star cannot add: MovieId:MPr4, StageName:Ricard Y\~niguez.
 Cast Star cannot add: MovieId:MPr4, StageName:Danny delaPaz.
 Cast Star cannot add: MovieId:MPr4, StageName:Marta duBois.
+Cast Star cannot add: MovieId:MPr6, StageName:Margot kidder.
 Cast Star cannot add: MovieId:MPr11, StageName:Tony Azito.
 Cast Star cannot add: MovieId:MPr25, StageName:Thomas McCarthy.
 Cast Star cannot add: MovieId:MPr25, StageName:Jeffrey Nordling.
@@ -10686,6 +10921,7 @@ Cast Star cannot add: MovieId:MPr25, StageName:Edward Herrman.
 Cast Star cannot add: MovieId:MR2, StageName:Shreee North.
 Cast Star cannot add: MovieId:MR4, StageName:Ina balin.
 Cast Star cannot add: MovieId:MR4, StageName:Jimmy Baird.
+Cast Star cannot add: MovieId:MR11, StageName:Peter vanEyck.
 Cast Star cannot add: MovieId:MR11, StageName:Goeoge Voskovec.
 Cast Star cannot add: MovieId:MR12, StageName:Frederic March.
 Cast Star cannot add: MovieId:MR13, StageName:Irene Pappas.
@@ -10811,6 +11047,7 @@ Cast Star cannot add: MovieId:MS25, StageName:Joseph DOnofrio.
 Cast Star cannot add: MovieId:MS26, StageName:Joe Don Parker.
 Cast Star cannot add: MovieId:MS28, StageName:MaryBeth Hurt.
 Cast Star cannot add: MovieId:MS28, StageName:Stan Phillips.
+Cast Star cannot add: MovieId:MS30, StageName:Robert de Niro.
 Cast Star cannot add: MovieId:MS30, StageName:Oscar Goodman.
 Cast Star cannot add: MovieId:MSa8, StageName:Harriett Hilliard.
 Cast Star cannot add: MovieId:MSa8, StageName:Harry Beresford.
@@ -10862,8 +11099,10 @@ Cast Star cannot add: MovieId:MSp5, StageName:Clotilde Coureau.
 Cast Star cannot add: MovieId:MSp10, StageName:Clotilde Coureau.
 Cast Star cannot add: MovieId:MSp10, StageName:Vincent Elbas.
 Cast Star cannot add: MovieId:MSp10, StageName:Karin Vaud.
+Cast Star cannot add: MovieId:MSp10, StageName:Geraldine Pailhas.
 Cast Star cannot add: MovieId:MSr10, StageName:Heinz Bennent.
 Cast Star cannot add: MovieId:MSr10, StageName:JeanMarc Bory.
+Cast Star cannot add: MovieId:MSr10, StageName:Aurore Clement.
 Cast Star cannot add: MovieId:MSr10, StageName:Anne Lonnberg.
 Cast Star cannot add: MovieId:MSt30, StageName:Lars Hanson.
 Cast Star cannot add: MovieId:MSt30, StageName:Karin Molander.
@@ -10908,10 +11147,12 @@ Cast Star cannot add: MovieId:MTU10, StageName:Danny Kameakona.
 Cast Star cannot add: MovieId:MTU10, StageName:Patty Yatsutake.
 Cast Star cannot add: MovieId:MTU10, StageName:Takago Fisher.
 Cast Star cannot add: MovieId:MTU10, StageName:Ken Narasaki.
+Cast Star cannot add: MovieId:MuB5, StageName:Donald pleasence.
 Cast Star cannot add: MovieId:MuB5, StageName:Walter Crisham.
 Cast Star cannot add: MovieId:MuK10, StageName:Mathiau Kassovitz.
 Cast Star cannot add: MovieId:MuK10, StageName:Julie Mauduech.
 Cast Star cannot add: MovieId:MuK10, StageName:Hubert Kounde.
+Cast Star cannot add: MovieId:MvD10, StageName:Fedja van Huet.
 Cast Star cannot add: MovieId:MvD10, StageName:Betty Shuurman.
 Cast Star cannot add: MovieId:MVh10, StageName:Lena Stolze.
 Cast Star cannot add: MovieId:MVh10, StageName:Elisabeth Berkin.
@@ -10976,7 +11217,9 @@ Cast Star cannot add: MovieId:MyH10, StageName:William Dafoe.
 Cast Star cannot add: MovieId:MyH10, StageName:Cloe Sevigny.
 Cast Star cannot add: MovieId:MyH10, StageName:Cara Seymor.
 Cast Star cannot add: MovieId:MyR10, StageName:Richard Brando.
+Cast Star cannot add: MovieId:MyS10, StageName:Koji Yakusho.
 Cast Star cannot add: MovieId:MZ1, StageName:Anita Bjork.
+Cast Star cannot add: MovieId:MZ1, StageName:Gunnar bjornstrand.
 Cast Star cannot add: MovieId:MZ15, StageName:Chrissie Cotterill.
 Cast Star cannot add: MovieId:MZa5, StageName:Alastair Sim.
 Cast Star cannot add: MovieId:MZa10, StageName:Vernon Gray.
@@ -11047,6 +11290,7 @@ Cast Star cannot add: MovieId:NF13, StageName:Pauline Moore.
 Cast Star cannot add: MovieId:NF13, StageName:June Gale.
 Cast Star cannot add: MovieId:NF13, StageName:Douglas Dumbrille.
 Cast Star cannot add: MovieId:NF13, StageName:Billie Seward.
+Cast Star cannot add: MovieId:NF13, StageName:Donald mcBride.
 Cast Star cannot add: MovieId:NF13, StageName:Trevor Bardette.
 Cast Star cannot add: MovieId:NF16, StageName:Jack Moss.
 Cast Star cannot add: MovieId:NF29, StageName:Johnny Crawford.
@@ -11057,6 +11301,8 @@ Cast Star cannot add: MovieId:NGr10, StageName:Stanley Smith.
 Cast Star cannot add: MovieId:NGr10, StageName:Gus Shy.
 Cast Star cannot add: MovieId:NGr10, StageName:Mary Lawlor.
 Cast Star cannot add: MovieId:NGr10, StageName:Dorothy McNutty.
+Cast Star cannot add: MovieId:NGr20, StageName:Pedro deCordoba.
+Cast Star cannot add: MovieId:NGr20, StageName:Edward vanSloan.
 Cast Star cannot add: MovieId:NHa10, StageName:Laurence.
 Cast Star cannot add: MovieId:NHy10, StageName:Ian Holme.
 Cast Star cannot add: MovieId:NHy17, StageName:Amanda Schull.
@@ -11110,6 +11356,7 @@ Cast Star cannot add: MovieId:NJ12, StageName:Paul Thoma.
 Cast Star cannot add: MovieId:NJ25, StageName:Antonia Minelli.
 Cast Star cannot add: MovieId:NJ34, StageName:Adolph Ceasar.
 Cast Star cannot add: MovieId:NJi10, StageName:Wesly Snipes.
+Cast Star cannot add: MovieId:NJi10, StageName:Elizabeth Pena.
 Cast Star cannot add: MovieId:NJu9, StageName:William Hudson.
 Cast Star cannot add: MovieId:NJu9, StageName:Yvette Vickers.
 Cast Star cannot add: MovieId:NJu9, StageName:Otto Waldis.
@@ -11118,10 +11365,13 @@ Cast Star cannot add: MovieId:NJu10, StageName:Admiral Nimitz.
 Cast Star cannot add: MovieId:NJu12, StageName:Kerwin Matthews.
 Cast Star cannot add: MovieId:NJu20, StageName:Mark Dignum.
 Cast Star cannot add: MovieId:NkM10, StageName:Patrick Dempsy.
+Cast Star cannot add: MovieId:NkM10, StageName:Olivia dAbo.
 Cast Star cannot add: MovieId:NkM10, StageName:Lisa Bonet.
 Cast Star cannot add: MovieId:NkM10, StageName:Michael Jeter.
 Cast Star cannot add: MovieId:NKp10, StageName:Pablo Picasso.
+Cast Star cannot add: MovieId:NKp12, StageName:Bernadette LaFont.
 Cast Star cannot add: MovieId:NKp30, StageName:Adolph Gance.
+Cast Star cannot add: MovieId:NKz10, StageName:Madchen Amick.
 Cast Star cannot add: MovieId:NKz10, StageName:Frederic Lehne.
 Cast Star cannot add: MovieId:NLB10, StageName:Matt Malloy.
 Cast Star cannot add: MovieId:NLl93, StageName:Leslie Neilson.
@@ -11280,6 +11530,7 @@ Cast Star cannot add: MovieId:NSg10, StageName:Lovelady Powell.
 Cast Star cannot add: MovieId:NSg10, StageName:Tom Poston.
 Cast Star cannot add: MovieId:NSm10, StageName:Geoge Tobias.
 Cast Star cannot add: MovieId:NSv10, StageName:Tracy Ullman.
+Cast Star cannot add: MovieId:NSv10, StageName:Vincent dOnofrio.
 Cast Star cannot add: MovieId:NSv10, StageName:Lilly Taylor.
 Cast Star cannot add: MovieId:NT20, StageName:Robert Coogan.
 Cast Star cannot add: MovieId:NT20, StageName:Mitzi Green.
@@ -11294,6 +11545,7 @@ Cast Star cannot add: MovieId:NT32, StageName:Grace Bradley.
 Cast Star cannot add: MovieId:NT32, StageName:Casa.
 Cast Star cannot add: MovieId:NT36, StageName:Carol Lombard.
 Cast Star cannot add: MovieId:NT36, StageName:Jay Henry.
+Cast Star cannot add: MovieId:NT40, StageName:Donald meek.
 Cast Star cannot add: MovieId:NT40, StageName:George Breakston.
 Cast Star cannot add: MovieId:NT44, StageName:C.Henry Gordon.
 Cast Star cannot add: MovieId:NT44, StageName:Benny Baker.
@@ -11319,6 +11571,7 @@ Cast Star cannot add: MovieId:NT127, StageName:Nancy Walters.
 Cast Star cannot add: MovieId:NT127, StageName:John Archer.
 Cast Star cannot add: MovieId:NT128, StageName:Laurel Goodwin.
 Cast Star cannot add: MovieId:NuJ1, StageName:Anita Bjork.
+Cast Star cannot add: MovieId:NuJ1, StageName:Peter vanEyck.
 Cast Star cannot add: MovieId:NuJ2, StageName:Peggy Ann Gardner.
 Cast Star cannot add: MovieId:NuJ2, StageName:Hilda Simms.
 Cast Star cannot add: MovieId:NuJ3, StageName:Orson Bean.
@@ -11342,6 +11595,7 @@ Cast Star cannot add: MovieId:nYo15, StageName:Shu Qi.
 Cast Star cannot add: MovieId:nYo15, StageName:Jason Chang.
 Cast Star cannot add: MovieId:OKa10, StageName:Savas Yurttas.
 Cast Star cannot add: MovieId:OKa10, StageName:Sevda Furdag.
+Cast Star cannot add: MovieId:OlA10, StageName:Judith Godreche.
 Cast Star cannot add: MovieId:OlA10, StageName:Thomas Langmann.
 Cast Star cannot add: MovieId:OlA14, StageName:Maggie Cheung.
 Cast Star cannot add: MovieId:OlS12, StageName:Terrence Stamp.
@@ -11391,6 +11645,7 @@ Cast Star cannot add: MovieId:OP30, StageName:Royal Beal West.
 Cast Star cannot add: MovieId:OP30, StageName:Mrs.~Joseph L. Welch.
 Cast Star cannot add: MovieId:OP31, StageName:Eve Marie Saint.
 Cast Star cannot add: MovieId:OP40, StageName:Liza Minelli.
+Cast Star cannot add: MovieId:OP40, StageName:Robert moore.
 Cast Star cannot add: MovieId:OP50, StageName:Richard Vernon.
 Cast Star cannot add: MovieId:OP50, StageName:Joop Doderer.
 Cast Star cannot add: MovieId:OPa1, StageName:Anna Patrick.
@@ -11417,6 +11672,7 @@ Cast Star cannot add: MovieId:OW4, StageName:Konstantin Shayne.
 Cast Star cannot add: MovieId:OW4, StageName:Billy House.
 Cast Star cannot add: MovieId:OW5, StageName:Ted deCorsica.
 Cast Star cannot add: MovieId:OW6, StageName:Jeanette Nolan.
+Cast Star cannot add: MovieId:OW6, StageName:Dan Oherlihy.
 Cast Star cannot add: MovieId:OW7, StageName:Michael MacLiammoir.
 Cast Star cannot add: MovieId:OW7, StageName:Robert Cook.
 Cast Star cannot add: MovieId:OW7, StageName:Michael Lawrence.
@@ -11443,6 +11699,7 @@ Cast Star cannot add: MovieId:PAd13, StageName:Christine Kaufmann.
 Cast Star cannot add: MovieId:PAd17, StageName:kd. Laing.
 Cast Star cannot add: MovieId:PAd17, StageName:Rosel Zech.
 Cast Star cannot add: MovieId:PaF10, StageName:Mary Steenbugen.
+Cast Star cannot add: MovieId:PaH50, StageName:George MacReady.
 Cast Star cannot add: MovieId:PaH50, StageName:Kathleen McGuire.
 Cast Star cannot add: MovieId:PaH50, StageName:George McReady.
 Cast Star cannot add: MovieId:PaH50, StageName:Michael Kahn.
@@ -11518,11 +11775,13 @@ Cast Star cannot add: MovieId:PAl4, StageName:Antonio Banderos.
 Cast Star cannot add: MovieId:PAl6, StageName:Manuela Velasco.
 Cast Star cannot add: MovieId:PAl6, StageName:Bibi Andersen.
 Cast Star cannot add: MovieId:PAl10, StageName:Julietta Serrano.
+Cast Star cannot add: MovieId:PAl12, StageName:Loles Leon.
 Cast Star cannot add: MovieId:PAl12, StageName:Lola Cordona.
 Cast Star cannot add: MovieId:PAl14, StageName:Marisa Paredes.
 Cast Star cannot add: MovieId:PAl14, StageName:Feodor Atkine.
 Cast Star cannot add: MovieId:PAl14, StageName:Miguel Bosd\'e.
 Cast Star cannot add: MovieId:PAl14, StageName:Mairata Obsiedo.
+Cast Star cannot add: MovieId:PAl16, StageName:Veronica Forque.
 Cast Star cannot add: MovieId:PAl16, StageName:Alex Casanovas.
 Cast Star cannot add: MovieId:PAl18, StageName:Marisa Parades.
 Cast Star cannot add: MovieId:PAl18, StageName:Imanuel Arias.
@@ -11533,7 +11792,9 @@ Cast Movie with null id: MovieId:PAl20, StageName:Liberto Rabal.
 Cast Movie with null id: MovieId:PAl20, StageName:Javier Barden.
 Cast Movie with null id: MovieId:PAl20, StageName:Pepe Sancho.
 Cast Star cannot add: MovieId:PAl21, StageName:Maria Paredes.
+Cast Star cannot add: MovieId:PAl21, StageName:Candela Pena.
 Cast Star cannot add: MovieId:PAl21, StageName:Antonia SanJuan.
+Cast Star cannot add: MovieId:PAl21, StageName:Penelope Cruz.
 Cast Star cannot add: MovieId:PaM10, StageName:Irene Ware.
 Cast Star cannot add: MovieId:PaM10, StageName:Dorothy Burgess.
 Cast Star cannot add: MovieId:PaP10, StageName:Ettore Garofolo.
@@ -11657,6 +11918,7 @@ Cast Star cannot add: MovieId:PFa10, StageName:E-than Randall.
 Cast Star cannot add: MovieId:PFa10, StageName:Christen McDonald.
 Cast Star cannot add: MovieId:PFa10, StageName:Ari Megro.
 Cast Star cannot add: MovieId:PFa10, StageName:C.D. Daley.
+Cast Star cannot add: MovieId:PFa10, StageName:Jobeth Williams.
 Cast Star cannot add: MovieId:PFC10, StageName:Frank Wolff.
 Cast Star cannot add: MovieId:PFo10, StageName:Bartalomeo Pagano.
 Cast Star cannot add: MovieId:PFo15, StageName:Pina Menichelli.
@@ -11677,6 +11939,7 @@ Cast Star cannot add: MovieId:PGr5, StageName:Anne Louise Lambert.
 Cast Star cannot add: MovieId:PGr5, StageName:Neil Cunningham.
 Cast Star cannot add: MovieId:PGr5, StageName:Hugh Fraser.
 Cast Star cannot add: MovieId:PGr5, StageName:Dave Hill.
+Cast Star cannot add: MovieId:PGr7, StageName:Andrea Ferreol.
 Cast Star cannot add: MovieId:PGr7, StageName:Eric Deacon.
 Cast Star cannot add: MovieId:PGr10, StageName:Chloe Webb.
 Cast Star cannot add: MovieId:PGr10, StageName:Geoffrey Copleston.
@@ -11810,6 +12073,7 @@ Cast Star cannot add: MovieId:PLe16, StageName:Jan Rochefort.
 Cast Star cannot add: MovieId:PLe16, StageName:JeanPierre Marielle.
 Cast Star cannot add: MovieId:PLe16, StageName:Catherine Roquefort.
 Cast Star cannot add: MovieId:PLf10, StageName:Jaques Perrin.
+Cast Star cannot add: MovieId:PLf10, StageName:Andrea Ferreol.
 Cast Star cannot add: MovieId:PLi10, StageName:Marianne Lofgren.
 Cast Star cannot add: MovieId:PLi10, StageName:Marianne Aminoff.
 Cast Star cannot add: MovieId:PLi10, StageName:Olof Widgren.
@@ -11844,6 +12108,7 @@ Cast Movie with null id: MovieId:PM8, StageName:Vittorio Gassman.
 Cast Movie with null id: MovieId:PM8, StageName:Paul Mazursky.
 Cast Movie with null id: MovieId:PM8, StageName:Jason Robards.
 Cast Star cannot add: MovieId:PM10, StageName:Little Richard.
+Cast Star cannot add: MovieId:PM10, StageName:Elizabeth Pena.
 Cast Star cannot add: MovieId:PM12, StageName:Margaret Sophie Stein.
 Cast Star cannot add: MovieId:PM12, StageName:Judith Malina.
 Cast Star cannot add: MovieId:PM12, StageName:Phil Leeds.
@@ -11865,6 +12130,7 @@ Cast Star cannot add: MovieId:PMo17, StageName:Candy Darling.
 Cast Star cannot add: MovieId:PMo17, StageName:Jackie Curtid.
 Cast Star cannot add: MovieId:PMo17, StageName:Holly Woodlawn.
 Cast Star cannot add: MovieId:PMo22, StageName:Arno Juerging.
+Cast Star cannot add: MovieId:PMo22, StageName:Vittorio deSica.
 Cast Star cannot add: MovieId:PMo22, StageName:Maxime McEnery.
 Cast Star cannot add: MovieId:PMo27, StageName:Patrick Shoene.
 Cast Star cannot add: MovieId:PMo27, StageName:Christina Indri.
@@ -11920,6 +12186,7 @@ Cast Star cannot add: MovieId:PRo55, StageName:Sheila Terry.
 Cast Star cannot add: MovieId:PRo55, StageName:Theodore Newton.
 Cast Star cannot add: MovieId:PRP10, StageName:Merret Oppenheim.
 Cast Star cannot add: MovieId:PRP10, StageName:Renate Steiger.
+Cast Star cannot add: MovieId:PRs10, StageName:Beverly dAngelo.
 Cast Star cannot add: MovieId:PRs10, StageName:x Miranal.
 Cast Star cannot add: MovieId:PRs10, StageName:Paul Bartel.
 Cast Star cannot add: MovieId:PRs10, StageName:Salvatore x.
@@ -11998,6 +12265,7 @@ Cast Star cannot add: MovieId:PUs6, StageName:Eug\`ene Deckers.
 Cast Star cannot add: MovieId:PVh9, StageName:Monique vandeVen.
 Cast Star cannot add: MovieId:PVh9, StageName:Tonny Huurdeman.
 Cast Star cannot add: MovieId:PVh12, StageName:Hans vanTongeren.
+Cast Star cannot add: MovieId:PVh12, StageName:Renee Soutendijk.
 Cast Star cannot add: MovieId:PVh17, StageName:Rachel Ticotin.
 Cast Star cannot add: MovieId:PVh18, StageName:Jeanne Triplehorn.
 Cast Star cannot add: MovieId:PVh18, StageName:Dorithy Malone.
@@ -12112,8 +12380,10 @@ Cast Star cannot add: MovieId:RAl20, StageName:Stephen Joyce.
 Cast Star cannot add: MovieId:RAl20, StageName:Frank Marlowe.
 Cast Star cannot add: MovieId:RAl50, StageName:Steve Ihnat.
 Cast Star cannot add: MovieId:RAl55, StageName:Theresa Wright.
+Cast Star cannot add: MovieId:RAl55, StageName:Nanette fabray.
 Cast Star cannot add: MovieId:RAl69, StageName:Marcel Bozuffi.
 Cast Star cannot add: MovieId:RAl69, StageName:Hugh Millais.
+Cast Star cannot add: MovieId:RAl70, StageName:Nina vanPallandt.
 Cast Star cannot add: MovieId:RAl72, StageName:Ann Prentiss.
 Cast Star cannot add: MovieId:RAl72, StageName:Joseph Walsh.
 Cast Star cannot add: MovieId:RAl73, StageName:Allan Nicholls.
@@ -12124,6 +12394,7 @@ Cast Star cannot add: MovieId:RAl90, StageName:Johanne terSteege.
 Cast Star cannot add: MovieId:RAl90, StageName:Hans Kesting.
 Cast Star cannot add: MovieId:RAl90, StageName:Jip Wijngaarden.
 Cast Star cannot add: MovieId:RAl90, StageName:Bernadette Giraurd.
+Cast Star cannot add: MovieId:RAl93, StageName:Vincent dOnofrio.
 Cast Star cannot add: MovieId:RAl93, StageName:Whoopie Goldberg.
 Cast Star cannot add: MovieId:RAl93, StageName:Lilie Tomlin.
 Cast Star cannot add: MovieId:RAl93, StageName:Andie McDowell.
@@ -12153,6 +12424,7 @@ Cast Star cannot add: MovieId:RaR10, StageName:Melvin Poupaud.
 Cast Star cannot add: MovieId:RaR12, StageName:Ann Poirot.
 Cast Star cannot add: MovieId:RaR12, StageName:Ann Parillaud.
 Cast Star cannot add: MovieId:RaR12, StageName:Lee Ann Fleck.
+Cast Star cannot add: MovieId:RaR13, StageName:Emmanuelle Beart.
 Cast Star cannot add: MovieId:RaR13, StageName:MarieFrance Pisier.
 Cast Star cannot add: MovieId:RAs10, StageName:Terry-Thomas.
 Cast Star cannot add: MovieId:RaT1, StageName:Peter Hammond.
@@ -12169,6 +12441,7 @@ Cast Star cannot add: MovieId:RAu10, StageName:Patricia Haines.
 Cast Star cannot add: MovieId:RaW2, StageName:Julanna Johnston.
 Cast Star cannot add: MovieId:RaW2, StageName:Etta Lee.
 Cast Star cannot add: MovieId:RaW2, StageName:sr.
+Cast Star cannot add: MovieId:RaW20, StageName:Dolores DelRio.
 Cast Star cannot add: MovieId:RaW59, StageName:Paul Kelley.
 Cast Star cannot add: MovieId:RaW59, StageName:Pricilla Lane.
 Cast Star cannot add: MovieId:RaW59, StageName:Edward Keane.
@@ -12187,6 +12460,8 @@ Cast Star cannot add: MovieId:RaW61, StageName:Charles Wilson.
 Cast Star cannot add: MovieId:RaW62, StageName:Artthur Kennedy.
 Cast Star cannot add: MovieId:RaW63, StageName:Sydney Greenstreet.
 Cast Star cannot add: MovieId:RaW63, StageName:Charles Grapwin.
+Cast Star cannot add: MovieId:RaW63, StageName:Stanley ridges.
+Cast Star cannot add: MovieId:RaW63, StageName:Hattie mcDaniel.
 Cast Star cannot add: MovieId:RaW66, StageName:Ronald Sinclair.
 Cast Star cannot add: MovieId:RaW66, StageName:Sig Rumann.
 Cast Star cannot add: MovieId:RaW66, StageName:Ilka Gruning.
@@ -12221,6 +12496,7 @@ Cast Star cannot add: MovieId:RbD3, StageName:George Marshall.
 Cast Star cannot add: MovieId:RbD3, StageName:Spunky-Funk Johnson.
 Cast Star cannot add: MovieId:RbD3, StageName:Pepi Hermine.
 Cast Star cannot add: MovieId:RbD3, StageName:Ruth Hermine.
+Cast Star cannot add: MovieId:RBe1, StageName:Jeff bridges.
 Cast Star cannot add: MovieId:RBe2, StageName:Joanne Cassidy.
 Cast Star cannot add: MovieId:RBe5, StageName:Sara Botsford.
 Cast Star cannot add: MovieId:RBe5, StageName:Josef Somner.
@@ -12274,6 +12550,7 @@ Cast Star cannot add: MovieId:RC19, StageName:Queenie Leonard.
 Cast Star cannot add: MovieId:RC19, StageName:Harry Thurston.
 Cast Star cannot add: MovieId:RC21, StageName:Nicole Besnard.
 Cast Star cannot add: MovieId:RcB1, StageName:Roman Navarro.
+Cast Star cannot add: MovieId:RcB3, StageName:Joe deSantis.
 Cast Star cannot add: MovieId:RcB3, StageName:Joyce McKenzie.
 Cast Star cannot add: MovieId:RcB3, StageName:Fay Baker.
 Cast Star cannot add: MovieId:RcB5, StageName:Eva Gobor.
@@ -12323,6 +12600,7 @@ Cast Star cannot add: MovieId:RCo3, StageName:Jil Jarmyn.
 Cast Star cannot add: MovieId:RCo11, StageName:Richard Garland.
 Cast Star cannot add: MovieId:RCo11, StageName:Pamela Duncan.
 Cast Star cannot add: MovieId:RCo11, StageName:Russell Johnson.
+Cast Star cannot add: MovieId:RCo14, StageName:Charles bronson.
 Cast Star cannot add: MovieId:RCo14, StageName:Susan Cabot.
 Cast Star cannot add: MovieId:RCo14, StageName:Maury Amsrdam.
 Cast Star cannot add: MovieId:RCo14, StageName:Barboura Morris.
@@ -12354,6 +12632,7 @@ Cast Star cannot add: MovieId:RCo43, StageName:Oliver Johnson.
 Cast Star cannot add: MovieId:RCo43, StageName:Derek Frances.
 Cast Star cannot add: MovieId:RCo44, StageName:Michael J. Polard.
 Cast Star cannot add: MovieId:RCo44, StageName:Gayle Hunnicutt.
+Cast Star cannot add: MovieId:RCo47, StageName:Robert DeNiro.
 Cast Star cannot add: MovieId:RCo47, StageName:Clint Kimbrough.
 Cast Star cannot add: MovieId:RCo48, StageName:Robert Corff.
 Cast Star cannot add: MovieId:RCo48, StageName:Elaine Giftos.
@@ -12373,6 +12652,7 @@ Cast Star cannot add: MovieId:RD8, StageName:Wilfred Hyde-White.
 Cast Star cannot add: MovieId:RD9, StageName:Ken Hutchinson.
 Cast Star cannot add: MovieId:RD15, StageName:Mathew Broderick.
 Cast Star cannot add: MovieId:RD15, StageName:Rutiger Hauer.
+Cast Star cannot add: MovieId:RD15, StageName:John wood.
 Cast Star cannot add: MovieId:RD15, StageName:Ken Hutchinson.
 Cast Star cannot add: MovieId:RD19, StageName:Mitchell Ryan.
 Cast Star cannot add: MovieId:RD19, StageName:Darlene Love.
@@ -12406,6 +12686,7 @@ Cast Star cannot add: MovieId:RDL13, StageName:Richard hurndall.
 Cast Star cannot add: MovieId:RDL13, StageName:Alastair Sim.
 Cast Star cannot add: MovieId:RDL17, StageName:Michael C. Gwynne.
 Cast Star cannot add: MovieId:RDL20, StageName:Anette OToole.
+Cast Star cannot add: MovieId:RdM8, StageName:Lee J. cobb.
 Cast Star cannot add: MovieId:RdM8, StageName:Adele Jergens.
 Cast Star cannot add: MovieId:RdM8, StageName:Stephen Dunne.
 Cast Star cannot add: MovieId:RdM18, StageName:Reginal Sheffield.
@@ -12457,8 +12738,11 @@ Cast Star cannot add: MovieId:RdR53, StageName:Vilma Ebsen.
 Cast Star cannot add: MovieId:RdR54, StageName:Alive Faye.
 Cast Star cannot add: MovieId:RdR54, StageName:George Babier.
 Cast Star cannot add: MovieId:RdR54, StageName:Ritz Brothers.
+Cast Star cannot add: MovieId:RdR56, StageName:Buddy ebsen.
 Cast Star cannot add: MovieId:RdR56, StageName:Sid Silvers.
 Cast Star cannot add: MovieId:RdR56, StageName:Raymond Wilburn.
+Cast Star cannot add: MovieId:RdR66, StageName:leo Gorcey.
+Cast Star cannot add: MovieId:RdR66, StageName:Donald meek.
 Cast Star cannot add: MovieId:RdR90, StageName:Juli Reding.
 Cast Star cannot add: MovieId:RDu10, StageName:Angelo Evans.
 Cast Star cannot add: MovieId:RDu15, StageName:Jewell Jernigan.
@@ -12607,6 +12891,7 @@ Cast Star cannot add: MovieId:RGr30, StageName:Andras Morton.
 Cast Star cannot add: MovieId:RGr30, StageName:Bela Both.
 Cast Star cannot add: MovieId:RGr30, StageName:Leo Lissek.
 Cast Star cannot add: MovieId:RGr30, StageName:Alyson Spiro.
+Cast Star cannot add: MovieId:RGr30, StageName:Janos Kulka.
 Cast Star cannot add: MovieId:RGr30, StageName:Athena Papadimitriu.
 Cast Star cannot add: MovieId:RHa4, StageName:Alec Guiness.
 Cast Star cannot add: MovieId:RHa4, StageName:Alec Guiness.
@@ -12704,6 +12989,7 @@ Cast Star cannot add: MovieId:RiF10, StageName:Queenie Leonard.
 Cast Star cannot add: MovieId:RiF10, StageName:David Charlie.
 Cast Star cannot add: MovieId:RiF13, StageName:Carlton Young.
 Cast Star cannot add: MovieId:RiF13, StageName:Ted DeCorsica.
+Cast Star cannot add: MovieId:RiF15, StageName:Cornelia otis skinner.
 Cast Star cannot add: MovieId:RiF18, StageName:Eileen Way.
 Cast Star cannot add: MovieId:RiF20, StageName:Robert Simon.
 Cast Star cannot add: MovieId:RiF21, StageName:William Lucas.
@@ -12939,6 +13225,7 @@ Cast Star cannot add: MovieId:RoA32, StageName:Michael Fox.
 Cast Movie with null id: MovieId:RoA35, StageName:Michael Caine.
 Cast Movie with null id: MovieId:RoA35, StageName:Cliff Robertson.
 Cast Movie with null id: MovieId:RoA35, StageName:Henry Fonda.
+Cast Star cannot add: MovieId:RoA48, StageName:Keith carradine.
 Cast Star cannot add: MovieId:RoA57, StageName:Catherine Bach.
 Cast Star cannot add: MovieId:RoA66, StageName:Chales Duning.
 Cast Star cannot add: MovieId:RoA66, StageName:Louis Gossett~jr..
@@ -12981,6 +13268,7 @@ Cast Star cannot add: MovieId:RoP4, StageName:Fional Lewis.
 Cast Star cannot add: MovieId:RoP5, StageName:Elisha Cook.
 Cast Star cannot add: MovieId:RoP7, StageName:Sydne Rome.
 Cast Star cannot add: MovieId:RoP7, StageName:Didi Hallervorden.
+Cast Star cannot add: MovieId:RoP9, StageName:Melvyn douglas.
 Cast Star cannot add: MovieId:RoP9, StageName:Jo vanFrleet.
 Cast Star cannot add: MovieId:RoP10, StageName:Nastassia Kinski.
 Cast Star cannot add: MovieId:RoP10, StageName:John Collin.
@@ -12995,6 +13283,7 @@ Cast Star cannot add: MovieId:RoR1, StageName:Hazel Brooks.
 Cast Star cannot add: MovieId:RoR1, StageName:Joseph Pevney.
 Cast Star cannot add: MovieId:RoR2, StageName:Shepperd Strudwick.
 Cast Star cannot add: MovieId:RoR5, StageName:Danielle Darieux.
+Cast Star cannot add: MovieId:RoR6, StageName:James mason.
 Cast Star cannot add: MovieId:RoR10, StageName:Anne Meacham.
 Cast Star cannot add: MovieId:RoR10, StageName:James Patterson.
 Cast Star cannot add: MovieId:RoS3, StageName:Frank Cellier.
@@ -13018,11 +13307,13 @@ Cast Star cannot add: MovieId:RoS70, StageName:Ruby Goodwin.
 Cast Star cannot add: MovieId:RoS70, StageName:Brad Weston.
 Cast Star cannot add: MovieId:RoS85, StageName:The Pentagon.
 Cast Star cannot add: MovieId:RoS90, StageName:Glynis Jones.
+Cast Star cannot add: MovieId:RoS90, StageName:Dick vanDyke.
 Cast Star cannot add: MovieId:RoS90, StageName:Mathew Garber.
 Cast Star cannot add: MovieId:RoS90, StageName:Karen Dotrice.
 Cast Star cannot add: MovieId:RoS94, StageName:Karen Dotrice.
 Cast Star cannot add: MovieId:RoS100, StageName:Barbara Morrison.
 Cast Star cannot add: MovieId:RoS112, StageName:Jo Anne Worley.
+Cast Star cannot add: MovieId:RoT20, StageName:Bernard lee.
 Cast Star cannot add: MovieId:RoT20, StageName:Nancy Nevinson.
 Cast Star cannot add: MovieId:RoV1, StageName:Jean Louis Trintigant.
 Cast Star cannot add: MovieId:RoV1, StageName:Christian Marquand.
@@ -13037,6 +13328,7 @@ Cast Star cannot add: MovieId:RoV7, StageName:Francine Spaak.
 Cast Star cannot add: MovieId:RoV15, StageName:Jane Birkin.
 Cast Star cannot add: MovieId:RPa10, StageName:Rhonda Flemming.
 Cast Star cannot add: MovieId:RPa10, StageName:Richard Erdman.
+Cast Star cannot add: MovieId:RPa10, StageName:William conrad.
 Cast Star cannot add: MovieId:RPe8, StageName:Mare Winningham.
 Cast Star cannot add: MovieId:RPe22, StageName:Lolita Davidovich.
 Cast Star cannot add: MovieId:RPr10, StageName:Joan Severance.
@@ -13082,6 +13374,7 @@ Cast Star cannot add: MovieId:RRw20, StageName:Frances Gifford.
 Cast Star cannot add: MovieId:RRw32, StageName:Mary Healy.
 Cast Star cannot add: MovieId:RRw33, StageName:Mary Jo Tarola.
 Cast Star cannot add: MovieId:RRw33, StageName:Monica Lewis.
+Cast Star cannot add: MovieId:RRw33, StageName:Jane darwell.
 Cast Star cannot add: MovieId:RRw33, StageName:Nicholas Joy.
 Cast Star cannot add: MovieId:RRw33, StageName:Dabbs Greer.
 Cast Star cannot add: MovieId:RRw37, StageName:Barbara Stanwyk.
@@ -13112,6 +13405,7 @@ Cast Star cannot add: MovieId:RS9, StageName:William Hope.
 Cast Star cannot add: MovieId:RS9, StageName:Tip Tipping.
 Cast Star cannot add: MovieId:RS9, StageName:Capl Topa.
 Cast Star cannot add: MovieId:RS9, StageName:Blain Fainman.
+Cast Star cannot add: MovieId:RS11, StageName:Lorraine bracco.
 Cast Star cannot add: MovieId:RS11, StageName:Andreas Katsulas.
 Cast Star cannot add: MovieId:RS14, StageName:Yusaku Matsuda.
 Cast Star cannot add: MovieId:RS14, StageName:Ken Takamura.
@@ -13120,6 +13414,7 @@ Cast Star cannot add: MovieId:RS15, StageName:Christopher MacDonald.
 Cast Star cannot add: MovieId:RS15, StageName:Steven Tobolowsky.
 Cast Star cannot add: MovieId:RS15, StageName:Tomothy Carhart.
 Cast Star cannot add: MovieId:RS20, StageName:Michael Wincott.
+Cast Star cannot add: MovieId:RS20, StageName:Tcheky Karyo.
 Cast Star cannot add: MovieId:RS20, StageName:Steve Waddington.
 Cast Star cannot add: MovieId:RS26, StageName:Scott Wolf.
 Cast Star cannot add: MovieId:RS26, StageName:Caroline Goodall.
@@ -13233,6 +13528,7 @@ Cast Movie with null id: MovieId:RSi45, StageName:James Hayter.
 Cast Movie with null id: MovieId:RSi45, StageName:Eva Bartok.
 Cast Movie with null id: MovieId:RSi45, StageName:Torin Thatcher.
 Cast Movie with null id: MovieId:RSi45, StageName:Margot Grahame.
+Cast Star cannot add: MovieId:RSp10, StageName:JoAnna Cassidy.
 Cast Star cannot add: MovieId:RSp20, StageName:Bill Kraus.
 Cast Star cannot add: MovieId:RSp20, StageName:Eizabeth Taylor.
 Cast Star cannot add: MovieId:RSp20, StageName:Arthur Ashe.
@@ -13249,6 +13545,7 @@ Cast Star cannot add: MovieId:RSt105, StageName:Polly Rowles.
 Cast Star cannot add: MovieId:RSt105, StageName:Pat Hitchcock.
 Cast Star cannot add: MovieId:RSt105, StageName:Wendy Winkleman.
 Cast Star cannot add: MovieId:RSt105, StageName:Kay Stewart.
+Cast Star cannot add: MovieId:RSt106, StageName:Jo vanFleet.
 Cast Star cannot add: MovieId:RSt107, StageName:Everett Sloan.
 Cast Star cannot add: MovieId:RSt107, StageName:Sean McClorey.
 Cast Star cannot add: MovieId:RSt107, StageName:Joseph Downing.
@@ -13370,6 +13667,7 @@ Cast Star cannot add: MovieId:RtB14, StageName:Caroline Lang.
 Cast Star cannot add: MovieId:RtB14, StageName:Vincent Risterucci.
 Cast Star cannot add: MovieId:RtD12, StageName:Lynnn Loring.
 Cast Star cannot add: MovieId:RTh3, StageName:John Buckler.
+Cast Star cannot add: MovieId:RTh3, StageName:William henry.
 Cast Star cannot add: MovieId:RTh4, StageName:Charley Grapwin.
 Cast Star cannot add: MovieId:RTh4, StageName:Cora Withersppon.
 Cast Star cannot add: MovieId:RTh6, StageName:Mickey Roonie.
@@ -13378,6 +13676,7 @@ Cast Star cannot add: MovieId:RTh9, StageName:Tom Conway.
 Cast Star cannot add: MovieId:RTh10, StageName:Cy Kendall.
 Cast Star cannot add: MovieId:RTh10, StageName:Howard Hickman.
 Cast Star cannot add: MovieId:RTh12, StageName:Reginal Owen.
+Cast Star cannot add: MovieId:RTh15, StageName:Gloria DeHaven.
 Cast Movie with null id: MovieId:RTh20, StageName:William Powell.
 Cast Movie with null id: MovieId:RTh20, StageName:Myrna Loy.
 Cast Movie with null id: MovieId:RTh20, StageName:Ralph Morgan.
@@ -13399,6 +13698,7 @@ Cast Star cannot add: MovieId:RtP10, StageName:Marie Luisa Rolando.
 Cast Star cannot add: MovieId:RtT10, StageName:John Witherspoon.
 Cast Star cannot add: MovieId:RTu3, StageName:Jenny Wright.
 Cast Star cannot add: MovieId:RTu3, StageName:Glynn Turman.
+Cast Star cannot add: MovieId:RTu3, StageName:Jeff KOber.
 Cast Star cannot add: MovieId:RtW10, StageName:Zoe Caldwell.
 Cast Star cannot add: MovieId:RtW10, StageName:Mitchell Ryan.
 Cast Star cannot add: MovieId:RtW10, StageName:Paul Sparke.
@@ -13544,6 +13844,7 @@ Cast Star cannot add: MovieId:RWF21, StageName:Brigitte Mira.
 Cast Star cannot add: MovieId:RWF22, StageName:Andrea Schroeber.
 Cast Star cannot add: MovieId:RWF22, StageName:Ana Karina.
 Cast Star cannot add: MovieId:RWF22, StageName:Macha Meril.
+Cast Star cannot add: MovieId:RWF26, StageName:Andrea Ferreol.
 Cast Star cannot add: MovieId:RWF26, StageName:Volker Spengler.
 Cast Star cannot add: MovieId:RWF26, StageName:Klaus L\"owitsch.
 Cast Star cannot add: MovieId:RWF26, StageName:Berhard Wicki.
@@ -13568,6 +13869,8 @@ Cast Star cannot add: MovieId:RWg10, StageName:Jean Baptiste Huan.
 Cast Star cannot add: MovieId:RWg10, StageName:Thibault deMontalbert.
 Cast Star cannot add: MovieId:RWh8, StageName:Elisabeth Risdon.
 Cast Star cannot add: MovieId:RWh10, StageName:Lucille Bremer.
+Cast Star cannot add: MovieId:RWh10, StageName:Mary nash.
+Cast Star cannot add: MovieId:RWh10, StageName:Virginia Obrien.
 Cast Star cannot add: MovieId:RWi1, StageName:John Emery.
 Cast Star cannot add: MovieId:RWi1, StageName:Jason Robards~sr.
 Cast Star cannot add: MovieId:RWi1, StageName:Helen Freeman.
@@ -13667,6 +13970,7 @@ Cast Star cannot add: MovieId:RZL31, StageName:Xavier Cugat.
 Cast Star cannot add: MovieId:RZL35, StageName:Barbara Stanwyk.
 Cast Star cannot add: MovieId:RZL39, StageName:Mel Torme.
 Cast Star cannot add: MovieId:RZL39, StageName:Sig Arno.
+Cast Star cannot add: MovieId:S5, StageName:William powell.
 Cast Star cannot add: MovieId:S5, StageName:Nicholas Soussanin.
 Cast Star cannot add: MovieId:S6, StageName:Olga Baclanova.
 Cast Star cannot add: MovieId:S9, StageName:Kurt Gerron.
@@ -13683,6 +13987,7 @@ Cast Star cannot add: MovieId:S13, StageName:Emile Chatard.
 Cast Star cannot add: MovieId:S14, StageName:Davidson Clark.
 Cast Star cannot add: MovieId:S14, StageName:Rita La Loy.
 Cast Star cannot add: MovieId:S15, StageName:Gavin Gordon.
+Cast Star cannot add: MovieId:S25, StageName:Mamie vanDoren.
 Cast Star cannot add: MovieId:S25, StageName:The U.S. Air Force.
 Cast Star cannot add: MovieId:SaD10, StageName:Robert Maplethorpe.
 Cast Star cannot add: MovieId:SaD10, StageName:Patti Smith.
@@ -13691,8 +13996,10 @@ Cast Star cannot add: MovieId:SaF13, StageName:Glenn Corbett.
 Cast Star cannot add: MovieId:SaF13, StageName:Paul Dubov.
 Cast Star cannot add: MovieId:SaF19, StageName:Glenn Corbett.
 Cast Star cannot add: MovieId:SaF19, StageName:Christa Lang.
+Cast Star cannot add: MovieId:SaF20, StageName:Bobby diCicco.
 Cast Star cannot add: MovieId:SaF20, StageName:Kelley Ward.
 Cast Star cannot add: MovieId:SaG10, StageName:Jenny Till.
+Cast Star cannot add: MovieId:SAo10, StageName:Koji Yakusho.
 Cast Star cannot add: MovieId:SaP11, StageName:Sally Struthers.
 Cast Star cannot add: MovieId:SaP13, StageName:Slim Pickins.
 Cast Star cannot add: MovieId:SaT4, StageName:Jim Riggs.
@@ -13782,6 +14089,8 @@ Cast Star cannot add: MovieId:SE25, StageName:Vsevolod Pudovkin.
 Cast Star cannot add: MovieId:SE26, StageName:Nikolai Cheraskov.
 Cast Star cannot add: MovieId:SeG10, StageName:JeanPierre Marielle.
 Cast Star cannot add: MovieId:SeL3, StageName:Georges Marchal.
+Cast Star cannot add: MovieId:SeL26, StageName:Lee vanCleef.
+Cast Star cannot add: MovieId:SeL30, StageName:Lee vanCleef.
 Cast Movie with null id: MovieId:SeL40, StageName:Robert deNiro.
 Cast Movie with null id: MovieId:SeL40, StageName:Jennifer Connelly.
 Cast Movie with null id: MovieId:SeL40, StageName:Darlanne Fleugel.
@@ -13866,6 +14175,7 @@ Cast Star cannot add: MovieId:SGi3, StageName:Margaret Johnson.
 Cast Star cannot add: MovieId:SGi8, StageName:Douglas Fairbanks~jr.
 Cast Star cannot add: MovieId:SGi8, StageName:Carl Jaffe.
 Cast Star cannot add: MovieId:SgT10, StageName:Marcel Ophuls.
+Cast Star cannot add: MovieId:SgT10, StageName:Eric Rohmer.
 Cast Star cannot add: MovieId:SGy10, StageName:Sinead Cusick.
 Cast Star cannot add: MovieId:SGy10, StageName:Grant Warnock.
 Cast Star cannot add: MovieId:SGy10, StageName:Lena Headsley.
@@ -13904,6 +14214,8 @@ Cast Star cannot add: MovieId:SHS10, StageName:Kim Ullrich.
 Cast Star cannot add: MovieId:SyH10, StageName:Ann Gisel Glass.
 Cast Star cannot add: MovieId:SyH10, StageName:Thomas Heinze.
 Cast Star cannot add: MovieId:SiA10, StageName:Bob Mathias.
+Cast Star cannot add: MovieId:SIC10, StageName:Jack laRue.
+Cast Star cannot add: MovieId:SIC10, StageName:Hugh mcDermott.
 Cast Star cannot add: MovieId:SIC10, StageName:Walter Crisham.
 Cast Star cannot add: MovieId:SIC10, StageName:Lily Molnar.
 Cast Star cannot add: MovieId:SIC10, StageName:Zoe Gail.
@@ -13929,6 +14241,7 @@ Cast Star cannot add: MovieId:SiW8, StageName:Michael Bacall.
 Cast Star cannot add: MovieId:SiW8, StageName:Jayne Atkinson.
 Cast Star cannot add: MovieId:SiW8, StageName:Keiko.
 Cast Star cannot add: MovieId:SiW10, StageName:Cuba Gooding~jr..
+Cast Star cannot add: MovieId:SiW10, StageName:Beverly dAngelo.
 Cast Star cannot add: MovieId:SiW12, StageName:Jason James Richter.
 Cast Star cannot add: MovieId:SiW12, StageName:Keiko.
 Cast Star cannot add: MovieId:SiW13, StageName:John Tenney.
@@ -13938,6 +14251,7 @@ Cast Star cannot add: MovieId:SiW13, StageName:John Tenney.
 Cast Star cannot add: MovieId:SiW13, StageName:Patrick McGohannon.
 Cast Star cannot add: MovieId:SiW14, StageName:Jason James Richter.
 Cast Star cannot add: MovieId:SiW14, StageName:Keiko.
+Cast Star cannot add: MovieId:SK2, StageName:Philip vanZandt.
 Cast Star cannot add: MovieId:SK3, StageName:Charles DMmcGraw.
 Cast Star cannot add: MovieId:SK3, StageName:Lon Chaney~jr.
 Cast Star cannot add: MovieId:SK3, StageName:Claude Atkins.
@@ -13949,6 +14263,7 @@ Cast Star cannot add: MovieId:SK5, StageName:Harry Morgon.
 Cast Star cannot add: MovieId:SK8, StageName:Terry-Thomas.
 Cast Star cannot add: MovieId:SK8, StageName:The Three Stoges.
 Cast Star cannot add: MovieId:SK10, StageName:Jos\'e Ferrer.
+Cast Star cannot add: MovieId:SK12, StageName:Spencer tracy.
 Cast Star cannot add: MovieId:SK12, StageName:Katherine Houghton.
 Cast Star cannot add: MovieId:SK12, StageName:Roy E. Glenn~sr..
 Cast Star cannot add: MovieId:SK12, StageName:Isabell Sanford.
@@ -13958,6 +14273,7 @@ Cast Star cannot add: MovieId:SK22, StageName:Barry Robin.
 Cast Star cannot add: MovieId:SK22, StageName:Miles Chapin.
 Cast Star cannot add: MovieId:SK22, StageName:Jesse White.
 Cast Star cannot add: MovieId:SKa10, StageName:Fanny Ardent.
+Cast Star cannot add: MovieId:SKe10, StageName:Beverly dAngelo.
 Cast Star cannot add: MovieId:SKe10, StageName:Marianne Flynn.
 Cast Star cannot add: MovieId:SKe10, StageName:Wayne Newton.
 Cast Star cannot add: MovieId:SKe10, StageName:Sigfried.
@@ -13986,6 +14302,7 @@ Cast Star cannot add: MovieId:SL33, StageName:Don Billett.
 Cast Star cannot add: MovieId:SL33, StageName:Richard Foronjy.
 Cast Star cannot add: MovieId:SL33, StageName:Carmine Caridi.
 Cast Star cannot add: MovieId:SL33, StageName:Kenny Marino.
+Cast Star cannot add: MovieId:SL35, StageName:Lindsay crouse.
 Cast Star cannot add: MovieId:SL44, StageName:Raoul Julia.
 Cast Star cannot add: MovieId:SL50, StageName:Christine Lathi.
 Cast Star cannot add: MovieId:SL50, StageName:Martha Plimpton.
@@ -14053,6 +14370,7 @@ Cast Star cannot add: MovieId:SLr10, StageName:Jean-Louis Trintignant.
 Cast Star cannot add: MovieId:SM3, StageName:Alec Guiness.
 Cast Star cannot add: MovieId:SM3, StageName:George Benson.
 Cast Star cannot add: MovieId:SM6, StageName:Alec Guiness.
+Cast Star cannot add: MovieId:SM6, StageName:FRankie Howerd.
 Cast Star cannot add: MovieId:SM7, StageName:Susan Harrison.
 Cast Star cannot add: MovieId:SMe1, StageName:Mena Suvari.
 Cast Star cannot add: MovieId:SMe1, StageName:PeterGallagher.
@@ -14083,6 +14401,7 @@ Cast Star cannot add: MovieId:SnT28, StageName:Leslie Nielsn.
 Cast Star cannot add: MovieId:SNz10, StageName:Charles Rampling.
 Cast Star cannot add: MovieId:SNz10, StageName:Clare Kelly.
 Cast Star cannot add: MovieId:SOS10, StageName:Philip Michael Thomas.
+Cast Star cannot add: MovieId:SoW1, StageName:Jurgen Vogel.
 Cast Star cannot add: MovieId:SoW1, StageName:Gedeon burkhard.
 Cast Star cannot add: MovieId:SP5, StageName:Lola Allbright.
 Cast Star cannot add: MovieId:SP5, StageName:Gail Kobe.
@@ -14172,11 +14491,13 @@ Cast Star cannot add: MovieId:SRa5, StageName:Gailard Sartan.
 Cast Star cannot add: MovieId:SRa5, StageName:Paul Mooney.
 Cast Star cannot add: MovieId:SRa5, StageName:Will Jordan.
 Cast Star cannot add: MovieId:SRf21, StageName:Eric Christmas.
+Cast Star cannot add: MovieId:SRf21, StageName:Bobby diCicco.
 Cast Star cannot add: MovieId:SRi10, StageName:Larry Drake.
 Cast Star cannot add: MovieId:SRm1, StageName:Lori Saunders.
 Cast Star cannot add: MovieId:SRm1, StageName:Marissa Mathes.
 Cast Star cannot add: MovieId:SRo1, StageName:Julia Adams.
 Cast Star cannot add: MovieId:SRo1, StageName:Ted deCorsica.
+Cast Star cannot add: MovieId:SRo2, StageName:Raymond massey.
 Cast Star cannot add: MovieId:SRo2, StageName:Richard Chulenkan.
 Cast Star cannot add: MovieId:SRo2, StageName:Brad Weston.
 Cast Star cannot add: MovieId:SRo2, StageName:Rosco Ates.
@@ -14247,6 +14568,7 @@ Cast Star cannot add: MovieId:SSS45, StageName:Tom Conway.
 Cast Star cannot add: MovieId:SSS58, StageName:Francis rafferty.
 Cast Star cannot add: MovieId:SSS58, StageName:Robert Z. Leonard.
 Cast Star cannot add: MovieId:SSu10, StageName:Dana Carvey.
+Cast Star cannot add: MovieId:SSu10, StageName:Olivia dAbo.
 Cast Star cannot add: MovieId:StA10, StageName:Criswell.
 Cast Star cannot add: MovieId:StA10, StageName:Texas Starr.
 Cast Star cannot add: MovieId:StA10, StageName:Bunny Glaser.
@@ -14288,6 +14610,7 @@ Cast Star cannot add: MovieId:StF5, StageName:Swoosie Kurtz.
 Cast Star cannot add: MovieId:StF5, StageName:Joe Sheridan.
 Cast Star cannot add: MovieId:StF5, StageName:Valerie Cogan.
 Cast Star cannot add: MovieId:StF10, StageName:Gailard Sartin.
+Cast Star cannot add: MovieId:StF10, StageName:Charles napier.
 Cast Star cannot add: MovieId:StF12, StageName:Kevin J OConnor.
 Cast Star cannot add: MovieId:StF12, StageName:Christian Clemenson.
 Cast Star cannot add: MovieId:StF12, StageName:Cadie Huffman.
@@ -14567,14 +14890,17 @@ Cast Star cannot add: MovieId:TFg1, StageName:Chris Leavins.
 Cast Star cannot add: MovieId:TFg1, StageName:Joel S. Keller.
 Cast Star cannot add: MovieId:TFi8, StageName:Valeree Grant.
 Cast Star cannot add: MovieId:TFi9, StageName:Melissa Stribling.
+Cast Star cannot add: MovieId:TFi9, StageName:John vanEyssen.
 Cast Star cannot add: MovieId:TFi9, StageName:Valerie Gaunt.
 Cast Star cannot add: MovieId:TFi9, StageName:Brad Starr.
 Cast Movie with null id: MovieId:TFI10, StageName:Andr\'e Morell.
 Cast Star cannot add: MovieId:TFi12, StageName:George Pastell.
 Cast Star cannot add: MovieId:TFi15, StageName:Yvonne Monlaur.
+Cast Star cannot add: MovieId:TFi20, StageName:Edward deSouza.
 Cast Star cannot add: MovieId:TFi20, StageName:Ian Wilson.
 Cast Star cannot add: MovieId:TFi20, StageName:Martin Miller.
 Cast Star cannot add: MovieId:TFi20, StageName:John Harvey.
+Cast Star cannot add: MovieId:TFi24, StageName:Christopher lee.
 Cast Star cannot add: MovieId:TFi24, StageName:Richard Pasco.
 Cast Star cannot add: MovieId:TFi24, StageName:Patrick Throughton.
 Cast Star cannot add: MovieId:TFi30, StageName:sa.
@@ -14720,6 +15046,7 @@ Cast Star cannot add: MovieId:TiB1, StageName:Diane Salinger.
 Cast Star cannot add: MovieId:TiB5, StageName:Tony Cox.
 Cast Star cannot add: MovieId:TiB5, StageName:Patrice Martinez.
 Cast Star cannot add: MovieId:TiB6, StageName:Robert Wuhl.
+Cast Star cannot add: MovieId:TiB12, StageName:Chris Odonnell.
 Cast Star cannot add: MovieId:TiB17, StageName:Tom Jones.
 Cast Star cannot add: MovieId:TiB17, StageName:Lisa Marie.
 Cast Movie with null id: MovieId:TiG12, StageName:Michael Palin.
@@ -14883,6 +15210,7 @@ Cast Star cannot add: MovieId:TTN10, StageName:Tiana Thi Tranh Nga.
 Cast Star cannot add: MovieId:TTy10, StageName:Hebert Knapp.
 Cast Star cannot add: MovieId:TTz2, StageName:Charles Kempner.
 Cast Star cannot add: MovieId:TTz4, StageName:Anne Jeffries.
+Cast Star cannot add: MovieId:TTz4, StageName:percy Kilbride.
 Cast Star cannot add: MovieId:TTz10, StageName:Oscar Homolko.
 Cast Star cannot add: MovieId:TTz10, StageName:June Clayworth.
 Cast Star cannot add: MovieId:TTz10, StageName:Lotte Stein.
@@ -14900,6 +15228,7 @@ Cast Star cannot add: MovieId:TVi10, StageName:Nick Scotti.
 Cast Star cannot add: MovieId:TVi10, StageName:Anthony Barrile.
 Cast Star cannot add: MovieId:TVw10, StageName:Craig Chester.
 Cast Star cannot add: MovieId:TVw10, StageName:Michael Gunther.
+Cast Star cannot add: MovieId:TWa10, StageName:Norma varden.
 Cast Star cannot add: MovieId:TWa10, StageName:Diana Churchill.
 Cast Star cannot add: MovieId:TWh20, StageName:William Collier~sr.
 Cast Star cannot add: MovieId:TWh20, StageName:William Collier~sr.
@@ -14924,6 +15253,9 @@ Cast Star cannot add: MovieId:TYg17, StageName:Michel Mok.
 Cast Star cannot add: MovieId:TYg17, StageName:Yvonne Shima.
 Cast Star cannot add: MovieId:TYg17, StageName:Marguarite Lewr.
 Cast Star cannot add: MovieId:TYg17, StageName:Reginald Carter.
+Cast Star cannot add: MovieId:TYg21, StageName:Vittorio deSica.
+Cast Star cannot add: MovieId:TYg25, StageName:Efrem Zimbalist~jr..
+Cast Star cannot add: MovieId:TyN10, StageName:Mamie vanDoren.
 Cast Star cannot add: MovieId:TyN10, StageName:Paul Gilbert.
 Cast Star cannot add: MovieId:TyN10, StageName:John Cronin.
 Cast Star cannot add: MovieId:TyN10, StageName:Ziva Rodann.
@@ -14936,6 +15268,7 @@ Cast Star cannot add: MovieId:UgF12, StageName:Francesca Bertini.
 Cast Star cannot add: MovieId:UgF12, StageName:Francesco diGennaro.
 Cast Star cannot add: MovieId:UgF12, StageName:Stanislaus Ciarli.
 Cast Star cannot add: MovieId:UlG3, StageName:Dean Staunton.
+Cast Star cannot add: MovieId:UlG10, StageName:Robert DeNiro.
 Cast Star cannot add: MovieId:UlG22, StageName:Michell Pfeiffer.
 Cast Star cannot add: MovieId:UlO10, StageName:Tabea Blumenschein.
 Cast Star cannot add: MovieId:UlO10, StageName:Yvonne Rainer.
@@ -14949,7 +15282,10 @@ Cast Star cannot add: MovieId:UrG10, StageName:Einar Zangeberg.
 Cast Star cannot add: MovieId:UrG10, StageName:Christel Holck.
 Cast Star cannot add: MovieId:UrG10, StageName:Ellen Kornbeck.
 Cast Star cannot add: MovieId:USt10, StageName:Petronella Barker.
+Cast Star cannot add: MovieId:USt10, StageName:Bjorn Sundquist.
 Cast Star cannot add: MovieId:VAr10, StageName:Jorge Sanz.
+Cast Star cannot add: MovieId:VAr10, StageName:Maribel Verdu.
+Cast Star cannot add: MovieId:VCy10, StageName:Bolek Polivka.
 Cast Star cannot add: MovieId:VCy10, StageName:Miroslav Donutil.
 Cast Star cannot add: MovieId:VCy10, StageName:Dagmar Veskrnova.
 Cast Star cannot add: MovieId:VCy10, StageName:Sarka Vojtkova.
@@ -14972,7 +15308,9 @@ Cast Star cannot add: MovieId:VdS6, StageName:Emma Gramatica.
 Cast Star cannot add: MovieId:VdS7, StageName:Carlo Battisti.
 Cast Star cannot add: MovieId:VdS7, StageName:Maria Pia Casilio.
 Cast Star cannot add: MovieId:VdS7, StageName:Lina Gennari.
+Cast Star cannot add: MovieId:VdS8, StageName:Vittorio deSica.
 Cast Star cannot add: MovieId:VdS15, StageName:Eleanora Brown.
+Cast Star cannot add: MovieId:VdS21, StageName:Vittorio deSica.
 Cast Star cannot add: MovieId:VdS24, StageName:Fabrio Tesel.
 Cast Star cannot add: MovieId:VF19, StageName:Percy Marmount.
 Cast Star cannot add: MovieId:VF19, StageName:Eugene Palette.
@@ -14985,6 +15323,7 @@ Cast Star cannot add: MovieId:VF25, StageName:Constantine Romanoff.
 Cast Star cannot add: MovieId:VF31, StageName:Douglas Fairbanks.
 Cast Star cannot add: MovieId:VF36, StageName:Chic Sale.
 Cast Star cannot add: MovieId:VF37, StageName:Barbara Pepper.
+Cast Star cannot add: MovieId:VF38, StageName:Lee tracy.
 Cast Star cannot add: MovieId:VF38, StageName:Ted Healy.
 Cast Star cannot add: MovieId:VF38, StageName:Ivan Lebedeff.
 Cast Star cannot add: MovieId:VF38, StageName:C.Auibrey Smith.
@@ -15001,6 +15340,7 @@ Cast Star cannot add: MovieId:VF47, StageName:Don Defoe.
 Cast Star cannot add: MovieId:VF48, StageName:Georgr Zucco.
 Cast Star cannot add: MovieId:VFu10, StageName:sa s.
 Cast Star cannot add: MovieId:VGa10, StageName:Anjelica Houston.
+Cast Star cannot add: MovieId:VGa12, StageName:Chloe Sevigny.
 Cast Star cannot add: MovieId:VGa12, StageName:sa.
 Cast Star cannot add: MovieId:VGl10, StageName:Ela GrubeDeister.
 Cast Star cannot add: MovieId:VGl10, StageName:Rolf Zacker.
@@ -15030,6 +15370,7 @@ Cast Star cannot add: MovieId:ViS58, StageName:Olga Baclanove.
 Cast Star cannot add: MovieId:ViS81, StageName:Martyn Greene.
 Cast Star cannot add: MovieId:ViS81, StageName:John Barclay.
 Cast Star cannot add: MovieId:ViS81, StageName:Sydney Granville.
+Cast Star cannot add: MovieId:ViW15, StageName:AnnaBella Sciorra.
 Cast Star cannot add: MovieId:ViW15, StageName:Cuba Gooding~jr.
 Cast Star cannot add: MovieId:VLo50, StageName:Miki Manjolovic.
 Cast Star cannot add: MovieId:VLo50, StageName:Vibeke Lokkeberg.
@@ -15068,10 +15409,12 @@ Cast Star cannot add: MovieId:VM22, StageName:Jaques Bergerac.
 Cast Star cannot add: MovieId:VME9, StageName:Charles Bateman.
 Cast Star cannot add: MovieId:VME9, StageName:Anna Capri.
 Cast Star cannot add: MovieId:VME9, StageName:Charles Robinson.
+Cast Star cannot add: MovieId:VME9, StageName:Alvy moore.
 Cast Star cannot add: MovieId:VME9, StageName:Geri Reischl.
 Cast Star cannot add: MovieId:VME11, StageName:Morgan Woodard.
 Cast Star cannot add: MovieId:VME11, StageName:John Doucette.
 Cast Star cannot add: MovieId:VME13, StageName:John McIntyre.
+Cast Star cannot add: MovieId:VME13, StageName:Huntz hall.
 Cast Star cannot add: MovieId:VME14, StageName:Robert Foxworth.
 Cast Star cannot add: MovieId:VME14, StageName:Johnny Duran.
 Cast Star cannot add: MovieId:VME14, StageName:Billy Attmore.
@@ -15094,6 +15437,7 @@ Cast Star cannot add: MovieId:VoS32, StageName:Jacques Bodet.
 Cast Star cannot add: MovieId:VoS42, StageName:Sam Sheppard.
 Cast Star cannot add: MovieId:VoS42, StageName:Barbara Sukowa.
 Cast Star cannot add: MovieId:VoS48, StageName:Ralph Hoppe.
+Cast Star cannot add: MovieId:VoS48, StageName:Chloe Sevigny.
 Cast Star cannot add: MovieId:VoS48, StageName:Michael Rapaport.
 Cast Star cannot add: MovieId:VrM40, StageName:Will Hay.
 Cast Star cannot add: MovieId:VrM40, StageName:Moore Marriott.
@@ -15119,6 +15463,7 @@ Cast Star cannot add: MovieId:VSh15, StageName:Betty Davis.
 Cast Star cannot add: MovieId:VSh15, StageName:Richard Waring.
 Cast Star cannot add: MovieId:VSh23, StageName:Romney Brent.
 Cast Star cannot add: MovieId:VSh23, StageName:Jerry Austin.
+Cast Star cannot add: MovieId:VSh23, StageName:Raymond burr.
 Cast Star cannot add: MovieId:VSh25, StageName:Orlando Martins.
 Cast Star cannot add: MovieId:VSj1, StageName:Lilli Bech.
 Cast Star cannot add: MovieId:VSj1, StageName:Gunnar Bowman.
@@ -15180,13 +15525,17 @@ Cast Star cannot add: MovieId:W90, StageName:Don Whitehead.
 Cast Star cannot add: MovieId:W90, StageName:John R. Reilly.
 Cast Star cannot add: MovieId:W90, StageName:William Murphy.
 Cast Star cannot add: MovieId:W90, StageName:Dorothy Coonan Wellman.
+Cast Star cannot add: MovieId:W100, StageName:robert Stack.
+Cast Star cannot add: MovieId:W100, StageName:Claire trevor.
 Cast Star cannot add: MovieId:W100, StageName:Ian Sterling.
+Cast Star cannot add: MovieId:W100, StageName:Phil harris.
 Cast Star cannot add: MovieId:W100, StageName:John Howrd.
 Cast Star cannot add: MovieId:WA2, StageName:Natividad Abascal.
 Cast Star cannot add: MovieId:WA2, StageName:Baron deBree.
 Cast Star cannot add: MovieId:WA5, StageName:James Tolkan.
 Cast Star cannot add: MovieId:WA6, StageName:Helen Ludlow.
 Cast Star cannot add: MovieId:WA6, StageName:Russel Horton.
+Cast Star cannot add: MovieId:WA9, StageName:Anne deSalvo.
 Cast Star cannot add: MovieId:WA9, StageName:Brent Spiner.
 Cast Star cannot add: MovieId:WA11, StageName:Patrick Horgan.
 Cast Star cannot add: MovieId:WA11, StageName:George Hamlin.
@@ -15338,6 +15687,7 @@ Cast Star cannot add: MovieId:WBe10, StageName:Glenne Headley.
 Cast Star cannot add: MovieId:WBe10, StageName:John Caglione~jr.
 Cast Star cannot add: MovieId:WBe10, StageName:Doug Drexler.
 Cast Star cannot add: MovieId:WBe10, StageName:Charlie Korsmar.
+Cast Star cannot add: MovieId:WBe10, StageName:Dick vanDyke.
 Cast Star cannot add: MovieId:WBe15, StageName:Halle Berrie.
 Cast Star cannot add: MovieId:WBo10, StageName:Alfons Haider.
 Cast Star cannot add: MovieId:WBo10, StageName:Alan Delon.
@@ -15349,6 +15699,7 @@ Cast Star cannot add: MovieId:WCl19, StageName:Ed Brophy.
 Cast Star cannot add: MovieId:WCM2, StageName:Howard Philips.
 Cast Star cannot add: MovieId:WCM2, StageName:Lois Mran.
 Cast Star cannot add: MovieId:WCM6, StageName:John Clemente.
+Cast Star cannot add: MovieId:WCM22, StageName:Peter vanEyck.
 Cast Star cannot add: MovieId:WCM22, StageName:Mady Christians.
 Cast Star cannot add: MovieId:WCM22, StageName:Emory Powell.
 Cast Star cannot add: MovieId:WCM32, StageName:Hilary Brooke.
@@ -15452,6 +15803,7 @@ Cast Star cannot add: MovieId:WHl32, StageName:Kevin Tighe.
 Cast Star cannot add: MovieId:WhR10, StageName:Paul Schulze.
 Cast Star cannot add: MovieId:WhS1, StageName:Edward Clements.
 Cast Star cannot add: MovieId:WhS5, StageName:Kate Beckinsdale.
+Cast Star cannot add: MovieId:WhS5, StageName:Chloe Sevigny.
 Cast Star cannot add: MovieId:WhS5, StageName:Chris Eigeman.
 Cast Movie with null id: MovieId:Whu1, StageName:William Hartnell.
 Cast Movie with null id: MovieId:Whu1, StageName:William Russell.
@@ -15496,6 +15848,7 @@ Cast Star cannot add: MovieId:WiW9, StageName:Elisha Cook~jr.
 Cast Star cannot add: MovieId:WiW9, StageName:Richard Bradford.
 Cast Star cannot add: MovieId:WiW9, StageName:Samuel Fuller.
 Cast Star cannot add: MovieId:WiW12, StageName:Hunter Carson.
+Cast Star cannot add: MovieId:WiW12, StageName:Aurore Clement.
 Cast Star cannot add: MovieId:WiW12, StageName:Bernard Wicki.
 Cast Star cannot add: MovieId:WiW20, StageName:Solveig Dommartin.
 Cast Star cannot add: MovieId:WiW20, StageName:Otto Sandler.
@@ -15520,10 +15873,13 @@ Cast Star cannot add: MovieId:WjH10, StageName:Kazimierz Opalinki.
 Cast Star cannot add: MovieId:WjH10, StageName:Barbara Krafftoowna.
 Cast Star cannot add: MovieId:WKH14, StageName:Marguerite Churchill.
 Cast Star cannot add: MovieId:WKH14, StageName:John Mack Brown.
+Cast Star cannot add: MovieId:WKH14, StageName:Dewitt Jennings.
+Cast Star cannot add: MovieId:WKH35, StageName:Ralph morgan.
 Cast Star cannot add: MovieId:WKH45, StageName:Esther Dale.
 Cast Star cannot add: MovieId:WKH52, StageName:Fred McMurray.
 Cast Star cannot add: MovieId:WKl10, StageName:Dorothy MacGowan.
 Cast Star cannot add: MovieId:WKl10, StageName:Sami Frey.
+Cast Star cannot add: MovieId:WKl30, StageName:Andre Dussollier.
 Cast Star cannot add: MovieId:WKl30, StageName:Eddie Constantine.
 Cast Star cannot add: MovieId:WKl40, StageName:Kenzo.
 Cast Star cannot add: MovieId:WKl40, StageName:Agnes B. Castelbajac.
@@ -15577,9 +15933,11 @@ Cast Star cannot add: MovieId:WlD24, StageName:Otis Harlan.
 Cast Star cannot add: MovieId:WlD24, StageName:Dewey Robinson.
 Cast Star cannot add: MovieId:WlD24, StageName:Veree Teasdale.
 Cast Star cannot add: MovieId:WlD34, StageName:Leo Camillo.
+Cast Star cannot add: MovieId:WlD34, StageName:Katherine deMille.
 Cast Star cannot add: MovieId:WlD34, StageName:Carlos dValdez.
 Cast Star cannot add: MovieId:WlD34, StageName:George Houston.
 Cast Star cannot add: MovieId:WlD34, StageName:Lupita Tovar.
+Cast Star cannot add: MovieId:WlD35, StageName:Pedro deCordoba.
 Cast Star cannot add: MovieId:WlD36, StageName:Alan Marshall.
 Cast Star cannot add: MovieId:WlD36, StageName:Rod laRoque.
 Cast Star cannot add: MovieId:WlD36, StageName:Helene Whitney.
@@ -15647,6 +16005,7 @@ Cast Star cannot add: MovieId:WR31, StageName:Harry Green.
 Cast Star cannot add: MovieId:WR40, StageName:William Collier~jr..
 Cast Star cannot add: MovieId:WR40, StageName:Roscoe Ates.
 Cast Star cannot add: MovieId:WR40, StageName:Stanley Fields.
+Cast Star cannot add: MovieId:WR42, StageName:Dorothy MacKaill.
 Cast Star cannot add: MovieId:WR72, StageName:Ben Bernie.
 Cast Star cannot add: MovieId:WR72, StageName:Dorothy Dell.
 Cast Star cannot add: MovieId:WR72, StageName:Arline Judge.
@@ -15668,6 +16027,7 @@ Cast Star cannot add: MovieId:WRi20, StageName:Louanne.
 Cast Star cannot add: MovieId:WRi20, StageName:Mathew L. Perry.
 Cast Star cannot add: MovieId:WS5, StageName:sa.
 Cast Star cannot add: MovieId:WS5, StageName:Hans Albers.
+Cast Star cannot add: MovieId:WS8, StageName:Erich vonStroheim.
 Cast Movie with null id: MovieId:WS35, StageName:Hildegard Knef.
 Cast Movie with null id: MovieId:WS45, StageName:Hildegard Knef.
 Cast Star cannot add: MovieId:WSa5, StageName:Alex Rebar.
@@ -15716,6 +16076,7 @@ Cast Star cannot add: MovieId:WvD70, StageName:Cecelia Parker.
 Cast Star cannot add: MovieId:WvD72, StageName:Sig Rumann.
 Cast Star cannot add: MovieId:WvD75, StageName:Philip Merryvale.
 Cast Star cannot add: MovieId:WvD75, StageName:Matthew Boulton.
+Cast Star cannot add: MovieId:WvD79, StageName:Ethel waters.
 Cast Star cannot add: MovieId:WvD79, StageName:Dennis Hooey.
 Cast Star cannot add: MovieId:WW12, StageName:Fred Kohler.
 Cast Star cannot add: MovieId:WW12, StageName:Fritzi Ridgeway.
@@ -15783,6 +16144,7 @@ Cast Star cannot add: MovieId:WWn80, StageName:Clayton Moore.
 Cast Star cannot add: MovieId:WWn80, StageName:Lorna Gray.
 Cast Star cannot add: MovieId:WWn101, StageName:George Cleveland.
 Cast Star cannot add: MovieId:WWn200, StageName:Richard Bakalyan.
+Cast Star cannot add: MovieId:WWn205, StageName:Corey allen.
 Cast Star cannot add: MovieId:WWn205, StageName:Rebecca Welles.
 Cast Star cannot add: MovieId:WWn205, StageName:Anne Whitfield.
 Cast Star cannot add: MovieId:WWn205, StageName:Richard Bakalyan.
@@ -15849,6 +16211,7 @@ Cast Star cannot add: MovieId:YAl10, StageName:Andre Toffel.
 Cast Star cannot add: MovieId:YaY5, StageName:Crysstyn Dante.
 Cast Star cannot add: MovieId:YaY10, StageName:Catherine Oxenburg.
 Cast Star cannot add: MovieId:YaY10, StageName:Emile LeVisetti.
+Cast Star cannot add: MovieId:YlG10, StageName:Halil Ergun.
 Cast Star cannot add: MovieId:YlG10, StageName:Necmettin {\c}Cobanoglu.
 Cast Star cannot add: MovieId:YlG10, StageName:Serf Sezer.
 Cast Star cannot add: MovieId:YLM10, StageName:JeanYves Thual.
@@ -15889,6 +16252,7 @@ Cast Star cannot add: MovieId:YSt10, StageName:Leopold Kozlowski.
 Cast Star cannot add: MovieId:YSt12, StageName:Leopold Kozlowski.
 Cast Star cannot add: MovieId:YSt12, StageName:Itzak Perlman.
 Cast Star cannot add: MovieId:YuB14, StageName:Carrie Otis.
+Cast Star cannot add: MovieId:YvA13, StageName:Emmanuelle Beart.
 Cast Star cannot add: MovieId:YvR3, StageName:JeanMarie Amato.
 Cast Star cannot add: MovieId:YvR6, StageName:Mireille Darc.
 Cast Star cannot add: MovieId:YvR10, StageName:Philippe LeroyBeaulieu.
@@ -15901,6 +16265,7 @@ Cast Star cannot add: MovieId:YYa11, StageName:Junko Ikeuchi.
 Cast Star cannot add: MovieId:YYa11, StageName:Chieko Baishu.
 Cast Star cannot add: MovieId:YYa60, StageName:Keiko Takeshita.
 Cast Star cannot add: MovieId:YYa62, StageName:Kimiko Goto.
+Cast Star cannot add: MovieId:YYa62, StageName:Chieko Baisho.
 Cast Star cannot add: MovieId:YYa78, StageName:Toshiyuki Takaba.
 Cast Star cannot add: MovieId:YYa78, StageName:Keiko Takeshita.
 Cast Star cannot add: MovieId:YZh14, StageName:Si Han.
@@ -15950,6 +16315,7 @@ Cast Star cannot add: MovieId:Z0409, StageName:Allan Hale~jr..
 Cast Star cannot add: MovieId:Z0411, StageName:William Lundigan.
 Cast Star cannot add: MovieId:Z0411, StageName:Jack Parr.
 Cast Star cannot add: MovieId:Z0411, StageName:Frank fay.
+Cast Star cannot add: MovieId:Z0412, StageName:Macdonald Carey.
 Cast Star cannot add: MovieId:Z0414, StageName:Zsa Zs Gabor.
 Cast Movie with null id: MovieId:Z0418, StageName:Marilyn Monroe.
 Cast Movie with null id: MovieId:Z0418, StageName:Joseph Cotten.
@@ -16067,6 +16433,7 @@ Cast Star cannot add: MovieId:Z9540, StageName:Kiril Mills.
 Cast Star cannot add: MovieId:Z9550, StageName:Leornard DiCapria.
 Cast Star cannot add: MovieId:Z9575, StageName:Cindy Crawford.
 Cast Star cannot add: MovieId:Z9579, StageName:Lorretta Devine.
+Cast Star cannot add: MovieId:Z9580, StageName:Elodie Bouchez.
 Cast Star cannot add: MovieId:Z9585, StageName:Robert Werner.
 Cast Star cannot add: MovieId:Z9605, StageName:Richard Dreyfus.
 Cast Star cannot add: MovieId:Z9620, StageName:Dana Delaney.
@@ -16103,6 +16470,7 @@ Cast Star cannot add: MovieId:Z9890, StageName:Gillian Anderson.
 Cast Star cannot add: MovieId:Z9920, StageName:Sarah Mitchell.
 Cast Star cannot add: MovieId:Z9920, StageName:Ryan Phillipe.
 Cast Star cannot add: MovieId:Z9925, StageName:Linda Hamilrton.
+Cast Star cannot add: MovieId:Z9955, StageName:Vincent dOnofrio.
 Cast Star cannot add: MovieId:Z9960, StageName:Joanna Kerns.
 Cast Star cannot add: MovieId:Z9960, StageName:Tom Matheson.
 Cast Star cannot add: MovieId:Z9965, StageName:Isaac Stern.

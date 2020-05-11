@@ -120,70 +120,77 @@ public class SAXParserActor extends DefaultHandler {
             e.printStackTrace();
         }
 
-        PreparedStatement showMaxId = null;
-        String query = "Select max(id) as id from stars";
+//        PreparedStatement showMaxId = null;
+//        String query = "Select max(id) as id from stars";
 
-        PreparedStatement checkStar = null;
-        String checkQuery = "SELECT * FROM stars WHERE name = ?";
+        PreparedStatement loadStar = null;
+        String loadQuery = "SELECT * FROM stars";
 
         PreparedStatement preparedQuery = null;
         String insertQuery = "Insert into stars(id, name, birthYear) Values(?,?,?)";
         int[] iNoRows = null;
         int recordCount = 0;
+        int maxId = 0;
+
+        // load all stars in stars table in memory
+        try {
+            loadStar = conn.prepareStatement(loadQuery);
+            ResultSet rsl = loadStar.executeQuery();
+
+            while (rsl.next()) {
+                // add to actorMap
+                actorMap.put(rsl.getString("name"), rsl.getString("id"));
+
+                // find max id in stars table
+                int currId = Integer.parseInt(rsl.getString("id").substring(2));
+                if (currId > maxId) {
+                    maxId = currId;
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
         // find the max id in stars table
         try {
-            showMaxId = conn.prepareStatement(query);
-            ResultSet rs = showMaxId.executeQuery();
+            int startId = maxId + 1;
+            System.out.println("Start adding actor data, start actor id: " + startId);
 
-            if (rs.next()){
-                int startId = Integer.parseInt(rs.getString("id").substring(2)) + 1;
-                System.out.println("Start adding actor data, start actor id: " + startId);
+            conn.setAutoCommit(false);
+            preparedQuery = conn.prepareStatement(insertQuery);
 
-                conn.setAutoCommit(false);
-                checkStar = conn.prepareStatement(checkQuery);
-                preparedQuery = conn.prepareStatement(insertQuery);
+            // iterate all the actors we parsed
+            for (int i = 0; i < myActors.size(); i++) {
+                // get the actor
+                Actor ac = myActors.get(i);
 
-                // iterate all the actors we parsed
-                for (int i = 0; i < myActors.size(); i++) {
-                    // get the actor
-                    Actor ac = myActors.get(i);
+                // check whether the star already exists
+                if (actorMap.containsKey(ac.getStageName())) {
+                    // if the star already exists, go to next actor
+                    inconsistent += "Star already exists: " + ac.toString() + "\n";
+                    continue;
+                } else {
+                    // if not, add the star
+                    String newId = "nm" + (startId + i);
+                    preparedQuery.setString(1, newId);
+                    preparedQuery.setString(2, ac.getStageName());
 
-                    // check whether the star already exists
-                    checkStar.setString(1, ac.getStageName());
-                    rs = checkStar.executeQuery();
+                    // add new id into hashmap
+                    actorMap.put(ac.getStageName(), newId);
 
-                    if (rs.next()) {
-                        // if the star already exists, add existed id into hashmap
-                        actorMap.put(ac.getStageName(), rs.getString("id"));
-
-                        // go to next actor
-                        inconsistent += "Star already exists: " + ac.toString() + "\n";
-                        continue;
-                    } else {
-                        // if not, add the star
-                        String newId = "nm" + (startId + i);
-                        preparedQuery.setString(1, newId);
-                        preparedQuery.setString(2, ac.getStageName());
-
-                        // add new id into hashmap
-                        actorMap.put(ac.getStageName(), newId);
-
-                        if (ac.getBirthyear() != null){
-                            preparedQuery.setInt(3, Integer.parseInt(ac.getBirthyear()));
-                        }
-                        else{
-                            preparedQuery.setNull(3, Types.NULL);
-                        }
-                        preparedQuery.addBatch();
+                    if (ac.getBirthyear() != null){
+                        preparedQuery.setInt(3, Integer.parseInt(ac.getBirthyear()));
                     }
+                    else{
+                        preparedQuery.setNull(3, Types.NULL);
+                    }
+                    preparedQuery.addBatch();
                     recordCount += 1;
                 }
-                System.out.println("adding star record number: " + recordCount + ", actor map size: " + actorMap.size());
-                iNoRows= preparedQuery.executeBatch();
-                conn.commit();
-
             }
+            System.out.println("adding star record number: " + recordCount + ", actor map size: " + actorMap.size());
+            iNoRows= preparedQuery.executeBatch();
+            conn.commit();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -201,8 +208,7 @@ public class SAXParserActor extends DefaultHandler {
 
         // close query and connection
         try {
-            showMaxId.close();
-            checkStar.close();
+            loadStar.close();
             preparedQuery.close();
             conn.close();
         } catch(Exception e) {

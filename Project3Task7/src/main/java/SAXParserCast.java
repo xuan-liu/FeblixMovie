@@ -135,7 +135,7 @@ public class SAXParserCast extends DefaultHandler {
     /**
      * set actorMap from class SAXParserActor, movieMap from class SAXParserMain
      */
-    public void setHashMap() throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+    public void loadStars() throws InstantiationException, IllegalAccessException, ClassNotFoundException {
         // get movieMap and actorMap
         SAXParserActor actor_parser = new SAXParserActor();
         actor_parser.runParser();
@@ -170,13 +170,13 @@ public class SAXParserCast extends DefaultHandler {
         PreparedStatement checkCast = null;
         String checkQuery = "SELECT * FROM stars_in_movies WHERE starId = ? and movieId = ?";
 
-        PreparedStatement checkStar = null;
-        String checkStarQuery = "SELECT * FROM stars WHERE name = ?";
+//        PreparedStatement checkStar = null;
+//        String checkStarQuery = "SELECT * FROM stars WHERE name = ?";
 
         try {
             preparedQuery = conn.prepareStatement(insertQuery);
             checkCast = conn.prepareStatement(checkQuery);
-            checkStar = conn.prepareStatement(checkStarQuery);
+//            checkStar = conn.prepareStatement(checkStarQuery);
             System.out.println("Start adding cast data.");
 
             conn.setAutoCommit(false);
@@ -209,12 +209,12 @@ public class SAXParserCast extends DefaultHandler {
 
                 } else if (movieId != null && starId == null) {
                     // if movie in hashmap, no star in hashmap, check whether the star is in database
-                    checkStar.setString(1, ct.getStageName());
-                    ResultSet rs = checkStar.executeQuery();
+//                    checkStar.setString(1, ct.getStageName());
+//                    ResultSet rs = checkStar.executeQuery();
 
-                    if (rs.next()) {
+                    if (actorMap.containsKey(ct.getStageName())) {
                         // if the star is in database, get the id and add the cast
-                        String id = rs.getString("id");
+                        String id = actorMap.get(ct.getStageName());
                         recordCount += 1;
                         preparedQuery.setString(1, id);
                         preparedQuery.setString(2, movieId);

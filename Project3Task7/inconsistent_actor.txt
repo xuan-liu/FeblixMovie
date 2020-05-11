@@ -5,7 +5,6 @@ Star already exists: StageName:Mario Adorf, Birthyear:1930.
 Star already exists: StageName:Ben Affleck, Birthyear: null.
 Star already exists: StageName:Casey Affleck, Birthyear: null.
 Star already exists: StageName:Rati Agnihotri, Birthyear:1960.
-Star already exists: StageName:Anouk Aimee, Birthyear:1932.
 Star already exists: StageName:Edward Albert, Birthyear:1951.
 Star already exists: StageName:Alan Alda, Birthyear:1936.
 Star already exists: StageName:Rutanya Alda, Birthyear: null.
@@ -58,7 +57,6 @@ Star already exists: StageName:Victor Banerjee, Birthyear: null.
 Star already exists: StageName:Adrienne Barbeau, Birthyear:1949.
 Star already exists: StageName:Ellen Barkin, Birthyear:1954.
 Star already exists: StageName:Priscilla Barnes, Birthyear: null.
-Star already exists: StageName:Maria Barranco, Birthyear: null.
 Star already exists: StageName:Drew Barrymore, Birthyear:1976.
 Star already exists: StageName:Kim Basinger, Birthyear:1953.
 Star already exists: StageName:Angela Bassett, Birthyear:1958.
@@ -89,7 +87,6 @@ Star already exists: StageName:Sandra Bernhard, Birthyear: null.
 Star already exists: StageName:Halle Berry, Birthyear: null.
 Star already exists: StageName:Michael Biehn, Birthyear: null.
 Star already exists: StageName:Karen Black, Birthyear:1942.
-Star already exists: StageName:Ruben Blades, Birthyear:1948.
 Star already exists: StageName:Susan Blakely, Birthyear:1950.
 Star already exists: StageName:Michel Blanc, Birthyear: null.
 Star already exists: StageName:Richard Bohringer, Birthyear: null.
@@ -147,6 +144,7 @@ Star already exists: StageName:John Byner, Birthyear: null.
 Star already exists: StageName:James Caan, Birthyear:1938.
 Star already exists: StageName:Nicolas Cage, Birthyear:1964.
 Star already exists: StageName:Michael Caine, Birthyear:1933.
+Star already exists: StageName:Colin Campbell, Birthyear:1937.
 Star already exists: StageName:George Carlin, Birthyear: null.
 Star already exists: StageName:David Carradine, Birthyear:1940.
 Star already exists: StageName:Keith Carradine, Birthyear:1945.
@@ -155,6 +153,7 @@ Star already exists: StageName:Helena Bonham Carter, Birthyear:1966.
 Star already exists: StageName:Jim Carter, Birthyear: null.
 Star already exists: StageName:Veronica Cartwright, Birthyear:1949.
 Star already exists: StageName:Johnny Cash, Birthyear:1932.
+Star already exists: StageName:John Cassavetes, Birthyear:1929.
 Star already exists: StageName:Seymour Cassel, Birthyear:1935.
 Star already exists: StageName:Joanna Cassidy, Birthyear:1944.
 Star already exists: StageName:Phoebe Cates, Birthyear:1963.
@@ -169,7 +168,6 @@ Star already exists: StageName:Chevy Chase, Birthyear:1949.
 Star already exists: StageName:Soumitra Chatterjee, Birthyear: null.
 Star already exists: StageName:Joan Chen, Birthyear: null.
 Star already exists: StageName:Cher, Birthyear:1946.
-Star already exists: StageName:Patrice Chereau, Birthyear: null.
 Star already exists: StageName:Leslie Cheung, Birthyear: null.
 Star already exists: StageName:Shelby Chong, Birthyear: null.
 Star already exists: StageName:Thomas Chong, Birthyear: null.
@@ -209,10 +207,8 @@ Star already exists: StageName:Lee Curreri, Birthyear: null.
 Star already exists: StageName:Tim Curry, Birthyear:1946.
 Star already exists: StageName:Jane Curtin, Birthyear: null.
 Star already exists: StageName:Jamie Lee Curtis, Birthyear:1958.
-Star already exists: StageName:Maryam DAbo, Birthyear: null.
 Star already exists: StageName:Willem Dafoe, Birthyear: null.
 Star already exists: StageName:Elizabeth Daily, Birthyear: null.
-Star already exists: StageName:Beatrice Dalle, Birthyear: null.
 Star already exists: StageName:Timothy Dalton, Birthyear:1944.
 Star already exists: StageName:Roger Daltrey, Birthyear:1944.
 Star already exists: StageName:Mark Damon, Birthyear: null.
@@ -237,14 +233,12 @@ Star already exists: StageName:Julie Delpy, Birthyear:1969.
 Star already exists: StageName:Dom DeLuise, Birthyear:1933.
 Star already exists: StageName:Judi Dench, Birthyear:1934.
 Star already exists: StageName:Catherine Deneuve, Birthyear:1943.
-Star already exists: StageName:Gerard Depardieu, Birthyear:1948.
 Star already exists: StageName:Bo Derek, Birthyear:1957.
 Star already exists: StageName:Bruce Dern, Birthyear:1936.
 Star already exists: StageName:Laura Dern, Birthyear:1967.
 Star already exists: StageName:Maruschka Detmers, Birthyear: null.
 Star already exists: StageName:William Devane, Birthyear: null.
 Star already exists: StageName:William Devane, Birthyear: null.
-Star already exists: StageName:Danny deVito, Birthyear: null.
 Star already exists: StageName:Cameron Diaz, Birthyear:1970.
 Star already exists: StageName:Marlene Dietrich, Birthyear:1901.
 Star already exists: StageName:Phyllis Diller, Birthyear:1917.
@@ -276,8 +270,9 @@ Star already exists: StageName:Sam Elliott, Birthyear:1944.
 Star already exists: StageName:Michael Elphick, Birthyear:1946.
 Star already exists: StageName:Robert Englund, Birthyear: null.
 Star already exists: StageName:Emilio Estevez, Birthyear: null.
-Star already exists: StageName:Francoise Fabian, Birthyear:1935.
 Star already exists: StageName:Peter Falk, Birthyear:1927.
+Star already exists: StageName:Derek Farr, Birthyear: null.
+Star already exists: StageName:Charles Farrell, Birthyear:1901.
 Star already exists: StageName:Mia Farrow, Birthyear:1945.
 Star already exists: StageName:Tovah Feldshuh, Birthyear: null.
 Star already exists: StageName:Sherilyn Fenn, Birthyear:1965.
@@ -307,7 +302,6 @@ Star already exists: StageName:Charlotte Gainsbourg, Birthyear: null.
 Star already exists: StageName:Michael Gambon, Birthyear: null.
 Star already exists: StageName:Bruno Ganz, Birthyear: null.
 Star already exists: StageName:Greta Garbo, Birthyear:1905.
-Star already exists: StageName:Andres Garcia, Birthyear: null.
 Star already exists: StageName:Allen Garfield, Birthyear:1939.
 Star already exists: StageName:Beverly Garland, Birthyear:1926.
 Star already exists: StageName:James Garner, Birthyear:1928.
@@ -340,9 +334,9 @@ Star already exists: StageName:Harold Gould, Birthyear:1923.
 Star already exists: StageName:Nickolas Grace, Birthyear: null.
 Star already exists: StageName:Lee Grant, Birthyear: null.
 Star already exists: StageName:Richard E. Grant, Birthyear: null.
+Star already exists: StageName:Peter Graves, Birthyear:1911.
 Star already exists: StageName:Charles Gray, Birthyear:1928.
 Star already exists: StageName:Erin Gray, Birthyear: null.
-Star already exists: StageName:Juliette Greco, Birthyear:1927.
 Star already exists: StageName:Danny Green, Birthyear:1903.
 Star already exists: StageName:Seth Green, Birthyear: null.
 Star already exists: StageName:Graham Greene, Birthyear:1904.
@@ -371,6 +365,7 @@ Star already exists: StageName:Richard Harris, Birthyear:1932.
 Star already exists: StageName:John Hart, Birthyear: null.
 Star already exists: StageName:Veronica Hart, Birthyear: null.
 Star already exists: StageName:Mariette Hartley, Birthyear:1940.
+Star already exists: StageName:Laurence Harvey, Birthyear:1928.
 Star already exists: StageName:Rutger Hauer, Birthyear:1944.
 Star already exists: StageName:Wings Hauser, Birthyear: null.
 Star already exists: StageName:Goldie Hawn, Birthyear:1945.
@@ -383,6 +378,7 @@ Star already exists: StageName:David Hemmings, Birthyear:1941.
 Star already exists: StageName:Lance Henriksen, Birthyear: null.
 Star already exists: StageName:Gregg Henry, Birthyear: null.
 Star already exists: StageName:Justin Henry, Birthyear:1971.
+Star already exists: StageName:Nicky Henson, Birthyear:1945.
 Star already exists: StageName:Bernard Hepton, Birthyear:1925.
 Star already exists: StageName:Charlton Heston, Birthyear:1924.
 Star already exists: StageName:Gregory Hines, Birthyear: null.
@@ -390,6 +386,7 @@ Star already exists: StageName:Pat Hingle, Birthyear:1923.
 Star already exists: StageName:Judd Hirsch, Birthyear:1936.
 Star already exists: StageName:Dustin Hoffman, Birthyear:1937.
 Star already exists: StageName:Hulk Hogan, Birthyear: null.
+Star already exists: StageName:William Holden, Birthyear:1918.
 Star already exists: StageName:Geoffrey Holder, Birthyear: null.
 Star already exists: StageName:Ian Holm, Birthyear:1932.
 Star already exists: StageName:Anthony Hopkins, Birthyear:1941.
@@ -415,11 +412,11 @@ Star already exists: StageName:William Hurt, Birthyear:1950.
 Star already exists: StageName:Olivia Hussey, Birthyear:1951.
 Star already exists: StageName:Anjelica Huston, Birthyear:1951.
 Star already exists: StageName:Timothy Hutton, Birthyear:1960.
+Star already exists: StageName:Rex Ingram, Birthyear:1895.
 Star already exists: StageName:Jeremy Irons, Birthyear:1948.
 Star already exists: StageName:Michael Ironside, Birthyear: null.
 Star already exists: StageName:Kate Jackson, Birthyear:1950.
 Star already exists: StageName:Samuel L. Jackson, Birthyear:1948.
-Star already exists: StageName:Irene Jacob, Birthyear: null.
 Star already exists: StageName:Derek Jacobi, Birthyear:1938.
 Star already exists: StageName:Saeed Jaffrey, Birthyear: null.
 Star already exists: StageName:Henry Jaglom, Birthyear: null.
@@ -455,22 +452,22 @@ Star already exists: StageName:Margot Kidder, Birthyear:1948.
 Star already exists: StageName:Nicole Kidman, Birthyear:1967.
 Star already exists: StageName:Val Kilmer, Birthyear:1959.
 Star already exists: StageName:Alan King, Birthyear:1924.
+Star already exists: StageName:Charles King, Birthyear:1899.
 Star already exists: StageName:Stephen King, Birthyear:1940.
 Star already exists: StageName:Ben Kingsley, Birthyear:1944.
 Star already exists: StageName:Greg Kinnear, Birthyear:1963.
 Star already exists: StageName:Sally Kirkland, Birthyear: null.
 Star already exists: StageName:Kevin Kline, Birthyear: null.
 Star already exists: StageName:Shirley Knight, Birthyear:1937.
-Star already exists: StageName:Jeroen Krabbe, Birthyear: null.
 Star already exists: StageName:Alice Krige, Birthyear: null.
 Star already exists: StageName:Kris Kristofferson, Birthyear:1936.
-Star already exists: StageName:Hardy Kruger, Birthyear:1928.
 Star already exists: StageName:Burt Kwouk, Birthyear:1930.
 Star already exists: StageName:David Ladd, Birthyear: null.
 Star already exists: StageName:Diane Ladd, Birthyear:1932.
 Star already exists: StageName:Christine Lahti, Birthyear: null.
 Star already exists: StageName:Lorenzo Lamas, Birthyear: null.
 Star already exists: StageName:Christopher Lambert, Birthyear: null.
+Star already exists: StageName:Jack Lambert, Birthyear:1920.
 Star already exists: StageName:Martin Landau, Birthyear:1933.
 Star already exists: StageName:Judy Landers, Birthyear: null.
 Star already exists: StageName:Diane Lane, Birthyear:1965.
@@ -483,13 +480,11 @@ Star already exists: StageName:John Phillip Law, Birthyear:1937.
 Star already exists: StageName:Leigh Lawson, Birthyear:1944.
 Star already exists: StageName:Cloris Leachman, Birthyear:1926.
 Star already exists: StageName:Denis Leary, Birthyear:1958.
-Star already exists: StageName:Cinque Lee, Birthyear: null.
 Star already exists: StageName:Mark Lee, Birthyear: null.
 Star already exists: StageName:Jennifer Jason Leigh, Birthyear:1961.
 Star already exists: StageName:Michael Lembeck, Birthyear: null.
 Star already exists: StageName:John Lennon, Birthyear: null.
 Star already exists: StageName:Rula Lenska, Birthyear: null.
-Star already exists: StageName:Tea Leoni, Birthyear: null.
 Star already exists: StageName:Michael Lerner, Birthyear: null.
 Star already exists: StageName:David Lewis, Birthyear: null.
 Star already exists: StageName:Geoffrey Lewis, Birthyear: null.
@@ -510,7 +505,6 @@ Star already exists: StageName:Andie MacDowell, Birthyear: null.
 Star already exists: StageName:Kyle MacLachlan, Birthyear: null.
 Star already exists: StageName:Shirley MacLaine, Birthyear:1934.
 Star already exists: StageName:Jena Malone, Birthyear:1984.
-Star already exists: StageName:Patrick MacNee, Birthyear:1922.
 Star already exists: StageName:William H. Macy, Birthyear: null.
 Star already exists: StageName:Amy Madigan, Birthyear: null.
 Star already exists: StageName:Madonna, Birthyear:1959.
@@ -519,7 +513,6 @@ Star already exists: StageName:Mako, Birthyear: null.
 Star already exists: StageName:Patrick Malahide, Birthyear: null.
 Star already exists: StageName:John Malkovich, Birthyear: null.
 Star already exists: StageName:Nick Mancuso, Birthyear:1956.
-Star already exists: StageName:Kiti Manver, Birthyear: null.
 Star already exists: StageName:Jane March, Birthyear:1973.
 Star already exists: StageName:Cheech Marin, Birthyear: null.
 Star already exists: StageName:Jane March, Birthyear:1973.
@@ -542,6 +535,7 @@ Star already exists: StageName:Frances Lee McCain, Birthyear: null.
 Star already exists: StageName:Andrew McCarthy, Birthyear: null.
 Star already exists: StageName:Kevin McCarthy, Birthyear:1914.
 Star already exists: StageName:Malcolm McDowell, Birthyear:1943.
+Star already exists: StageName:Spanky McFarland, Birthyear: null.
 Star already exists: StageName:Stephen McHattie, Birthyear: null.
 Star already exists: StageName:Michael McKean, Birthyear: null.
 Star already exists: StageName:Lonette McKee, Birthyear: null.
@@ -555,7 +549,6 @@ Star already exists: StageName:Frank Miller, Birthyear: null.
 Star already exists: StageName:Spike Milligan, Birthyear:1918.
 Star already exists: StageName:Helen Mirren, Birthyear:1926.
 Star already exists: StageName:Matthew Modine, Birthyear: null.
-Star already exists: StageName:Angela Molina, Birthyear: null.
 Star already exists: StageName:Ron Moody, Birthyear:1924.
 Star already exists: StageName:Demi Moore, Birthyear: null.
 Star already exists: StageName:Julianne Moore, Birthyear:1961.
@@ -565,6 +558,7 @@ Star already exists: StageName:Jeanne Moreau, Birthyear:1928.
 Star already exists: StageName:Rita Moreno, Birthyear:1931.
 Star already exists: StageName:Michele Morgan, Birthyear:1920.
 Star already exists: StageName:Michael Moriarty, Birthyear: null.
+Star already exists: StageName:Mary Morris, Birthyear:1915.
 Star already exists: StageName:David Morrissey, Birthyear: null.
 Star already exists: StageName:David Morse, Birthyear: null.
 Star already exists: StageName:Eddie Murphy, Birthyear:1960.
@@ -607,12 +601,12 @@ Star already exists: StageName:Al Pacino, Birthyear:1939.
 Star already exists: StageName:Joanna Pacula, Birthyear: null.
 Star already exists: StageName:Gwyneth Paltrow, Birthyear:1973.
 Star already exists: StageName:Joe Pantoliano, Birthyear: null.
-Star already exists: StageName:Michael Pare, Birthyear: null.
 Star already exists: StageName:Sarah Jessica Parker, Birthyear:1965.
 Star already exists: StageName:Michael Parks, Birthyear:1938.
 Star already exists: StageName:Dolly Parton, Birthyear:1946.
 Star already exists: StageName:Michael Pataki, Birthyear: null.
 Star already exists: StageName:Mandy Patinkin, Birthyear: null.
+Star already exists: StageName:Raymond Pellegrin, Birthyear: null.
 Star already exists: StageName:Sean Penn, Birthyear:1960.
 Star already exists: StageName:Ron Perlman, Birthyear: null.
 Star already exists: StageName:Bernadette Peters, Birthyear:1948.
@@ -638,7 +632,6 @@ Star already exists: StageName:Elvis Presley, Birthyear:1935.
 Star already exists: StageName:Kelly Preston, Birthyear:1963.
 Star already exists: StageName:Barry Primus, Birthyear:1938.
 Star already exists: StageName:William Prince, Birthyear:1913.
-Star already exists: StageName:Jurgen Prochnow, Birthyear: null.
 Star already exists: StageName:David Prowse, Birthyear: null.
 Star already exists: StageName:Jonathan Pryce, Birthyear:1947.
 Star already exists: StageName:Dennis Quaid, Birthyear:1955.
@@ -693,7 +686,6 @@ Star already exists: StageName:Ken Russell, Birthyear: null.
 Star already exists: StageName:Kurt Russell, Birthyear:1951.
 Star already exists: StageName:Mark Rydell, Birthyear:1934.
 Star already exists: StageName:Winona Ryder, Birthyear:1971.
-Star already exists: StageName:Sabu, Birthyear:1924.
 Star already exists: StageName:Soupy Sales, Birthyear:1926.
 Star already exists: StageName:Peter Sallis, Birthyear:1921.
 Star already exists: StageName:Jennifer Salt, Birthyear:1944.
@@ -753,6 +745,7 @@ Star already exists: StageName:Maureen Stapleton, Birthyear:1925.
 Star already exists: StageName:Mary Steenburgen, Birthyear:1952.
 Star already exists: StageName:Rod Steiger, Birthyear:1925.
 Star already exists: StageName:David Steinberg, Birthyear: null.
+Star already exists: StageName:Harvey Stephens, Birthyear:1970.
 Star already exists: StageName:Daniel Stern, Birthyear: null.
 Star already exists: StageName:Tom Stern, Birthyear: null.
 Star already exists: StageName:Frances Sternhagen, Birthyear: null.
@@ -761,6 +754,7 @@ Star already exists: StageName:Patrick Stewart, Birthyear: null.
 Star already exists: StageName:David Ogden Stiers, Birthyear: null.
 Star already exists: StageName:Hugo Stiglitz, Birthyear: null.
 Star already exists: StageName:Ben Stiller, Birthyear: null.
+Star already exists: StageName:Sting, Birthyear: null.
 Star already exists: StageName:John Stockwell, Birthyear: null.
 Star already exists: StageName:Eric Stoltz, Birthyear:1962.
 Star already exists: StageName:Christopher Stone, Birthyear: null.
@@ -790,6 +784,7 @@ Star already exists: StageName:Lea Thompson, Birthyear: null.
 Star already exists: StageName:Uma Thurman, Birthyear:1971.
 Star already exists: StageName:Cheryl Tiegs, Birthyear: null.
 Star already exists: StageName:Jennifer Tilly, Birthyear: null.
+Star already exists: StageName:Ann Todd, Birthyear:1932.
 Star already exists: StageName:Marisa Tomei, Birthyear: null.
 Star already exists: StageName:Rip Torn, Birthyear:1931.
 Star already exists: StageName:Stuart Townsend, Birthyear: null.
@@ -797,6 +792,7 @@ Star already exists: StageName:John Travolta, Birthyear:1954.
 Star already exists: StageName:Guinevere Turner, Birthyear:1968.
 Star already exists: StageName:Janine Turner, Birthyear:1964.
 Star already exists: StageName:John Turner, Birthyear:1932.
+Star already exists: StageName:Beverly Tyler, Birthyear:1924.
 Star already exists: StageName:Liv Tyler, Birthyear: null.
 Star already exists: StageName:Cicely Tyson, Birthyear:1933.
 Star already exists: StageName:Robert Urich, Birthyear: null.
@@ -826,7 +822,6 @@ Star already exists: StageName:Adam West, Birthyear:1929.
 Star already exists: StageName:David White, Birthyear:1916.
 Star already exists: StageName:Lynn Whitfield, Birthyear:1954.
 Star already exists: StageName:Dianne Wiest, Birthyear: null.
-Star already exists: StageName:Jose Wilker, Birthyear: null.
 Star already exists: StageName:Fred Willard, Birthyear: null.
 Star already exists: StageName:Esther Williams, Birthyear:1923.
 Star already exists: StageName:JoBeth Williams, Birthyear: null.
@@ -854,7 +849,6 @@ Star already exists: StageName:Susannah York, Birthyear:1941.
 Star already exists: StageName:Burt Young, Birthyear: null.
 Star already exists: StageName:Karen Young, Birthyear: null.
 Star already exists: StageName:Robert Young, Birthyear:1907.
-Star already exists: StageName:Renee Zellweger, Birthyear:1970.
 Star already exists: StageName:Anthony Zerbe, Birthyear: null.
 Star already exists: StageName:Adrian Zmed, Birthyear: null.
 Star already exists: StageName:David Zucker, Birthyear: null.
