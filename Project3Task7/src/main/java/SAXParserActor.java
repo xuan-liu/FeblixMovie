@@ -51,7 +51,7 @@ public class SAXParserActor extends DefaultHandler {
 
             //parse the file and also register this class for call backs
             System.out.println("Start Parsing Actor.");
-            sp.parse("actors63.xml", this);
+            sp.parse("../data/actors63.xml", this);
 
         } catch (SAXException se) {
             se.printStackTrace();
@@ -64,7 +64,7 @@ public class SAXParserActor extends DefaultHandler {
 
     //Event Handlers
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
-        if (qName.equalsIgnoreCase("../data/actor")) {
+        if (qName.equalsIgnoreCase("actor")) {
             // if "actor", create a new instance of actor
             tempActor = new Actor();
             addList = true;
