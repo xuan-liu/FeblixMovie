@@ -32,7 +32,7 @@ public class SAXParserMain extends DefaultHandler {
     private Map<String, Integer> genreMap = new HashMap<>();
 
     // hashmap for genre whole name. key: shorten genre in xml file, value: the whole name
-    private Map<String, String> genreNameMap = new HashMap<String, String>() {{
+    final private Map<String, String> genreNameMap = new HashMap<String, String>() {{
         put("Susp", "Thriller");
         put("CnR", "Cops and Robbers");
         put("Dram", "Drama");
@@ -49,6 +49,8 @@ public class SAXParserMain extends DefaultHandler {
         put("Noir", "Black");
         put("BioP", "Biographical Picture");
         put("TV", "TV Show");
+        put("TVs", "TV series");
+        put("TVm", "TV miniseries");
     }};
 
 
@@ -114,7 +116,7 @@ public class SAXParserMain extends DefaultHandler {
 
             if (!(tempVal != null && tempVal.trim().length() > 0)) {
                 addList = false;
-                inconsistent += "Movie with null director: " + tempMovie.toString() + "\n";
+                inconsistent += "Adding to movies table -- Movie with null director: " + tempMovie.toString() + "\n";
             }
 
         } else if (addList && qName.equalsIgnoreCase("film")) {
@@ -134,7 +136,7 @@ public class SAXParserMain extends DefaultHandler {
             } else {
                 // if null, not add to list
                 addList = false;
-                inconsistent += "Movie with null title: " + tempMovie.toString() + "\n";
+                inconsistent += "Adding to movies table -- Movie with null title: " + tempMovie.toString() + "\n";
             }
 
         } else if (qName.equalsIgnoreCase("year")) {
@@ -145,11 +147,11 @@ public class SAXParserMain extends DefaultHandler {
                     tempMovie.setYear(Integer.parseInt(tempVal));
                 } catch (Exception e) {
                     addList = false;
-                    inconsistent += "Movie year cannot parse to int: " + tempMovie.toString() + "\n";
+                    inconsistent += "Adding to movies table -- Movie year cannot parse to int: " + tempMovie.toString() + "\n";
                 }
             } else {
                 addList = false;
-                inconsistent += "Movie with null year: " + tempMovie.toString() + "\n";
+                inconsistent += "Adding to movies table -- Movie with null year: " + tempMovie.toString() + "\n";
             }
 
         } else if (qName.equalsIgnoreCase("cat")) {
@@ -187,12 +189,6 @@ public class SAXParserMain extends DefaultHandler {
         int[] iNoRows=null;
         int recordCount = 0;
 
-        PreparedStatement showMax = null;
-        String maxQuery = "Select MAX(id) as id from genres";
-
-        PreparedStatement preparedGenreQuery = null;
-        String queryGenre = "SELECT * FROM genres WHERE name = ?";
-
         PreparedStatement preparedGenre = null;
         String insertGenre = "Insert into genres(name) Values(?)";
 
@@ -200,6 +196,28 @@ public class SAXParserMain extends DefaultHandler {
         String insertGenreMovie = "INSERT INTO genres_in_movies(genreId, movieId) VALUES(?, ?);";
         int[] iNoRowsg=null;
         int genreCount = 0;
+
+        PreparedStatement loadGenre = null;
+        String loadQuery = "SELECT * FROM genres";
+        int maxGenreId = 0;
+
+        // load all genres in genres table in memory
+        try {
+            loadGenre = conn.prepareStatement(loadQuery);
+            ResultSet rsl = loadGenre.executeQuery();
+
+            while (rsl.next()) {
+                // add to actorMap
+                genreMap.put(rsl.getString("name"), rsl.getInt("id"));
+
+                // find max id in genres table
+                if (rsl.getInt("id") > maxGenreId) {
+                    maxGenreId = rsl.getInt("id");
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
         // find the max id in stars table
         try {
@@ -212,37 +230,10 @@ public class SAXParserMain extends DefaultHandler {
 
                 conn.setAutoCommit(false);
 
-                // insert all genres
-                showMax = conn.prepareStatement(maxQuery);
-                ResultSet rsq = showMax.executeQuery();
-
-                if (rsq.next()) {
-                    int gen_id = rsq.getInt("id") + 1;
-                    preparedGenreQuery = conn.prepareStatement(queryGenre);
-                    preparedGenre = conn.prepareStatement(insertGenre);
-                    for (String g: genreNameMap.values()) {
-                        // check whether the genre exist
-                        preparedGenreQuery.setString(1, g);
-                        ResultSet rsg = preparedGenreQuery.executeQuery();
-
-                        if (rsg.next()) {
-                            // genre already exists, add to genreMap
-                            genreMap.put(g, rsg.getInt("id"));
-                        } else {
-                            // genre not exist, insert genre
-                            preparedGenre.setString(1, g);
-                            preparedGenre.executeUpdate();
-
-                            // add to genreMap
-                            genreMap.put(g, gen_id);
-                            gen_id += 1;
-                        }
-                    }
-                }
-
                 checkMovie = conn.prepareStatement(checkQuery);
                 preparedQuery = conn.prepareStatement(insertQuery);
                 preparedGenreMovie = conn.prepareStatement(insertGenreMovie);
+                preparedGenre = conn.prepareStatement(insertGenre);
 
                 // iterate all the movies we parsed
                 for (int i = 0; i < myMovies.size(); i++) {
@@ -260,7 +251,7 @@ public class SAXParserMain extends DefaultHandler {
                         movieMap.put(mv.getId(), rs.getString("id"));
 
                         // go to next actor
-                        inconsistent += "Movie already exists: " + mv.toString() + "\n";
+                        inconsistent += "Adding to movies table -- Movie already exists: " + mv.toString() + "\n";
                         continue;
                     } else {
                         // if not, add the movie in movie table
@@ -274,16 +265,25 @@ public class SAXParserMain extends DefaultHandler {
                         preparedQuery.addBatch();
                         recordCount += 1;
 
-                        // add the movie genre relationship
+                        // add to genres table and the movie genre relationship
                         for (int j = 0; j < mv.getGenres().size(); j++) {
                             genreCount += 1;
                             try{
                                 String g = mv.getGenres().get(j);
+                                if (!genreMap.containsKey(g)) {
+                                    // if the genre not exist in the database, add the genre
+                                    preparedGenre.setString(1, g);
+                                    preparedGenre.executeUpdate();
+
+                                    // add to genreMap
+                                    genreMap.put(g, maxGenreId);
+                                    maxGenreId += 1;
+                                }
                                 preparedGenreMovie.setInt(1, genreMap.get(g));
                                 preparedGenreMovie.setString(2, movieMap.get(mv.getId()));
                                 preparedGenreMovie.addBatch();
                             } catch (Exception e) {
-                                inconsistent += "Genre cannot add to genres_in_movies: " + mv.toString() + "\n";
+                                inconsistent += "Adding to genres_in_movies table -- Genre cannot add: " + mv.toString() + "\n";
                             }
                         }
 
@@ -301,23 +301,22 @@ public class SAXParserMain extends DefaultHandler {
         }
 
         // print inconsistent to file
-        try {
-            FileWriter myWriter = new FileWriter("inconsistent_main.txt");
-            myWriter.write(inconsistent);
-            myWriter.close();
-            System.out.println("Successfully wrote inconsistent to the file inconsistent_main.txt.");
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
+//        try {
+//            FileWriter myWriter = new FileWriter("inconsistent_main.txt");
+//            myWriter.write(inconsistent);
+//            myWriter.close();
+//            System.out.println("Successfully wrote inconsistent to the file inconsistent_main.txt.");
+//        } catch (IOException e) {
+//            System.out.println("An error occurred.");
+//            e.printStackTrace();
+//        }
 
         // close query and connection
         try {
-            showMax.close();
+            loadGenre.close();
             showMaxId.close();
             checkMovie.close();
             preparedQuery.close();
-            preparedGenreQuery.close();
             preparedGenre.close();
             preparedGenreMovie.close();
             conn.close();
@@ -329,6 +328,10 @@ public class SAXParserMain extends DefaultHandler {
 
     public Map<String, String> getMovieMap() {
         return movieMap;
+    }
+
+    public String getInconsistent() {
+        return inconsistent;
     }
 
     public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException {

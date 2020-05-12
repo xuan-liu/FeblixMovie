@@ -20,7 +20,7 @@ public class SAXParserCast extends DefaultHandler {
 
     private boolean addList; //whether add the actor into list
 
-    String inconsistent = "";
+    static String inconsistent = "";
 
     private static Map<String, String> actorMap;
     private static Map<String, String> movieMap;
@@ -64,28 +64,6 @@ public class SAXParserCast extends DefaultHandler {
         }
     }
 
-    /**
-     * Iterate through the list and print
-     * the contents
-     */
-    private void printData() {
-        String result = "No of Casts '" + myCasts.size() + "'.\n";
-        Iterator<Cast> it = myCasts.iterator();
-        while (it.hasNext()) {
-            result += it.next().toString() + "\n";
-        }
-
-        try {
-            FileWriter myWriter = new FileWriter("cast.txt");
-            myWriter.write(result);
-            myWriter.close();
-            System.out.println("Successfully wrote to the file.");
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
-    }
-
     //Event Handlers
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         if (qName.equalsIgnoreCase("m")) {
@@ -112,7 +90,7 @@ public class SAXParserCast extends DefaultHandler {
             } else {
                 // if null, not add to list
                 addList = false;
-                inconsistent += "Cast with null movie id: " + tempCast.toString() + "\n";
+                inconsistent += "Adding to stars_in_movies table -- Cast with null movie id: " + tempCast.toString() + "\n";
             }
 
         } else if (qName.equalsIgnoreCase("a")) {
@@ -123,29 +101,15 @@ public class SAXParserCast extends DefaultHandler {
 
                 if (tempVal.equals("s a")) {
                     addList = false;
-                    inconsistent += "Cast with stagename as s a: " + tempCast.toString() + "\n";
+                    inconsistent += "Adding to stars_in_movies table -- Cast with stagename as s a: " + tempCast.toString() + "\n";
                 }
             } else {
                 // if null, not add to list
                 addList = false;
-                inconsistent += "Cast with null stagename: " + tempCast.toString() + "\n";
+                inconsistent += "Adding to stars_in_movies table -- Cast with null stagename: " + tempCast.toString() + "\n";
             }
         }
 
-    }
-
-    /**
-     * set actorMap from class SAXParserActor, movieMap from class SAXParserMain
-     */
-    public void loadStars() throws InstantiationException, IllegalAccessException, ClassNotFoundException {
-        // get movieMap and actorMap
-        SAXParserActor actor_parser = new SAXParserActor();
-        actor_parser.runParser();
-        actorMap = actor_parser.getActorMap();
-
-        SAXParserMain movie_parser = new SAXParserMain();
-        movie_parser.runParser();
-        movieMap = movie_parser.getMovieMap();
     }
 
     /**
@@ -202,7 +166,7 @@ public class SAXParserCast extends DefaultHandler {
 
                     if (rs.next()) {
                         // if the cast already exists, continue for next cast
-                        inconsistent += "Cast already exists: " + ct.toString() + "\n";
+                        inconsistent += "Adding to stars_in_movies table -- Cast already exists: " + ct.toString() + "\n";
                         continue;
                     } else {
                         // if not, add the cast
@@ -214,16 +178,13 @@ public class SAXParserCast extends DefaultHandler {
 
                 } else if (movieId != null && starId == null) {
                     // if movie in hashmap, no star in hashmap, check whether the star is in database
-//                    checkStar.setString(1, ct.getStageName());
-//                    ResultSet rs = checkStar.executeQuery();
-
                     if (actorMap.containsKey(ct.getStageName())) {
                         // if the star is in database, get the id and add the cast
                         String id = actorMap.get(ct.getStageName());
-                        recordCount += 1;
                         preparedQuery.setString(1, id);
                         preparedQuery.setString(2, movieId);
                         preparedQuery.addBatch();
+                        recordCount += 1;
                     } else {
                         // if the star is not in database, add the star in stars table
                         String newId = "nm" + maxId;
@@ -238,17 +199,14 @@ public class SAXParserCast extends DefaultHandler {
                         actorMap.put(ct.getStageName(), newId);
 
                         // add the cast
-                        recordCount += 1;
                         preparedQuery.setString(1, newId);
                         preparedQuery.setString(2, movieId);
                         preparedQuery.addBatch();
                         recordCount += 1;
-
-//                        inconsistent += "Cast Star cannot add: " + ct.toString() + "\n";
                     }
                 } else {
                     // otherwise, report inconsistent
-                    inconsistent += "Cast Movie with null id: " + ct.toString() + "\n";
+                    inconsistent += "Adding to stars_in_movies table -- Cast Movie not found: " + ct.toString() + "\n";
                 }
 
             }
@@ -260,17 +218,6 @@ public class SAXParserCast extends DefaultHandler {
             conn.commit();
 
         } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        // print inconsistent to file
-        try {
-            FileWriter myWriter = new FileWriter("inconsistent_cast.txt");
-            myWriter.write(inconsistent);
-            myWriter.close();
-            System.out.println("Successfully wrote inconsistent to the file inconsistent_cast.txt.");
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
             e.printStackTrace();
         }
 
@@ -286,19 +233,35 @@ public class SAXParserCast extends DefaultHandler {
 
     }
 
-    public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+    public void printInconsistent() throws IOException{
+        // print inconsistent to file
+        try {
+            FileWriter myWriter = new FileWriter("inconsistent_report.txt");
+            myWriter.write(inconsistent);
+            myWriter.close();
+            System.out.println("Successfully wrote all inconsistent cases to the file inconsistent_report.txt.");
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+    }
+
+    public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException, IOException {
         // get movieMap and actorMap
         SAXParserActor actor_parser = new SAXParserActor();
         actor_parser.runParser();
         actorMap = actor_parser.getActorMap();
         maxStarId += actor_parser.getMaxId();
+        inconsistent += actor_parser.getInconsistent();
 
         SAXParserMain movie_parser = new SAXParserMain();
         movie_parser.runParser();
         movieMap = movie_parser.getMovieMap();
+        inconsistent += movie_parser.getInconsistent();
 
         SAXParserCast spe = new SAXParserCast();
         spe.runParser();
+        spe.printInconsistent();
     }
 
 }

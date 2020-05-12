@@ -87,7 +87,7 @@ public class SAXParserActor extends DefaultHandler {
             } else {
                 // if null, not add to list
                 addList = false;
-                inconsistent += "Star with null stagename " + tempActor.toString() + "\n";
+                inconsistent += "Adding to stars table -- Star with null stagename: " + tempActor.toString() + "\n";
             }
 
         } else if (qName.equalsIgnoreCase("dob")) {
@@ -169,7 +169,7 @@ public class SAXParserActor extends DefaultHandler {
                 // check whether the star already exists
                 if (actorMap.containsKey(ac.getStageName())) {
                     // if the star already exists, go to next actor
-                    inconsistent += "Star already exists: " + ac.toString() + "\n";
+                    inconsistent += "Adding to stars table -- Star already exists: " + ac.toString() + "\n";
                     continue;
                 } else {
                     // if not, add the star
@@ -200,15 +200,15 @@ public class SAXParserActor extends DefaultHandler {
 
         maxIdString += "nm" + maxId;
         // print inconsistent to file
-        try {
-            FileWriter myWriter = new FileWriter("inconsistent_actor.txt");
-            myWriter.write(inconsistent);
-            myWriter.close();
-            System.out.println("Successfully wrote inconsistent to the file inconsistent_actor.txt.");
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
+//        try {
+//            FileWriter myWriter = new FileWriter("inconsistent_actor.txt");
+//            myWriter.write(inconsistent);
+//            myWriter.close();
+//            System.out.println("Successfully wrote inconsistent to the file inconsistent_actor.txt.");
+//        } catch (IOException e) {
+//            System.out.println("An error occurred.");
+//            e.printStackTrace();
+//        }
 
         // close query and connection
         try {
@@ -227,6 +227,10 @@ public class SAXParserActor extends DefaultHandler {
 
     public String getMaxId() {
         return maxIdString;
+    }
+
+    public String getInconsistent() {
+        return inconsistent;
     }
 
     public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
