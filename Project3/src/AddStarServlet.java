@@ -62,13 +62,14 @@ public class AddStarServlet extends HttpServlet {
 
                 preparedQuery.executeUpdate();
                 preparedQuery.close();
+                JsonObject jsonObject = new JsonObject();
+                jsonObject.addProperty("message", "Star " + name_param + " with ID: " + newId + " has been successfully added to the database.");
+                System.out.println(jsonObject.toString());
+                response.getWriter().write(jsonObject.toString());
 
 
             }
-            JsonObject jsonObject = new JsonObject();
-            jsonObject.addProperty("message", "Star " + name_param + " has been successfully added to the database.");
-            System.out.println(jsonObject.toString());
-            response.getWriter().write(jsonObject.toString());
+
 
 
 
