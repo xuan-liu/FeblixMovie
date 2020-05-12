@@ -64,7 +64,7 @@ public class SAXParserActor extends DefaultHandler {
 
     //Event Handlers
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
-        if (qName.equalsIgnoreCase("actor")) {
+        if (qName.equalsIgnoreCase("../data/actor")) {
             // if "actor", create a new instance of actor
             tempActor = new Actor();
             addList = true;

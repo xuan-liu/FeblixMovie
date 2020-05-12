@@ -53,7 +53,7 @@ public class SAXParserCast extends DefaultHandler {
 
             //parse the file and also register this class for call backs
             System.out.println("Start Parsing Cast.");
-            sp.parse("casts124.xml", this);
+            sp.parse("../data/casts124.xml", this);
 
         } catch (SAXException se) {
             se.printStackTrace();

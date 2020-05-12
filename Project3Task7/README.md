@@ -9,7 +9,8 @@ Before running it, it's recommended to back up your "moviedb" database. You can 
 
 
 Then you can run the project.
-1. Clone this repository using git clone <repo url>
-2. `cd Project3Task7`
-3. `mvn package`
-4. `time java -cp target/cs122b-spring20-project3-SAXParser-example-0.0.1-SNAPSHOT.jar:/home/ubuntu/.m2/repository/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46.jar SAXParserCast` Using "time" at first can track the time the project consumes.
+1. Prepare "actors63.xml", "casts124.xml" and "mains243.xml" files in a folder named "data". The folder should be in the same path as Project3Task7.
+2. Clone this repository using `git clone <repo url>`
+3. `cd Project3Task7`
+4. `mvn package`
+5. `time java -cp target/cs122b-spring20-project3-SAXParser-example-0.0.1-SNAPSHOT.jar:/home/ubuntu/.m2/repository/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46.jar SAXParserCast` Using "time" at first can track the time the project consumes.

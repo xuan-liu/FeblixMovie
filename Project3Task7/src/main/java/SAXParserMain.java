@@ -80,7 +80,7 @@ public class SAXParserMain extends DefaultHandler {
 
             //parse the file and also register this class for call backs
             System.out.println("Start Parsing Main.");
-            sp2.parse("mains243.xml", this);
+            sp2.parse("../data/mains243.xml", this);
 
         } catch (SAXException se) {
             se.printStackTrace();

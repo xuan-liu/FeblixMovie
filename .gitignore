@@ -2,4 +2,5 @@
 /target
 *.iml
 target
-.DS_Store
+Project3Task7/.DS_Store
+Project3Task7/*.xml
