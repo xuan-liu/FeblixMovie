@@ -13,7 +13,7 @@ function handleLoginResult(resultDataString) {
 
     // If login succeeds, it will redirect the user to index.html
     if (resultDataJson["status"] === "success") {
-        window.location.replace("search.html");
+        window.location.replace("normal_search.html");
 
 
     } else {

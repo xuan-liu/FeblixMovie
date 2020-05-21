@@ -47,6 +47,7 @@ public class ResultServlet extends HttpServlet {
         String order_param = request.getParameter("order");
 
 
+
         HashMap<Integer, String> string_parameters = new HashMap<Integer, String>();
         HashMap<Integer, Integer> integer_parameters = new HashMap<Integer, Integer>();
         int param_count = 0;
@@ -82,31 +83,45 @@ public class ResultServlet extends HttpServlet {
             string_parameters.put(++param_count, genre_param);
         }
         else{
-            if (star_param != ""){
-                queryBegin += ",stars as s, stars_in_movies as sm";
-                whereSection += " and m.id = sm.movieId and s.id = sm.starId and s.name like ?";
-                string_parameters.put(++param_count, "%" + star_param + "%");
+            if (star_param != null){
+                if (star_param != ""){
+                    queryBegin += ",stars as s, stars_in_movies as sm";
+                    whereSection += " and m.id = sm.movieId and s.id = sm.starId and s.name like ?";
+                    string_parameters.put(++param_count, "%" + star_param + "%");
+                }
             }
-            if (director_param != ""){
-                whereSection += " and m.director like ?";
+            if (director_param != null){
+                if(director_param != ""){
+                    whereSection += " and m.director like ?";
 //                whereSection += " and m.director like '%" + director_param + "%'";
-                string_parameters.put(++param_count, "%" + director_param + "%");
-            }
-            if (year_param != ""){
-//                whereSection += " and m.year = " + year_param;
-                whereSection += " and m.year = ?";
-                integer_parameters.put(++param_count, Integer.parseInt(year_param));
+                    string_parameters.put(++param_count, "%" + director_param + "%");
+                }
 
             }
-            if (title_param != "") {
+            if (year_param != null){
+                if (year_param != ""){
+                    //                whereSection += " and m.year = " + year_param;
+                    whereSection += " and m.year = ?";
+                    integer_parameters.put(++param_count, Integer.parseInt(year_param));
+                }
 
-                //split terms within title
-                String[] terms = title_param.split(" +");
-                whereSection += " and match(title) against (";
 
-                for (String t:terms){
-                    whereSection += "? ";
-                    string_parameters.put(++param_count, "+" + t + "*");
+            }
+            if (title_param != null) {
+                if(title_param != ""){
+                    //split terms within title
+                    String[] terms = title_param.split(" +");
+                    whereSection += " and match(title) against (";
+                    for (String t:terms){
+                        whereSection += "? ";
+                        string_parameters.put(++param_count, "+" + t + "*");
+                }
+
+
+
+
+
+
                 }
 
 
@@ -184,14 +199,14 @@ public class ResultServlet extends HttpServlet {
             Connection dbcon = dataSource.getConnection();
 
             // Declare our statement
-            Statement statement = dbcon.createStatement();
+
 
             String query = queryBegin + queryTail;
             log(query);
 
 
             PreparedStatement preparedQuery = dbcon.prepareStatement(query);
-//            System.out.println(star_query);
+
             log(preparedQuery.toString());
             log(string_parameters.toString());
             log(integer_parameters.toString());
@@ -298,7 +313,7 @@ public class ResultServlet extends HttpServlet {
             response.setStatus(200);
 
             rs.close();
-            statement.close();
+            preparedQuery.close();
             dbcon.close();
         } catch (Exception e) {
 

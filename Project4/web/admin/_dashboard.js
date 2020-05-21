@@ -77,7 +77,7 @@ $.ajax("api/metadata", {
 
 let url = window.location.href.toString();
 let patt = /.+?(?=admin)/i;
-let result = url.match(patt) + "search.html";
+let result = url.match(patt) + "normal_search.html";
 
 $("#searchPageButton").append("<a href='" + result + "' class='btn btn-primary' style='float: right;'>Search Page</a>");
 
