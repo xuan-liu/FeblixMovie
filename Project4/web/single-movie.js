@@ -101,9 +101,6 @@ function handleCartInfo(cartEvent){
     cartEvent.preventDefault();
 }
 
-function handleBackInfo(result){
-    document.getElementById('backButton').href=result['movielisturl'];
-}
 /**
  * Once this .js is loaded, following scripts will be executed by the browser\
  */
@@ -125,12 +122,12 @@ jQuery.ajax({
     success: (resultData) => handleResult(resultData) // Setting callback function to handle data returned successfully by the SingleStarServlet
 });
 
-jQuery.ajax({
-    dataType: "json",
-    method: "GET",
-    url: "api/jump",
-    success: (resultURLdata) => handleBackInfo(resultURLdata)
-});
+// jQuery.ajax({
+//     dataType: "json",
+//     method: "GET",
+//     url: "api/jump",
+//     success: (resultURLdata) => handleBackInfo(resultURLdata)
+// });
 
 jQuery.ajax({
     dataType: "json", // Setting return data type
@@ -139,6 +136,6 @@ jQuery.ajax({
     success: (userTypeData) => handleUserType(userTypeData)// Setting callback function to handle data returned successfully by the StarsServlet
 });
 
-
+document.getElementById('backButton').href=sessionStorage.getItem('movieListURL');
 addItem.submit(handleCartInfo);
 

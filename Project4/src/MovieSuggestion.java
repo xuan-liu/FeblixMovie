@@ -72,7 +72,7 @@ public class MovieSuggestion extends HttpServlet {
         }
 
 
-        statment += " IN BOOLEAN MODE)";
+        statment += " IN BOOLEAN MODE) limit 10";
 
         try {
 

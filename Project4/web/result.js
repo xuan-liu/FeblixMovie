@@ -280,3 +280,6 @@ jQuery.ajax({
     url: "api/result" + url.search, // Setting request url, which is mapped by MoviesServlet
     success: (resultData) => handleMovieResult(resultData) // Setting callback function to handle data returned successfully by the StarsServlet
 });
+
+//Cache movieListPage url to session
+sessionStorage.setItem("movieListURL", window.location)

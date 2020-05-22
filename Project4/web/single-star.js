@@ -87,9 +87,4 @@ jQuery.ajax({
     success: (resultData) => handleResult(resultData) // Setting callback function to handle data returned successfully by the SingleStarServlet
 });
 
-jQuery.ajax({
-    dataType: "json",
-    method: "GET",
-    url: "api/jump",
-    success: (resultURLdata) => handleBackInfo(resultURLdata)
-});
+document.getElementById('backButton').href=sessionStorage.getItem('movieListURL');

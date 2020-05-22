@@ -1,26 +1,43 @@
 
 function handleLookup(query, doneCallback) {
-    console.log("autocomplete initiated")
-    console.log("sending AJAX request to backend Java Servlet")
+    console.log("Autocomplete Initiated")
 
     // TODO: if you want to check past query results first, you can do it here
 
     // sending the HTTP GET request to the Java Servlet endpoint hero-suggestion
     // with the query data
-    jQuery.ajax({
-        "method": "GET",
-        // generate the request url from the query.
-        // escape the query string to avoid errors caused by special characters
-        "url": "movie-suggestion?query=" + escape(query),
-        "success": function(data) {
-            // pass the data, query, and doneCallback function into the success handler
-            handleLookupAjaxSuccess(data, query, doneCallback)
-        },
-        "error": function(errorData) {
-            console.log("lookup ajax error")
-            console.log(errorData)
-        }
-    })
+
+    let trimmed_query = query.split(/ +/).join(" ");
+
+    let cached_data = sessionStorage.getItem(trimmed_query);
+
+    if (cached_data == null){
+        console.log("Query Result not in Cache");
+        console.log("Sending AJAX request to backend Java Servlet")
+        jQuery.ajax({
+            "method": "GET",
+            // generate the request url from the query.
+            // escape the query string to avoid errors caused by special characters
+            "url": "movie-suggestion?query=" + escape(query),
+            "success": function(data) {
+                // pass the data, query, and doneCallback function into the success handler
+                CacheData(trimmed_query, data);
+                handleLookupAjaxSuccess(data, query, doneCallback)
+            },
+            "error": function(errorData) {
+                console.log("lookup ajax error")
+                console.log(errorData)
+            }
+        })
+    }
+    else{
+        console.log("Found Query Result of '" + trimmed_query + "' in Cache");
+        console.log("Using Cached Data to Display")
+        handleLookupAjaxSuccess(cached_data, query, doneCallback);
+    }
+
+
+
 }
 
 
@@ -32,10 +49,11 @@ function handleLookup(query, doneCallback) {
  *
  */
 function handleLookupAjaxSuccess(data, query, doneCallback) {
-    console.log("lookup ajax successful")
+    console.log("lookup successful")
 
     // parse the string into JSON
     var jsonData = JSON.parse(data);
+    console.log("Suggestion List Data: ")
     console.log(jsonData)
 
     // TODO: if you want to cache the result into a global variable you can do it here
@@ -56,9 +74,22 @@ function handleLookupAjaxSuccess(data, query, doneCallback) {
 function handleSelectSuggestion(suggestion) {
     // TODO: jump to the specific result page based on the selected suggestion
 
-    console.log("you select " + suggestion["value"] + " with ID " + suggestion["data"]["heroID"])
-    // result.html?title=?&limit=10&offset=0&order=r_desc_t_asc
+    console.log("you select " + suggestion["value"] + " with ID " + suggestion["data"]["movieId"])
+
+    let url = "single-movie.html?id=" + suggestion["data"]["movieId"];
+
+    window.location.replace(url);
+
 }
+
+function CacheData(trimmed_query,data){
+
+    sessionStorage.setItem(trimmed_query, data);
+    console.log("Query result of '" + trimmed_query + "' is cached successfully")
+
+
+}
+
 
 
 /*
@@ -72,6 +103,9 @@ function handleSelectSuggestion(suggestion) {
  */
 // $('#autocomplete') is to find element by the ID "autocomplete"
 $('#autocomplete').autocomplete({
+
+    minChars: 3,
+
     // documentation of the lookup function can be found under the "Custom lookup function" section
     lookup: function (query, doneCallback) {
         handleLookup(query, doneCallback)
