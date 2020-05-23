@@ -39,20 +39,29 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
+        String mobile = request.getParameter("mobile");
 
-        // Obtain RecaptchaResponse
-        String gRecaptchaResponse = request.getParameter("g-recaptcha-response");
+        System.out.println("email : " + email);
+        System.out.println("password : " + password);
 
-        try{
-            RecaptchaVerifyUtils.verify(gRecaptchaResponse);
+        if (mobile == null){
 
-        } catch (Exception e) {
-            JsonObject responseJsonObject = new JsonObject();
-            responseJsonObject.addProperty("status", "fail");
-            responseJsonObject.addProperty("message", "Recaptcha Verification Failed");
-            response.getWriter().write(responseJsonObject.toString());
-            return;
+            // Obtain RecaptchaResponse
+            String gRecaptchaResponse = request.getParameter("g-recaptcha-response");
+
+            try{
+                RecaptchaVerifyUtils.verify(gRecaptchaResponse);
+
+            } catch (Exception e) {
+                JsonObject responseJsonObject = new JsonObject();
+                responseJsonObject.addProperty("status", "fail");
+                responseJsonObject.addProperty("message", "Recaptcha Verification Failed");
+                response.getWriter().write(responseJsonObject.toString());
+                return;
+            }
+
         }
+
 
         // check whether the user email/password info matches a record in the customers table
         PreparedStatement loginQuery = null;
@@ -72,6 +81,7 @@ public class LoginServlet extends HttpServlet {
 
             JsonObject responseJsonObject = new JsonObject();
             if (rs.next()) {
+
                 // get the encrypted password from the database
                 String encryptedPassword = rs.getString("password");
 
