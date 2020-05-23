@@ -136,6 +136,14 @@ jQuery.ajax({
     success: (userTypeData) => handleUserType(userTypeData)// Setting callback function to handle data returned successfully by the StarsServlet
 });
 
-document.getElementById('backButton').href=sessionStorage.getItem('movieListURL');
+let movielisturl = sessionStorage.getItem('movieListURL');
+if (movielisturl != null){
+    document.getElementById('backButton').href=movielisturl;
+}
+else{
+    document.getElementById('backButton').innerText = "Back to Search"
+    document.getElementById('backButton').href="normal_search.html";
+}
+
 addItem.submit(handleCartInfo);
 

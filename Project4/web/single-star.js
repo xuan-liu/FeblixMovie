@@ -87,4 +87,10 @@ jQuery.ajax({
     success: (resultData) => handleResult(resultData) // Setting callback function to handle data returned successfully by the SingleStarServlet
 });
 
-document.getElementById('backButton').href=sessionStorage.getItem('movieListURL');
+if (movielisturl != null){
+    document.getElementById('backButton').href=movielisturl;
+}
+else{
+    document.getElementById('backButton').innerText = "Back to Search"
+    document.getElementById('backButton').href="normal_search.html";
+}
