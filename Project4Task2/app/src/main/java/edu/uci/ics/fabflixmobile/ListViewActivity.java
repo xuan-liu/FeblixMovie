@@ -10,6 +10,11 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -19,6 +24,7 @@ import java.util.List;
 
 public class ListViewActivity extends Activity {
     ArrayList<Movie> movies = new ArrayList<>();
+    private String url = "https:/10.0.2.2:8443/Project4/api/";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -49,7 +55,7 @@ public class ListViewActivity extends Activity {
                 stars.add(st.get(k).getAsJsonObject().get("starName").getAsString());
             }
 
-            movies.add(new Movie(e.get("title").getAsString(), e.get("year").getAsString(), e.get("director").getAsString(), genres, stars));
+            movies.add(new Movie(e.get("movieId").getAsString(), e.get("title").getAsString(), e.get("year").getAsString(), e.get("director").getAsString(), genres, stars));
 
         }
 
@@ -62,10 +68,46 @@ public class ListViewActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Movie movie = movies.get(position);
-                String message = String.format("Clicked on position: %d, name: %s, %s", position, movie.getName(), movie.getYear());
-                Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+                String movieId = movie.getId();
+                Log.d("movieID:", movie.getId());
+
+                showSingleMovie(movieId);
+
+//                String message = String.format("Clicked on position: %d, name: %s, %s", position, movie.getName(), movie.getYear());
+//                Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
             }
         });
-
     }
+
+    public void showSingleMovie(String movieId) {
+        Log.d("movieID:", movieId);
+        // get single movie data
+        final RequestQueue queue = NetworkManager.sharedManager(this).queue;
+        final StringRequest singleRequest = new StringRequest(Request.Method.GET, url + "single-movie?id=" + movieId, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Log.d("response:",response);
+
+                //initialize the activity(page)/destination
+                Intent singlePage = new Intent(ListViewActivity.this, SingleMovieActivity.class);
+                singlePage.putExtra("data", response);
+
+                //without starting the activity/page, nothing would happen
+                startActivity(singlePage);
+            }
+        },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        // error
+                        Log.d("singlemovie.error", error.toString());
+                    }
+                }) {
+
+        };
+
+        // !important: queue.add is where the login request is actually sent
+        queue.add(singleRequest);
+    }
+
 }
