@@ -15,6 +15,8 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
@@ -38,7 +40,7 @@ public class SearchActivity extends Activity {
         message = findViewById(R.id.message);
         searchButton = findViewById(R.id.search);
 
-        url = "https:/10.0.2.2:8443/Project4_war/api/";
+        url = "https:/10.0.2.2:8443/Project4/api/";
 
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,33 +57,33 @@ public class SearchActivity extends Activity {
         message.setText("Searching...");
         // Use the same network queue across our application
         final RequestQueue queue = NetworkManager.sharedManager(this).queue;
-        //request type is POST
-        Log.d("movietitel",url + "result?title=" + movieTitle.getText().toString() + "&limit=10&offset=0&order=r_desc_t_asc");
-        final StringRequest loginRequest = new StringRequest(Request.Method.GET, url + "result?title=" + movieTitle.getText().toString() + "&limit=10&offset=0&order=r_desc_t_asc", new Response.Listener<String>() {
+        //request type is GET
+        Log.d("movietitle",url + "result?title=" + movieTitle.getText().toString() + "&limit=10&offset=0&order=r_desc_t_asc");
+        final StringRequest searchRequest = new StringRequest(Request.Method.GET, url + "result?title=" + movieTitle.getText().toString() + "&limit=10&offset=0&order=r_desc_t_asc", new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                //TODO should parse the json response to redirect to appropriate functions.
                 Log.d("response:",response);
 
-                JsonObject responseJsonObject = JsonParser.parseString(response).getAsJsonObject();
+                //initialize the activity(page)/destination
+                Intent listPage = new Intent(SearchActivity.this, ListViewActivity.class);
+                listPage.putExtra("data", response);
 
-
-
-
+                //without starting the activity/page, nothing would happen
+                startActivity(listPage);
             }
         },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         // error
-                        Log.d("login.error", error.toString());
+                        Log.d("search.error", error.toString());
                     }
                 }) {
 
         };
 
         // !important: queue.add is where the login request is actually sent
-        queue.add(loginRequest);
+        queue.add(searchRequest);
 
     }
 }
