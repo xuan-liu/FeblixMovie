@@ -2,6 +2,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.plaf.synth.SynthEditorPaneUI;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -23,12 +24,14 @@ public class LoginFilter implements Filter {
 
         String contextPath = httpRequest.getContextPath();
 
+        System.out.println("session id login filter: " + httpRequest.getSession().getId());
+
         String redirectPath = contextPath + "/login.html";
 
         // Check if this URL is allowed to access without logging in
         if (this.isUrlAllowedWithoutLogin(httpRequest.getServletPath())) {
             // Keep default action: pass along the filter chain
-            System.out.println("redirect url" + httpRequest.getRequestURL());
+
             chain.doFilter(request, response);
             return;
         }
@@ -36,8 +39,10 @@ public class LoginFilter implements Filter {
         // Redirect to login page if the "user" attribute doesn't exist in session
         if (httpRequest.getSession().getAttribute("user") == null) {
             httpResponse.sendRedirect(redirectPath);
+            System.out.println("Not Login");
         } else {
             chain.doFilter(request, response);
+            System.out.println("User" +  httpRequest.getSession().getAttribute("user").toString() + "is Logged In");
         }
     }
 
