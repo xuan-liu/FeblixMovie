@@ -49,7 +49,7 @@ function handleLookup(query, doneCallback) {
  *
  */
 function handleLookupAjaxSuccess(data, query, doneCallback) {
-    console.log("lookup successful")
+    console.log("Parsing Data")
 
     // parse the string into JSON
     var jsonData = JSON.parse(data);
