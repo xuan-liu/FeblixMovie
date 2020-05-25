@@ -67,6 +67,8 @@ public class SearchActivity extends Activity {
                 //initialize the activity(page)/destination
                 Intent listPage = new Intent(SearchActivity.this, ListViewActivity.class);
                 listPage.putExtra("data", response);
+                listPage.putExtra("offset", 0);
+                listPage.putExtra("search_movie", movieTitle.getText().toString());
 
                 //without starting the activity/page, nothing would happen
                 startActivity(listPage);

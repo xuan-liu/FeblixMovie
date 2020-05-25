@@ -25,16 +25,23 @@ import java.util.List;
 public class ListViewActivity extends Activity {
     ArrayList<Movie> movies = new ArrayList<>();
     private String url = "https:/10.0.2.2:8443/Project4/api/";
+    private Button prevButton;
+    private Button nextButton;
+    int limit = 10;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         // show list view page
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listview);
+        prevButton = findViewById(R.id.prev);
+        nextButton = findViewById(R.id.next);
 
         // data is passed from SearchActivity, which is retrieved from the database and the backend server
         String data = this.getIntent().getStringExtra("data");
         JsonArray responseJsonArray = JsonParser.parseString(data).getAsJsonArray();
+        int offset = this.getIntent().getIntExtra("offset", 0);
+        String search_movie = this.getIntent().getStringExtra("search_movie");
 
         // load all data into array list
         for (int i = 0; i < responseJsonArray.size(); i++) {
@@ -59,6 +66,35 @@ public class ListViewActivity extends Activity {
 
         }
 
+        // process prev/next button
+        if (offset != 0) {
+            prevButton.setText("prev");
+            int newOffset = Math.max(0,offset - limit);
+            Log.d("prevButton: ",url + "result?title=" + search_movie + "&limit=10&offset=" + newOffset + "&order=r_desc_t_asc");
+
+            prevButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    showNewPage(search_movie, newOffset);
+                }
+            });
+
+        }
+
+        if(movies.size() == limit){ //If len < limit, reaches the end of data
+            nextButton.setText("next");
+            int newOffset = offset + limit;
+            Log.d("nextButton: ",url + "result?title=" + search_movie + "&limit=10&offset=" + newOffset + "&order=r_desc_t_asc");
+
+            nextButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    showNewPage(search_movie, newOffset);
+                }
+            });
+        }
+
+        // show the list of result
         MovieListViewAdapter adapter = new MovieListViewAdapter(movies, this);
 
         ListView listView = findViewById(R.id.list);
@@ -108,6 +144,40 @@ public class ListViewActivity extends Activity {
 
         // !important: queue.add is where the login request is actually sent
         queue.add(singleRequest);
+    }
+
+    public void showNewPage(String search_movie, int newOffset) {
+        // Use the same network queue across our application
+        final RequestQueue queue = NetworkManager.sharedManager(this).queue;
+        //request type is GET
+        String new_url = url + "result?title=" + search_movie + "&limit=10&offset=" + newOffset + "&order=r_desc_t_asc";
+        final StringRequest searchRequest = new StringRequest(Request.Method.GET, new_url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Log.d("response:",response);
+
+                //initialize the activity(page)/destination
+                Intent listPage = new Intent(ListViewActivity.this, ListViewActivity.class);
+                listPage.putExtra("data", response);
+                listPage.putExtra("offset", newOffset);
+                listPage.putExtra("search_movie", search_movie);
+
+                //without starting the activity/page, nothing would happen
+                startActivity(listPage);
+            }
+        },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        // error
+                        Log.d("search.error", error.toString());
+                    }
+                }) {
+
+        };
+
+        // !important: queue.add is where the login request is actually sent
+        queue.add(searchRequest);
     }
 
 }
