@@ -40,7 +40,7 @@
     </dependencies>
 
     <build>
-        <finalName>Project3</finalName>
+        <finalName>Project4</finalName>
         <sourceDirectory>src</sourceDirectory>
         <plugins>
             <plugin>
