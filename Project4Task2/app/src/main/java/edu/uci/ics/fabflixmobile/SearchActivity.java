@@ -34,7 +34,7 @@ public class SearchActivity extends Activity {
         message = findViewById(R.id.message);
         searchButton = findViewById(R.id.search);
 
-        url = "https:/10.0.2.2:8443/Project4/api/";
+        url = "https://ec2-18-212-1-122.compute-1.amazonaws.com:8443/Project4/api/";
 
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +56,7 @@ public class SearchActivity extends Activity {
         final StringRequest searchRequest = new StringRequest(Request.Method.GET, url + "result?title=" + movieTitle.getText().toString() + "&limit=20&offset=0&order=r_desc_t_asc", new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                message.setText("");
                 Log.d("response:",response);
 
                 //initialize the activity(page)/destination

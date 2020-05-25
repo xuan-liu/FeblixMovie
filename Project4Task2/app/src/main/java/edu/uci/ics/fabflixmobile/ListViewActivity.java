@@ -24,7 +24,7 @@ import java.util.List;
 
 public class ListViewActivity extends Activity {
     ArrayList<Movie> movies = new ArrayList<>();
-    private String url = "https:/10.0.2.2:8443/Project4/api/";
+    private String url = "https://ec2-18-212-1-122.compute-1.amazonaws.com:8443/Project4/api/";
     private Button prevButton;
     private Button nextButton;
     int limit = 20;
