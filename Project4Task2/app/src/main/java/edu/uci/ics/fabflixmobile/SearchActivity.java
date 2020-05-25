@@ -15,13 +15,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 
-import java.util.HashMap;
-import java.util.Map;
 
 public class SearchActivity extends Activity {
 
@@ -58,8 +52,8 @@ public class SearchActivity extends Activity {
         // Use the same network queue across our application
         final RequestQueue queue = NetworkManager.sharedManager(this).queue;
         //request type is GET
-        Log.d("movietitle",url + "result?title=" + movieTitle.getText().toString() + "&limit=10&offset=0&order=r_desc_t_asc");
-        final StringRequest searchRequest = new StringRequest(Request.Method.GET, url + "result?title=" + movieTitle.getText().toString() + "&limit=10&offset=0&order=r_desc_t_asc", new Response.Listener<String>() {
+        Log.d("movietitle",url + "result?title=" + movieTitle.getText().toString() + "&limit=20&offset=0&order=r_desc_t_asc");
+        final StringRequest searchRequest = new StringRequest(Request.Method.GET, url + "result?title=" + movieTitle.getText().toString() + "&limit=20&offset=0&order=r_desc_t_asc", new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Log.d("response:",response);

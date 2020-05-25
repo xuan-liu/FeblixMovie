@@ -27,7 +27,7 @@ public class ListViewActivity extends Activity {
     private String url = "https:/10.0.2.2:8443/Project4/api/";
     private Button prevButton;
     private Button nextButton;
-    int limit = 10;
+    int limit = 20;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -68,9 +68,10 @@ public class ListViewActivity extends Activity {
 
         // process prev/next button
         if (offset != 0) {
-            prevButton.setText("prev");
+            // if not the first page, show prev button
+            prevButton.setVisibility(View.VISIBLE);
             int newOffset = Math.max(0,offset - limit);
-            Log.d("prevButton: ",url + "result?title=" + search_movie + "&limit=10&offset=" + newOffset + "&order=r_desc_t_asc");
+            Log.d("prevButton: ",url + "result?title=" + search_movie + "&limit=20&offset=" + newOffset + "&order=r_desc_t_asc");
 
             prevButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -79,12 +80,15 @@ public class ListViewActivity extends Activity {
                 }
             });
 
+        } else {
+            prevButton.setVisibility(View.GONE);
         }
 
-        if(movies.size() == limit){ //If len < limit, reaches the end of data
-            nextButton.setText("next");
+        if(movies.size() == limit){
+            // If not the last page, show next button
+            nextButton.setVisibility(View.VISIBLE);
             int newOffset = offset + limit;
-            Log.d("nextButton: ",url + "result?title=" + search_movie + "&limit=10&offset=" + newOffset + "&order=r_desc_t_asc");
+            Log.d("nextButton: ",url + "result?title=" + search_movie + "&limit=20&offset=" + newOffset + "&order=r_desc_t_asc");
 
             nextButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -92,6 +96,8 @@ public class ListViewActivity extends Activity {
                     showNewPage(search_movie, newOffset);
                 }
             });
+        } else {
+            nextButton.setVisibility(View.GONE);
         }
 
         // show the list of result
@@ -150,7 +156,7 @@ public class ListViewActivity extends Activity {
         // Use the same network queue across our application
         final RequestQueue queue = NetworkManager.sharedManager(this).queue;
         //request type is GET
-        String new_url = url + "result?title=" + search_movie + "&limit=10&offset=" + newOffset + "&order=r_desc_t_asc";
+        String new_url = url + "result?title=" + search_movie + "&limit=20&offset=" + newOffset + "&order=r_desc_t_asc";
         final StringRequest searchRequest = new StringRequest(Request.Method.GET, new_url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
