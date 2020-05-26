@@ -1,17 +1,13 @@
-# Project 4 Android Example
-
-This is an example Android project to demonstrate how to:
-
-- Change between Android Activities
-- Make RESTful HTTPS requests
-- Maintain cookies
-- Use ListView with custom row layout
-- HTTP is supported by checking /app/src/main/AndroidManifest.xml
-
+# Project4 Task2: Android App for Fabflix
 ## Running this project
 
-This Android app depends on [cs122b-spring20-project2-login-cart-example](https://github.com/UCI-Chenli-teaching/cs122b-spring20-project2-login-cart-example) as the backend server to work.
+This Android app depends on [Project4](https://github.com/UCI-Chenli-teaching/cs122b-spring20-team-38/tree/master/Project4 "Project4") as the backend server to work.
 
-Follow the instructions on [Canvas](https://canvas.eee.uci.edu/courses/26486/pages/p4-task-2-developing-an-android-app-for-fabflix) to set up the Android App Project
+1. Install Android SDK in IntelliJ-IDEA.
+2. Clone this repository using  `git clone <repo url>`. Import Project4Task2 in IntelliJ using **Import Project --> Android Gradle --> Finish**. Wait until the Gradle finishes building.
+3. Setup and start a new Android emulator using the "AVD Manager".
+4. Deploy [Project4](https://github.com/UCI-Chenli-teaching/cs122b-spring20-team-38/tree/master/Project4 "Project4")  on the Tomcat server.
+5. Build and deploy the APK on the local emulator.
+6. Run the Android app
 
-Note: Don't forget to change the URL in Login class to match your deployed backend
+Note: Don't forget to change the URL in Login, SearchActivity and ListViewActivity class to match your deployed backend
