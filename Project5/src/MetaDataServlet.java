@@ -3,6 +3,8 @@ import com.google.gson.JsonObject;
 //import com.sun.org.apache.bcel.internal.generic.ACONST_NULL;
 
 import javax.annotation.Resource;
+import javax.naming.Context;
+import javax.naming.InitialContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,8 +20,8 @@ import java.sql.*;
 @WebServlet(name = "MetaDataServlet", urlPatterns = "/admin/api/metadata")
 public class MetaDataServlet extends HttpServlet {
 
-    @Resource(name = "jdbc/moviedb")
-    private DataSource dataSource;
+//    @Resource(name = "jdbc/moviedb")
+//    private DataSource dataSource;
 
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -30,7 +32,12 @@ public class MetaDataServlet extends HttpServlet {
 
         try {
             // Get a connection from dataSource
-            Connection dbcon = dataSource.getConnection();
+            Context initContext = new InitialContext();
+            Context envContext = (Context) initContext.lookup("java:/comp/env");
+            DataSource ds = (DataSource) envContext.lookup("jdbc/moviedb");
+            Connection dbcon = ds.getConnection();
+            if (dbcon == null)
+                out.println("dbcon is null.");
 
             DatabaseMetaData databaseMetaData = dbcon.getMetaData();
 

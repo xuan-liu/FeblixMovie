@@ -6,6 +6,8 @@ import java.sql.ResultSet;
 import java.util.HashMap;
 
 import javax.annotation.Resource;
+import javax.naming.Context;
+import javax.naming.InitialContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,8 +22,8 @@ import com.google.gson.JsonObject;
 @WebServlet("/movie-suggestion")
 public class MovieSuggestion extends HttpServlet {
 
-    @Resource(name = "jdbc/moviedb")
-    private DataSource dataSource;
+//    @Resource(name = "jdbc/moviedb")
+//    private DataSource dataSource;
 
     //Default Constructor
     public MovieSuggestion() {
@@ -76,7 +78,12 @@ public class MovieSuggestion extends HttpServlet {
 
         try {
 
-            Connection dbcon = dataSource.getConnection();
+//            Connection dbcon = dataSource.getConnection();
+            Context initContext = new InitialContext();
+            Context envContext = (Context) initContext.lookup("java:/comp/env");
+            DataSource ds = (DataSource) envContext.lookup("jdbc/moviedb");
+            Connection dbcon = ds.getConnection();
+
             // setup the response json arrray
 
 

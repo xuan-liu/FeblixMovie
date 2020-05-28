@@ -1,6 +1,8 @@
 import com.google.gson.JsonObject;
 
-import javax.annotation.Resource;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -9,7 +11,7 @@ import javax.sql.DataSource;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
-import java.sql.Statement;
+
 import java.sql.PreparedStatement;
 
 import org.jasypt.util.password.StrongPasswordEncryptor;
@@ -29,8 +31,8 @@ import org.jasypt.util.password.StrongPasswordEncryptor;
 @WebServlet(name = "AdminLogin", urlPatterns = "/api/adminlogin")
 public class AdminLogin extends HttpServlet {
     // Create a dataSource which registered in web.xml
-    @Resource(name = "jdbc/moviedb")
-    private DataSource dataSource;
+//    @Resource(name = "jdbc/moviedb")
+//    private DataSource dataSource;
 
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -44,7 +46,10 @@ public class AdminLogin extends HttpServlet {
         PreparedStatement loginQuery = null;
         try {
             // Get a connection from dataSource
-            Connection dbcon = dataSource.getConnection();
+            Context initContext = new InitialContext();
+            Context envContext = (Context) initContext.lookup("java:/comp/env");
+            DataSource ds = (DataSource) envContext.lookup("jdbc/moviedb");
+            Connection dbcon = ds.getConnection();
 
             // Declare our statement
             String query = "SELECT * from employees where email = ?";

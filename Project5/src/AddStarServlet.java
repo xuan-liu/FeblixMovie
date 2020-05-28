@@ -1,26 +1,25 @@
-import com.google.gson.JsonArray;
+
 import com.google.gson.JsonObject;
 
-import javax.annotation.Resource;
-import javax.servlet.ServletException;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import javax.sound.midi.SysexMessage;
+
 import javax.sql.DataSource;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.*;
-import java.util.ArrayList;
 
 
 @WebServlet(name = "AddStarServlet", urlPatterns = "/admin/api/addstar")
 public class AddStarServlet extends HttpServlet {
 
-    @Resource(name = "jdbc/moviedb")
-    private DataSource dataSource;
+//    @Resource(name = "jdbc/moviedb")
+//    private DataSource dataSource;
 
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -34,7 +33,11 @@ public class AddStarServlet extends HttpServlet {
 
         try {
             // Get a connection from dataSource
-            Connection dbcon = dataSource.getConnection();
+//            Connection dbcon = dataSource.getConnection();
+            Context initContext = new InitialContext();
+            Context envContext = (Context) initContext.lookup("java:/comp/env");
+            DataSource ds = (DataSource) envContext.lookup("jdbc/moviedb");
+            Connection dbcon = ds.getConnection();
 
 
             // Declare our statement
