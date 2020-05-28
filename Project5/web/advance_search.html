@@ -1,0 +1,131 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+
+    <!-- add header and footer -->
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <title>Search Page</title>
+
+</head>
+<body>
+<div id="header"></div>
+<div id="searchPageButton" style="position: relative">
+    <a href='normal_search.html' class='btn btn-primary' style='float: right;'>Normal Search Page</a>
+</div>
+<div class="container">
+    <div id = "dashBoardButton" style="float: right;"></div>
+    <h3>Search Movies</h3>
+    <hr>
+    <!-- Set the method to POST to avoid showing the username/password in the URL
+         The default action is disabled to allow your own implementation. -->
+    <form id="search_form" method="get" action="result.html" class="form-horizontal">
+        <div class="form-group">
+            <label class="col-sm-1 control-label">Title</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" name="title">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-1 control-label">Year</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" name="year">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-1 control-label">Director</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" name="director">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-1 control-label">Star</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" name="star">
+            </div>
+        </div>
+        <input name="limit" value="10" type="hidden">
+        <input name="offset" value="0" type="hidden">
+        <input name="order" value="r_desc_t_asc" type="hidden">
+        <button type="submit" class="btn btn-default">Search</button>
+    </form>
+
+    <br>
+    <br>
+
+    <h3>Browse Movies</h3>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Browse by Title</h4>
+            <div class="grid-container-character">
+                <a class="grid-link" href="result.html?category=*&limit=10&offset=0&order=r_desc_t_asc">*</a>
+                <a class="grid-link" href="result.html?category=0&limit=10&offset=0&order=r_desc_t_asc">0</a>
+                <a class="grid-link" href="result.html?category=1&limit=10&offset=0&order=r_desc_t_asc">1</a>
+                <a class="grid-link" href="result.html?category=2&limit=10&offset=0&order=r_desc_t_asc">2</a>
+                <a class="grid-link" href="result.html?category=3&limit=10&offset=0&order=r_desc_t_asc">3</a>
+                <a class="grid-link" href="result.html?category=4&limit=10&offset=0&order=r_desc_t_asc">4</a>
+                <a class="grid-link" href="result.html?category=5&limit=10&offset=0&order=r_desc_t_asc">5</a>
+                <a class="grid-link" href="result.html?category=6&limit=10&offset=0&order=r_desc_t_asc">6</a>
+                <a class="grid-link" href="result.html?category=7&limit=10&offset=0&order=r_desc_t_asc">7</a>
+                <a class="grid-link" href="result.html?category=8&limit=10&offset=0&order=r_desc_t_asc">8</a>
+                <a class="grid-link" href="result.html?category=9&limit=10&offset=0&order=r_desc_t_asc">9</a>
+                <a class="grid-link" href="result.html?category=a&limit=10&offset=0&order=r_desc_t_asc">a</a>
+                <a class="grid-link" href="result.html?category=b&limit=10&offset=0&order=r_desc_t_asc">b</a>
+                <a class="grid-link" href="result.html?category=c&limit=10&offset=0&order=r_desc_t_asc">c</a>
+                <a class="grid-link" href="result.html?category=d&limit=10&offset=0&order=r_desc_t_asc">d</a>
+                <a class="grid-link" href="result.html?category=e&limit=10&offset=0&order=r_desc_t_asc">e</a>
+                <a class="grid-link" href="result.html?category=f&limit=10&offset=0&order=r_desc_t_asc">f</a>
+                <a class="grid-link" href="result.html?category=g&limit=10&offset=0&order=r_desc_t_asc">g</a>
+                <a class="grid-link" href="result.html?category=h&limit=10&offset=0&order=r_desc_t_asc">h</a>
+                <a class="grid-link" href="result.html?category=i&limit=10&offset=0&order=r_desc_t_asc">i</a>
+                <a class="grid-link" href="result.html?category=j&limit=10&offset=0&order=r_desc_t_asc">j</a>
+                <a class="grid-link" href="result.html?category=k&limit=10&offset=0&order=r_desc_t_asc">k</a>
+                <a class="grid-link" href="result.html?category=l&limit=10&offset=0&order=r_desc_t_asc">l</a>
+                <a class="grid-link" href="result.html?category=m&limit=10&offset=0&order=r_desc_t_asc">m</a>
+                <a class="grid-link" href="result.html?category=n&limit=10&offset=0&order=r_desc_t_asc">n</a>
+                <a class="grid-link" href="result.html?category=o&limit=10&offset=0&order=r_desc_t_asc">o</a>
+                <a class="grid-link" href="result.html?category=p&limit=10&offset=0&order=r_desc_t_asc">p</a>
+                <a class="grid-link" href="result.html?category=q&limit=10&offset=0&order=r_desc_t_asc">q</a>
+                <a class="grid-link" href="result.html?category=r&limit=10&offset=0&order=r_desc_t_asc">r</a>
+                <a class="grid-link" href="result.html?category=s&limit=10&offset=0&order=r_desc_t_asc">s</a>
+                <a class="grid-link" href="result.html?category=t&limit=10&offset=0&order=r_desc_t_asc">t</a>
+                <a class="grid-link" href="result.html?category=u&limit=10&offset=0&order=r_desc_t_asc">u</a>
+                <a class="grid-link" href="result.html?category=v&limit=10&offset=0&order=r_desc_t_asc">v</a>
+                <a class="grid-link" href="result.html?category=w&limit=10&offset=0&order=r_desc_t_asc">w</a>
+                <a class="grid-link" href="result.html?category=x&limit=10&offset=0&order=r_desc_t_asc">x</a>
+                <a class="grid-link" href="result.html?category=y&limit=10&offset=0&order=r_desc_t_asc">y</a>
+                <a class="grid-link" href="result.html?category=z&limit=10&offset=0&order=r_desc_t_asc">z</a>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <h4>Browse by Genre</h4>
+            <div id = "genreContainerBody" class="grid-container-genre">
+            </div>
+        </div>
+    </div>
+
+    <script src="advance_search.js"></script>
+</div>
+<div id="footer"></div>
+</body>
+</html>

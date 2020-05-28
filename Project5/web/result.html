@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- add header and footer -->
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <title>Movie List</title>
+</head>
+
+<body>
+<div id="header"></div>
+
+
+<div class="container">
+    <div id = "dashBoardButton" style="float: right;"></div>
+
+    <div class="jumbotron">
+        <h1 class="display-4">Search Result</h1>
+    </div>
+
+    <div id="add_to_cart_message"></div>
+
+    <div class="sort">
+        Sort by:
+        <select id="sortMenu" onchange="location = this.value;"></select>
+        <select id="numberToDisplayMenu" onchange="location = this.value;"></select>
+        <br>
+    </div>
+
+    <!-- Id "movie_table" is useful for jQuery to find the html element with id, class here is mapping to Bootstrap defined class CSS -->
+    <table id="movie_table" class="table table-striped">
+        <!-- Create a table header -->
+        <thead>
+        <tr>
+            <!-- Titles of each column-->
+            <th>Title</th>
+            <th>Year</th>
+            <th>Director</th>
+            <th>Genres</th>
+            <th>Stars</th>
+            <th>Rating</th>
+            <th>Action</th>
+
+        </tr>
+        </thead>
+        <!-- Table body is left empty here, will be populated with the data retrieved with index.js -->
+        <!-- Again, id "movie_table_body" is useful for jQuery to find this html element -->
+        <tbody id=movie_table_body></tbody>
+    </table>
+
+    <div class="page">
+        <ul id="pagination" class="pagination">
+        </ul>
+    </div>
+</div>
+<div id="footer"></div>
+
+<!-- Load our own JS file -->
+<script src="result.js"></script>
+</body>
+</html>
