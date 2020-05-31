@@ -1,0 +1,58 @@
+/*search page*/
+hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.grid-container-character {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    padding: 1px;
+}
+.grid-container-genre {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 1px;
+}
+
+.grid-link {
+    font-size: 18px;
+}
+
+/*result page*/
+.sort {
+    float: right;
+    margin-bottom: 16px;
+}
+.page {
+    text-align: center;
+}
+#movie_table {
+    font-size: 16px;
+}
+
+/*single movie page*/
+#movie_info {
+    font-size: 16px;
+}
+
+#addItem {
+    text-align: right;
+}
+
+/*single star page*/
+#star_info {
+    font-size: 16px;
+}
+
+/*cart page*/
+#cart_table {
+    font-size: 16px;
+}
+
+/*confirmation page*/
+#sale_table {
+    font-size: 16px;
+}
