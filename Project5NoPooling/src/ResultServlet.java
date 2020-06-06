@@ -1,10 +1,8 @@
-
+import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
-
-import javax.naming.Context;
-import javax.naming.InitialContext;
+import javax.annotation.Resource;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,7 +16,7 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-
+import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -29,10 +27,12 @@ public class ResultServlet extends HttpServlet {
 //    private static final long serialVersionUID = 3L;
 
     // Create a dataSource which registered in web.xml
-//    @Resource(name = "jdbc/moviedb")
-//    private DataSource dataSource;
+    @Resource(name = "jdbc/moviedb")
+    private DataSource dataSource;
 
-
+    /**
+     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         response.setContentType("application/json"); // Response mime type
@@ -56,6 +56,9 @@ public class ResultServlet extends HttpServlet {
         HashMap<Integer, String> string_parameters = new HashMap<Integer, String>();
         HashMap<Integer, Integer> integer_parameters = new HashMap<Integer, Integer>();
         int param_count = 0;
+
+
+
 
 
 
@@ -135,7 +138,8 @@ public class ResultServlet extends HttpServlet {
         }
 
 
-
+        //        String orderSection = "r.rating desc";
+//        String orderSection = "";
         if (order_param.equals("t_asc_r_asc")){
             //"t_asc_r_asc" = title ascending order, rating ascending order
             whereSection += " order by m.title asc, r.rating asc";
@@ -176,6 +180,21 @@ public class ResultServlet extends HttpServlet {
         integer_parameters.put(++param_count, Integer.parseInt(limit_param));
         integer_parameters.put(++param_count, Integer.parseInt(offset_param));
 
+//        if (limit_param == null || limit_param == ""){
+//            queryTail += " limit 30 ";
+//        }
+//        else{
+//            queryTail += " limit " + limit_param + " ";
+//        }
+//
+//        if (offset_param == null || offset_param ==""){
+//            queryTail += "offset 0";
+//        }
+//        else{
+//            queryTail += "offset " + offset_param;
+//        }
+
+
 
         // Output stream to STDOUT
         PrintWriter out = response.getWriter();
@@ -183,15 +202,9 @@ public class ResultServlet extends HttpServlet {
         try {
             // Time an event in a program to nanosecond precision
             long startTJTime = System.nanoTime();
-
+            
             // Get a connection from dataSource
-            Context initContext = new InitialContext();
-            Context envContext = (Context) initContext.lookup("java:/comp/env");
-            DataSource ds = (DataSource) envContext.lookup("jdbc/moviedb");
-            Connection dbcon = ds.getConnection();
-
-            if (dbcon == null)
-                out.println("dbcon is null.");
+            Connection dbcon = dataSource.getConnection();
 
             // Declare our statement
 
@@ -239,10 +252,15 @@ public class ResultServlet extends HttpServlet {
                 PreparedStatement genre_statement = dbcon.prepareStatement(genre_query);
                 genre_statement.setString(1, movieId);
                 ResultSet genre_rs = genre_statement.executeQuery();
-
+//                String genres = "";
+                String genre;
+//                int count = 0;
                 while (genre_rs.next()){
-
+//                    if (count != 0){
+//                        genres = genres + ", ";
+//                    }
                     genreJsonArray.add(genre_rs.getString("name"));
+//                    count++;
                 }
                 genre_rs.close();
                 genre_statement.close();
@@ -264,7 +282,9 @@ public class ResultServlet extends HttpServlet {
 
                 Map<String, String> starMap = new HashMap<String, String>();
                 while (star_rs.next()){
-
+//                    if (count != 0){
+//                        stars = stars + ", ";
+//                    }
                     String starName = star_rs.getString("name");
                     String starId = star_rs.getString("starId");
                     JsonObject starJsonObject = new JsonObject();
@@ -307,7 +327,7 @@ public class ResultServlet extends HttpServlet {
             // write TS and TJ time to file
             try {
                 String contextPath = getServletContext().getRealPath("/");
-                String filePath = contextPath+"/SingleTest1_log.txt";
+                String filePath = contextPath+"/time_log.txt";
                 System.out.println(filePath);
 
                 File myfile = new File(filePath);
@@ -327,8 +347,6 @@ public class ResultServlet extends HttpServlet {
                 System.out.println("Error: write to file");
                 e.printStackTrace();
             }
-
-
         } catch (Exception e) {
 
             // write error message JSON object to output

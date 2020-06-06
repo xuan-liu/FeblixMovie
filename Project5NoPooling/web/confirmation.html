@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- add header and footer -->
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <title>Confirmation Page</title>
+</head>
+
+<body>
+<div id="header"></div>
+<div class="container">
+    <div class="jumbotron">
+        <h2> Congratulations! You purchase has been processed </h2>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+            <span class="sr-only">100% Complete</span>
+        </div>
+    </div>
+
+    <table id="sale_table" class="table table-striped">
+        <!-- Create a table header -->
+        <thead>
+        <tr>
+            <!-- Titles of each column-->
+            <th>Title</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+        <!-- Table body is left empty here, will be populated with the data retrieved with index.js -->
+        <!-- Again, id "movie_table_body" is useful for jQuery to find this html element -->
+        <tbody id=sale_table_body></tbody>
+    </table>
+
+    <h4 id="total_sale" style="text-align: right"></h4>
+</div>
+
+<!-- include our own JS file -->
+<script src="./confirmation.js"></script>
+<div id="footer"></div>
+</body>
+</html>
