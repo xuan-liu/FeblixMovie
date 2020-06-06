@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -34,6 +36,9 @@ public class ResultServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         response.setContentType("application/json"); // Response mime type
+
+        // Time an event in a program to nanosecond precision
+        long startTSTime = System.nanoTime();
 
         //Obtain and checks if the parameters exists in the url
         String title_param = request.getParameter("title");
@@ -176,6 +181,9 @@ public class ResultServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         try {
+            // Time an event in a program to nanosecond precision
+            long startTJTime = System.nanoTime();
+
             // Get a connection from dataSource
             Context initContext = new InitialContext();
             Context envContext = (Context) initContext.lookup("java:/comp/env");
@@ -295,6 +303,28 @@ public class ResultServlet extends HttpServlet {
             rs.close();
             preparedQuery.close();
             dbcon.close();
+
+            // write TS and TJ time to file
+            String contextPath = getServletContext().getRealPath("/");
+            String xmlFilePath = contextPath+"\\time.txt";
+            System.out.println(xmlFilePath);
+
+            File myfile = new File(xmlFilePath);
+            myfile.createNewFile();
+
+//            String filePath = "/Users/liuxuan/Graduate/Study/20Spring/cs122b-project1/cs122b-spring20-team-38/Project5/time.txt";
+            FileWriter myWriter = new FileWriter(myfile, true);
+
+            long endTime = System.nanoTime();
+            long elapsedTJTime = endTime - startTJTime;
+            long elapsedTSTime = endTime - startTSTime;
+
+            System.out.println("elapsedTJTime: "+ elapsedTJTime);
+            System.out.println("elapsedTSTime: "+ elapsedTSTime);
+
+            myWriter.write(elapsedTJTime + "," +  elapsedTSTime + "," + title_param + "\n");
+            myWriter.close();
+
         } catch (Exception e) {
 
             // write error message JSON object to output
