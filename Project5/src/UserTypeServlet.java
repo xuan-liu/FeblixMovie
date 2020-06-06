@@ -24,9 +24,9 @@ public class UserTypeServlet extends HttpServlet {
      * handles GET requests to store session information
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response)throws IOException{
-        HttpSession session = request.getSession();
-
-        String userType = ((User) session.getAttribute("user")).getType();
+//        HttpSession session = request.getSession();
+        String userType = "customer";
+//        String userType = ((User) session.getAttribute("user")).getType();
         response.setContentType("application/json"); // Response mime type
 
         // Output stream to STDOUT
