@@ -305,25 +305,29 @@ public class ResultServlet extends HttpServlet {
             dbcon.close();
 
             // write TS and TJ time to file
-            String contextPath = getServletContext().getRealPath("/");
-            String xmlFilePath = contextPath+"\\time.txt";
-            System.out.println(xmlFilePath);
+            try {
+                String contextPath = getServletContext().getRealPath("/");
+                String filePath = contextPath+"/time_log.txt";
+                System.out.println(filePath);
 
-            File myfile = new File(xmlFilePath);
-            myfile.createNewFile();
+                File myfile = new File(filePath);
+                myfile.createNewFile();
+                FileWriter myWriter = new FileWriter(myfile, true);
 
-//            String filePath = "/Users/liuxuan/Graduate/Study/20Spring/cs122b-project1/cs122b-spring20-team-38/Project5/time.txt";
-            FileWriter myWriter = new FileWriter(myfile, true);
+                long endTime = System.nanoTime();
+                long elapsedTJTime = endTime - startTJTime;
+                long elapsedTSTime = endTime - startTSTime;
 
-            long endTime = System.nanoTime();
-            long elapsedTJTime = endTime - startTJTime;
-            long elapsedTSTime = endTime - startTSTime;
+                System.out.println("elapsedTJTime: "+ elapsedTJTime);
+                System.out.println("elapsedTSTime: "+ elapsedTSTime);
 
-            System.out.println("elapsedTJTime: "+ elapsedTJTime);
-            System.out.println("elapsedTSTime: "+ elapsedTSTime);
+                myWriter.write(elapsedTJTime + "," +  elapsedTSTime + "," + title_param + "\n");
+                myWriter.close();
+            } catch (Exception e) {
+                System.out.println("Error: write to file");
+                e.printStackTrace();
+            }
 
-            myWriter.write(elapsedTJTime + "," +  elapsedTSTime + "," + title_param + "\n");
-            myWriter.close();
 
         } catch (Exception e) {
 
