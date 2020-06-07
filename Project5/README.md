@@ -14,7 +14,8 @@
 	5. Modify the Balancer instance to balance the assignment of connections between the two servers.
 
     - #### Collaborations and Work Distribution:
-
+       - Hongen Lei: Implemented Connection Pooling. Modified Project 5 to become Master and Slave Project.  Implemented Google Cloud Balancer.
+       - Xuan Liu: Implemented Balancer, Master, and Slave instances. Created Log Processing Script. Produced the JMeter TS/TJ Time Measurement Report.
 
 - # Connection Pooling
     - #### Include the filename/path of all code/configuration files in GitHub of using JDBC Connection Pooling.
@@ -85,9 +86,8 @@
 
 - # JMeter TS/TJ Time Logs
     - #### Instructions of how to use the `log_processing.*` script to process the JMeter logs.
-    - After the test, the "time_log.txt" file is stored in tomcat/webapps/Project5. The processing scipt is in the [logProcess](https://github.com/UCI-Chenli-teaching/cs122b-spring20-team-38/tree/master/logProcess) Project, running processLog.java will print the average TS and TJ. 
-    
-    Note: you need to change the file path in processLog.java.
+        - After the test, the "time_log.txt" file is stored in tomcat/webapps/Project5. The processing scipt is in the [logProcess](https://github.com/UCI-Chenli-teaching/cs122b-spring20-team-38/tree/master/logProcess) Project, running processLog.java will print the average TS and TJ. 
+        - Note: you need to change the file path in processLog.java.
 
 
 - # JMeter TS/TJ Time Measurement Report
