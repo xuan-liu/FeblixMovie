@@ -202,7 +202,7 @@ public class ResultServlet extends HttpServlet {
         try {
             // Time an event in a program to nanosecond precision
             long startTJTime = System.nanoTime();
-            
+
             // Get a connection from dataSource
             Connection dbcon = dataSource.getConnection();
 

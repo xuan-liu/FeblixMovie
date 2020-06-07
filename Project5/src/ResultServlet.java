@@ -307,7 +307,7 @@ public class ResultServlet extends HttpServlet {
             // write TS and TJ time to file
             try {
                 String contextPath = getServletContext().getRealPath("/");
-                String filePath = contextPath+"/SingleTest1_log.txt";
+                String filePath = contextPath+"/time_log.txt";
                 System.out.println(filePath);
 
                 File myfile = new File(filePath);
