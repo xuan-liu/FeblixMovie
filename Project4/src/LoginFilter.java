@@ -28,22 +28,24 @@ public class LoginFilter implements Filter {
 
         String redirectPath = contextPath + "/login.html";
 
+        chain.doFilter(request, response);
+
         // Check if this URL is allowed to access without logging in
-        if (this.isUrlAllowedWithoutLogin(httpRequest.getServletPath())) {
-            // Keep default action: pass along the filter chain
-
-            chain.doFilter(request, response);
-            return;
-        }
-
-        // Redirect to login page if the "user" attribute doesn't exist in session
-        if (httpRequest.getSession().getAttribute("user") == null) {
-            httpResponse.sendRedirect(redirectPath);
-            System.out.println("Not Login");
-        } else {
-            chain.doFilter(request, response);
-            System.out.println("User" +  httpRequest.getSession().getAttribute("user").toString() + "is Logged In");
-        }
+//        if (this.isUrlAllowedWithoutLogin(httpRequest.getServletPath())) {
+//            // Keep default action: pass along the filter chain
+//
+//            chain.doFilter(request, response);
+//            return;
+//        }
+//
+//        // Redirect to login page if the "user" attribute doesn't exist in session
+//        if (httpRequest.getSession().getAttribute("user") == null) {
+//            httpResponse.sendRedirect(redirectPath);
+//            System.out.println("Not Login");
+//        } else {
+//            chain.doFilter(request, response);
+//            System.out.println("User" +  httpRequest.getSession().getAttribute("user").toString() + "is Logged In");
+//        }
     }
 
     private boolean isUrlAllowedWithoutLogin(String requestURI) {
